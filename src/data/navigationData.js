@@ -47,10 +47,10 @@ export const NAV_PATH_MAP = Object.freeze(
 //Social Media
 export const SOCIAL_MEDIA= Object.freeze({
   facebook: "https://www.facebook.com/share/1Keh3Dv62e/",
-  twitter: "",
-  youtube: "",
-  instagram: "",
-  tiktok: ""
+  twitter: "https://twitter.com/",
+  youtube: "https://youtube.com/",
+  instagram: "https://www.instagram.com/stgabrielgroupofschools",
+  tiktok: "https://tiktok.com/"
 });
 
 

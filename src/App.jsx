@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import Navbar from './components/layout/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
+import Footer from './components/layout/Footer';
 
 
 const Home = lazy(()=> import('./pages/Home'));
@@ -121,7 +122,7 @@ function App(){
           </Suspense>
 
         </main>
-
+        <Footer />
       </div>
     </ErrorBoundary>
   )
