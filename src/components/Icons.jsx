@@ -1,13 +1,19 @@
 import React from 'react';
-import * as SimpleIcons from 'simple-icons';
+import {
+  siFacebook,
+  siInstagram,
+  siX,
+  siYoutube,
+  siTiktok,
+} from 'simple-icons';
 
 const ICON_NAME_MAP = {
-  facebook: 'siFacebook',
-  instagram: 'siInstagram',
-  twitter: 'siX',
-  x: 'siX',
-  youtube: 'siYoutube',
-  tiktok: 'siTiktok',
+  facebook: siFacebook,
+  instagram: siInstagram,
+  twitter: siX,
+  x: siX,
+  youtube: siYoutube,
+  tiktok: siTiktok,
 };
 
 /**
@@ -29,11 +35,10 @@ export const Icon = ({
   ...props 
 }) => {
   const normalizedName = String(name ?? '').trim().toLowerCase();
-  const iconKey = ICON_NAME_MAP[normalizedName] ?? normalizedName;
-  const iconData = SimpleIcons[iconKey] || SimpleIcons[`si${normalizedName}`];
-  
+  const iconData = ICON_NAME_MAP[normalizedName];
+
   if (!iconData) {
-    console.warn(`Icon "${name}" not found in simple-icons`);
+    console.warn(`Icon "${name}" not found in the site icon set`);
     return null;
   }
 

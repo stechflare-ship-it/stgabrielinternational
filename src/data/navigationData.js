@@ -1,5 +1,7 @@
 
+import logo from "../assets/images/gabriellogo.jpeg"
 
+export { logo };
 
 // hoding data which is never changing
 export const SITE_CONFIG = Object.freeze({

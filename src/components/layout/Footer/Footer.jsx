@@ -1,10 +1,10 @@
 import React, { memo, useMemo } from "react";
 import { NAV_LINKS, SITE_CONFIG } from "../../../data/navigationData";
-import { Clock, GraduationCap, Mail, MapPin, Phone } from "lucide-react";
-import { Link as RouterLink } from "react-router-dom";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { FooterSocial } from "./FooterSocial";
 import { FooterLink } from "./FooterLink";
 import { useFooter } from "../../../hooks/useFooter";
+import { BrandLogo } from "../../common/BrandLogo";
 
 
 
@@ -60,29 +60,7 @@ const Footer = memo (function Footer(){
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12 mb-12 md:mb-16">
                     {/*Brand and mission */}
                     <div className="space-y-4">
-                        <RouterLink
-                            to="/"
-                            className="inline-flex flex-col items-start gap-3 sm:flex-row sm:items-center group focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg p-1"
-                            aria-label={`${SITE_CONFIG.name} - Homepage`}
-                        >
-                            <div className="p-2.5 bg-blue-900 text-amber-400 rounded-xl shadow-md group-hover:bg-blue-800 transition-colors">
-                                <GraduationCap className="w-7 h-7" aria-hidden="true"/>
-
-                            </div>
-
-                            <div className="flex flex-col min-w-0">
-                                <span className="text-lg sm:text-xl font-bold tracking-tight text-white group-hover:text-amber-400 transition-colors break-words">
-                                    {SITE_CONFIG.name}
-
-                                </span>
-
-                                <span className="text-[10px] sm:text-[11px] font-bold tracking-widest text-amber-500 uppercase break-words">
-                                    {SITE_CONFIG.subName}
-
-                                </span>
-                            </div>
-
-                        </RouterLink>
+                        <BrandLogo variant="footer" />
 
                         {/*Description with semantic paragraph with SEO*/}
                         <p className="text-sm text-slate-400 leading-relaxed break-words">
