@@ -11,16 +11,7 @@ const AboutLegacy = lazy(() => import('./AboutLegacy'));
 const AboutLeadership = lazy(() => import('./AboutLeadership'));
 const AboutFacilities = lazy(() => import('./AboutFacilities'));
 
-/**
- * 🏗️ ABOUT PAGE
- * 
- * Features:
- * - SEO-optimized with meta tags
- * - Lazy loading for non-critical sections
- * - Performance focused
- * - Mobile-first responsive
- * - Accessibility compliant
- */
+
 
 function About() {
   const { legacy, visionMission, leadership, facilities } = ABOUT_DATA;

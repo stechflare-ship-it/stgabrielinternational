@@ -10,7 +10,7 @@ const About = lazy(() => import('./pages/About/About'));
 const Academics = lazy(() => import('./pages/Academics'));
 const StudentLife = lazy(() => import('./pages/StudentLife'));
 const Staff = lazy(() => import('./pages/Staff'));
-const Gallery = lazy(() => import('./pages/Gallery'));
+const Gallery = lazy(() => import('./pages/Gallery/Gallery'));
 const News = lazy(() => import('./pages/NewsEvents'));
 const Downloads = lazy(() => import('./pages/Downloads'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -114,7 +114,7 @@ function App(){
               <Route path='/academics' element = {<Academics />}/>
               <Route path='/student-life' element = {<StudentLife />}/>
               <Route path='/staff' element = {<Staff />}/>
-              <Route path='/gallery' element = {<Gallery />}/>
+              <Route path='/gallery/*' element = {<Gallery />}/>
               <Route path='/news' element = {<News />}/>
               <Route path='/downloads' element = {<Downloads />}/>
               <Route path='/contact' element = {<Contact />}/>
