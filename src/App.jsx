@@ -2,10 +2,11 @@ import React, { Suspense } from 'react';
 import Navbar from './components/layout/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
+import Footer from './components/layout/Footer';
 
 
 const Home = lazy(()=> import('./pages/Home'));
-const About = lazy(() => import('./pages/AboutUs'));
+const About = lazy(() => import('./pages/About/About'));
 const Academics = lazy(() => import('./pages/Academics'));
 const StudentLife = lazy(() => import('./pages/StudentLife'));
 const Staff = lazy(() => import('./pages/Staff'));
@@ -121,7 +122,7 @@ function App(){
           </Suspense>
 
         </main>
-
+        <Footer />
       </div>
     </ErrorBoundary>
   )

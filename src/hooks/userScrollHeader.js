@@ -22,7 +22,7 @@ export function useScrollHeader({
   const menuButtonRef = useRef(null);
   const scrollTimeoutRef= useRef(null);//scroll timer
   const animationFrameRef = useRef(null);
-  const mountedRef = useRef(null);//to check if component is mounted
+  const mountedRef = useRef(true);//to check if component is mounted
 
   //memoization -  for remembering values between renders . only recalculate when dependencies change.
 
@@ -33,7 +33,7 @@ export function useScrollHeader({
   //cleanup function - runs when component unmounts
   const cleanup = useCallback(()=>{
     //mark as unmounted
-    mountedRef.current= false;
+    mountedRef.current = false;
 
     //cancle animation frame
     if (animationFrameRef.current){
@@ -57,34 +57,35 @@ export function useScrollHeader({
   //scroll handler 
 
   useEffect(()=>{
-    let ticking=false;
+    mountedRef.current = true;
+    let ticking = false;
 
     //handling scroll
-    const handleScroll=() =>{
-      if (!mountedRef.current)return;
+    const handleScroll = () => {
+      if (!mountedRef.current) return;
 
       //to run only if not scheduled
-      if (!ticking){
+      if (!ticking) {
         //schedule with request animationFrame(next screen refresh)
-        animationFrameRef.current = requestAnimationFrame(()=> {
+        animationFrameRef.current = requestAnimationFrame(() => {
           try {
-            const currentScrolly = window.scrollY;
+            const currentScrollY = window.scrollY;
             
             //check if threshold is passed
-            const shouldScrolled = currentSociety > threshold;
+            const shouldScrolled = currentScrollY > threshold;
 
             //only update state if value changed- to prevent unnecessary re-renders
             setState(prev => {
-              if (prev.isScrolled === shouldScrolled)return prev;
-              return {...prev, isScrolled: shouldScrolled};
+              if (prev.isScrolled === shouldScrolled) return prev;
+              return { ...prev, isScrolled: shouldScrolled };
             });
           } catch (error) {
-            console.warn('Scroll handler error:',error);
+            console.warn('Scroll handler error:', error);
           }
-          ticking =false;
+          ticking = false;
         });
 
-        ticking =true;
+        ticking = true;
       }
     };
 

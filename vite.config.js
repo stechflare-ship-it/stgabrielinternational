@@ -8,4 +8,22 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('framer-motion')) return 'motion-vendor';
+            if (id.includes('simple-icons')) return 'icon-vendor';
+            if (id.includes('react-router-dom') || id.includes('react-router')) return 'router-vendor';
+            if (id.includes('lucide-react')) return 'ui-icons-vendor';
+            if (id.includes('react-dom') || id.includes('react/jsx-runtime')) return 'react-vendor';
+          }
+
+          if (id.includes('/src/pages/About/')) return 'about-page';
+          if (id.includes('/src/pages/')) return 'page-shell';
+        },
+      },
+    },
+  },
 })

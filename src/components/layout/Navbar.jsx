@@ -1,17 +1,10 @@
-import React, { memo, useMemo, Suspense, lazy,useEffect} from 'react';
+import React, { memo, useMemo, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, GraduationCap, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
 import { SITE_CONFIG, NAV_LINKS } from '../../data/navigationData';
 import { useScrollHeader } from '../../hooks/userScrollHeader';
+import { BrandLogo } from '../common/BrandLogo';
 
-// import { NavLink, useLocation } from 'react-router-dom';
-
-// const { memo, useMemo } = require('react');
-// const { SITE_CONFIG, NAV_LINKS } = require('../../data/navigationData');
-
-
-//to load animation library only when needed
-const motion = lazy(() => import('framer-motion'));
 
 //Topbar rendering with contact imfo
 const TopBar = memo(function Topbar(){
@@ -60,40 +53,7 @@ const TopBar = memo(function Topbar(){
 });
 
 const Logo = memo(function Logo(){
-  const { name, subName, subNameHope} = SITE_CONFIG;
-
-  return(
-    <NavLink
-      to="/"
-      className="flex items-center space-x-2 sm:space-x-3 group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg flex-shrink-0"
-      aria-label={`${name} - Homepage`}
-    >
-      {/* Logo Icon */}
-      <div className="p-1.5 sm:p-2.5 bg-blue-900 text-amber-400 rounded-lg sm:rounded-xl group-hover:bg-amber-500 group-hover:text-blue-950 transition-colors">
-        <GraduationCap className="w-5 h-5 sm:w-7 sm:h-7" aria-hidden="true" />
-      </div>
-      
-      {/* Logo Text */}
-      <div className="flex flex-col">
-        {/* School Name */}
-        <span className="text-sm sm:text-lg font-bold tracking-tight text-blue-950 leading-tight">
-          {name}
-        </span>
-        <div>
-          <span className="text-[10px] sm:text-xs font-semibold tracking-wider text-amber-600 uppercase ">
-          {subName}
-        </span>
-        <span className="ml-2 text-[11px] italic before:content-['•'] before:mr-1 before:text-red-500 ">
-          
-          {subNameHope}
-        </span>
-        </div>
-        {/* Subtitle - hidden on very small screens */}
-        
-      </div>
-    </NavLink>
-
-  );
+  return <BrandLogo variant="navbar" showHope />;
 });
 
 //DESKTOP Navigation
