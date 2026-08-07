@@ -9,14 +9,6 @@ import roboticsImg from '../../assets/images/optimized/robotics.webp';
 import olympicImg from '../../assets/images/optimized/olympic.webp';
 import libraryImg from '../../assets/images/optimized/library.webp';
 
-//leadership
-import graceImg from '../../assets/images/optimized/grace.webp';
-import jamesImg from '../../assets/images/optimized/james.webp';
-import peterImg from '../../assets/images/optimized/peter.webp';
-import sarahImg from '../../assets/images/optimized/sarah.webp';
-
-
-
 
 export const ABOUT_DATA = Object.freeze({
 
@@ -106,41 +98,16 @@ export const ABOUT_DATA = Object.freeze({
     },
   },
 
-  // LEADERSHIP SECTION - With experience
+  // LEADERSHIP SECTION from staffData.js
+  // duplicated here — About.jsx pulls it from STAFF_MEMBERS in staffData.js
+  // (filtered to category === 'leadership') so there is one source of truth
+  // for leadership people, shared by both the About and Staff pages.
 
   leadership: {
     title: "Executive Guidance",
     subtitle: "Leadership Team",
     description:
       "Guided by distinguished educators with international experience.",
-    members: [
-      {
-        name: "Dr. Sarah Mwangi",
-        role: "Principal & CEO",
-        image:sarahImg,
-        bio: "25+ years in international education. PhD in Educational Leadership.",
-        experience: "25+ years in international education, PhD in Educational Leadership, Former Director at Cambridge International Schools.",
-      },
-      {
-        name: "Mr. James Ochieng",
-        role: "Head of Academics",
-        image: jamesImg,
-        bio: "PhD in Curriculum Development. 20 years of teaching experience.",
-        experience: "PhD in Curriculum Development, 20 years teaching experience, Published author in educational research.",
-      },
-      {
-        name: "Ms. Grace Wanjiru",
-        role: "Head of Student Affairs",
-        image: graceImg,
-        experience: "MA in Counseling Psychology, 15 years in student welfare, Certified Child Psychologist.",
-      },
-      {
-        name: "Mr. Peter Kamau",
-        role: "Head of STEM",
-        image: peterImg,
-        experience: "Robotics & AI Specialist, 12 years in STEM education, Founded the school's robotics program.",
-      },
-    ],
   },
 
   // FACILITIES SECTION - With images

@@ -4,14 +4,6 @@ import AboutHero from './AboutHero';
 import AboutValue from './AboutValue';
 import { ABOUT_DATA } from './aboutData';
 import { SITE_CONFIG } from '../../data/navigationData';
-// Single source of truth for staff/leadership — adjust this path to match
-// wherever your Staff page folder actually lives relative to About/.
-import { STAFF_MEMBERS } from '../Staff/staffData';
-
-// Leadership people shown on the About page are just the 'leadership'
-// category from the same list the Staff Directory uses — no more separate
-// leadership roster to keep in sync.
-const LEADERSHIP_MEMBERS = STAFF_MEMBERS.filter((member) => member.category === 'leadership');
 
 // Lazy load heavy sections for performance
 const AboutVisionMission = lazy(() => import('./AboutVisionMission'));
@@ -63,8 +55,8 @@ function About() {
           
           
           
-          {/* Leadership Team — copy from aboutData, members from staffData */}
-          <AboutLeadership data={{ ...leadership, members: LEADERSHIP_MEMBERS }} />
+          {/* Leadership Team */}
+          <AboutLeadership data={leadership} />
           
           {/* Facilities */}
           <AboutFacilities data={facilities} />

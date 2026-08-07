@@ -34,11 +34,11 @@ const AboutLeadership = memo(function AboutLeadership({ data }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {data.members.map((member, index) => {
             const delay = index * 150;
-            const experience = member.experience || member.credentials || '';
-
+            
+            
             return (
               <div
-                key={member.id || member.name}
+                key={member.name}
                 className={`
                   group bg-gray-50 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl 
                   transition-all duration-500 cursor-pointer
@@ -60,7 +60,7 @@ const AboutLeadership = memo(function AboutLeadership({ data }) {
                   
                   <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/85 via-slate-950/40 to-transparent p-3 z-10">
                     <div className="text-[11px] text-amber-400 font-semibold tracking-wide truncate">
-                      {experience.split(',')[0]}
+                      {member.experience?.split(',')[0]}
                     </div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ const AboutLeadership = memo(function AboutLeadership({ data }) {
                   `}>
                     <div className="pt-4 border-t border-gray-200">
                       <p className="text-xs text-gray-600 leading-relaxed">
-                        {experience}
+                        {member.experience}
                       </p>
                     </div>
                   </div>
