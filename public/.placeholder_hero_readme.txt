@@ -1,0 +1,1 @@
+// NOTE: This file intentionally left minimal. Place real hero files in public/hero.mp4 and public/hero-poster.jpg

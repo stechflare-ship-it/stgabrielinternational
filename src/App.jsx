@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import Footer from './components/layout/Footer';
 import WhatsAppButton from './components/whatsapp/WhatsAppButton';
+import ChatbotFallback from './components/chatbot/ChatbotFallback';
 
 
 const Home = lazy(()=> import('./pages/Home'));
@@ -15,6 +16,10 @@ const Gallery = lazy(() => import('./pages/Gallery/Gallery'));
 const News = lazy(() => import('./pages/NewsEvents'));
 const Downloads = lazy(() => import('./pages/Downloads'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Admissions = lazy(() => import('./pages/Admissions'));
+const FeesAndRequirements = lazy(() => import('./pages/FeesAndRequirements'));
+const Blog = lazy(() => import('./pages/Blog'));
+const BlogPost = lazy(() => import('./pages/BlogPost'));
 
 
 //ERROR BOUNDARY Catches errors in child components
@@ -90,12 +95,6 @@ function PageLoader() {
 
 
 
-//PAGE VIEW Tracker - tracks page views for analytics
-
-//SEO Component
-
-// Page Components to wrap every component with SEO
-
 // MAIN APP
 function App(){
   return (
@@ -105,6 +104,9 @@ function App(){
 
         {/* Floating WhatsApp button (left) */}
         <WhatsAppButton />
+
+        {/* Chatbot fallback (right) */}
+        <ChatbotFallback />
 
         {/* Main Content */}
 
@@ -120,6 +122,10 @@ function App(){
               <Route path='/news' element = {<News />}/>
               <Route path='/downloads' element = {<Downloads />}/>
               <Route path='/contact' element = {<Contact />}/>
+              <Route path='/admissions' element = {<Admissions />}/>
+              <Route path='/fees-and-requirements' element = {<FeesAndRequirements />}/>
+              <Route path='/blog' element = {<Blog />}/>
+              <Route path='/blog/:slug' element = {<BlogPost />}/>
             </Routes>
           </Suspense>
 
