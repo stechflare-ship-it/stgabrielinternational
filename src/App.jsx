@@ -9,7 +9,7 @@ const Home = lazy(()=> import('./pages/Home'));
 const About = lazy(() => import('./pages/About/About'));
 const Academics = lazy(() => import('./pages/Academics'));
 const StudentLife = lazy(() => import('./pages/StudentLife'));
-const Staff = lazy(() => import('./pages/Staff'));
+const Staff = lazy(() => import('./pages/Staff/Staff'));
 const Gallery = lazy(() => import('./pages/Gallery/Gallery'));
 const News = lazy(() => import('./pages/NewsEvents'));
 const Downloads = lazy(() => import('./pages/Downloads'));
