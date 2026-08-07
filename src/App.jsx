@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import Footer from './components/layout/Footer';
+import WhatsAppButton from './components/whatsapp/WhatsAppButton';
 
 
 const Home = lazy(()=> import('./pages/Home'));
@@ -102,7 +103,8 @@ function App(){
       <div className='min-h-screen bg-gray-50 flex flex-col'>
         <Navbar />
 
-        {/* To add Page View Tracking */}
+        {/* Floating WhatsApp button (left) */}
+        <WhatsAppButton />
 
         {/* Main Content */}
 
