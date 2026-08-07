@@ -1,7 +1,9 @@
-import React, { lazy } from 'react';
+import React, { lazy, Suspense } from 'react';
+import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import WhatsAppButton from './components/whatsapp/WhatsAppButton';
 import ChatbotFallback from './components/chatbot/ChatbotFallback';
+import { Route, Routes } from 'react-router-dom';
 
 const Home = lazy(()=> import('./pages/Home'));
 const About = lazy(() => import('./pages/About/About'));
@@ -56,7 +58,6 @@ class ErrorBoundary extends React.Component {
 
     return this.props.children;
   }
-
 }
 
 function PageLoader() {
@@ -72,8 +73,6 @@ function PageLoader() {
     </div>
   );
 }
-
-import { Route, Routes } from 'react-router-dom';
 
 function App(){
   return (
