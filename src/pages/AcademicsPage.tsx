@@ -10,8 +10,9 @@ export const AcademicsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="British Curriculum & International Education | St. Gabriel Nakuru"
-        description="Explore the British International Curriculum at St. Gabriel International School in Lanet, Nakuru. From EYFS, Primary, Lower Secondary, Cambridge IGCSE to A-Level."
+        title="British Curriculum & International Education | Best Education in Nakuru, Kenya"
+        description="Explore the best British Curriculum education at St. Gabriel International School in Lanet, Nakuru, Kenya. EYFS, Cambridge IGCSE & A-Level offering real-life experiences and a balanced life."
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, Cambridge IGCSE, A-Level, EYFS, St. Gabriel International School"
         canonicalPath="/academics"
         breadcrumbs={[{ name: 'Academics', path: '/academics' }]}
       />

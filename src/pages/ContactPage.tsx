@@ -10,8 +10,9 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Contact Us & Visit Lanet Campus | St. Gabriel Nakuru"
-        description="Contact St. Gabriel International School in Lanet, Nakuru County, Kenya. Phone numbers, WhatsApp, email, and campus directions."
+        title="Contact St. Gabriel International School | Lanet, Nakuru, Kenya"
+        description="Contact St. Gabriel International School in Lanet, Nakuru, Kenya. Best British Curriculum school on Transformer Rd offering a balanced life and real-life education."
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, St Gabriels Mission School, Transformer Rd Nakuru"
         canonicalPath="/contact"
         breadcrumbs={[{ name: 'Contact', path: '/contact' }]}
       />

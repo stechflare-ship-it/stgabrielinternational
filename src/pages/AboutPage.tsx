@@ -10,8 +10,9 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="About St. Gabriel International School | Nakuru"
-        description="Learn about St. Gabriel International School in Lanet, Nakuru. Established in 1998 with motto 'Hope to the World', delivering British curriculum, Christian character, and leadership."
+        title="About St. Gabriel International School | Best Education in Nakuru, Kenya"
+        description="Learn about St. Gabriel International School in Lanet, Nakuru, Kenya. Delivering the best British Curriculum education, nurturing a balanced life and real-life learning experiences since 1998."
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, About St Gabriel"
         canonicalPath="/about"
         breadcrumbs={[{ name: 'About Us', path: '/about' }]}
       />

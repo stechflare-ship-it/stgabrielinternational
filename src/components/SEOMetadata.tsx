@@ -4,6 +4,7 @@ import { SCHOOL_INFO } from '../data/schoolData';
 interface SEOMetadataProps {
   title: string;
   description: string;
+  keywords?: string;
   canonicalPath?: string;
   ogType?: 'website' | 'article';
   ogImage?: string;
@@ -13,6 +14,7 @@ interface SEOMetadataProps {
 export const SEOMetadata: React.FC<SEOMetadataProps> = ({
   title,
   description,
+  keywords = 'international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, St Gabriels Mission School, Transformer Rd Nakuru, Cambridge IGCSE, A-Level, EYFS, boarding school Kenya',
   canonicalPath = '',
   ogType = 'website',
   ogImage = 'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=1200',
@@ -50,6 +52,7 @@ export const SEOMetadata: React.FC<SEOMetadataProps> = ({
 
     // 2. Standard Meta Tags
     setMetaTag('meta[name="description"]', 'content', description);
+    setMetaTag('meta[name="keywords"]', 'content', keywords);
     setMetaTag('meta[name="robots"]', 'content', 'index, follow, max-image-preview:large');
     setMetaTag('meta[name="author"]', 'content', SCHOOL_INFO.name);
 

@@ -43,8 +43,9 @@ export const HomePage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB]">
       <SEOMetadata
-        title="St. Gabriel International School | International & British Curriculum School in Nakuru"
-        description="Premier British & International Curriculum Day & Boarding School in Lanet, Nakuru, Kenya. Nurturing academic rigor, holistic talents, Christian values, and global opportunities."
+        title="St. Gabriel International School | Best British Curriculum Education in Nakuru, Kenya"
+        description="St. Gabriel International School in Lanet, Nakuru, Kenya offers the best British Curriculum education (EYFS, Cambridge IGCSE & A-Level), promoting a balanced life and real-life experiences in day and boarding environments."
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, Cambridge school Nakuru, boarding school Kenya"
         canonicalPath="/"
       />
 

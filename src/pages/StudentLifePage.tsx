@@ -27,8 +27,9 @@ export const StudentLifePage: React.FC = () => {
   return (
     <div className="w-full bg-[#071321] text-white min-h-screen">
       <SEOMetadata
-        title="Vibrant Student Life & Handbook | St. Gabriel Nakuru"
-        description="Daily routines, uniform guidelines, co-curricular sports, health welfare, and character development at St. Gabriel International School in Lanet, Nakuru."
+        title="Student Life, Balanced Life & Real-Life Experience | St. Gabriel Nakuru Kenya"
+        description="Discover a balanced life and real-life learning experiences at St. Gabriel International School in Nakuru, Kenya. British curriculum, sports, arts, leadership and character development."
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, student life, co-curricular, St. Gabriel International School"
         canonicalPath="/student-life"
         breadcrumbs={[{ name: 'Student Life', path: '/student-life' }]}
       />
