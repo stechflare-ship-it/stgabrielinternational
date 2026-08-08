@@ -1,0 +1,139 @@
+import React from 'react';
+import { SEOMetadata } from '../components/SEOMetadata';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { SectionHeading } from '../components/SectionHeading';
+import { ShieldCheck, Award, Heart, BookOpen, Users, Compass, CheckCircle2 } from 'lucide-react';
+import { SCHOOL_INFO } from '../data/schoolData';
+import { Button } from '../components/Button';
+
+export const AboutPage: React.FC = () => {
+  return (
+    <div className="w-full bg-[#F8F9FB] min-h-screen">
+      <SEOMetadata
+        title="About St. Gabriel International School | Nakuru"
+        description="Learn about St. Gabriel International School in Lanet, Nakuru. Established in 1998 with motto 'Hope to the World', delivering British curriculum, Christian character, and leadership."
+        canonicalPath="/about"
+        breadcrumbs={[{ name: 'About Us', path: '/about' }]}
+      />
+
+      <Breadcrumbs items={[{ label: 'About Us', path: '/about' }]} />
+
+      {/* Banner */}
+      <section className="bg-[#0B1D33] text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27]">
+        <div className="max-w-7xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
+            Est. 1998 • Lanet, Nakuru County
+          </span>
+          <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white">
+            About St. Gabriel International School
+          </h1>
+          <p className="font-serif italic text-[#E0BA43] text-lg sm:text-xl font-semibold">
+            &quot;{SCHOOL_INFO.motto}&quot;
+          </p>
+        </div>
+      </section>
+
+      {/* Core Narrative */}
+      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <SectionHeading
+              badge="Our History & Identity"
+              title="A Legacy of Academic Rigor and Moral Integrity"
+              align="left"
+            />
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              Founded in 1998 in Lanet, Nakuru County, St. Gabriel International School was established with a singular vision: to provide a world-class international education grounded in Christian values, holistic personal development, and intellectual curiosity.
+            </p>
+            <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
+              Over the past two decades, St. Gabriel has grown into one of Nakuru County&apos;s most respected educational institutions, offering a seamless British International Curriculum path from Early Years Foundation Stage (EYFS) through Cambridge IGCSE and Advanced Level (A-Level).
+            </p>
+
+            <div className="p-5 rounded-2xl bg-[#0B1D33] text-white border border-[#C59B27]/40 space-y-2">
+              <h4 className="font-bold text-sm text-[#E0BA43] uppercase tracking-wider flex items-center gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#C59B27]" />
+                <span>Day & Separate Boarding Compounds</span>
+              </h4>
+              <p className="text-xs text-gray-300">
+                Our campus offers Day School and separate boys and girls boarding facilities located approximately 4 km apart in Lanet to maintain distinct, focused living environments.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative">
+            <img
+              src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=1200"
+              alt="St. Gabriel Campus Administration"
+              className="rounded-3xl shadow-2xl border-4 border-white object-cover w-full h-[400px]"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Vision, Mission & Values */}
+      <section className="py-16 bg-[#071321] text-white border-y border-[#C59B27]/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            badge="Guiding Principles"
+            title="Vision, Mission & Core Values"
+            theme="dark"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#C59B27] text-[#0B1D33] flex items-center justify-center font-bold">
+                <Award className="w-6 h-6" />
+              </div>
+              <h3 className="font-serif font-bold text-xl text-[#E0BA43]">Our Vision</h3>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                To inspire students to exploit and achieve their maximum potential in life, developing confident scholars who illuminate the world with hope, knowledge, and ethical leadership.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#C59B27] text-[#0B1D33] flex items-center justify-center font-bold">
+                <Compass className="w-6 h-6" />
+              </div>
+              <h3 className="font-serif font-bold text-xl text-[#E0BA43]">Our Mission</h3>
+              <p className="text-xs text-gray-300 leading-relaxed">
+                To provide a transformative international education that nurtures academic distinction, critical thinking, creative expression, athletic mastery, and Christian moral character.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 space-y-3">
+              <div className="w-12 h-12 rounded-xl bg-[#C59B27] text-[#0B1D33] flex items-center justify-center font-bold">
+                <Heart className="w-6 h-6" />
+              </div>
+              <h3 className="font-serif font-bold text-xl text-[#E0BA43]">Core Values</h3>
+              <ul className="text-xs text-gray-300 space-y-1.5">
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-[#C59B27]" /> Integrity & Christian Faith</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-[#C59B27]" /> Academic Distinction</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-[#C59B27]" /> Discipline & Mutual Respect</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-[#C59B27]" /> Innovation & Global Outlook</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 text-center max-w-4xl mx-auto px-4">
+        <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B1D33]">
+          Explore Academic & Boarding Life
+        </h2>
+        <p className="text-gray-600 text-sm my-4">
+          Learn more about our curriculum stages or contact our admissions office in Lanet, Nakuru.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Button to="/academics" variant="primary" size="md">
+            View Curriculum Stages
+          </Button>
+          <Button to="/admissions" variant="secondary" size="md">
+            Admissions Enquiry
+          </Button>
+        </div>
+      </section>
+    </div>
+  );
+};

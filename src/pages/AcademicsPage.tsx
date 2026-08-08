@@ -1,0 +1,64 @@
+import React from 'react';
+import { SEOMetadata } from '../components/SEOMetadata';
+import { Breadcrumbs } from '../components/Breadcrumbs';
+import { SectionHeading } from '../components/SectionHeading';
+import { CurriculumTimeline } from '../components/CurriculumTimeline';
+import { Button } from '../components/Button';
+import { BookOpen, Sparkles, Award, GraduationCap } from 'lucide-react';
+
+export const AcademicsPage: React.FC = () => {
+  return (
+    <div className="w-full bg-[#F8F9FB] min-h-screen">
+      <SEOMetadata
+        title="British Curriculum & International Education | St. Gabriel Nakuru"
+        description="Explore the British International Curriculum at St. Gabriel International School in Lanet, Nakuru. From EYFS, Primary, Lower Secondary, Cambridge IGCSE to A-Level."
+        canonicalPath="/academics"
+        breadcrumbs={[{ name: 'Academics', path: '/academics' }]}
+      />
+
+      <Breadcrumbs items={[{ label: 'Academics & Curriculum', path: '/academics' }]} />
+
+      <section className="bg-[#0B1D33] text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27]">
+        <div className="max-w-7xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
+            Cambridge & British Curriculum Standards
+          </span>
+          <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white">
+            Academic Pathways & Curriculum
+          </h1>
+          <p className="max-w-2xl mx-auto text-gray-300 text-sm sm:text-base">
+            Delivering an inspiring, world-recognized education from Early Years through Advanced Level university entry qualifications.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <SectionHeading
+          badge="Curriculum Overview"
+          title="Progressive Learning Stages"
+          subtitle="Click on any stage below to explore specific subjects, entry ages, and academic outcomes."
+        />
+        <CurriculumTimeline />
+      </section>
+
+      <section className="bg-[#071321] text-white py-16 border-t border-[#C59B27]/30">
+        <div className="max-w-4xl mx-auto text-center px-4 space-y-6">
+          <h2 className="font-serif text-2xl sm:text-3xl font-bold">
+            Ready to Enroll Your Child in Our British Curriculum Program?
+          </h2>
+          <p className="text-gray-300 text-sm">
+            Our academic advisors in Lanet, Nakuru are ready to assist with grade placement and subject choices.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button to="/admissions" variant="primary" size="md">
+              Apply for Admission
+            </Button>
+            <Button to="/contact" variant="secondary" size="md">
+              Speak to Academics Office
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
