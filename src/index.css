@@ -1,5 +1,84 @@
 @import "tailwindcss";
-/* In your global CSS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    --navy-dark: #071321;
+    --navy-main: #0A192F;
+    --navy-light: #162E4D;
+    --gold-main: #D4AF37;
+    --gold-light: #E5C158;
+    --gold-dark: #A88924;
+    --gold-subtle: #FAF6E8;
+    --warm-bg: #FDFCFB;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #1A1A1A;
+    background-color: var(--warm-bg);
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A192F;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C158;
+}
+
+/* Hide scrollbar for Chrome, Safari, Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Sleek Interface Utilities */
+.bg-navy-dark { background-color: #071321; }
+.bg-navy-main { background-color: #0A192F; }
+.bg-navy-light { background-color: #162E4D; }
+.bg-gold-main { background-color: #D4AF37; }
+.bg-gold-light { background-color: #E5C158; }
+.bg-gold-subtle { background-color: #FAF6E8; }
+
+.text-navy-main { color: #0A192F; }
+.text-gold-main { color: #D4AF37; }
+.text-gold-light { color: #E5C158; }
+
+.border-gold-main { border-color: #D4AF37; }
+.border-gold-subtle { border-color: rgba(212, 175, 55, 0.3); }
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #E5C158 0%, #D4AF37 50%, #A88924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
 @media (max-width: 480px) {
   .navbar-brand-text {
     font-size: 0.875rem;
@@ -9,13 +88,12 @@
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

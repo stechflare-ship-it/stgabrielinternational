@@ -1,0 +1,6 @@
+{
+  "name": "St. Gabriel International School",
+  "description": "Premier British & International Curriculum Day & Boarding School in Lanet, Nakuru, Kenya. Hope to the World.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

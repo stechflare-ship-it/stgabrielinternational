@@ -1,18 +1,19 @@
-# Build artifacts
-/dist
-
 # Dependency directories
 node_modules/
+build/
+dist/
+coverage/
 
 # Local env files
 .env
 .env.local
-.env.*.local
+.env.*
+!.env.example
 
-# Vite cache
+# Build & Vite cache
 .vite
-
-# logs
+.DS_Store
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
