@@ -25,8 +25,10 @@ export const SCHOOL_INFO = {
     area: 'Lanet',
     county: 'Nakuru County',
     country: 'Kenya',
-    fullAddress: 'Lanet, Nakuru County, Kenya',
-    coordinates: { lat: -0.2833, lng: 36.1167 }
+    fullAddress: 'St. Gabriel\'s Mission School, Transformer Rd, Lanet, Nakuru, Kenya',
+    coordinates: { lat: -0.2718165, lng: 36.1815519 },
+    googleMapsUrl: 'https://www.google.com/maps/place/St.+gabriels+mission+school/@-0.2718165,36.1815519,17z/data=!3m1!4b1!4m6!3m5!1s0x18299487536a1161:0x8e6768382a603db5!8m2!3d-0.2718165!4d36.1815519',
+    embedMapUrl: 'https://maps.google.com/maps?q=-0.2718165,36.1815519+(St.+Gabriel%27s+Mission+School)&t=&z=16&ie=UTF8&iwloc=B&output=embed'
   },
   contacts: {
     mainPhone: '+254 724 694 554',

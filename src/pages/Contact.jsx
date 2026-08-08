@@ -49,9 +49,32 @@ export default function Contact(){
       </div>
 
       <section className="mt-8">
-        <h3 className="font-semibold">Location</h3>
-        <p className="text-sm text-gray-600 mt-2">Map placeholder — add official coordinates or Google Maps link when available.</p>
-        <div className="mt-4 bg-gray-100 h-64 rounded flex items-center justify-center text-gray-500">Map placeholder</div>
+        <h3 className="font-semibold text-lg text-gray-900">Campus Location</h3>
+        <p className="text-sm text-gray-600 mt-1">St. Gabriel's Mission School, Transformer Rd, Lanet, Nakuru, Kenya</p>
+        <div className="mt-4 rounded-lg overflow-hidden border border-gray-300 shadow">
+          <iframe
+            title="St. Gabriel's Mission School Map"
+            src="https://maps.google.com/maps?q=-0.2718165,36.1815519+(St.+Gabriel%27s+Mission+School)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+            width="100%"
+            height="320"
+            style={{ border: 0 }}
+            allowFullScreen={true}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-80"
+          ></iframe>
+          <div className="p-3 bg-gray-50 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-gray-700">
+            <span>📍 Coordinates: -0.2718165, 36.1815519 (Transformer Rd, Nakuru)</span>
+            <a
+              href="https://www.google.com/maps/place/St.+gabriels+mission+school/@-0.2718165,36.1815519,17z/data=!3m1!4b1!4m6!3m5!1s0x18299487536a1161:0x8e6768382a603db5!8m2!3d-0.2718165!4d36.1815519"
+              target="_blank"
+              rel="noreferrer"
+              className="px-3 py-1.5 bg-blue-900 text-white font-medium rounded hover:bg-blue-800 transition-colors"
+            >
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
       </section>
 
       <section className="mt-8">

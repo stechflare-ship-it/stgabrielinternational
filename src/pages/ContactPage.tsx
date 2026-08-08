@@ -107,34 +107,50 @@ export const ContactPage: React.FC = () => {
             <ContactButtons />
           </div>
 
-          {/* Interactive Map Placeholder */}
-          <div className="bg-[#0B1D33] text-white p-8 rounded-3xl border border-[#C59B27]/40 shadow-2xl flex flex-col justify-between space-y-6">
+          {/* Interactive Google Map Section */}
+          <div className="bg-[#0B1D33] text-white p-6 sm:p-8 rounded-3xl border border-[#C59B27]/40 shadow-2xl flex flex-col justify-between space-y-6">
             <div>
               <span className="px-3 py-1 rounded bg-[#C59B27] text-[#0B1D33] text-[10px] font-extrabold uppercase">
                 Visit Lanet Campus
               </span>
               <h3 className="font-serif font-bold text-2xl text-white mt-3">
-                Schedule a Personal Campus Tour
+                Exact Campus Location on Google Maps
               </h3>
               <p className="text-xs text-gray-300 mt-2 leading-relaxed">
-                Experience our state-of-the-art classroom spaces, science and computer laboratories, boarding facilities, and athletic grounds firsthand.
+                St. Gabriel's Mission School, Transformer Rd, Lanet, Nakuru County, Kenya. Experience our state-of-the-art academic & boarding facilities.
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-[#162E4D] border border-[#C59B27]/30 text-center space-y-3">
-              <MapPin className="w-8 h-8 text-[#E0BA43] mx-auto" />
-              <h4 className="font-serif font-bold text-base text-white">Lanet, Nakuru County</h4>
-              <p className="text-xs text-gray-300">
-                Located conveniently in Lanet, Nakuru with separate 4km boys & girls boarding compounds.
-              </p>
-              <a
-                href={`https://maps.google.com/?q=${SCHOOL_INFO.location.coordinates.lat},${SCHOOL_INFO.location.coordinates.lng}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2 rounded-xl bg-[#C59B27] text-[#0B1D33] text-xs font-bold hover:bg-white transition-all shadow-md mt-2"
-              >
-                Open Google Maps Directions
-              </a>
+            <div className="rounded-2xl overflow-hidden border border-[#C59B27]/30 shadow-lg bg-[#162E4D] space-y-0">
+              <iframe
+                title="St. Gabriel's Mission School Exact Location Map"
+                src={SCHOOL_INFO.location.embedMapUrl}
+                width="100%"
+                height="280"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-72 rounded-t-2xl"
+              ></iframe>
+              <div className="p-4 bg-[#162E4D] text-center space-y-2">
+                <div className="flex items-center justify-center gap-2 text-[#E0BA43] text-sm font-bold">
+                  <MapPin className="w-4 h-4 flex-shrink-0" />
+                  <span>St. Gabriel's Mission School, Transformer Rd</span>
+                </div>
+                <p className="text-[11px] text-gray-300">
+                  Coordinates: <span className="font-mono text-white">{SCHOOL_INFO.location.coordinates.lat}, {SCHOOL_INFO.location.coordinates.lng}</span>
+                </p>
+                <a
+                  href={SCHOOL_INFO.location.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#C59B27] text-[#0B1D33] text-xs font-bold hover:bg-white transition-all shadow-md mt-1"
+                >
+                  <MapPin className="w-3.5 h-3.5" />
+                  <span>Open Exact Google Maps Directions</span>
+                </a>
+              </div>
             </div>
           </div>
 
