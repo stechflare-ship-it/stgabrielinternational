@@ -1,29 +1,19 @@
-<<<<<<< HEAD
+# Dependency directories
 node_modules/
 build/
 dist/
 coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
-=======
-# Build artifacts
-/dist
-
-# Dependency directories
-node_modules/
 
 # Local env files
 .env
 .env.local
-.env.*.local
+.env.*
+!.env.example
 
-# Vite cache
+# Build & Vite cache
 .vite
-
-# logs
+.DS_Store
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> origin/main
