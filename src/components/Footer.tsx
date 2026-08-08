@@ -86,7 +86,8 @@ export const Footer: React.FC = () => {
                 { label: 'Cambridge IGCSE (Years 10–11)', path: '/academics/igcse' },
                 { label: 'A-Level (Years 12–13)', path: '/academics/a-level' },
                 { label: 'Photo Gallery', path: '/gallery' },
-                { label: 'News & Events', path: '/news' }
+                { label: 'News & Events', path: '/news' },
+                { label: 'Blog & Articles', path: '/blog' }
               ].map((link) => (
                 <li key={link.path}>
                   <Link

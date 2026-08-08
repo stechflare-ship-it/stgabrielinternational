@@ -15,6 +15,7 @@ import { AdmissionsPage } from './pages/AdmissionsPage';
 import { FeesPage } from './pages/FeesPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { NewsPage } from './pages/NewsPage';
+import { BlogPage } from './pages/BlogPage';
 import { StaffPage } from './pages/StaffPage';
 import { DownloadsPage } from './pages/DownloadsPage';
 import { ContactPage } from './pages/ContactPage';
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="/fees-and-requirements" element={<FeesPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/news" element={<NewsPage />} />
+            <Route path="/blog" element={<BlogPage />} />
             <Route path="/staff" element={<StaffPage />} />
             <Route path="/downloads" element={<DownloadsPage />} />
             <Route path="/contact" element={<ContactPage />} />
