@@ -350,7 +350,7 @@ export const StudentLifePage: React.FC = () => {
           badge="Campus Gallery"
           title="Moments of Excellence & Fellowship"
           subtitle="Explore academic, athletic, and co-curricular highlights at St. Gabriel International School."
-          lightTheme={false}
+          theme="dark"
         />
         <Gallery />
       </section>
