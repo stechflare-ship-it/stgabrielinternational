@@ -38,48 +38,21 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
-      {/* Top Utility Announcement Bar */}
-      <div className="bg-[#0A192F] text-gray-300 text-xs py-2 px-4 sm:px-8 border-b border-[#D4AF37]/30">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
-          
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-[11px] sm:text-xs">
-            <span className="flex items-center gap-1.5 text-gray-200 font-medium">
-              <MapPin className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>Lanet, Nakuru County, Kenya</span>
-            </span>
-            <span className="hidden sm:inline-block text-gray-600">|</span>
-            <span className="flex items-center gap-1.5 text-[#D4AF37] font-semibold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>British & International Curriculum</span>
-            </span>
-          </div>
-
-          <div className="flex items-center gap-4 text-[11px] sm:text-xs">
-            <div className="flex flex-col text-right mr-2 border-r border-white/20 pr-4 hidden sm:flex">
-              <span className="text-[10px] text-[#D4AF37] font-bold tracking-tighter uppercase">Admissions Enquiry</span>
-              <a href={`tel:${SCHOOL_INFO.contacts.mainPhoneRaw}`} className="text-white text-xs font-mono tracking-wider hover:text-[#D4AF37]">
-                {SCHOOL_INFO.contacts.mainPhone}
-              </a>
-            </div>
-            <a
-              href={`tel:${SCHOOL_INFO.contacts.mainPhoneRaw}`}
-              className="flex sm:hidden items-center gap-1 text-[#D4AF37] font-mono hover:underline focus:outline-none"
-            >
-              <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span>{SCHOOL_INFO.contacts.mainPhone}</span>
-            </a>
-            <span className="text-gray-600 sm:hidden">|</span>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-[#25D366] font-semibold hover:underline focus:outline-none"
-            >
-              <MessageCircle className="w-3.5 h-3.5 fill-current" />
-              <span>WhatsApp</span>
-            </a>
-          </div>
-
+      {/* Red Moving Ribbon Announcement Bar */}
+      <div 
+        className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white py-2 px-0 overflow-hidden border-b-2 border-[#D4AF37] shadow-md cursor-pointer"
+        onClick={() => window.location.href = '/admissions'}
+        title="Click to view admissions"
+      >
+        <div className="animate-ribbon-marquee text-xs sm:text-sm font-bold tracking-wide uppercase flex items-center gap-12 select-none">
+          <span className="flex items-center gap-3">
+            <span className="bg-[#D4AF37] text-red-950 text-[10px] sm:text-xs px-2 py-0.5 rounded font-black tracking-widest shadow">ANNOUNCEMENT</span>
+            <span>🚨 OFFICIAL OPENING OF ST. GABRIEL INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
+          </span>
+          <span className="flex items-center gap-3">
+            <span className="bg-[#D4AF37] text-red-950 text-[10px] sm:text-xs px-2 py-0.5 rounded font-black tracking-widest shadow">ANNOUNCEMENT</span>
+            <span>🚨 OFFICIAL OPENING OF ST. GABRIEL INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
+          </span>
         </div>
       </div>
 

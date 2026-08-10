@@ -6,47 +6,26 @@ import { useScrollHeader } from '../../hooks/userScrollHeader';
 import { BrandLogo } from '../common/BrandLogo';
 
 
-//Topbar rendering with contact imfo
+// Red Moving Ribbon Announcement Bar
 const TopBar = memo(function Topbar(){
-  const {phone, email, announcement} = SITE_CONFIG;
+  const announcementText = "🚨 ANNOUNCEMENT: OFFICIAL OPENING OF ST. GABRIEL INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟";
 
   return (
     <div 
-      className="bg-blue-950 text-gray-300 text-xs py-2 px-4 hidden sm:block"
-      aria-label="Contact information"
+      className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white py-2 px-0 overflow-hidden border-b-2 border-amber-400 shadow-md relative z-50 cursor-pointer"
+      aria-label="Important Announcement"
+      title="Click to view admissions"
+      onClick={() => window.location.href = '/admissions'}
     >
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-        {/* Left side: Phone and Email */}
-        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
-          {/* Phone with Schema markup for SEO */}
-          <a
-            href={`tel:${phone}`}
-            className="flex items-center gap-1 hover:text-white transition-colors"
-            aria-label={`Call us at ${phone}`}
-          >
-            {/* Phone icon */}
-            <Phone className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" aria-hidden="true" />
-            <span className="whitespace-nowrap">{phone}</span>
-          </a>
-          
-          {/* Email */}
-          <a
-            href={`mailto:${email}`}
-            className="flex items-center gap-1 hover:text-white transition-colors"
-            aria-label={`Email us at ${email}`}
-          >
-            <Mail className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" aria-hidden="true" />
-            <span className="whitespace-nowrap">{email}</span>
-          </a>
-        </div>
-        
-        {/* Right side: Announcement */}
-        <div 
-          className="text-amber-400 font-medium animate-pulse text-center sm:text-left"
-          aria-live="polite"
-        >
-          {announcement}
-        </div>
+      <div className="animate-ribbon-marquee text-xs sm:text-sm font-bold tracking-wide uppercase flex items-center gap-12 select-none">
+        <span className="flex items-center gap-3">
+          <span className="bg-amber-400 text-red-950 text-[10px] sm:text-xs px-2 py-0.5 rounded font-black tracking-widest shadow">SPECIAL NOTICE</span>
+          <span>{announcementText}</span>
+        </span>
+        <span className="flex items-center gap-3">
+          <span className="bg-amber-400 text-red-950 text-[10px] sm:text-xs px-2 py-0.5 rounded font-black tracking-widest shadow">SPECIAL NOTICE</span>
+          <span>{announcementText}</span>
+        </span>
       </div>
     </div>
   );

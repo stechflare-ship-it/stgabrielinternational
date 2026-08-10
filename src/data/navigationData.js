@@ -16,7 +16,7 @@ export const SITE_CONFIG = Object.freeze({
   // WhatsApp (opens chat)
   whatsapp: "https://wa.me/254724694554",
   email : "stgabrielmissionsecsch@gmail.com",
-  announcement :"Admission Open for 2026/2027 Academic Year",
+  announcement :"Official Opening of St. Gabriel International School from September 2026! Admissions Now Open for British Curriculum (EYFS, Primary, Secondary, IGCSE & A-Level)",
 
 });
 

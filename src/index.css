@@ -37,6 +37,22 @@
   }
 }
 
+/* Red Moving Announcement Ribbon Animation */
+@keyframes ribbonMarquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ribbon-marquee {
+  display: flex;
+  width: max-content;
+  animation: ribbonMarquee 24s linear infinite;
+}
+
+.animate-ribbon-marquee:hover {
+  animation-play-state: paused;
+}
+
 /* Custom Sleek Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
