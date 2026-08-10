@@ -1,6 +1,7 @@
 import React from 'react';
-import { SITE_CONFIG, logo } from '../../data/navigationData';
+import { SITE_CONFIG } from '../../data/navigationData';
 import { Link as RouterLink } from 'react-router-dom';
+import logo from '../../assets/images/logo.webp'
 
 export function BrandLogo({
   variant = 'navbar',

@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: School Identity */}
           <div className="lg:col-span-2 space-y-5">
-            <Logo variant="footer" showTagline={true} />
+            <Logo variant="footer"  />
 
             <p className="text-sm text-gray-300 leading-relaxed max-w-md">
               St. Gabriel International School delivers an inspiring British & International Curriculum in Lanet, Nakuru County. We nurture academic rigor, holistic talents, Christian character, and leadership opportunities for day and boarding scholars.

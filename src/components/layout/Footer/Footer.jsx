@@ -169,7 +169,7 @@ const Footer = memo (function Footer(){
                             {/* Hours */}
                             <div className="flex items-center space-x-3 pt-1 border-t border-slate-900">
                                 <Clock className="w-5 h-5 text-amber-500 flex-shrink-0" aria-hidden="true" />
-                                <span className="text-xs text-slate-400">Monday - Friday: 8:00 AM – 4:30 PM <br/> Saturday: 8:30 AM – 1:00 PM</span>
+                                <span className="text-xs text-slate-400">Monda - Friday: 8:00 AM – 4:30 PM <br/> Saturday: 8:30 AM – 1:00 PM</span>
                             </div>
 
                             {/* REUSES SITE_CONFIG.announcement */}

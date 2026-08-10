@@ -1,6 +1,6 @@
 import React from 'react';
 import { SITE_CONFIG, SOCIAL_MEDIA } from '../../data/navigationData';
-import logo from '../../assets/images/gabriellogo.jpeg';
+import logo from '../../assets/images/logo.webp';
 
 export default function Footer(){
   return (

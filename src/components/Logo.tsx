@@ -6,7 +6,7 @@ interface LogoProps {
   className?: string;
   showTagline?: boolean;
 }
-
+import logo from '../assets/images/logo.webp'
 export const Logo: React.FC<LogoProps> = ({
   variant = 'light',
   className = '',
@@ -22,12 +22,12 @@ export const Logo: React.FC<LogoProps> = ({
       className={`group flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] rounded-sm p-1 transition-transform ${className}`}
       aria-label="St. Gabriel International School Home"
     >
-      <div className="relative flex-shrink-0 w-10 h-12 bg-[#D4AF37] flex items-center justify-center rounded-sm shadow-md">
+      <div className="relative flex-shrink-0  h-14  flex items-center justify-center rounded-sm shadow-md">
         {!imgError ? (
           <img
-            src="/images/logo.png"
+            src={logo}
             alt="St. Gabriel International School Badge"
-            className="w-full h-full object-contain p-1"
+            className='w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[8rem] object-contain shrink-0 '
             onError={() => setImgError(true)}
             referrerPolicy="no-referrer"
           />
