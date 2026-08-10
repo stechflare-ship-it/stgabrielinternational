@@ -4,6 +4,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SectionHeading } from '../components/SectionHeading';
 import { Button } from '../components/Button';
 import { Sparkles, CheckCircle2, Heart, BookOpen, Compass } from 'lucide-react';
+import academicExplore from '../assets/images/academics/academicexplore.webp';
 
 export const EYFSPage: React.FC = () => {
   return (
@@ -86,9 +87,11 @@ export const EYFSPage: React.FC = () => {
 
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&q=80&w=1200"
+              src={academicExplore}
               alt="St. Gabriel EYFS Class Activity"
-              className="rounded-3xl shadow-2xl border-4 border-white object-cover w-full h-[420px]"
+              className="w-full h-full shadow-2xl object-cover border-4 rounded-3xl border-white"
+              
+            
               referrerPolicy="no-referrer"
             />
           </div>

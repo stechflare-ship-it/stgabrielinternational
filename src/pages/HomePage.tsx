@@ -33,6 +33,16 @@ import { NewsCard } from '../components/NewsCard';
 import { Button } from '../components/Button';
 import { SCHOOL_INFO, NEWS_ITEMS } from '../data/schoolData';
 
+import homeimg from '../assets/images/about/campus.webp';
+
+import claasroom from '../assets/images/gallery/classroom.webp';
+import arts from '../assets/images/gallery/artsClub.webp';
+import complab from '../assets/images/gallery/compLab.webp';
+import graduation from '../assets/images/gallery/graduation.webp';
+import sports from '../assets/images/gallery/sports.webp';
+import faith from '../assets/images/gallery/faith.webp';
+
+
 const PLACEHOLDER_CAMPUS = 'https://placehold.co/800x600/0b1d33/e0ba43?text=St.+Gabriel+Campus';
 const PLACEHOLDER_CLASSROOM = 'https://placehold.co/800x600/0b1d33/ffffff?text=Classroom+Study';
 const PLACEHOLDER_ARTS = 'https://placehold.co/800x600/0b1d33/ffffff?text=Performing+Arts';
@@ -100,7 +110,7 @@ export const HomePage: React.FC = () => {
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <img
-                src={PLACEHOLDER_CAMPUS}
+                src={homeimg}
                 alt="St. Gabriel International School Campus"
                 className="w-full h-[420px] object-cover"
               />
@@ -203,7 +213,7 @@ export const HomePage: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 hover:border-[#C59B27] transition-all space-y-4 flex flex-col justify-between">
               <div>
                 <div className="relative h-44 rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
-                  <img src={PLACEHOLDER_CLASSROOM} alt="Classroom learning at St. Gabriel" className="w-full h-full object-cover" />
+                  <img src={claasroom} alt="Classroom learning at St. Gabriel" className="w-full h-full object-cover" />
                   <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-[#0B1D33]/80 text-[#E0BA43] text-[10px] font-bold">Academics</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">
@@ -222,7 +232,7 @@ export const HomePage: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 hover:border-[#C59B27] transition-all space-y-4 flex flex-col justify-between">
               <div>
                 <div className="relative h-44 rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
-                  <img src={PLACEHOLDER_ARTS} alt="Performing arts students" className="w-full h-full object-cover" />
+                  <img src={arts} alt="Performing arts students" className="w-full h-full object-cover" />
                   <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-[#0B1D33]/80 text-[#E0BA43] text-[10px] font-bold">Performing Arts</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">
@@ -241,7 +251,7 @@ export const HomePage: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 hover:border-[#C59B27] transition-all space-y-4 flex flex-col justify-between">
               <div>
                 <div className="relative h-44 rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
-                  <img src={PLACEHOLDER_ICT} alt="Computer Lab at St. Gabriel" className="w-full h-full object-cover" />
+                  <img src={complab} alt="Computer Lab at St. Gabriel" className="w-full h-full object-cover" />
                   <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-[#0B1D33]/80 text-[#E0BA43] text-[10px] font-bold">STEM & ICT</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">
@@ -260,7 +270,7 @@ export const HomePage: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 hover:border-[#C59B27] transition-all space-y-4 flex flex-col justify-between">
               <div>
                 <div className="relative h-44 rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
-                  <img src={PLACEHOLDER_GRADUATION} alt="Graduation ceremony" className="w-full h-full object-cover" />
+                  <img src={graduation} alt="Graduation ceremony" className="w-full h-full object-cover" />
                   <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-[#0B1D33]/80 text-[#E0BA43] text-[10px] font-bold">Excellence</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">
@@ -279,7 +289,7 @@ export const HomePage: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 hover:border-[#C59B27] transition-all space-y-4 flex flex-col justify-between">
               <div>
                 <div className="relative h-44 rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
-                  <img src={PLACEHOLDER_CAMPUS} alt="St. Gabriel Scholars Active & Athletic" className="w-full h-full object-cover" />
+                  <img src={sports} alt="St. Gabriel Scholars Active & Athletic" className="w-full h-full object-cover" />
                   <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-[#0B1D33]/80 text-[#E0BA43] text-[10px] font-bold">Athletics</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">
@@ -297,8 +307,8 @@ export const HomePage: React.FC = () => {
             {/* Christian Values */}
             <div className="p-6 rounded-2xl bg-[#0B1D33] border border-[#C59B27]/40 hover:border-[#C59B27] transition-all space-y-4 flex flex-col justify-between">
               <div>
-                <div className="relative h-44 rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
-                  <img src={PLACEHOLDER_CAMPUS} alt="Scholars in uniform" className="w-full h-full object-cover" />
+                <div className="relative  rounded-xl overflow-hidden mb-4 border border-[#C59B27]/30">
+                  <img src={faith} alt="Scholars in uniform" className="w-full h-full object-cover" />
                   <span className="absolute top-2 left-2 px-2 py-0.5 rounded bg-[#0B1D33]/80 text-[#E0BA43] text-[10px] font-bold">Faith & Values</span>
                 </div>
                 <div className="flex items-center gap-3 mb-2">

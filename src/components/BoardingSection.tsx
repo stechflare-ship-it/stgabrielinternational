@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, MapPin, Home, Heart, Users, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from './Button';
+import facilities from '../assets/images/boardinglife/facilities.webp'
 
 const PLACEHOLDER_BOARDING = 'https://placehold.co/800x600/0b1d33/e0ba43?text=St.+Gabriel+Boarding+Facilities';
 
@@ -83,7 +84,7 @@ export const BoardingSection: React.FC = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#C59B27]/40">
               <img
-                src={PLACEHOLDER_BOARDING}
+                src={facilities}
                 alt="St. Gabriel Boarding Facilities in Lanet"
                 className="w-full h-80 sm:h-96 object-cover"
               />

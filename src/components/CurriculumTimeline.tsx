@@ -60,7 +60,7 @@ export const CurriculumTimeline: React.FC = () => {
             className="group relative bg-white rounded-2xl border border-gray-200 hover:border-[#C59B27] shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col overflow-hidden"
           >
             {/* Header Banner */}
-            <div className="relative h-48 overflow-hidden bg-[#0B1D33]">
+            <div className="relative h-full overflow-hidden bg-[#0B1D33]">
               <img
                 src={stage.image}
                 alt={stage.title}

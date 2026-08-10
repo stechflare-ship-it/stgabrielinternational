@@ -10,11 +10,42 @@ import {
   RequirementCategory
 } from '../types';
 
+import advanceLevel from '../assets/images/academics/advanceLevel.webp';
+import cambridgeLevel from '../assets/images/academics/cambridge.webp';
+import earlyYearLevel from '../assets/images/academics/earlyYear.webp';
+import internationalLevel from '../assets/images/academics/international.webp';
+import lowerSecondarLevel from '../assets/images/academics/lowerSec.webp';
+import compLab from '../assets/images/gallery/compLab.webp';
+import classroom from '../assets/images/gallery/classroom.webp';
+
+
+//gallery pages images
+
+import artsClub from '../assets/images/gallery/artsClub.webp';
+import athletics from '../assets/images/gallery/athletics.webp';
+import graduation from '../assets/images/gallery/graduation.webp';
+import musicBand from '../assets/images/gallery/musicBand.webp';
+import schoolBus from '../assets/images/gallery/schoolBus.webp';
+import schoolUniform from '../assets/images/gallery/schoolUniform.webp';
+import sereneSpace from '../assets/images/gallery/sereneSpace.webp';
+import sports from '../assets/images/gallery/sports.webp';
+
+//staff
+import peter from '../assets/images/staff/peter.webp';
+import john from '../assets/images/staff/john.webp';
+import maina from '../assets/images/staff/maina.webp';
+
+
+
 const PLACEHOLDER_IMAGE = 'https://placehold.co/800x600/0b1d33/e0ba43?text=St.+Gabriel+International+School';
 const PLACEHOLDER_CLASSROOM = 'https://placehold.co/800x600/0b1d33/ffffff?text=Classroom+Study';
 const PLACEHOLDER_ARTS = 'https://placehold.co/800x600/0b1d33/ffffff?text=Performing+Arts';
 const PLACEHOLDER_GRADUATION = 'https://placehold.co/800x600/0b1d33/ffffff?text=Graduation+%26+Distinctions';
 const PLACEHOLDER_ICT = 'https://placehold.co/800x600/0b1d33/ffffff?text=STEM+%26+Computer+Lab';
+
+
+
+
 
 export const SCHOOL_INFO = {
   name: 'St. Gabriel International School',
@@ -81,7 +112,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Expressive Arts & Design'
     ],
     path: '/academics/eyfs',
-    image: 'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&q=80&w=1200'
+    image: earlyYearLevel
   },
   {
     key: 'primary',
@@ -108,7 +139,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Global Perspectives & Social Studies'
     ],
     path: '/academics/primary',
-    image: PLACEHOLDER_CLASSROOM
+    image: internationalLevel
   },
   {
     key: 'lower-secondary',
@@ -136,7 +167,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Physical Education'
     ],
     path: '/academics/lower-secondary',
-    image: PLACEHOLDER_ARTS
+    image: lowerSecondarLevel
   },
   {
     key: 'igcse',
@@ -163,7 +194,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Foreign Languages'
     ],
     path: '/academics/igcse',
-    image: PLACEHOLDER_ICT
+    image: cambridgeLevel
   },
   {
     key: 'a-level',
@@ -189,7 +220,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Art & Design'
     ],
     path: '/academics/a-level',
-    image: PLACEHOLDER_GRADUATION
+    image: advanceLevel
   }
 ];
 
@@ -396,7 +427,7 @@ export const NEWS_ITEMS: NewsItem[] = [
       'Our holistic approach combining disciplined study, personalized faculty mentoring, and modern laboratory resources has continued to yield global academic excellence.',
       'Congratulations to all candidates, parents, and dedicated faculty members whose tireless effort made this achievement possible.'
     ],
-    image: PLACEHOLDER_GRADUATION,
+    image: graduation,
     featured: true
   },
   {
@@ -410,7 +441,7 @@ export const NEWS_ITEMS: NewsItem[] = [
       'The St. Gabriel Annual Cultural & Arts Festival brought together students from EYFS through A-Level for an inspiring day of musical, theatrical, and artistic performances.',
       'Highlights included original student-scripted drama pieces, choir renditions of traditional and international classics, and an interactive digital art exhibition.'
     ],
-    image: PLACEHOLDER_ARTS
+    image: musicBand
   },
   {
     id: 'news-3',
@@ -423,7 +454,7 @@ export const NEWS_ITEMS: NewsItem[] = [
       'As part of our commitment to technology and future-proof learning, St. Gabriel has unveiled its expanded STEM & Robotics Innovation Hub.',
       'Students will participate in competitive robotics challenges, software programming, and environmental engineering projects.'
     ],
-    image: PLACEHOLDER_ICT
+    image: compLab
   }
 ];
 
@@ -432,56 +463,56 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'gal-uniform',
     title: 'St. Gabriel Secondary Scholars in Official Uniform',
     category: 'Campus',
-    image: PLACEHOLDER_IMAGE,
+    image: schoolUniform,
     caption: 'Scholars wearing the official St. Gabriel navy blue blazers with gold trim, maroon ties, and school badge at Lanet campus.'
   },
   {
     id: 'gal-classroom',
     title: 'Classroom Concentration & Focused Study',
     category: 'Academics',
-    image: PLACEHOLDER_CLASSROOM,
+    image: classroom,
     caption: 'Students engaged in interactive academic writing and problem solving in their classroom.'
   },
   {
     id: 'gal-brass',
     title: 'Orchestral Brass Band & Performing Arts',
     category: 'Arts & Drama',
-    image: PLACEHOLDER_ARTS,
+    image: musicBand,
     caption: 'Talented scholars showcasing brass musical instruments (trombone, euphonium, tuba) during music instruction.'
   },
   {
     id: 'gal-graduation',
     title: 'Annual Graduation & Distinction Award Ceremony',
     category: 'Academics',
-    image: PLACEHOLDER_GRADUATION,
+    image: graduation,
     caption: 'Scholars wearing black and gold graduation gowns and mortarboards celebrating academic achievements.'
   },
   {
     id: 'gal-computer',
     title: 'Computer & Digital Literacy Laboratory',
     category: 'Academics',
-    image: PLACEHOLDER_ICT,
+    image: compLab,
     caption: 'Hands-on ICT and computing laboratory where students master digital literacy under faculty mentorship.'
   },
   {
     id: 'gal-1',
     title: 'Modern Learning Facilities & School Bus Fleet',
     category: 'Campus',
-    image: PLACEHOLDER_IMAGE,
+    image: schoolBus,
     caption: 'St. Gabriel International School scholars standing beside the official school transport bus at Lanet, Nakuru.'
   },
   {
     id: 'gal-4',
     title: 'Serene Boarding Living Space & Brotherhood',
     category: 'Boarding',
-    image: PLACEHOLDER_GRADUATION,
+    image: sereneSpace,
     caption: 'Spacious, well-ventilated boarding accommodations and distinction celebrations fostering brotherhood and sisterhood in Lanet.'
   },
   {
     id: 'gal-5',
     title: 'Athletics & Co-Curricular Groups',
     category: 'Sports',
-    image: PLACEHOLDER_ARTS,
+    image: athletics,
     caption: 'Co-curricular sports and brass band performers representing St. Gabriel at Lanet.'
   }
 ];
@@ -498,21 +529,21 @@ export const STAFF_MEMBERS: StaffMember[] = [
   },
   {
     id: 'staff-2',
-    name: 'Mr. David Ochieng',
+    name: 'Mr. Peter Mwangi',
     role: 'Vice Principal & Head of Academics',
     department: 'Academic Directorate',
     qualification: 'M.Sc. Physics (UoN), B.Ed. Science (Kenyatta Univ.)',
     bio: 'Specialist in Cambridge IGCSE and A-Level curriculum design with a passion for STEM innovation, research projects, and university placement excellence.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600'
+    image: peter
   },
   {
     id: 'staff-3',
-    name: 'Mrs. Grace Chebet',
+    name: 'Mr Maina',
     role: 'Head of Boarding & Pastoral Care',
     department: 'Student Affairs & Boarding',
     qualification: 'B.A. Counseling Psychology, Higher Dip. Child Development',
     bio: 'Dedicated to providing a warm, nurturing home-away-from-home atmosphere across our separate boys and girls boarding facilities in Lanet.',
-    image: 'https://images.unsplash.com/photo-1580894732413-a751516a8a0b?auto=format&fit=crop&q=80&w=600'
+    image: maina
   },
   {
     id: 'staff-4',
@@ -521,7 +552,7 @@ export const STAFF_MEMBERS: StaffMember[] = [
     department: 'Sports & Creative Arts',
     qualification: 'B.Sc. Sports Science & Physical Education',
     bio: 'Championing athletic development, sportsmanship, and teamwork across soccer, basketball, athletics, and swimming.',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600'
+    image:john
   }
 ];
 

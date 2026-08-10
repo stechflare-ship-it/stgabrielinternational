@@ -5,6 +5,7 @@ import { SectionHeading } from '../components/SectionHeading';
 import { ShieldCheck, Award, Heart, BookOpen, Users, Compass, CheckCircle2 } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 import { Button } from '../components/Button';
+import aboutBg from '../assets/images/about/campus.webp'
 
 export const AboutPage: React.FC = () => {
   return (
@@ -63,7 +64,7 @@ export const AboutPage: React.FC = () => {
 
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&q=80&w=1200"
+              src={aboutBg}
               alt="St. Gabriel Campus Administration"
               className="rounded-3xl shadow-2xl border-4 border-white object-cover w-full h-[400px]"
               referrerPolicy="no-referrer"

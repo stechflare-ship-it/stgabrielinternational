@@ -5,6 +5,13 @@ import { SectionHeading } from '../components/SectionHeading';
 import { BookOpen, Calendar, User, ArrowRight, Search, Tag, Clock, Share2, Sparkles, X } from 'lucide-react';
 import { Button } from '../components/Button';
 
+
+import cambridge from '../assets/images/blogs/cambridge.webp';
+import boardingLife from '../assets/images/blogs/boardingLife.webp';
+import playgroup from '../assets/images/blogs/playgroup.webp';
+import robotics from '../assets/images/blogs/robotics.webp';
+import musicBand from '../assets/images/blogs/musicBand.webp';
+
 interface BlogPost {
   id: string;
   title: string;
@@ -35,7 +42,7 @@ const BLOG_POSTS: BlogPost[] = [
       '3. Subject Specialization: At A-Level, learners tailor their academic trajectory toward their career aspirations in Medicine, Engineering, Computer Science, Law, and International Business.',
       'Our dedicated faculty provides continuous pastoral support and examination preparation, ensuring every candidate enters test series with confidence and intellectual discipline.'
     ],
-    image: 'https://placehold.co/800x600/0b1d33/ffffff?text=Cambridge+IGCSE+%26+A-Level+Guide',
+    image: cambridge,
     tags: ['Cambridge', 'IGCSE', 'A-Level', 'Academic Excellence']
   },
   {
@@ -52,7 +59,7 @@ const BLOG_POSTS: BlogPost[] = [
       'House parents and residential matrons maintain a warm, family-like atmosphere where emotional welfare and peer mentorship go hand-in-hand.',
       'Through shared responsibilities, dorm cleanup challenges, and weekend coffee house talent evenings, boarders develop emotional resilience, empathetic leadership, and enduring brotherhood and sisterhood.'
     ],
-    image: 'https://placehold.co/800x600/0b1d33/e0ba43?text=Boarding+Life+%26+Pastoral+Care',
+    image: boardingLife,
     tags: ['Boarding', 'Pastoral Care', 'Student Welfare', 'Character']
   },
   {
@@ -69,7 +76,7 @@ const BLOG_POSTS: BlogPost[] = [
       'By linking STEM projects to ecological challenges in Nakuru County, students learn how software engineering and clean technology can address real community issues.',
       'Hands-on computational thinking builds confidence, spatial awareness, and creative problem-solving skills across all academic subjects.'
     ],
-    image: 'https://placehold.co/800x600/0b1d33/ffffff?text=STEM+%26+Robotics+Innovation',
+    image: robotics,
     tags: ['STEM', 'Robotics', 'ICT', 'Future Skills']
   },
   {
@@ -85,7 +92,7 @@ const BLOG_POSTS: BlogPost[] = [
       'Our brass band orchestra teaches rhythmic discipline and ensemble harmony, while competitive athletic leagues in soccer, basketball, swimming, and track foster sportsmanship and perseverance.',
       'Participation in journalism, drama, and debating clubs enhances verbal clarity and public speaking skills, empowering students to articulate their thoughts eloquently on international stages.'
     ],
-    image: 'https://placehold.co/800x600/0b1d33/e0ba43?text=Co-Curricular+Excellence',
+    image: musicBand,
     tags: ['Co-Curricular', 'Music', 'Sports', 'Leadership']
   },
   {
@@ -104,7 +111,7 @@ const BLOG_POSTS: BlogPost[] = [
       '3. Read together daily to build vocabulary and imaginative curiosity.',
       'Our EYFS classrooms are designed as vibrant learning sanctuaries where trained early childhood educators nurture emotional security, communication skills, and sensory exploration.'
     ],
-    image: 'https://placehold.co/800x600/0b1d33/ffffff?text=EYFS+Parent+Preparation+Guide',
+    image: playgroup,
     tags: ['EYFS', 'Early Years', 'Parenting', 'Primary']
   }
 ];
@@ -198,7 +205,7 @@ export const BlogPage: React.FC = () => {
               >
                 <div className="space-y-4">
                   {/* Thumbnail */}
-                  <div className="relative h-52 overflow-hidden bg-gray-100">
+                  <div >
                     <img
                       src={post.image}
                       alt={post.title}

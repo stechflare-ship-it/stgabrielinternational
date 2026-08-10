@@ -46,11 +46,11 @@ export const StaffPage: React.FC = () => {
               className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all space-y-4 p-5 flex flex-col justify-between"
             >
               <div className="space-y-4">
-                <div className="relative h-56 rounded-xl overflow-hidden bg-gray-100">
+                <div >
                   <img
                     src={staff.image}
                     alt={staff.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
                     referrerPolicy="no-referrer"
                   />
                   <span className="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-[#0B1D33]/90 text-[#E0BA43] text-[10px] font-bold border border-[#C59B27]/40">

@@ -18,6 +18,8 @@ import {
   Compass,
   FileText
 } from 'lucide-react';
+import athletic from '../assets/images/gallery/athletics.webp';
+import artsClub from '../assets/images/gallery/artsClub.webp';
 
 const HERO_PLACEHOLDER = 'https://placehold.co/1200x600/0b1d33/e0ba43?text=St.+Gabriel+Student+Life+%26+Campus';
 const CO_CURRICULAR_PLACEHOLDER_1 = 'https://placehold.co/800x600/0b1d33/ffffff?text=Co-Curricular+Sports+%26+Athletics';
@@ -321,7 +323,7 @@ export const StudentLifePage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
             <img
-              src={CO_CURRICULAR_PLACEHOLDER_1}
+              src={athletic}
               alt="Co-Curricular Sports"
               className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-500"
             />
@@ -333,7 +335,7 @@ export const StudentLifePage: React.FC = () => {
 
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
             <img
-              src={CO_CURRICULAR_PLACEHOLDER_2}
+              src={artsClub}
               alt="Performing Arts"
               className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-500"
             />

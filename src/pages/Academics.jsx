@@ -29,7 +29,7 @@ const CATEGORIES = [
     title: 'Primary',
     short: 'Solid foundations in core subjects',
     images: [
-      { src: 'https://source.unsplash.com/800x600/?primary,school', alt: 'Primary school classroom' },
+      { src: 'https://souce.unsplash.com/800x600/?primary,school', alt: 'Primary school classroom' },
       { src: 'https://source.unsplash.com/800x600/?children,reading', alt: 'Children reading together' },
       { src: 'https://source.unsplash.com/800x600/?school,science', alt: 'Primary science activity' },
     ],
