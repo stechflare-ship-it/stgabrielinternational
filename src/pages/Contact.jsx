@@ -2,14 +2,37 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO/SEO';
 import { SITE_CONFIG } from '../data/navigationData';
+import campusHeroImg from '../assets/images/about/campus.webp';
 
 export default function Contact(){
   return (
-    <div className="max-w-5xl mx-auto px-4 py-12">
+    <div className="w-full">
       <SEO title="Contact St. Gabriel International School | Lanet, Nakuru" description="Contact St. Gabriel International School in Lanet, Nakuru County. Call, WhatsApp or use the enquiry form to contact Admissions." />
 
-      <h1 className="text-2xl font-bold">Contact St. Gabriel International School</h1>
-      <p className="mt-2 text-gray-600">Lanet, Nakuru County, Kenya</p>
+      {/* Hero Header */}
+      <section className="relative text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-amber-400 overflow-hidden bg-[#0B1D33]">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={campusHeroImg}
+            alt="St. Gabriel Campus Contact in Lanet Nakuru"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
+        </div>
+        <div className="relative z-10 max-w-5xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-widest border border-amber-400/40">
+            Lanet, Nakuru County, Kenya
+          </span>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
+            Contact St. Gabriel International School
+          </h1>
+          <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
+            We welcome parents, guardians, and visitors. Get in touch with our administration or schedule a personal campus tour in Lanet.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-5xl mx-auto px-4 py-12">
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-white p-6 rounded shadow">
@@ -82,5 +105,6 @@ export default function Contact(){
         <p className="text-sm text-gray-600">For admissions queries, visit the <Link to="/admissions" className="text-blue-800">Admissions</Link> page or WhatsApp us directly.</p>
       </section>
     </div>
-  );
+  </div>
+);
 }

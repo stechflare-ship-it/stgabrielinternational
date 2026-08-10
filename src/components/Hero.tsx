@@ -3,8 +3,9 @@ import { Play, Pause, GraduationCap, Compass, ArrowRight, ShieldCheck, Sparkles,
 import { Button } from './Button';
 import { SCHOOL_INFO } from '../data/schoolData';
 import heroVideo from '../assets/hero.mp4';
+import campusHeroImg from '../assets/images/about/campus.webp';
 
-const HERO_POSTER = 'https://placehold.co/1200x800/0b1d33/e0ba43?text=St.+Gabriel+International+School';
+const HERO_POSTER = campusHeroImg;
 
 export const Hero: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(true);

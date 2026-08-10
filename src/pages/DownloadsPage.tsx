@@ -5,6 +5,7 @@ import { SectionHeading } from '../components/SectionHeading';
 import { DOWNLOAD_DOCUMENTS } from '../data/schoolData';
 import { Download, FileText, ArrowRight } from 'lucide-react';
 import { Button } from '../components/Button';
+import libraryHeroImg from '../assets/images/optimized/library.webp';
 
 export const DownloadsPage: React.FC = () => {
   return (
@@ -18,16 +19,27 @@ export const DownloadsPage: React.FC = () => {
 
       <Breadcrumbs items={[{ label: 'Document Downloads', path: '/downloads' }]} />
 
-      <section className="bg-[#0B1D33] text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27]">
-        <div className="max-w-7xl mx-auto text-center space-y-4">
-          <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40 inline-flex items-center gap-1.5">
+      <section className="relative text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27] overflow-hidden bg-[#0B1D33]">
+        {/* Background Hero Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={libraryHeroImg}
+            alt="St. Gabriel School Library and Resources"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
+          <div className="absolute inset-0 bg-[url('/images/pattern-dots.svg')] opacity-10" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 backdrop-blur-sm text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40 inline-flex items-center gap-1.5">
             <Download className="w-3.5 h-3.5" />
             <span>Official Resources & Guides</span>
           </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white">
+          <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
             Downloads & Documents Center
           </h1>
-          <p className="max-w-2xl mx-auto text-gray-300 text-sm sm:text-base">
+          <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
             Access downloadable PDF documents including our official prospectus, termly fee schedules, student requirements, and term calendar.
           </p>
         </div>

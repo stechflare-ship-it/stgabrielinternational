@@ -5,6 +5,7 @@ import { SectionHeading } from '../components/SectionHeading';
 import { CurriculumTimeline } from '../components/CurriculumTimeline';
 import { Button } from '../components/Button';
 import { BookOpen, Sparkles, Award, GraduationCap } from 'lucide-react';
+import academicExplore from '../assets/images/academics/academicexplore.webp';
 
 export const AcademicsPage: React.FC = () => {
   return (
@@ -19,15 +20,26 @@ export const AcademicsPage: React.FC = () => {
 
       <Breadcrumbs items={[{ label: 'Academics & Curriculum', path: '/academics' }]} />
 
-      <section className="bg-[#0B1D33] text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27]">
-        <div className="max-w-7xl mx-auto text-center space-y-4">
-          <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
+      <section className="relative text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27] overflow-hidden bg-[#0B1D33]">
+        {/* Background Hero Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={academicExplore}
+            alt="St. Gabriel Academic Pathways & Classroom"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
+          <div className="absolute inset-0 bg-[url('/images/pattern-dots.svg')] opacity-10" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 backdrop-blur-sm text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
             Cambridge & British Curriculum Standards
           </span>
-          <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white">
+          <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
             Academic Pathways & Curriculum
           </h1>
-          <p className="max-w-2xl mx-auto text-gray-300 text-sm sm:text-base">
+          <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
             Delivering an inspiring, world-recognized education from Early Years through Advanced Level university entry qualifications.
           </p>
         </div>

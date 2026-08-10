@@ -39,9 +39,9 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-40 w-full transition-all duration-300">
       {/* Red Moving Ribbon Announcement Bar */}
-      <div 
-        className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white py-2 px-0 overflow-hidden border-b-2 border-[#D4AF37] shadow-md cursor-pointer"
-        onClick={() => window.location.href = '/admissions'}
+      <Link 
+        to="/admissions"
+        className="block bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white py-2 px-0 overflow-hidden border-b-2 border-[#D4AF37] shadow-md cursor-pointer hover:from-red-800 hover:to-red-800 transition-colors"
         title="Click to view admissions"
       >
         <div className="animate-ribbon-marquee text-xs sm:text-sm font-bold tracking-wide uppercase flex items-center gap-12 select-none">
@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
             <span>🚨 OFFICIAL OPENING OF ST. GABRIEL INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
           </span>
         </div>
-      </div>
+      </Link>
 
       {/* Main Navigation Bar */}
       <nav
