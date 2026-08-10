@@ -90,10 +90,15 @@ function App(){
               <Route path='/about' element={<About />}/>
               <Route path='/academics' element={<Academics />}/>
               <Route path='/academics/eyfs' element={<EYFS />}/>
+              <Route path='/academics/early-years' element={<EYFS />}/>
               <Route path='/academics/primary' element={<Primary />}/>
               <Route path='/academics/lower-secondary' element={<LowerSecondary />}/>
+              <Route path='/academics/junior-secondary' element={<LowerSecondary />}/>
               <Route path='/academics/igcse' element={<IGCSE />}/>
+              <Route path='/academics/cambridge' element={<IGCSE />}/>
+              <Route path='/academics/senior-secondary' element={<IGCSE />}/>
               <Route path='/academics/a-level' element={<ALevel />}/>
+              <Route path='/academics/alevel' element={<ALevel />}/>
               <Route path='/student-life' element={<StudentLife />}/>
               <Route path='/boarding' element={<Boarding />}/>
               <Route path='/admissions' element={<Admissions />}/>
