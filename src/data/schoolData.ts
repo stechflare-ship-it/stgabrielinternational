@@ -411,6 +411,55 @@ export const FAQ_ITEMS: FAQItem[] = [
     answer: 'Call our main telephone at +254 724 694 554 or enquiries at +254 720 349 748. You can also chat directly on WhatsApp at +254 724 694 554 using our floating button or direct WhatsApp link.',
     category: 'General',
     tags: ['contact', 'whatsapp', 'phone', 'admissions']
+  },
+  {
+    id: 'faq-13',
+    question: 'Who designed and built the St. Gabriel website?',
+    answer: 'This website was designed and developed by TECHFLARE SOLUTIONS — "Igniting Innovations · Delivering Solutions". You can visit their official website at https://techflare-solutions.com to learn more about their software engineering solutions.',
+    category: 'Developer & Tech',
+    tags: ['techflare', 'developer', 'made', 'built', 'created', 'designer', 'website']
+  },
+  {
+    id: 'faq-14',
+    question: 'What services does TechFlare Solutions offer?',
+    answer: 'TechFlare Solutions specializes in Web Development & UI/UX Design, Custom Software Development, Mobile App Development, School Management & Portal Systems, Cloud Solutions, Digital Transformation, IT Consulting, and API Integrations.',
+    category: 'Developer & Tech',
+    tags: ['techflare', 'services', 'solutions', 'software', 'web development', 'apps', 'systems']
+  },
+  {
+    id: 'faq-15',
+    question: 'What is the school motto, vision, and mission?',
+    answer: 'Motto: "HOPE TO THE WORLD" (also "A Balanced Life & Real-Life Experience"). Vision: To be a premier international center of academic excellence, moral integrity, and technological innovation. Mission: To provide a transformative international education blending rigorous curriculum, character discipline, STEM innovation, and cultural diversity.',
+    category: 'About',
+    tags: ['motto', 'vision', 'mission', 'values', 'hope', 'motto']
+  },
+  {
+    id: 'faq-16',
+    question: 'When was St. Gabriel established and what is its history?',
+    answer: 'St. Gabriel International School was established in 1998 in Lanet, Nakuru County, Kenya. Over 28 years of dedication, the school has grown into a leading institution with 1,250+ students from 28+ nationalities and alumni studying worldwide.',
+    category: 'About',
+    tags: ['history', 'established', 'founded', '1998', 'years', 'legacy']
+  },
+  {
+    id: 'faq-17',
+    question: 'Where is St. Gabriel International School located?',
+    answer: 'St. Gabriel International School is located along Transformer Rd, Lanet, Nakuru County, Kenya. Our separate boys and girls boarding compounds are situated approximately 4km apart in Lanet.',
+    category: 'General',
+    tags: ['location', 'address', 'lanet', 'nakuru', 'transformer rd', 'where']
+  },
+  {
+    id: 'faq-18',
+    question: 'Who leads St. Gabriel International School?',
+    answer: 'Our executive leadership includes Dr. Elizabeth Mwangi (Principal & Head of School), Mr. Peter Mwangi (Vice Principal & Head of Academics), Mr. Maina (Head of Boarding & Pastoral Care), and Mr. James Kiptoo (Sports & Co-Curricular Director).',
+    category: 'About',
+    tags: ['principal', 'leadership', 'staff', 'headmaster', 'director', 'who']
+  },
+  {
+    id: 'faq-19',
+    question: 'What co-curricular activities and STEM facilities are available?',
+    answer: 'We feature a state-of-the-art Robotics & STEM Innovation Center, Computer/ICT suite, Orchestral Brass Band, Olympic-size swimming pool, football and basketball grounds, arts & drama clubs, and a dedicated school bus fleet.',
+    category: 'Campus',
+    tags: ['facilities', 'stem', 'robotics', 'sports', 'swimming', 'activities', 'clubs', 'music']
   }
 ];
 

@@ -77,7 +77,7 @@ export interface FAQItem {
   id: string;
   question: string;
   answer: string;
-  category: 'Curriculum' | 'Boarding' | 'Fees' | 'Admissions' | 'General';
+  category: 'Curriculum' | 'Boarding' | 'Fees' | 'Admissions' | 'General' | 'Developer & Tech' | 'About' | 'Campus';
   tags: string[];
 }
 

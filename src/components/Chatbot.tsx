@@ -21,7 +21,7 @@ export const Chatbot: React.FC = () => {
     {
       id: 'welcome-1',
       sender: 'bot',
-      text: 'Hello! Welcome to St. Gabriel International School Assistant. How can I help you today? Select a question below or type your enquiry.',
+      text: 'Hello! Welcome to St. Gabriel International School Assistant. I can answer questions about our school history, motto, location, curriculum, boarding, fees, leadership, and even details about who built this website (TechFlare Solutions). How can I assist you today?',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
   ]);
@@ -29,15 +29,15 @@ export const Chatbot: React.FC = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const suggestedQuestions = [
-    'What curriculum does St. Gabriel offer?',
-    'Is St. Gabriel an international school?',
-    'Which grades are available?',
-    'Does the school offer boarding?',
-    'Are boys and girls accommodated separately?',
-    'How far apart are the boarding locations?',
-    'What are the boarding fees?',
-    'What is the Paybill number & bank account?',
+    'Who built this website & what services do they offer?',
+    'What is St. Gabriel\'s motto, vision & mission?',
+    'When was St. Gabriel established & school history?',
+    'Where is St. Gabriel located in Lanet, Nakuru?',
+    'What British Curriculum levels are offered?',
+    'Does the school offer boarding for boys & girls?',
+    'What are the boarding fees & Paybill details?',
     'What are the junior section requirements?',
+    'Who is the Principal & School Leadership?',
     'How do I contact admissions on WhatsApp?'
   ];
 
@@ -65,41 +65,214 @@ export const Chatbot: React.FC = () => {
     setQuery('');
     setIsTyping(true);
 
-    // Simulate intelligent search matching against FAQ database
     setTimeout(() => {
-      const lowerQuery = userText.toLowerCase();
+      const q = userText.toLowerCase().trim();
 
       let botResponse = '';
-      let actionBtn = undefined;
+      let actionBtn: { label: string; href: string } | undefined = undefined;
 
-      // Match query logic
-      const matchedFaq = FAQ_ITEMS.find((faq) => {
-        const qMatch = faq.question.toLowerCase().includes(lowerQuery) || lowerQuery.includes(faq.question.toLowerCase());
-        const tagMatch = faq.tags.some((t) => lowerQuery.includes(t));
-        return qMatch || tagMatch;
-      });
-
-      if (matchedFaq) {
-        botResponse = matchedFaq.answer;
-        if (matchedFaq.category === 'Fees') {
-          actionBtn = { label: 'View Full Fee Table', href: '/fees-and-requirements' };
-        } else if (matchedFaq.category === 'Boarding') {
-          actionBtn = { label: 'Explore Boarding Life', href: '/boarding' };
-        } else if (matchedFaq.category === 'Curriculum') {
-          actionBtn = { label: 'View Curriculum Stages', href: '/academics' };
+      // 1. TechFlare Solutions / Web Developer query matching
+      if (
+        q.includes('techflare') ||
+        q.includes('developer') ||
+        q.includes('built this website') ||
+        q.includes('who built') ||
+        q.includes('who made') ||
+        q.includes('who designed') ||
+        q.includes('who created') ||
+        q.includes('website creator') ||
+        q.includes('web design') ||
+        q.includes('software company')
+      ) {
+        if (q.includes('service') || q.includes('offer') || q.includes('do they do')) {
+          botResponse = `TechFlare Solutions ("Igniting Innovations · Delivering Solutions") provides custom software & digital services including: 1) Web & Mobile App Development 2) School Management & Student Portals 3) UI/UX Design & Branding 4) Cloud Infrastructure & Hosting 5) System Integrations & Security. Visit https://techflare-solutions.com for details!`;
+          actionBtn = { label: 'Visit TechFlare Solutions', href: 'https://techflare-solutions.com' };
+        } else {
+          botResponse = `This website was designed and engineered by TECHFLARE SOLUTIONS — "Igniting Innovations · Delivering Solutions". TechFlare Solutions builds high-performance web applications, custom software systems, and mobile applications. Learn more on their official website at https://techflare-solutions.com!`;
+          actionBtn = { label: 'Visit TechFlare Solutions', href: 'https://techflare-solutions.com' };
         }
-      } else if (lowerQuery.includes('whatsapp') || lowerQuery.includes('phone') || lowerQuery.includes('contact') || lowerQuery.includes('call')) {
-        botResponse = `You can call our main admissions line at ${SCHOOL_INFO.contacts.mainPhone} or enquiries at ${SCHOOL_INFO.contacts.enquiryPhone}. You can also chat on WhatsApp directly!`;
+      }
+      // 2. Motto / Vision / Mission / Values
+      else if (
+        q.includes('motto') ||
+        q.includes('vision') ||
+        q.includes('mission') ||
+        q.includes('value') ||
+        q.includes('slogan') ||
+        q.includes('hope to the world')
+      ) {
+        botResponse = `St. Gabriel's Motto is "${SCHOOL_INFO.motto}" (also "A Balanced Life & Real-Life Experience").\n\n• Vision: To be a premier international center of academic excellence, moral integrity, and technological innovation.\n• Mission: To provide a transformative international education blending academic rigor, character discipline, STEM innovation, and global diversity.\n• 5 Core Values: Integrity, Excellence, Innovation, Diversity, and Community.`;
+        actionBtn = { label: 'Read About Our Vision & Values', href: '/about' };
+      }
+      // 3. School History / Legacy / Founded / Established
+      else if (
+        q.includes('history') ||
+        q.includes('founded') ||
+        q.includes('established') ||
+        q.includes('1998') ||
+        q.includes('legacy') ||
+        q.includes('how old') ||
+        q.includes('background')
+      ) {
+        botResponse = `St. Gabriel International School was established in 1998 in Lanet, Nakuru County, Kenya. Over 28 years of academic and spiritual dedication, the school has grown into a premier institution with 1,250+ students from 28+ global nationalities and alumni studying at top universities worldwide.`;
+        actionBtn = { label: 'Explore School History', href: '/about' };
+      }
+      // 4. Location / Address / Directions / Map
+      else if (
+        q.includes('location') ||
+        q.includes('address') ||
+        q.includes('where') ||
+        q.includes('map') ||
+        q.includes('directions') ||
+        q.includes('lanet') ||
+        q.includes('transformer') ||
+        q.includes('nakuru')
+      ) {
+        botResponse = `St. Gabriel International School is located along Transformer Rd, Lanet, Nakuru County, Kenya. Our separate boys' and girls' boarding compounds are situated approximately 4km apart in Lanet to ensure safe, focused living environments.`;
+        actionBtn = { label: 'Open Google Maps Directions', href: '/contact' };
+      }
+      // 5. Leadership / Principal / Staff
+      else if (
+        q.includes('principal') ||
+        q.includes('headmaster') ||
+        q.includes('leadership') ||
+        q.includes('staff') ||
+        q.includes('director') ||
+        q.includes('elizabeth') ||
+        q.includes('peter mwangi') ||
+        q.includes('who leads')
+      ) {
+        botResponse = `Executive Leadership:\n• Principal & Head of School: Dr. Elizabeth Mwangi (Ph.D. Educational Leadership)\n• Vice Principal & Head of Academics: Mr. Peter Mwangi (M.Sc. Physics)\n• Head of Boarding & Pastoral Care: Mr. Maina (B.A. Counseling Psychology)\n• Head of Co-Curricular: Mr. James Kiptoo (B.Sc. Sports Science)`;
+        actionBtn = { label: 'View Full Staff Directory', href: '/staff' };
+      }
+      // 6. Curriculum / EYFS / Primary / Lower Secondary / Junior / Senior / IGCSE / A-Level
+      else if (
+        q.includes('curriculum') ||
+        q.includes('eyfs') ||
+        q.includes('primary') ||
+        q.includes('lower secondary') ||
+        q.includes('junior') ||
+        q.includes('igcse') ||
+        q.includes('a-level') ||
+        q.includes('alevel') ||
+        q.includes('cambridge') ||
+        q.includes('grade') ||
+        q.includes('level') ||
+        q.includes('subject')
+      ) {
+        botResponse = `We offer the full British International Curriculum path:\n1. Early Years Foundation Stage (EYFS: Playgroup, Nursery, Reception; Ages 2–5)\n2. Primary School (Years 1–6)\n3. Lower / Junior Secondary (Years 7–9)\n4. Cambridge IGCSE / Senior Secondary (Years 10–11)\n5. Advanced Level A-Level (Years 12–13)`;
+        actionBtn = { label: 'Explore Curriculum Pathways', href: '/academics' };
+      }
+      // 7. Boarding / Accommodation / Hostels
+      else if (
+        q.includes('boarding') ||
+        q.includes('hostel') ||
+        q.includes('dorm') ||
+        q.includes('accommodation') ||
+        q.includes('separate') ||
+        q.includes('4km') ||
+        q.includes('boys') ||
+        q.includes('girls')
+      ) {
+        botResponse = `St. Gabriel provides full boarding for boys and girls in completely separate compounds ~4km apart in Lanet. Boarding features 24/7 security, resident matrons & house fathers, nutritious dining, supervised study prep hours, medical care, and laundry services.`;
+        actionBtn = { label: 'Explore Boarding Life', href: '/boarding' };
+      }
+      // 8. Fees / Paybill / Equity Bank / Payment
+      else if (
+        q.includes('fee') ||
+        q.includes('cost') ||
+        q.includes('paybill') ||
+        q.includes('247247') ||
+        q.includes('equity') ||
+        q.includes('bank') ||
+        q.includes('payment')
+      ) {
+        botResponse = `Boarding fees per term:\n• Grades 1–3: Term 1 (KSh 20,100), Term 2 (KSh 20,500), Term 3 (KSh 20,100)\n• Grades 4–5: Term 1 (KSh 21,400), Term 2 (KSh 21,700), Term 3 (KSh 21,400)\n• Grade 6: Term 1 (KSh 23,500), Term 2 (KSh 23,800), Term 3 (KSh 23,500)\n\nPayment Channels:\n• M-Pesa Paybill: 247247 (Account: 780824#NAME/CLASS)\n• Equity Bank Account: 1460285830194\n• STRICT POLICY: NO CASH PAYMENTS ACCEPTED.`;
+        actionBtn = { label: 'View Fees Structure', href: '/fees-and-requirements' };
+      }
+      // 9. Requirements / Checklist / Uniform / Books
+      else if (
+        q.includes('requirement') ||
+        q.includes('checklist') ||
+        q.includes('item') ||
+        q.includes('book') ||
+        q.includes('bible') ||
+        q.includes('atlas') ||
+        q.includes('uniform')
+      ) {
+        botResponse = `Junior section student requirements include: Good News Bible, Golden Bells, Dictionary, Kamusi Sanifu, Moran Atlas, Geometric Set, Plate/Cup/Spoon, Black Leather Shoes, White Sports Shoes, Slippers, Body Oil, Toothpaste/Brush, Soap, Omo, and Toilet Paper (Sanitary Pads for Girls).`;
+        actionBtn = { label: 'View Requirements Checklist', href: '/fees-and-requirements' };
+      }
+      // 10. Contact / Phone / Email / WhatsApp
+      else if (
+        q.includes('contact') ||
+        q.includes('phone') ||
+        q.includes('call') ||
+        q.includes('email') ||
+        q.includes('whatsapp') ||
+        q.includes('admissions') ||
+        q.includes('enquiry')
+      ) {
+        botResponse = `Admissions Hotline: ${SCHOOL_INFO.contacts.mainPhone}\nEnquiries Line: ${SCHOOL_INFO.contacts.enquiryPhone}\nAdmissions Email: ${SCHOOL_INFO.contacts.email}\nInfo Email: ${SCHOOL_INFO.contacts.infoEmail}\nLocation: Transformer Rd, Lanet, Nakuru.`;
         actionBtn = {
           label: 'Chat on WhatsApp',
           href: `https://wa.me/${SCHOOL_INFO.contacts.whatsappPhoneRaw}?text=${SCHOOL_INFO.whatsappPrefillMessage}`
         };
-      } else if (lowerQuery.includes('fee') || lowerQuery.includes('cost') || lowerQuery.includes('paybill') || lowerQuery.includes('bank')) {
-        botResponse = `Boarding fees range from KSh 20,100 to KSh 23,800 per term depending on grade level. Equity Bank Account: 1460285830194, Paybill: 247247 (Account: 780824#NAME/CLASS). Strict policy: NO CASH PAYMENTS.`;
-        actionBtn = { label: 'View Fees Page', href: '/fees-and-requirements' };
-      } else {
-        botResponse = `Thank you for asking about St. Gabriel International School in Lanet, Nakuru. We offer a full British Curriculum (EYFS, Primary, Secondary, IGCSE, A-Level) with day and separate boarding facilities. For detailed personal guidance, feel free to contact our admissions team on +254 724 694 554.`;
-        actionBtn = { label: 'Contact Admissions', href: '/contact' };
+      }
+      // 11. Downloads / Prospectus / Documents / PDF
+      else if (
+        q.includes('download') ||
+        q.includes('prospectus') ||
+        q.includes('pdf') ||
+        q.includes('document') ||
+        q.includes('calendar') ||
+        q.includes('handbook')
+      ) {
+        botResponse = `You can download official PDF documents including the School Prospectus 2026/2027, Fees Structure & Payment Policy, Student Requirements Checklist, Academic Term Calendar, and Boarding Code of Conduct from our Downloads page.`;
+        actionBtn = { label: 'Go to Downloads Page', href: '/downloads' };
+      }
+      // 12. Facilities / Swimming / STEM / Sports / Music / Bus
+      else if (
+        q.includes('facility') ||
+        q.includes('swimming') ||
+        q.includes('stem') ||
+        q.includes('robotics') ||
+        q.includes('sport') ||
+        q.includes('bus') ||
+        q.includes('music') ||
+        q.includes('band')
+      ) {
+        botResponse = `St. Gabriel features modern campus facilities including a Robotics & STEM Innovation Center, computer laboratories, Olympic-size swimming pool, orchestral brass band, soccer & basketball grounds, and a fleet of school transport buses.`;
+        actionBtn = { label: 'Explore Student Life & Facilities', href: '/student-life' };
+      }
+      // 13. Fallback to FAQ database searching
+      else {
+        const matchedFaq = FAQ_ITEMS.find((faq) => {
+          const qMatch = faq.question.toLowerCase().includes(q) || q.includes(faq.question.toLowerCase());
+          const tagMatch = faq.tags.some((t) => q.includes(t));
+          return qMatch || tagMatch;
+        });
+
+        if (matchedFaq) {
+          botResponse = matchedFaq.answer;
+          if (matchedFaq.category === 'Fees') {
+            actionBtn = { label: 'View Fee Structure', href: '/fees-and-requirements' };
+          } else if (matchedFaq.category === 'Boarding') {
+            actionBtn = { label: 'Explore Boarding Life', href: '/boarding' };
+          } else if (matchedFaq.category === 'Curriculum') {
+            actionBtn = { label: 'View Curriculum Stages', href: '/academics' };
+          } else if (matchedFaq.category === 'Developer & Tech') {
+            actionBtn = { label: 'Visit TechFlare Solutions', href: 'https://techflare-solutions.com' };
+          } else if (matchedFaq.category === 'About') {
+            actionBtn = { label: 'About St. Gabriel', href: '/about' };
+          }
+        } else {
+          botResponse = `Thank you for asking about St. Gabriel International School in Lanet, Nakuru. We offer a full British Curriculum (EYFS, Primary, Lower Secondary, IGCSE, A-Level) with day and separate boarding facilities. For direct assistance, call our admissions team on +254 724 694 554 or click below to chat on WhatsApp.`;
+          actionBtn = {
+            label: 'Chat on WhatsApp',
+            href: `https://wa.me/${SCHOOL_INFO.contacts.whatsappPhoneRaw}?text=${SCHOOL_INFO.whatsappPrefillMessage}`
+          };
+        }
       }
 
       const botMsg: ChatMessage = {
@@ -112,7 +285,7 @@ export const Chatbot: React.FC = () => {
 
       setMessages((prev) => [...prev, botMsg]);
       setIsTyping(false);
-    }, 700);
+    }, 600);
   };
 
   return (
