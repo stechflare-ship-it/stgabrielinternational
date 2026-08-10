@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
             onLoadedData={() => setVideoLoaded(true)}
             onCanPlay={() => setVideoLoaded(true)}
             onError={(e) => {
-              console.error("Video error:", e);
+              console.error("Video error on element:", (e.target as HTMLVideoElement | HTMLSourceElement)?.tagName);
               setVideoError(true);
             }}
             className="w-full h-full object-cover scale-105 transition-opacity duration-1000"
