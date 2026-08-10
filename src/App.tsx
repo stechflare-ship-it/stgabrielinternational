@@ -25,7 +25,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-[#F8F9FB] font-sans text-gray-900 antialiased selection:bg-[#C59B27] selection:text-[#0B1D33]">
+      <div className="flex flex-col min-h-screen max-w-full overflow-x-hidden bg-[#F8F9FB] font-sans text-gray-900 antialiased selection:bg-[#C59B27] selection:text-[#0B1D33]">
         <Navbar />
         
         <main className="flex-grow">

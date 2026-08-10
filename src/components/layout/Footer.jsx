@@ -42,14 +42,14 @@ export default function Footer(){
             <li><a href={SOCIAL_MEDIA.youtube} className="text-gray-300 hover:text-white">YouTube</a></li>
           </ul>
 
-          <p className="text-xs text-gray-400 mt-6">Website by TechFlare Solutions — "Igniting Innovations · Delivering Solutions"</p>
+          <p className="text-xs text-gray-400 mt-6">Website by <a href="https://techflare-solutions.com" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold text-amber-400">TechFlare Solutions</a> — "Igniting Innovations · Delivering Solutions"</p>
         </div>
       </div>
 
       <div className="bg-blue-900 text-gray-300 text-xs py-3">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <div>© {new Date().getFullYear()} St. Gabriel International School. All rights reserved.</div>
-          <div>Designed & Built by TechFlare Solutions</div>
+          <div>Designed & Built by <a href="https://techflare-solutions.com" target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold text-amber-400">TechFlare Solutions</a></div>
         </div>
       </div>
     </footer>

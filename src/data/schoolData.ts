@@ -74,7 +74,7 @@ export const SCHOOL_INFO = {
   developer: {
     name: 'TECHFLARE SOLUTIONS',
     tagline: 'Igniting Innovations · Delivering Solutions',
-    website: 'https://techflaresolutions.com'
+    website: 'https://techflare-solutions.com'
   },
   whatsappPrefillMessage: encodeURIComponent(
     'Hello St. Gabriel International School. I would like to enquire about admission, fees and school programmes.'

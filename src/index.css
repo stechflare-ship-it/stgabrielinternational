@@ -16,11 +16,20 @@
     --warm-bg: #FDFCFB;
   }
 
-  html {
+  html, body {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
     color: #1A1A1A;
     background-color: var(--warm-bg);
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, .font-serif {
