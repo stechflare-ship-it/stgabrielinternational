@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SEO from '../components/SEO/SEO';
+import academicExplore from '../assets/images/optimized/academicexplore.webp';
 
 const CATEGORIES = [
   {
@@ -155,35 +156,40 @@ export default function Academics() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="w-full">
       <SEO
         title="Premium Academics — St. Gabriel International School"
         description="Explore our premium academic pathways at St. Gabriel International — from Early Years to A-Level and international progression, with specialist support and enrichment."
       />
 
-      <header className="mb-6">
-        <h1 className="text-3xl font-bold">Premium Academics</h1>
-        <p className="mt-3 text-gray-600">
-          As a group of schools, St. Gabriel International offers a premium, fully scaffolded curriculum across all stages. We combine academic rigour with pastoral care, enrichment and international pathways so every student can thrive.
-        </p>
-
-        <div className="mt-4 flex flex-wrap items-center gap-2">
-          <a
-            href="/admissions"
-            className="inline-block bg-blue-900 text-white px-4 py-2 rounded shadow-sm text-sm"
-            aria-label="Admissions and Entry"
-          >
-            Admissions & Entry
-          </a>
-          <a
-            href="/contact"
-            className="inline-block border border-gray-300 text-gray-700 px-4 py-2 rounded text-sm"
-            aria-label="Contact us"
-          >
-            Contact Us
-          </a>
+      {/* Hero Header */}
+      <section className="relative text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-amber-400 overflow-hidden bg-[#0B1D33]">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={academicExplore}
+            alt="St. Gabriel Academic Pathways"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
         </div>
-      </header>
+        <div className="relative z-10 max-w-6xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-widest border border-amber-400/40">
+            British Curriculum • EYFS to A-Level
+          </span>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
+            Premium Academic Pathways
+          </h1>
+          <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
+            St. Gabriel International offers a premium, fully scaffolded curriculum across all stages. We combine academic rigour with pastoral care, enrichment and international pathways so every student can thrive.
+          </p>
+          <div className="pt-2 flex flex-wrap justify-center gap-3">
+            <a href="/admissions" className="inline-block bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">Admissions & Entry</a>
+            <a href="/contact" className="inline-block border border-white/40 hover:bg-white/10 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-colors">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <div className="max-w-6xl mx-auto px-4 py-12">
 
       {/* Category bar */}
       <nav className="mb-6" aria-label="Academic stages">
@@ -309,5 +315,6 @@ export default function Academics() {
         </div>
       )}
     </div>
-  );
+  </div>
+);
 }

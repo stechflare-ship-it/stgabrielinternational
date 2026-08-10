@@ -21,10 +21,6 @@ import {
 import athletic from '../assets/images/gallery/athletics.webp';
 import artsClub from '../assets/images/gallery/artsClub.webp';
 
-const HERO_PLACEHOLDER = 'https://placehold.co/1200x600/0b1d33/e0ba43?text=St.+Gabriel+Student+Life+%26+Campus';
-const CO_CURRICULAR_PLACEHOLDER_1 = 'https://placehold.co/800x600/0b1d33/ffffff?text=Co-Curricular+Sports+%26+Athletics';
-const CO_CURRICULAR_PLACEHOLDER_2 = 'https://placehold.co/800x600/0b1d33/ffffff?text=Performing+Arts+%26+Clubs';
-
 export const StudentLifePage: React.FC = () => {
   return (
     <div className="w-full bg-[#071321] text-white min-h-screen">
@@ -38,17 +34,18 @@ export const StudentLifePage: React.FC = () => {
 
       <Breadcrumbs items={[{ label: 'Student Life', path: '/student-life' }]} />
 
-      {/* Hero Section with Placeholder Background */}
+      {/* Hero Section with Background Photo */}
       <section className="relative bg-[#0A192F] py-20 px-4 sm:px-6 lg:px-8 border-b border-[#C59B27]/30 overflow-hidden">
-        {/* Background Overlay */}
-        <div className="absolute inset-0 z-0 opacity-20">
+        {/* Background Photo Overlay */}
+        <div className="absolute inset-0 z-0">
           <img
-            src={HERO_PLACEHOLDER}
-            alt="St. Gabriel Student Life"
-            className="w-full h-full object-cover"
+            src={athletic}
+            alt="St. Gabriel Student Life & Co-Curriculars"
+            className="w-full h-full object-cover object-center"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#071321]/95 via-[#0A192F]/85 to-[#071321]/80"></div>
+          <div className="absolute inset-0 bg-[url('/images/pattern-dots.svg')] opacity-10"></div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#071321]/90 via-[#0A192F]/95 to-[#071321]"></div>
 
         <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-block">

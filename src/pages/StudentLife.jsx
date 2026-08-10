@@ -10,6 +10,8 @@ const GALLERY = [
   { src: 'https://source.unsplash.com/1200x800/?fieldtrip,students', alt: 'Educational trip' },
 ];
 
+import athletic from '../assets/images/gallery/athletics.webp';
+
 export default function StudentLife() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -26,22 +28,40 @@ export default function StudentLife() {
   }, [lightboxOpen]);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="w-full">
       <SEO
         title="Student Life & Co-Curricular Activities | St. Gabriel Nakuru"
         description="Student life at St. Gabriel balances academic rigour with sports, music, drama, leadership, community service and international opportunities — nurturing well-rounded learners in Lanet, Nakuru."
       />
 
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold">Student Life</h1>
-        <p className="mt-3 text-gray-600">
-          Life at St. Gabriel goes beyond the classroom. Our vibrant student life programme combines clubs, sports, arts, leadership and community engagement to develop confident, creative and compassionate young people ready for global opportunities.
-        </p>
-        <div className="mt-4 flex flex-wrap gap-2">
-          <a href="/admissions" className="inline-block bg-blue-900 text-white px-4 py-2 rounded text-sm">Admissions</a>
-          <a href="/contact" className="inline-block border border-gray-300 text-gray-700 px-4 py-2 rounded text-sm">Contact</a>
+      {/* Hero Header */}
+      <section className="relative text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-amber-400 overflow-hidden bg-[#0B1D33]">
+        <div className="absolute inset-0 z-0">
+          <img
+            src={athletic}
+            alt="St. Gabriel Student Life & Co-Curriculars"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
         </div>
-      </header>
+        <div className="relative z-10 max-w-6xl mx-auto text-center space-y-4">
+          <span className="px-3.5 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold uppercase tracking-widest border border-amber-400/40">
+            Life at St. Gabriel International
+          </span>
+          <h1 className="text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
+            Student Life & Co-Curriculars
+          </h1>
+          <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
+            Our vibrant student life programme combines clubs, sports, arts, leadership and community engagement to develop confident, creative and compassionate young people.
+          </p>
+          <div className="pt-2 flex flex-wrap justify-center gap-3">
+            <a href="/admissions" className="inline-block bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">Admissions & Enquiries</a>
+            <a href="/contact" className="inline-block border border-white/40 hover:bg-white/10 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-colors">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <div className="max-w-6xl mx-auto px-4 py-12">
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded shadow">
@@ -108,5 +128,6 @@ export default function StudentLife() {
         <a href="/contact" className="inline-block border border-gray-300 px-4 py-2 rounded">Contact Admissions</a>
       </div>
     </div>
-  );
+  </div>
+);
 }
