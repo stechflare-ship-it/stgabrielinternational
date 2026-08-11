@@ -15,19 +15,19 @@ export const Logo: React.FC<LogoProps> = ({
   const [imgError, setImgError] = useState(false);
 
   const isLightText = variant === 'light' || variant === 'footer';
-
+//"relative flex-shrink-0 min-h-16 flex items-center justify-center rounded-full"
   return (
     <Link
       to="/"
-      className={`group flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] rounded-sm p-1 transition-transform ${className}`}
+      className={`group flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] rounded-sm p-1 transition-transform ${className}`}
       aria-label="St. Gabriel International School Home"
     >
-      <div className="relative flex-shrink-0  h-14  flex items-center justify-center rounded-sm shadow-md">
+      <div className="relative flex-shrink-0 min-h-8 flex items-center justify-center rounded-full">
         {!imgError ? (
           <img
             src={logo}
             alt="St. Gabriel International School Badge"
-            className='w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[8rem] object-contain shrink-0 '
+            className='w-[6rem] h-[5rem] sm:w-[4rem] sm:h-[4rem] md:w-[5rem] md:h-[5rem] object-contain shrink-0 '
             onError={() => setImgError(true)}
             referrerPolicy="no-referrer"
           />
@@ -40,21 +40,21 @@ export const Logo: React.FC<LogoProps> = ({
         <span
           className={`font-serif font-bold text-base sm:text-lg md:text-xl tracking-tight uppercase transition-colors ${
             isLightText
-              ? 'text-white group-hover:text-[#D4AF37]'
-              : 'text-[#0A192F] group-hover:text-[#D4AF37]'
+              ? 'text-[#0A192F] group-hover:text-red-500'
+              : 'text-[#0A192F] group-hover:text-red-500'
           }`}
         >
           ST. GABRIEL
         </span>
         <span
-          className={`text-[10px] tracking-[0.2em] font-medium uppercase ${
-            isLightText ? 'text-[#D4AF37]' : 'text-[#D4AF37]'
+          className={`text-[12px] tracking-[0.2em] font-bold uppercase ${
+            isLightText ? 'text-red-700  ' : 'text-red-400'
           }`}
         >
           International School
         </span>
         {showTagline && (
-          <span className="text-[9px] text-[#D4AF37]/80 tracking-[0.2em] uppercase font-light hidden sm:inline-block">
+          <span className="text-[10px] text-red-600 uppercase tracking-[0.2em] font-medium italic  sm:inline-block">
             &quot;Hope to the World&quot;
           </span>
         )}

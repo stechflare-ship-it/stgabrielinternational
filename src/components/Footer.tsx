@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
   const whatsappUrl = `https://wa.me/${SCHOOL_INFO.contacts.whatsappPhoneRaw}?text=${SCHOOL_INFO.whatsappPrefillMessage}`;
 
   return (
-    <footer className="bg-[#0A192F] text-gray-300 border-t border-[#D4AF37]/30 relative overflow-hidden">
+    <footer className="bg-[#5CE1E6] text-[#0A192F] border-t border-[#D4AF37]/30 relative overflow-hidden">
       
       {/* Decorative Gold Glow Background Accent */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#D4AF37]/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-5">
             <Logo variant="footer"  />
 
-            <p className="text-sm text-gray-300 leading-relaxed max-w-md">
+            <p className="text-sm  leading-relaxed max-w-md">
               St. Gabriel International School delivers an inspiring British & International Curriculum in Lanet, Nakuru County. We nurture academic rigor, holistic talents, Christian character, and leadership opportunities for day and boarding scholars.
             </p>
 
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
 
           {/* Col 2: Quick Links */}
           <div>
-            <h3 className="font-serif text-base font-bold uppercase tracking-wider text-white mb-4 border-b border-[#D4AF37]/30 pb-2 inline-block">
+            <h3 className="font-serif text-base font-bold uppercase tracking-wider mb-4 border-b border-[#D4AF37]/30 pb-2 inline-block">
               Quick Links
             </h3>
             <ul className="space-y-2.5 text-xs uppercase tracking-wider">
@@ -63,9 +63,9 @@ export const Footer: React.FC = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="group inline-flex items-center gap-1.5 text-gray-300 hover:text-[#D4AF37] transition-colors"
+                    className="group inline-flex items-center gap-1.5 text-[#0A192F] hover:font-bold hover:text-lg hover:text-[#D4AF37] transition-colors"
                   >
-                    <ChevronRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-1 transition-transform" />
+                    <ChevronRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-1 transition-transform " />
                     <span>{link.label}</span>
                   </Link>
                 </li>
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
 
           {/* Col 3: Curriculum Stages */}
           <div>
-            <h3 className="font-serif text-base font-bold uppercase tracking-wider text-white mb-4 border-b border-[#D4AF37]/30 pb-2 inline-block">
+            <h3 className="font-serif text-base font-bold uppercase tracking-wider  mb-4 border-b border-[#D4AF37]/30 pb-2 inline-block">
               Curriculum Stages
             </h3>
             <ul className="space-y-2.5 text-xs uppercase tracking-wider">
@@ -92,9 +92,9 @@ export const Footer: React.FC = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="group inline-flex items-center gap-1.5 text-gray-300 hover:text-[#D4AF37] transition-colors"
+                    className="group inline-flex items-center gap-1.5 hover:text-[#D4AF37] hover:font-bold hover:text-lg transition-colors"
                   >
-                    <ChevronRight className="w-3.5 h-3.5 text-[#D4AF37] group-hover:translate-x-1 transition-transform" />
+                    <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     <span>{link.label}</span>
                   </Link>
                 </li>
@@ -104,48 +104,48 @@ export const Footer: React.FC = () => {
 
           {/* Col 4: Contact Admissions */}
           <div>
-            <h3 className="font-serif text-base font-bold uppercase tracking-wider text-white mb-4 border-b border-[#D4AF37]/30 pb-2 inline-block">
+            <h3 className="font-serif text-base font-bold uppercase tracking-wider  mb-4 border-b border-[#D4AF37]/30 pb-2 inline-block">
               Contact Admissions
             </h3>
             <ul className="space-y-3 text-xs uppercase tracking-wider">
               <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#D4AF37] flex-shrink-0 mt-0.5" />
-                <span className="normal-case text-gray-300">Lanet, Nakuru County, Kenya</span>
+                <MapPin className="w-4 h-4  flex-shrink-0 mt-0.5" />
+                <span className="normal-case ">Lanet, Nakuru County, Kenya</span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
+                <Phone className="w-4 h-4  flex-shrink-0" />
                 <a
                   href={`tel:${SCHOOL_INFO.contacts.mainPhoneRaw}`}
-                  className="hover:text-[#D4AF37] transition-colors font-mono"
+                  className="hover:text-[#D4AF37] transition-colors hover:font-bold hover:text-lg"
                 >
                   {SCHOOL_INFO.contacts.mainPhone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
+                <Phone className="w-4 h-4  flex-shrink-0" />
                 <a
                   href={`tel:${SCHOOL_INFO.contacts.enquiryPhoneRaw}`}
-                  className="hover:text-[#D4AF37] transition-colors font-mono"
+                  className="hover:text-[#D4AF37] transition-colors hover:font-bold hover:text-lg"
                 >
                   {SCHOOL_INFO.contacts.enquiryPhone}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <MessageCircle className="w-4 h-4 text-[#25D366] flex-shrink-0" />
+                <MessageCircle className="w-4 h-4  flex-shrink-0" />
                 <a
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#25D366] font-semibold hover:underline"
+                  className="text-green-600 font-bold hover:underline hover:font-bold hover:text-lg"
                 >
                   WhatsApp Us
                 </a>
               </li>
               <li className="flex items-center gap-2.5 pt-2">
-                <Mail className="w-4 h-4 text-[#D4AF37] flex-shrink-0" />
+                <Mail className="w-4 h-4  flex-shrink-0" />
                 <a
                   href={`mailto:${SCHOOL_INFO.contacts.email}`}
-                  className="hover:text-[#D4AF37] transition-colors lowercase tracking-normal text-gray-300"
+                  className="hover:text-[#D4AF37] hover:font-bold hover:text-lg transition-colors lowercase tracking-normal "
                 >
                   {SCHOOL_INFO.contacts.email}
                 </a>

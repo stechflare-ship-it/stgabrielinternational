@@ -31,7 +31,7 @@ import sereneSpace from '../assets/images/gallery/sereneSpace.webp';
 import sports from '../assets/images/gallery/sports.webp';
 
 //staff
-import peter from '../assets/images/staff/peter.webp';
+import nicholas from '../assets/images/staff/nicholas.webp';
 import john from '../assets/images/staff/john.webp';
 import maina from '../assets/images/staff/maina.webp';
 
@@ -568,6 +568,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 
 export const STAFF_MEMBERS: StaffMember[] = [
   {
+    id: 'staff-2',
+    name: 'Mr Nicholas',
+    role: 'Principal',
+    department: 'Academic Directorate',
+    qualification: 'M.Sc. Physics (UoN), B.Ed. Science (Kenyatta Univ.)',
+    bio: 'Specialist in Cambridge IGCSE and A-Level curriculum design with a passion for STEM innovation, research projects, and university placement excellence.',
+    image: nicholas
+  },
+  {
     id: 'staff-1',
     name: 'Dr. Elizabeth Mwangi',
     role: 'Principal & Head of School',
@@ -575,15 +584,6 @@ export const STAFF_MEMBERS: StaffMember[] = [
     qualification: 'Ph.D. Educational Leadership (Univ. of Sussex), M.Ed. International Education',
     bio: 'Over 20 years of experience leading international British curriculum schools across East Africa with a vision for academic rigor and Christian character leadership.',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'staff-2',
-    name: 'Mr. Peter Mwangi',
-    role: 'Vice Principal & Head of Academics',
-    department: 'Academic Directorate',
-    qualification: 'M.Sc. Physics (UoN), B.Ed. Science (Kenyatta Univ.)',
-    bio: 'Specialist in Cambridge IGCSE and A-Level curriculum design with a passion for STEM innovation, research projects, and university placement excellence.',
-    image: peter
   },
   {
     id: 'staff-3',

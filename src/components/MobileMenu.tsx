@@ -53,11 +53,11 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
         <div className="w-full bg-[#071321] text-white shadow-2xl flex flex-col justify-between border-l border-[#C59B27]/30">
           
           {/* Header */}
-          <div className="p-4 sm:p-6 border-b border-gray-800 flex items-center justify-between">
+          <div className="p-4 sm:p-6 border-b border-gray-800 flex items-center bg-[#5CE1E6] justify-between">
             <Logo variant="light" showTagline={false} />
             <button
               onClick={onClose}
-              className="p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-[#C59B27]"
+              className="p-2 rounded-lg text-blue-600 hover:text-red-400 hover:bg-white focus:outline-none focus:ring-2 focus:ring-[#C59B27]"
               aria-label="Close menu"
             >
               <X className="w-6 h-6" />
