@@ -34,7 +34,7 @@ import sports from '../assets/images/gallery/sports.webp';
 import peter from '../assets/images/staff/peter.webp';
 import john from '../assets/images/staff/john.webp';
 import maina from '../assets/images/staff/maina.webp';
-import leadershipPrincipal from '../assets/images/leadership/peter.webp';
+import leadershipPrincipal from '../assets/images/staff/nicholas.webp';
 import jamesImg from '../assets/images/leadership/james.webp';
 
 
