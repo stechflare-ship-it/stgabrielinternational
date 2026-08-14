@@ -35,7 +35,6 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
     { name: 'Gallery', path: '/gallery' },
     { name: 'News & Events', path: '/news' },
     { name: 'Blog & Articles', path: '/blog' },
-    { name: 'Our Staff', path: '/staff' },
     { name: 'Downloads', path: '/downloads' },
     { name: 'Contact Us', path: '/contact' },
   ];

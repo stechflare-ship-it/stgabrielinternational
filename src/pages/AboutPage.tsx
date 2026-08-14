@@ -1,19 +1,45 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { SEOMetadata } from '../components/SEOMetadata';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SectionHeading } from '../components/SectionHeading';
-import { ShieldCheck, Award, Heart, BookOpen, Users, Compass, CheckCircle2 } from 'lucide-react';
-import { SCHOOL_INFO } from '../data/schoolData';
+import { ShieldCheck, Award, Heart, BookOpen, Users, Compass, CheckCircle2, GraduationCap, Quote, ArrowRight, Sparkles } from 'lucide-react';
+import { SCHOOL_INFO, STAFF_MEMBERS } from '../data/schoolData';
 import { Button } from '../components/Button';
-import aboutBg from '../assets/images/about/campus.webp'
+import { StaffModal } from '../components/StaffModal';
+import { StaffMember } from '../types';
+import aboutBg from '../assets/images/about/campus.webp';
 
 export const AboutPage: React.FC = () => {
+  const [selectedLeader, setSelectedLeader] = useState<StaffMember | null>(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const leaderId = params.get('leader');
+    if (leaderId) {
+      const match = STAFF_MEMBERS.find((s) => s.id === leaderId);
+      if (match) {
+        setSelectedLeader(match);
+      }
+    } else if (location.hash === '#leadership' || location.hash === '#principal') {
+      const el = document.getElementById('leadership');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+      if (location.hash === '#principal') {
+        const principal = STAFF_MEMBERS.find((s) => s.id === 'mr-nicholas');
+        if (principal) setSelectedLeader(principal);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
         title="About St. Gabriel International School | Best Education in Nakuru, Kenya"
         description="Learn about St. Gabriel International School in Lanet, Nakuru, Kenya. Delivering the best British Curriculum education, nurturing a balanced life and real-life learning experiences since 1998."
-        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, About St Gabriel"
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, About St Gabriel, Mr Nicholas"
         canonicalPath="/about"
         breadcrumbs={[{ name: 'About Us', path: '/about' }]}
       />
@@ -130,6 +156,94 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Executive Administration Section */}
+      <section id="leadership" className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#C59B27]/15 text-[#C59B27] text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Executive Leadership</span>
+          </span>
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0B1D33]">
+            Meet Our Esteemed Executive Administration
+          </h2>
+          <p className="text-gray-600 text-base sm:text-lg leading-relaxed pt-2">
+            Meet our esteemed executive administration who are dedicated to serve and educate our scholars with academic distinction, moral integrity, and pastoral care.
+          </p>
+          <div className="w-24 h-1 bg-[#C59B27] mx-auto rounded-full mt-4" />
+        </div>
+
+        {/* 4 Executive Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {STAFF_MEMBERS.map((member) => (
+            <div
+              key={member.id}
+              onClick={() => setSelectedLeader(member)}
+              className="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer transform hover:-translate-y-1.5"
+            >
+              {/* Photo Area */}
+              <div className="relative h-72 w-full overflow-hidden bg-[#0A192F]">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1D33]/90 via-[#0B1D33]/20 to-transparent"></div>
+                
+                {/* Department Badge */}
+                <div className="absolute top-3 left-3">
+                  <span className="px-2.5 py-1 rounded-full bg-[#0A192F]/85 backdrop-blur-md text-[#D4AF37] text-[10px] font-bold uppercase tracking-wider border border-[#D4AF37]/30 shadow">
+                    {member.department}
+                  </span>
+                </div>
+
+                {/* Bottom Overlay Label */}
+                <div className="absolute bottom-3 left-3 right-3 text-white">
+                  <span className="text-[11px] text-[#D4AF37] font-semibold block truncate">
+                    {member.role}
+                  </span>
+                </div>
+              </div>
+
+              {/* Card Body */}
+              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <div className="space-y-2">
+                  <h3 className="font-serif text-xl font-bold text-[#0B1D33] group-hover:text-[#C59B27] transition-colors">
+                    {member.name}
+                  </h3>
+
+                  {/* Qualifications */}
+                  <div className="flex items-start gap-1.5 text-xs text-gray-700 bg-gray-50 p-2.5 rounded-xl border border-gray-100">
+                    <GraduationCap className="w-4 h-4 text-[#C59B27] flex-shrink-0 mt-0.5" />
+                    <span className="line-clamp-2 font-medium">{member.qualification}</span>
+                  </div>
+
+                  {/* Welcome message preview */}
+                  {member.welcomeMessage && (
+                    <p className="text-xs text-gray-600 line-clamp-3 italic leading-relaxed pt-1">
+                      &quot;{member.welcomeMessage}&quot;
+                    </p>
+                  )}
+                </div>
+
+                {/* Card Action */}
+                <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#0B1D33] group-hover:text-[#C59B27]">
+                  <span>Read Full Profile & Message</span>
+                  <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Staff Details Modal */}
+      <StaffModal
+        member={selectedLeader}
+        isOpen={!!selectedLeader}
+        onClose={() => setSelectedLeader(null)}
+      />
+
       {/* CTA */}
       <section className="py-16 text-center max-w-4xl mx-auto px-4">
         <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#0B1D33]">
@@ -150,3 +264,4 @@ export const AboutPage: React.FC = () => {
     </div>
   );
 };
+

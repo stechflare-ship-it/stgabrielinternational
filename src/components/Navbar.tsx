@@ -237,17 +237,6 @@ export const Navbar: React.FC = () => {
             </Link>
 
             <Link
-              to="/staff"
-              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
-                isActive('/staff')
-                  ? 'text-[#D4AF37] border-[#D4AF37]'
-                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
-              }`}
-            >
-              Staff
-            </Link>
-
-            <Link
               to="/downloads"
               className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/downloads')

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   GraduationCap,
@@ -17,7 +17,8 @@ import {
   ArrowRight,
   Phone,
   MessageCircle,
-  HelpCircle
+  HelpCircle,
+  Quote
 } from 'lucide-react';
 
 import { SEOMetadata } from '../components/SEOMetadata';
@@ -31,7 +32,9 @@ import { PaybillCard } from '../components/PaybillCard';
 import { Gallery } from '../components/Gallery';
 import { NewsCard } from '../components/NewsCard';
 import { Button } from '../components/Button';
-import { SCHOOL_INFO, NEWS_ITEMS } from '../data/schoolData';
+import { StaffModal } from '../components/StaffModal';
+import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS } from '../data/schoolData';
+import { StaffMember } from '../types';
 
 import homeimg from '../assets/images/about/campus.webp';
 
@@ -50,12 +53,21 @@ const PLACEHOLDER_GRADUATION = 'https://placehold.co/800x600/0b1d33/ffffff?text=
 const PLACEHOLDER_ICT = 'https://placehold.co/800x600/0b1d33/ffffff?text=STEM+%26+Computer+Lab';
 
 export const HomePage: React.FC = () => {
+  const [selectedLeader, setSelectedLeader] = useState<StaffMember | null>(null);
+
+  const openPrincipalMessage = () => {
+    const principal = STAFF_MEMBERS.find((s) => s.id === 'mr-nicholas') || STAFF_MEMBERS[0];
+    setSelectedLeader(principal);
+  };
+
+  const principal = STAFF_MEMBERS.find((s) => s.id === 'mr-nicholas') || STAFF_MEMBERS[0];
+
   return (
     <div className="w-full bg-[#F8F9FB]">
       <SEOMetadata
         title="St. Gabriel International School | Best British Curriculum Education in Nakuru, Kenya"
         description="St. Gabriel International School in Lanet, Nakuru, Kenya offers the best British Curriculum education (EYFS, Cambridge IGCSE & A-Level), promoting a balanced life and real-life experiences in day and boarding environments."
-        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, Cambridge school Nakuru, boarding school Kenya"
+        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, Cambridge school Nakuru, boarding school Kenya, Mr Nicholas"
         canonicalPath="/"
       />
 
@@ -98,7 +110,11 @@ export const HomePage: React.FC = () => {
             </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
-              <Button to="/about" variant="secondary" size="md">
+              <Button
+                onClick={openPrincipalMessage}
+                variant="secondary"
+                size="md"
+              >
                 Read Principal&apos;s Welcome
               </Button>
               <Button to="/admissions" variant="primary" size="md">
@@ -125,6 +141,71 @@ export const HomePage: React.FC = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Dedicated Principal Message Spotlight Banner */}
+        <div className="mt-16 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#0A192F] via-[#0B1D33] to-[#162E4D] text-white border-2 border-[#D4AF37]/40 shadow-2xl relative overflow-hidden">
+          <div className="absolute -top-12 -right-12 w-64 h-64 bg-[#D4AF37]/10 rounded-full blur-3xl pointer-events-none"></div>
+          
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            {/* Principal Photo */}
+            <div className="lg:col-span-4 flex flex-col items-center text-center sm:text-left sm:flex-row lg:flex-col lg:items-center gap-5">
+              <div className="relative w-40 h-40 sm:w-48 sm:h-48 rounded-2xl overflow-hidden shadow-2xl border-4 border-[#D4AF37] flex-shrink-0 bg-slate-900">
+                <img
+                  src={principal.image}
+                  alt={principal.name}
+                  className="w-full h-full object-cover object-top"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="space-y-1 text-center">
+                <h3 className="font-serif text-2xl font-bold text-white">
+                  {principal.name}
+                </h3>
+                <p className="text-xs text-[#E0BA43] font-bold uppercase tracking-wider">
+                  {principal.role}
+                </p>
+                <p className="text-[11px] text-gray-300">
+                  {principal.department}
+                </p>
+              </div>
+            </div>
+
+            {/* Principal Message Excerpt */}
+            <div className="lg:col-span-8 space-y-4">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4AF37]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#D4AF37]/30">
+                <Quote className="w-3.5 h-3.5" />
+                <span>Executive Principal&apos;s Welcome</span>
+              </div>
+
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white leading-tight">
+                &quot;Every child is endowed with unique potential that flourishes when nurtured with rigor, love, and high moral standards.&quot;
+              </h3>
+
+              <p className="text-sm text-gray-300 leading-relaxed">
+                {principal.welcomeMessage}
+              </p>
+
+              <div className="pt-2 flex flex-wrap items-center gap-4">
+                <button
+                  onClick={openPrincipalMessage}
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#D4AF37] text-[#0A192F] font-bold text-xs uppercase tracking-wider hover:bg-white transition-colors duration-300 shadow-lg cursor-pointer"
+                >
+                  <span>Read Mr. Nicholas&apos; Full Message & Experience</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+                
+                <Link
+                  to="/about#leadership"
+                  className="inline-flex items-center gap-1.5 text-xs text-gray-300 hover:text-[#E0BA43] font-semibold underline underline-offset-4 transition-colors"
+                >
+                  <span>Meet All Executive Administration</span>
+                </Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -419,6 +500,13 @@ export const HomePage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Staff / Principal Message Modal */}
+      <StaffModal
+        member={selectedLeader}
+        isOpen={!!selectedLeader}
+        onClose={() => setSelectedLeader(null)}
+      />
 
     </div>
   );

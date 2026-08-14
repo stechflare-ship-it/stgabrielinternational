@@ -43,6 +43,9 @@ export interface NewsItem {
   content: string[];
   image: string;
   featured?: boolean;
+  author?: string;
+  readTime?: string;
+  tags?: string[];
 }
 
 export interface GalleryItem {
@@ -61,6 +64,11 @@ export interface StaffMember {
   qualification: string;
   bio: string;
   image: string;
+  welcomeMessage?: string;
+  experience?: string;
+  detailedMessage?: string[];
+  phone?: string;
+  email?: string;
 }
 
 export interface DownloadDocument {
