@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -16,7 +16,6 @@ import { FeesPage } from './pages/FeesPage';
 import { GalleryPage } from './pages/GalleryPage';
 import { NewsPage } from './pages/NewsPage';
 import { BlogPage } from './pages/BlogPage';
-import { StaffPage } from './pages/StaffPage';
 import { DownloadsPage } from './pages/DownloadsPage';
 import { ContactPage } from './pages/ContactPage';
 import { ScrollToTop } from './components/ScrollToTop';
@@ -42,7 +41,7 @@ export default function App() {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/blog" element={<BlogPage />} />
-            <Route path="/staff" element={<StaffPage />} />
+            <Route path="/staff" element={<Navigate to="/about" replace />} />
             <Route path="/downloads" element={<DownloadsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<HomePage />} />

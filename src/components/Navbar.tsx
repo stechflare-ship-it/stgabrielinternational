@@ -60,24 +60,24 @@ export const Navbar: React.FC = () => {
       <nav
         className={`w-full transition-all duration-300 border-b border-[#D4AF37]/30 ${
           scrolled
-            ? 'bg-[#5CE1E6]   py-1'
-            : 'bg-[#5CE1E6] py-1'
+            ? 'bg-[#0A192F]/95 backdrop-blur-md shadow-2xl py-2.5'
+            : 'bg-[#0A192F] py-3.5'
         }`}
         aria-label="Main Navigation"
       >
-        <div className="max-w-xl  px-2 sm:px-6 lg:px-2 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           
           {/* Logo */}
           <Logo variant="light" />
 
           {/* Desktop Navigation Links */}
-          <div className="hidden xl:flex items-center space-x-1 lg:space-x-1   uppercase tracking-wider">
+          <div className="hidden xl:flex items-center space-x-1 lg:space-x-2 text-[11px] font-semibold uppercase tracking-wider">
             <Link
               to="/"
-              className={`px-2 py-2  text-sm font-bold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Home
@@ -85,10 +85,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/about"
-              className={`px-2 py-2 text-sm font-bold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/about')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               About
@@ -102,10 +102,10 @@ export const Navbar: React.FC = () => {
             >
               <Link
                 to="/academics"
-                className={`inline-flex items-center gap-1 px-1 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+                className={`inline-flex items-center gap-1 px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                   location.pathname.startsWith('/academics')
-                    ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                    ? 'text-[#D4AF37] border-[#D4AF37]'
+                    : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
                 }`}
               >
                 <span>Academics</span>
@@ -161,10 +161,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/student-life"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/student-life')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Student Life
@@ -172,10 +172,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/boarding"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/boarding')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Boarding
@@ -183,10 +183,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/admissions"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/admissions')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Admissions
@@ -194,10 +194,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/fees-and-requirements"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/fees-and-requirements')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Fees & Requirements
@@ -205,10 +205,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/gallery"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/gallery')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Gallery
@@ -216,10 +216,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/news"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/news')
-                  ?'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               News
@@ -227,32 +227,21 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/blog"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/blog')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Blog
             </Link>
 
             <Link
-              to="/staff"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
-                isActive('/staff')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
-              }`}
-            >
-              Staff
-            </Link>
-
-            <Link
               to="/downloads"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/downloads')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Downloads
@@ -260,10 +249,10 @@ export const Navbar: React.FC = () => {
 
             <Link
               to="/contact"
-              className={`px-2 py-2 text-sm font-semibold uppercase tracking-wider transition-all border-b-2 ${
+              className={`px-3 py-2 text-xs font-semibold uppercase tracking-wider transition-all border-b-2 ${
                 isActive('/contact')
-                  ? 'text-red-500 border-red-500'
-                  : 'text-[#0A192F] hover:text-red-500 border-transparent hover:border-red-500'
+                  ? 'text-[#D4AF37] border-[#D4AF37]'
+                  : 'text-white/80 hover:text-[#D4AF37] border-transparent hover:border-[#D4AF37]'
               }`}
             >
               Contact
@@ -274,7 +263,7 @@ export const Navbar: React.FC = () => {
           <div className="hidden sm:flex items-center space-x-3">
             <Link
               to="/admissions"
-              className="bg-[#D4AF37] text-[#0A192F] px-4 py-2.5 font-bold text-[11px] uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-sm flex items-center gap-2"
+              className="bg-[#D4AF37] text-[#0A192F] px-6 py-2.5 font-bold text-[11px] uppercase tracking-widest hover:bg-white transition-colors duration-300 rounded-sm flex items-center gap-2"
             >
               <GraduationCap className="w-4 h-4" />
               <span>ENROLL NOW</span>

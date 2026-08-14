@@ -30,10 +30,12 @@ import schoolUniform from '../assets/images/gallery/schoolUniform.webp';
 import sereneSpace from '../assets/images/gallery/sereneSpace.webp';
 import sports from '../assets/images/gallery/sports.webp';
 
-//staff
-import nicholas from '../assets/images/staff/nicholas.webp';
+//staff & leadership
+import peter from '../assets/images/staff/peter.webp';
 import john from '../assets/images/staff/john.webp';
 import maina from '../assets/images/staff/maina.webp';
+import leadershipPrincipal from '../assets/images/leadership/peter.webp';
+import jamesImg from '../assets/images/leadership/james.webp';
 
 
 
@@ -450,9 +452,9 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-18',
     question: 'Who leads St. Gabriel International School?',
-    answer: 'Our executive leadership includes Dr. Elizabeth Mwangi (Principal & Head of School), Mr. Peter Mwangi (Vice Principal & Head of Academics), Mr. Maina (Head of Boarding & Pastoral Care), and Mr. James Kiptoo (Sports & Co-Curricular Director).',
+    answer: 'Our executive leadership is led by Mr. Nicholas (Executive Principal & Head of School), supported by Mr. Peter Mwangi (Vice Principal & Head of Academics), Mr. Maina (Head of Boarding & Pastoral Care), and Mr. James Kiptoo (Head of Co-Curricular & Sports Directorate).',
     category: 'About',
-    tags: ['principal', 'leadership', 'staff', 'headmaster', 'director', 'who']
+    tags: ['principal', 'leadership', 'staff', 'headmaster', 'director', 'who', 'mr nicholas', 'nicholas']
   },
   {
     id: 'faq-19',
@@ -568,40 +570,77 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 
 export const STAFF_MEMBERS: StaffMember[] = [
   {
-    id: 'staff-2',
-    name: 'Mr Nicholas',
-    role: 'Principal',
+    id: 'mr-nicholas',
+    name: 'Mr. Nicholas',
+    role: 'Executive Principal & Head of School',
+    department: 'Executive Administration',
+    qualification: 'M.Ed. Educational Leadership & Management (Univ. of London), B.Ed. (Hons), Cambridge International Education Certified Leader',
+    experience: '24+ years of distinguished leadership in British International Curriculum schools across Kenya and East Africa. Extensive background in Cambridge CAIE inspections, holistic student development, and transformative academic administration.',
+    bio: 'Dedicated to nurturing disciplined scholars who embody academic rigor, Christian moral integrity, and technological innovation to bring hope to the world.',
+    welcomeMessage: 'A warm welcome to St. Gabriel International School. As Principal, it is my joy and privilege to lead a community where world-class British international education meets unwavering Christian values and holistic talent nurturing.',
+    detailedMessage: [
+      'Welcome to St. Gabriel International School, Lanet, Nakuru. At St. Gabriel, our conviction is simple yet profound: every child is endowed by God with unique potential that flourishes when nurtured with structured academic rigor, loving pastoral care, and high moral standards.',
+      'Our British International curriculum pathway—spanning Early Years Foundation Stage (EYFS), Primary, Lower Secondary, Cambridge IGCSE, and Advanced Level (A-Level)—empowers students to think critically, communicate articulately, and solve real-world problems with confidence and ethical discernment.',
+      'Complementing our academic excellence is a vibrant co-curricular program embracing robotics & STEM innovation, competitive sports, musical brass orchestration, and community service. In our separate boarding compounds for boys and girls, we cultivate brotherhood, sisterhood, spiritual maturity, and self-reliance.',
+      'I warmly invite you to visit our beautiful campus in Lanet, meet our dedicated faculty, and partner with us in shaping the visionary leaders of tomorrow. Under our motto "HOPE TO THE WORLD", we look forward to walking this transformative educational journey with your family.'
+    ],
+    image: leadershipPrincipal,
+    email: 'principal@stgabrielschool.ac.ke',
+    phone: '+254 724 694 554'
+  },
+  {
+    id: 'mr-peter-mwangi',
+    name: 'Mr. Peter Mwangi',
+    role: 'Vice Principal & Head of Academics',
     department: 'Academic Directorate',
-    qualification: 'M.Sc. Physics (UoN), B.Ed. Science (Kenyatta Univ.)',
-    bio: 'Specialist in Cambridge IGCSE and A-Level curriculum design with a passion for STEM innovation, research projects, and university placement excellence.',
-    image: nicholas
+    qualification: 'M.Sc. Applied Physics (Univ. of Nairobi), B.Ed. Science (Kenyatta Univ.), CAIE Lead Assessor & Curriculum Specialist',
+    experience: '18+ years leading Cambridge IGCSE and A-Level STEM curriculum design, pedagogical innovation, faculty development, and international university placement success.',
+    bio: 'Specialist in Cambridge curriculum architecture with a passion for STEM innovation, research projects, and pre-university academic excellence.',
+    welcomeMessage: 'At St. Gabriel, academic distinction is not just about memorizing facts—it is about cultivating critical inquiry, scientific curiosity, and lifelong analytical mastery.',
+    detailedMessage: [
+      'Our academic framework at St. Gabriel International School is engineered to challenge, inspire, and elevate every learner. We maintain rigorous standards benchmarked against global Cambridge International qualifications.',
+      'Through state-of-the-art science laboratories, modern ICT suites, and continuous individualized assessment, our academic faculty ensures each student achieves outstanding results in Cambridge IGCSE and A-Level examinations.',
+      'We emphasize research, independent study, and collaborative problem-solving, equipping our graduates for seamless entry into top-tier universities worldwide.'
+    ],
+    image: peter,
+    email: 'academics@stgabrielschool.ac.ke',
+    phone: '+254 720 349 748'
   },
   {
-    id: 'staff-1',
-    name: 'Dr. Elizabeth Mwangi',
-    role: 'Principal & Head of School',
-    department: 'Executive Leadership',
-    qualification: 'Ph.D. Educational Leadership (Univ. of Sussex), M.Ed. International Education',
-    bio: 'Over 20 years of experience leading international British curriculum schools across East Africa with a vision for academic rigor and Christian character leadership.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'
-  },
-  {
-    id: 'staff-3',
-    name: 'Mr Maina',
+    id: 'mr-maina',
+    name: 'Mr. Maina',
     role: 'Head of Boarding & Pastoral Care',
-    department: 'Student Affairs & Boarding',
-    qualification: 'B.A. Counseling Psychology, Higher Dip. Child Development',
-    bio: 'Dedicated to providing a warm, nurturing home-away-from-home atmosphere across our separate boys and girls boarding facilities in Lanet.',
-    image: maina
+    department: 'Student Affairs & Pastoral Care',
+    qualification: 'B.A. Counseling Psychology, Higher Dip. Child Development & Adolescent Mentorship, Certified Pastoral Care Counselor',
+    experience: '16+ years in residential student welfare, Christian counseling, and character development in premier international boarding institutions.',
+    bio: 'Dedicated to providing a warm, structured, and nurturing home-away-from-home atmosphere across our separate boys and girls boarding facilities in Lanet.',
+    welcomeMessage: 'Boarding at St. Gabriel is designed as a loving, structured community where young men and women cultivate independence, Christian values, and lifelong friendships.',
+    detailedMessage: [
+      'Residential life at St. Gabriel International School provides an enriching environment where students develop independence, self-discipline, and strong interpersonal bonds.',
+      'Our separate boarding compounds for boys and girls, situated approximately 4 km apart in Lanet, offer dedicated houseparents, nutritious meal programs, structured study hours, and regular pastoral care sessions.',
+      'We believe that true education nurtures the whole person—mind, body, and spirit—ensuring every boarder feels safe, valued, and empowered to excel.'
+    ],
+    image: maina,
+    email: 'boarding@stgabrielschool.ac.ke',
+    phone: '+254 724 694 554'
   },
   {
-    id: 'staff-4',
+    id: 'mr-james-kiptoo',
     name: 'Mr. James Kiptoo',
-    role: 'Head of Co-Curricular & Sports Director',
+    role: 'Head of Co-Curricular & Sports Directorate',
     department: 'Sports & Creative Arts',
-    qualification: 'B.Sc. Sports Science & Physical Education',
-    bio: 'Championing athletic development, sportsmanship, and teamwork across soccer, basketball, athletics, and swimming.',
-    image:john
+    qualification: 'B.Sc. Sports Science & Physical Education (Kenyatta Univ.), Certified Athletics & Basketball Coach, Brass Orchestral Conductor',
+    experience: '14+ years coaching championship athletic teams, directing brass orchestral bands, and nurturing student leadership through performing arts and clubs.',
+    bio: 'Championing athletic mastery, sportsmanship, and teamwork across soccer, basketball, swimming, brass band, robotics, and dramatic arts.',
+    welcomeMessage: 'Every student has unique talents—whether on the sports pitch, at the chess board, or playing a brass trumpet. Our mission is to discover and polish that talent into international distinction.',
+    detailedMessage: [
+      'A holistic education reaches beyond textbooks into the field of play, musical performance, and collaborative leadership. At St. Gabriel, our co-curricular program is second to none.',
+      'From our full-scale brass band and championship athletics teams to robotics, debate, drama, and swimming, every scholar is encouraged to explore their passions and develop resilience.',
+      'Participation in sports and creative arts builds teamwork, perseverance, and emotional intelligence—essential qualities for the leaders of tomorrow.'
+    ],
+    image: john,
+    email: 'sports@stgabrielschool.ac.ke',
+    phone: '+254 720 349 748'
   }
 ];
 
