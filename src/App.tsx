@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { Chatbot } from './components/Chatbot';
+import { BackToTop } from './components/BackToTop';
 
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -51,6 +52,7 @@ export default function App() {
         <Footer />
         <FloatingWhatsApp />
         <Chatbot />
+        <BackToTop />
       </div>
     </Router>
   );
