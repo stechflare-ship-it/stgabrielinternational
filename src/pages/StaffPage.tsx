@@ -23,7 +23,7 @@ import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { FACULTY_MEMBERS, LEADERSHIP_TEAM, STAFF_MEMBERS, SCHOOL_INFO } from '../data/schoolData';
 import { StaffMember } from '../types';
-import heroBgImg from '../assets/images/leadership/backgroundleadership.webp';
+import heroBgImg from '../assets/images/staff/staff2.webp';
 
 const DEPARTMENTS = [
   'All Faculty & Staff',
@@ -202,7 +202,7 @@ export const StaffPage: React.FC = () => {
                 className="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer transform hover:-translate-y-1.5"
               >
                 {/* Photo Header */}
-                <div className="relative h-64 w-full overflow-hidden bg-[#0A192F]">
+                <div className="relative  w-full overflow-hidden bg-[#0A192F]">
                   <img
                     src={member.image}
                     alt={member.name}
