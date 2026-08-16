@@ -27,6 +27,7 @@ import heroBgImg from '../assets/images/leadership/backgroundleadership.webp';
 
 const DEPARTMENTS = [
   'All Faculty & Staff',
+  'Executive Leadership',
   'Sciences & STEM',
   'Languages & Humanities',
   'Mathematics & Computing',
@@ -43,15 +44,17 @@ export const StaffPage: React.FC = () => {
 
   // Filter staff members based on category and search query
   const filteredFaculty = useMemo(() => {
-    return FACULTY_MEMBERS.filter((member) => {
+    return STAFF_MEMBERS.filter((member) => {
       const matchesDept =
         selectedDept === 'All Faculty & Staff' ||
         member.department.toLowerCase().includes(selectedDept.toLowerCase()) ||
+        (selectedDept === 'Executive Leadership' && (member.department.includes('Board') || member.department.includes('Executive') || member.department.includes('Operations'))) ||
         (selectedDept === 'Sciences & STEM' && member.department.includes('Science')) ||
         (selectedDept === 'Languages & Humanities' && (member.department.includes('Languages') || member.department.includes('Humanities'))) ||
         (selectedDept === 'Mathematics & Computing' && (member.department.includes('Mathematics') || member.department.includes('Computing') || member.department.includes('ICT'))) ||
         (selectedDept === 'Pastoral Care & Boarding' && (member.department.includes('Pastoral') || member.department.includes('Boarding'))) ||
-        (selectedDept === 'Sports & Creative Arts' && (member.department.includes('Sports') || member.department.includes('Arts')));
+        (selectedDept === 'Sports & Creative Arts' && (member.department.includes('Sports') || member.department.includes('Arts'))) ||
+        (selectedDept === 'Academic Administration' && (member.department.includes('Administration') || member.department.includes('Academic')));
 
       const matchesSearch =
         searchQuery.trim() === '' ||

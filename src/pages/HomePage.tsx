@@ -320,59 +320,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. Executive Leadership Team */}
-      <section className="py-16 sm:py-24 bg-[#0B1D33] text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
-          <div className="text-center space-y-3 max-w-3xl mx-auto">
-            <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40 inline-block">
-              School Leadership
-            </span>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
-              Guided by Experienced Educational Leaders
-            </h2>
-            <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-              Our seasoned administration is dedicated to academic rigor, pastoral welfare, and Christian values.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {STAFF_MEMBERS.map((staff) => (
-              <div
-                key={staff.id}
-                onClick={() => setSelectedLeader(staff)}
-                className="bg-white/5 border border-white/10 hover:border-[#C59B27] rounded-2xl p-5 text-center space-y-4 hover:-translate-y-1 transition-all duration-300 cursor-pointer group"
-              >
-                <div className="w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-[#C59B27] shadow-lg">
-                  <img
-                    src={staff.image}
-                    alt={staff.name}
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).src = `https://placehold.co/400x400/0B1D33/E0BA43?text=${encodeURIComponent(staff.name)}`;
-                    }}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-                <div className="space-y-1">
-                  <h3 className="font-serif font-bold text-base text-white group-hover:text-[#E0BA43] transition-colors">
-                    {staff.name}
-                  </h3>
-                  <p className="text-xs text-[#E0BA43] font-semibold">{staff.role}</p>
-                  <p className="text-[11px] text-gray-400">{staff.department}</p>
-                </div>
-                <span className="inline-flex items-center gap-1 text-[11px] text-[#E0BA43] font-bold pt-2">
-                  <span>View Full Profile</span>
-                  <ArrowRight className="w-3 h-3" />
-                </span>
-              </div>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
-      {/* 8. Campus & Student Life Gallery */}
+      {/* 7. Campus & Student Life Gallery */}
       <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <SectionHeading
           badge="Life at St. Gabriel"
