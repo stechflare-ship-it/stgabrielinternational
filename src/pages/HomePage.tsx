@@ -39,10 +39,11 @@ import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { TestimonialSlider } from '../components/TestimonialSlider';
 import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
-import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS } from '../data/schoolData';
+import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS, DIRECTOR_MEMBER, LEADERSHIP_TEAM } from '../data/schoolData';
 import { StaffMember, NewsItem } from '../types';
 
 import campusImg from '../assets/images/about/campus.webp';
+import directorImg from '../assets/images/leadership/director.webp';
 import principalImg from '../assets/images/leadership/nicholas.webp';
 import claasroomImg from '../assets/images/gallery/classroom.webp';
 import artsImg from '../assets/images/gallery/musicBand.webp';
@@ -70,10 +71,10 @@ export const HomePage: React.FC = () => {
   const [activeStory, setActiveStory] = useState<NewsItem | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
 
-  const openPrincipalMessage = () => {
-    const principal = STAFF_MEMBERS.find((s) => s.id === 'mr-nicholas' || s.id === 'nicholas');
-    if (principal) {
-      setSelectedLeader(principal);
+  const openDirectorMessage = () => {
+    const director = DIRECTOR_MEMBER || STAFF_MEMBERS.find((s) => s.id === 'director');
+    if (director) {
+      setSelectedLeader(director);
     }
   };
 
@@ -103,39 +104,39 @@ export const HomePage: React.FC = () => {
         ogDescription="Providing world-class Kenya CBC & British Cambridge International pathways, championship brass band, STEM laboratories, and separate residential boarding in Lanet, Nakuru."
       />
 
-      {/* 1. Cinematic Hero */}
-      <Hero onOpenPrincipalMessage={openPrincipalMessage} />
+      {/* 1. Cinematic Hero with hero.mp4 */}
+      <Hero onOpenDirectorMessage={openDirectorMessage} />
 
-      {/* 2. Welcome from the Principal & Vice Principal Highlight */}
+      {/* 2. Welcome from the Director Highlight */}
       <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Principal Image & Badge */}
+          {/* Director Image & Badge */}
           <div className="lg:col-span-5 relative">
             <div 
-              onClick={openPrincipalMessage}
+              onClick={openDirectorMessage}
               className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-[#C59B27]/40 bg-[#0B1D33] group cursor-pointer"
             >
               <img
-                src={principalImg}
-                alt="Mr. Nicholas - Executive Principal of St. Gabriel International School"
+                src={directorImg}
+                alt="Mr. Anthony Maina - Director & Founder of St. Gabriel International School"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
                 onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = `https://placehold.co/600x750/0B1D33/E0BA43?text=Mr.+Nicholas+(Principal)`;
+                  (e.currentTarget as HTMLImageElement).src = `https://placehold.co/600x750/0B1D33/E0BA43?text=Mr.+Anthony+Maina+(Director)`;
                 }}
-                className="w-full h-[420px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-[450px] object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B1D33] via-transparent to-transparent opacity-90"></div>
               
               <div className="absolute bottom-6 left-6 right-6 text-white space-y-1">
                 <span className="px-3 py-1 rounded-full bg-[#C59B27] text-[#0B1D33] text-xs font-bold uppercase tracking-wider inline-block">
-                  Head of School Welcome
+                  Director&apos;s Welcome
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-white group-hover:text-[#E0BA43] transition-colors">Mr. Nicholas</h3>
-                <p className="text-xs text-[#E0BA43] font-medium">Executive Principal & Headmaster</p>
+                <h3 className="font-serif text-2xl font-bold text-white group-hover:text-[#E0BA43] transition-colors">Mr. Anthony Maina</h3>
+                <p className="text-xs text-[#E0BA43] font-medium">Director & Founder • St. Gabriel Group of Schools</p>
                 <p className="text-[11px] text-gray-300 underline pt-1 flex items-center gap-1 font-semibold">
                   <span>Click photo to read full message & biography &rarr;</span>
                 </p>
@@ -148,17 +149,17 @@ export const HomePage: React.FC = () => {
                 <GraduationCap className="w-6 h-6" />
               </div>
               <div>
-                <span className="text-xl font-bold text-[#0B1D33] font-serif block">100%</span>
-                <span className="text-[11px] text-gray-500 font-medium">University Transition</span>
+                <span className="text-xl font-bold text-[#0B1D33] font-serif block">28+ Years</span>
+                <span className="text-[11px] text-gray-500 font-medium">Legacy of Excellence</span>
               </div>
             </div>
           </div>
 
-          {/* Principal Letter Content */}
+          {/* Director Letter Content */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-2">
               <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#0B1D33] text-xs font-extrabold uppercase tracking-widest border border-[#C59B27]/30 inline-block">
-                Principal&apos;s Welcome Address
+                Director&apos;s Welcome Address
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-[#0B1D33] leading-tight">
                 Nurturing Visionary Leaders for Kenya and the World
@@ -167,10 +168,10 @@ export const HomePage: React.FC = () => {
 
             <div className="space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
               <p className="italic border-l-4 border-[#C59B27] pl-4 text-gray-800 font-medium">
-                &ldquo;At St. Gabriel International School, we believe that education is not merely the transmission of textbook facts, but the ignition of intellect, character, and lifelong purpose under God&apos;s grace.&rdquo;
+                &ldquo;At St. Gabriel International School, our vision is to ignite intellect, character, and lifelong purpose in every child under God&apos;s grace.&rdquo;
               </p>
               <p>
-                Welcome to St. Gabriel International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British Cambridge International Pathway (EYFS to A-Level)</strong>.
+                Welcome to St. Gabriel International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British Cambridge International Pathway (EYFS to A-Level)</strong>.
               </p>
               <p>
                 Whether in our modern STEM robotics laboratories, on championship athletic fields, within our nationally acclaimed orchestral brass band, or across our separate serene boys and girls residential boarding compounds, we guide each young scholar toward a balanced, purposeful life.
@@ -179,15 +180,19 @@ export const HomePage: React.FC = () => {
 
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <button
-                onClick={openPrincipalMessage}
+                onClick={openDirectorMessage}
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0B1D33] hover:bg-[#C59B27] hover:text-[#0B1D33] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md cursor-pointer"
               >
-                <span>Read Full Welcome Address</span>
+                <span>Read Full Director&apos;s Address</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
               <Button to="/about" variant="outline">
                 About Our 28-Year Heritage
+              </Button>
+
+              <Button to="/staff" variant="secondary">
+                View Faculty & Staff
               </Button>
             </div>
           </div>

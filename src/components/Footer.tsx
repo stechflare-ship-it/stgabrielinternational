@@ -115,6 +115,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-xs font-bold uppercase tracking-wider">
               {[
                 { label: 'About St. Gabriel', path: '/about' },
+                { label: 'Faculty & Staff Directory', path: '/staff' },
                 { label: 'Academics & Curriculum', path: '/academics' },
                 { label: 'Student Life', path: '/student-life' },
                 { label: 'Boarding Experience', path: '/boarding' },

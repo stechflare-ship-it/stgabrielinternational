@@ -33,6 +33,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
   const mainLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
+    { name: 'Faculty & Staff', path: '/staff' },
     { name: 'Student Life', path: '/student-life' },
     { name: 'Boarding (Boys & Girls)', path: '/boarding' },
     { name: 'Admissions', path: '/admissions' },

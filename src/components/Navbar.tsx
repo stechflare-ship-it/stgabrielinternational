@@ -94,6 +94,17 @@ export const Navbar: React.FC = () => {
               About
             </Link>
 
+            <Link
+              to="/staff"
+              className={`px-3 py-2 text-xs font-bold uppercase tracking-wider transition-all border-b-2 ${
+                isActive('/staff')
+                  ? 'text-[#0A192F] border-[#0A192F] bg-white/30 rounded-t-sm'
+                  : 'text-[#0A192F]/90 hover:text-[#0A192F] border-transparent hover:border-[#0A192F] hover:bg-white/20 rounded-t-sm'
+              }`}
+            >
+              Staff
+            </Link>
+
             {/* Academics Dropdown */}
             <div
               className="relative"

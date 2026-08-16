@@ -21,6 +21,7 @@ const NewsPage = lazy(() => import('./pages/NewsPage').then(m => ({ default: m.N
 const BlogPage = lazy(() => import('./pages/BlogPage').then(m => ({ default: m.BlogPage })));
 const DownloadsPage = lazy(() => import('./pages/DownloadsPage').then(m => ({ default: m.DownloadsPage })));
 const ContactPage = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })));
+const StaffPage = lazy(() => import('./pages/StaffPage').then(m => ({ default: m.StaffPage })));
 
 const PageLoader = () => (
   <div className="w-full min-h-[60vh] flex items-center justify-center bg-[#F8F9FB]">
@@ -53,7 +54,7 @@ export default function App() {
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/blog" element={<BlogPage />} />
-              <Route path="/staff" element={<Navigate to="/about" replace />} />
+              <Route path="/staff" element={<StaffPage />} />
               <Route path="/downloads" element={<DownloadsPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="*" element={<HomePage />} />

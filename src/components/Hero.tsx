@@ -6,10 +6,11 @@ import heroVideo from '../assets/hero.mp4';
 import campusPosterImg from '../assets/images/about/campus.webp';
 
 interface HeroProps {
+  onOpenDirectorMessage?: () => void;
   onOpenPrincipalMessage?: () => void;
 }
 
-export const Hero: React.FC<HeroProps> = ({ onOpenPrincipalMessage }) => {
+export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincipalMessage }) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -140,12 +141,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenPrincipalMessage }) => {
             EXPLORE CURRICULUM
           </Button>
 
-          {onOpenPrincipalMessage && (
+          {(onOpenDirectorMessage || onOpenPrincipalMessage) && (
             <button
-              onClick={onOpenPrincipalMessage}
-              className="w-full sm:w-auto px-6 py-3.5 border border-white text-white hover:bg-white hover:text-[#0A192F] font-bold text-xs uppercase tracking-widest transition-all cursor-pointer inline-flex items-center justify-center gap-2"
+              onClick={onOpenDirectorMessage || onOpenPrincipalMessage}
+              className="w-full sm:w-auto px-6 py-3.5 border border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#0A192F] font-bold text-xs uppercase tracking-widest transition-all cursor-pointer inline-flex items-center justify-center gap-2 shadow-lg"
             >
-              <span>PRINCIPAL&apos;S MESSAGE</span>
+              <span>DIRECTOR&apos;S MESSAGE</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           )}

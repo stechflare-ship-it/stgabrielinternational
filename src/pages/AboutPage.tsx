@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { SEOMetadata } from '../components/SEOMetadata';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SectionHeading } from '../components/SectionHeading';
 import { ShieldCheck, Award, Heart, BookOpen, Users, Compass, CheckCircle2, GraduationCap, Quote, ArrowRight, Sparkles, History, Calendar, Flag, Globe } from 'lucide-react';
-import { SCHOOL_INFO, STAFF_MEMBERS, SCHOOL_HISTORY_MILESTONES } from '../data/schoolData';
+import { SCHOOL_INFO, LEADERSHIP_TEAM, STAFF_MEMBERS, SCHOOL_HISTORY_MILESTONES } from '../data/schoolData';
 import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { StaffMember } from '../types';
@@ -29,8 +29,8 @@ export const AboutPage: React.FC = () => {
         el.scrollIntoView({ behavior: 'smooth' });
       }
       if (location.hash === '#principal') {
-        const principal = STAFF_MEMBERS.find((s) => s.id === 'mr-nicholas');
-        if (principal) setSelectedLeader(principal);
+        const leader = LEADERSHIP_TEAM.find((s) => s.id === 'chief-principal' || s.id === 'director');
+        if (leader) setSelectedLeader(leader);
       }
     }
   }, [location]);
@@ -241,16 +241,16 @@ export const AboutPage: React.FC = () => {
           <div className="w-24 h-1 bg-[#C59B27] mx-auto rounded-full mt-4" />
         </div>
 
-        {/* 4 Executive Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {STAFF_MEMBERS.map((member) => (
+        {/* 5 Executive Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          {LEADERSHIP_TEAM.map((member) => (
             <div
               key={member.id}
               onClick={() => setSelectedLeader(member)}
               className="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer transform hover:-translate-y-1.5"
             >
               {/* Photo Area */}
-              <div className="relative h-72 w-full overflow-hidden bg-[#0A192F]">
+              <div className="relative h-64 w-full overflow-hidden bg-[#0A192F]">
                 <img
                   src={member.image}
                   alt={member.name}
@@ -261,7 +261,7 @@ export const AboutPage: React.FC = () => {
                 
                 {/* Department Badge */}
                 <div className="absolute top-3 left-3">
-                  <span className="px-2.5 py-1 rounded-full bg-[#0A192F]/85 backdrop-blur-md text-[#D4AF37] text-[10px] font-bold uppercase tracking-wider border border-[#D4AF37]/30 shadow">
+                  <span className="px-2.5 py-0.5 rounded-full bg-[#0A192F]/85 backdrop-blur-md text-[#D4AF37] text-[9px] font-bold uppercase tracking-wider border border-[#D4AF37]/30 shadow">
                     {member.department}
                   </span>
                 </div>
@@ -275,34 +275,55 @@ export const AboutPage: React.FC = () => {
               </div>
 
               {/* Card Body */}
-              <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+              <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
                 <div className="space-y-2">
-                  <h3 className="font-serif text-xl font-bold text-[#0B1D33] group-hover:text-[#C59B27] transition-colors">
+                  <h3 className="font-serif text-lg font-bold text-[#0B1D33] group-hover:text-[#C59B27] transition-colors leading-tight">
                     {member.name}
                   </h3>
 
                   {/* Qualifications */}
-                  <div className="flex items-start gap-1.5 text-xs text-gray-700 bg-gray-50 p-2.5 rounded-xl border border-gray-100">
-                    <GraduationCap className="w-4 h-4 text-[#C59B27] flex-shrink-0 mt-0.5" />
+                  <div className="flex items-start gap-1.5 text-[11px] text-gray-700 bg-gray-50 p-2 rounded-xl border border-gray-100">
+                    <GraduationCap className="w-3.5 h-3.5 text-[#C59B27] flex-shrink-0 mt-0.5" />
                     <span className="line-clamp-2 font-medium">{member.qualification}</span>
                   </div>
 
                   {/* Welcome message preview */}
                   {member.welcomeMessage && (
-                    <p className="text-xs text-gray-600 line-clamp-3 italic leading-relaxed pt-1">
+                    <p className="text-[11px] text-gray-600 line-clamp-2 italic leading-relaxed pt-0.5">
                       &quot;{member.welcomeMessage}&quot;
                     </p>
                   )}
                 </div>
 
                 {/* Card Action */}
-                <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#0B1D33] group-hover:text-[#C59B27]">
-                  <span>Read Full Profile & Message</span>
-                  <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] font-bold text-[#0B1D33] group-hover:text-[#C59B27]">
+                  <span>View Bio</span>
+                  <ArrowRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Link to Dedicated Staff Page */}
+        <div className="mt-12 p-8 rounded-3xl bg-gradient-to-r from-[#0A192F] to-[#1E3A8A] text-white border border-[#C59B27]/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center md:text-left">
+            <h3 className="font-serif text-2xl font-bold text-white">
+              Meet Our Inspiring Faculty & Department Leads
+            </h3>
+            <p className="text-sm text-gray-200 max-w-2xl">
+              Explore our full staff directory of Cambridge and CBC certified educators, STEM researchers, language specialists, sports coaches, and pastoral caregivers.
+            </p>
+          </div>
+          <Button
+            to="/staff"
+            variant="primary"
+            size="lg"
+            className="whitespace-nowrap uppercase tracking-wider font-bold"
+            icon={<ArrowRight className="w-5 h-5" />}
+          >
+            EXPLORE ALL FACULTY & STAFF
+          </Button>
         </div>
       </section>
 
