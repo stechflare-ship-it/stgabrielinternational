@@ -117,6 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
       return;
     }
 
+    setProgress(0);
     const step = (TICK_INTERVAL / SLIDE_DURATION) * 100;
 
     timerRef.current = window.setInterval(() => {
@@ -132,7 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPlaying]);
+  }, [isPlaying, currentSlideIndex]);
 
   const activeSlide = HERO_SLIDES[currentSlideIndex];
 

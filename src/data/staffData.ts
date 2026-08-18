@@ -3,14 +3,20 @@ import { StaffMember } from '../types';
 import directorImg from '../assets/images/leadership/director.webp';
 import mdDirectorImg from '../assets/images/leadership/mddirector.webp';
 import nicholasLeadershipImg from '../assets/images/leadership/nicholas.webp';
-import patrickImg from '../assets/images/leadership/payrick.webp';
+import peterStaffImg from '../assets/images/staff/peter.webp';
+import patrickImg from '../assets/images/leadership/patrick.webp';
 import edwinImg from '../assets/images/leadership/edwin.webp';
-
-import alicia from '../../src/assets/images/staff/alicia.webp';
-import camilia from '../../src/assets/images/staff/camila.webp';
-import godfrey from '../../src/assets/images/staff/godfrey.webp';
-import laban from '../../src/assets/images/staff/laban.webp';
-import njoroge from '../../src/assets/images/staff/njoroge.webp';
+import jamesLeadershipImg from '../assets/images/leadership/james.webp';
+import graceLeadershipImg from '../assets/images/leadership/grace.webp';
+import sarahLeadershipImg from '../assets/images/leadership/sarah.webp';
+import mainaStaffImg from '../assets/images/staff/maina.webp';
+import johnStaffImg from '../assets/images/staff/john.webp';
+import aliciaStaffImg from '../assets/images/staff/alicia.webp';
+import godfreyStaffImg from '../assets/images/staff/godfrey.webp';
+import labanStaffImg from '../assets/images/staff/laban.webp';
+import njorogeStaffImg from '../assets/images/staff/njoroge.webp';
+import camilaStaffImg from '../assets/images/staff/camila.webp';
+import staff2Img from '../assets/images/staff/staff2.webp';
 
 // ---------------------------------------------------------------------------
 // 5 EXECUTIVE LEADERSHIP MEMBERS (Featured on About Page & Director Welcome)
@@ -23,7 +29,7 @@ import njoroge from '../../src/assets/images/staff/njoroge.webp';
 export const LEADERSHIP_TEAM: StaffMember[] = [
   {
     id: 'director',
-    name: 'Mr. Director',
+    name: 'Mr. Anthony Maina',
     role: 'Director & Founder',
     department: 'Board of Directors',
     qualification: 'M.Ed. Institutional Leadership & Management, B.Ed. (Hons)',
@@ -62,7 +68,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     name: 'Mr. Nicholas Okeyo',
     role: 'Chief Principal & Head of Institution',
     department: 'Executive Administration',
-    qualification: 'B.Ed (MKU), MATHEMATICS AND BIOLOGY',
+    qualification: 'M.Ed. Educational Leadership (Univ. of London), B.Ed. Science (Kenyatta Univ.)',
     bio: 'Distinguished educator with over 24 years of executive leadership in leading national and international curriculum institutions. Oversees academic standards, faculty mentoring, and dual-curriculum execution.',
     welcomeMessage: 'We empower students to become critical thinkers, principled leaders, and innovative global problem solvers.',
     experience: '24+ Years Leadership',
@@ -74,11 +80,22 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
       'Whether preparing for national KPSEA and KCSE milestones or sitting for Cambridge IGCSE and A-Level examinations, our learners achieve exemplary mastery.'
     ]
   },
-
   {
-    id: 'boys-principal',
+    id: 'principal-peter',
+    name: 'Mr. Peter Mwangi',
+    role: 'Principal & Academic Dean',
+    department: 'Academic Administration',
+    qualification: 'M.Sc. Curriculum Development (UoN), B.Ed. Science (Hons)',
+    bio: 'Coordinates dual-curriculum syllabus mapping, teacher professional development, STEM laboratory pedagogy, and international examination administration.',
+    welcomeMessage: 'We design rigorous learning pathways that inspire scientific curiosity and lifelong intellectual mastery.',
+    experience: '18+ Years Experience',
+    image: peterStaffImg,
+    email: 'academics@stgabrielinternational.sc.ke'
+  },
+  {
+    id: 'school-manager',
     name: 'Mr. Patrick Kariuki',
-    role: 'Boy\'s Principal',
+    role: 'School Manager & Operations Director',
     department: 'Operations & Institutional Management',
     qualification: 'B.Com. Operations Management, Certified Public Administrator',
     bio: 'Directs institutional logistics, campus security protocols, transportation fleets, boarding compound maintenance, and auxiliary services.',
@@ -86,8 +103,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     experience: '16+ Years Experience',
     image: patrickImg,
     email: 'manager@stgabrielinternational.sc.ke'
-  },
-  
+  }
 ];
 
 export const DIRECTOR_MEMBER = LEADERSHIP_TEAM[0];
@@ -105,7 +121,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Overseeing both residential compounds in Lanet, Mr. Maina ensures a safe, warm, disciplined home-away-from-home where boarders cultivate self-reliance, leadership, and Christian brotherhood.',
     welcomeMessage: 'Our boarding life is grounded in Christian brotherhood, holistic wellness, and strong academic discipline.',
     experience: '15+ Years Experience',
-    image: "mainaStaffImg",
+    image: mainaStaffImg,
     email: 'boarding@stgabrielinternational.sc.ke'
   },
   {
@@ -117,7 +133,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Director James spearheads our championship brass band, regional football teams, Taekwondo dojo, and international sports tournaments, instilling sportsmanship and resilience.',
     welcomeMessage: 'Discipline on the field translates directly into excellence in the classroom.',
     experience: '14+ Years Coaching',
-    image: "jamesLeadershipImg",
+    image: jamesLeadershipImg,
     email: 'sports@stgabrielinternational.sc.ke'
   },
   {
@@ -129,7 +145,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Mrs. Wanjiru crafts joyful, sensory-rich playgroup and primary environments that develop foundational phonics, numeracy, and emotional intelligence.',
     welcomeMessage: 'Every child\'s early journey begins with love, wonder, and purposeful discovery.',
     experience: '12+ Years Experience',
-    image: "graceLeadershipImg",
+    image: graceLeadershipImg,
     email: 'eyfs@stgabrielinternational.sc.ke'
   },
   {
@@ -141,7 +157,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Ms. Chebet provides compassionate mentorship and dedicated counseling support across the girls\' boarding compound, guiding adolescent scholars with empathy and dignity.',
     welcomeMessage: 'We nurture young women of exceptional poise, moral courage, and intellect.',
     experience: '11+ Years Experience',
-    image: "sarahLeadershipImg",
+    image: sarahLeadershipImg,
     email: 'counseling@stgabrielinternational.sc.ke'
   },
   {
@@ -153,7 +169,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Dr. Ochieng leads the high school science department, robotics club, and competitive STEM olympiad teams.',
     welcomeMessage: 'Science is about active discovery, experimentation, and solving real-world challenges.',
     experience: '16+ Years Experience',
-    image: "johnStaffImg",
+    image: johnStaffImg,
     email: 'stem@stgabrielinternational.sc.ke'
   },
   {
@@ -165,7 +181,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Spearheading multilingual fluency in English, French, and Kiswahili, preparing scholars for international diplomacy and global university study.',
     welcomeMessage: 'Languages open doors to understanding our diverse and interconnected world.',
     experience: '13+ Years Experience',
-    image: alicia,
+    image: aliciaStaffImg,
     email: 'languages@stgabrielinternational.sc.ke'
   },
   {
@@ -177,7 +193,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Expert mathematics mentor celebrated for simplifying complex concepts and mentoring regional mathematics contest champions.',
     welcomeMessage: 'Mathematics is the foundational language of logical reasoning and universal truth.',
     experience: '14+ Years Experience',
-    image: godfrey,
+    image: godfreyStaffImg,
     email: 'maths@stgabrielinternational.sc.ke'
   },
   {
@@ -189,7 +205,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Directs digital literacy, software programming, web development workshops, and campus-wide technological infrastructure.',
     welcomeMessage: 'Empowering future innovators with 21st-century coding and computational skills.',
     experience: '10+ Years Experience',
-    image: laban,
+    image: labanStaffImg,
     email: 'ict@stgabrielinternational.sc.ke'
   },
   {
@@ -201,7 +217,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Inspires deep historical inquiry, ethical leadership, civic engagement, and community service projects.',
     welcomeMessage: 'Understanding our history guides us in shaping a more just and hopeful future.',
     experience: '15+ Years Experience',
-    image: njoroge,
+    image: njorogeStaffImg,
     email: 'humanities@stgabrielinternational.sc.ke'
   },
   {
@@ -213,7 +229,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Passionate visual artist cultivating student creativity through painting, sculpture, graphic design, and annual art exhibitions.',
     welcomeMessage: 'Art is where imagination transforms into lasting beauty and expression.',
     experience: '9+ Years Experience',
-    image: camilia,
+    image: camilaStaffImg,
     email: 'arts@stgabrielinternational.sc.ke'
   },
   {
@@ -225,7 +241,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Oversees dormitory hygiene, balanced meal planning, and health clinic care for residential scholars.',
     welcomeMessage: 'Every boarder receives the warmth, care, and nutritional support of home.',
     experience: '12+ Years Experience',
-    image: "staff2Img",
+    image: staff2Img,
     email: 'welfare@stgabrielinternational.sc.ke'
   },
   {

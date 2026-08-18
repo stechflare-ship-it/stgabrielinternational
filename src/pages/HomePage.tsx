@@ -38,7 +38,6 @@ import { NewsModal } from '../components/NewsModal';
 import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { TestimonialSlider } from '../components/TestimonialSlider';
-import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS, DIRECTOR_MEMBER, LEADERSHIP_TEAM } from '../data/schoolData';
 import { StaffMember, NewsItem } from '../types';
 
@@ -335,8 +334,8 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 9. Interactive Testimonials Carousel */}
-      <TestimonialsCarousel
+      {/* 9. Interactive Testimonials Slider */}
+      <TestimonialSlider
         badge="Parent & Scholar Testimonials"
         title="What Families Say About St. Gabriel"
         subtitle="Read authentic reviews with verified 5-star ratings from current parents, scholars, and alumni across our Kenya CBC and British Cambridge streams."
