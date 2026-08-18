@@ -92,7 +92,7 @@ export const EYFSPage: React.FC = () => {
         ]}
         course={{
           name: stageData.title,
-          description: stageData.description || stageData.subtitle,
+          description: stageData.subtitle,
           educationalLevel: `${stageData.years} (${stageData.ageRange})`,
           teaches: stageData.subjects
         }}
