@@ -13,10 +13,26 @@ export const AdmissionsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Admissions & Application Guide | St. Gabriel Nakuru"
-        description="Apply for admission to St. Gabriel International School in Lanet, Nakuru. British & International Curriculum for Day and Boarding scholars."
+        title="Admissions & Application Guide 2026/2027 | St. Gabriel Nakuru"
+        description="Apply for admission to St. Gabriel International School in Lanet, Nakuru. Enrolling for Kenya CBC (PP1–Senior School) & British Cambridge (EYFS–A-Level)."
+        keywords="school admission nakuru, international school enrollment kenya, apply st gabriel, cambridge igcse admissions, cbc junior secondary enrollment, nakuru boarding admissions"
         canonicalPath="/admissions"
+        ogType="website"
+        ogTitle="Admissions & Online Application · St. Gabriel International School"
+        ogDescription="Secure your child's place in premier Kenya CBC and British Cambridge International programs. Open enrollment with day & boarding options in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Admissions', path: '/admissions' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Admissions at St. Gabriel International School',
+          description: 'Official enrollment procedure, admission criteria, and online application portal for day and boarding scholars.',
+          offers: {
+            '@type': 'Offer',
+            category: 'Academic Enrollment',
+            availability: 'https://schema.org/InStock',
+            validFrom: '2026-01-01'
+          }
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Admissions', path: '/admissions' }]} />

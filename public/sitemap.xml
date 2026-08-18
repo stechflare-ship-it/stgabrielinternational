@@ -1,36 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Primary Landing Page -->
   <url>
-    <loc>/</loc>
+    <loc>https://stgabrielinternational.co.ke/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Admissions & Enrollments -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/admissions</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Academics & Curriculum Hub -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/academics</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Individual Academic Stages -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/academics/eyfs</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/about</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/primary</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/academics</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/lower-secondary</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/student-life</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/igcse</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>/boarding</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/a-level</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>/admissions</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/cbc-pre-primary</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/fees-and-requirements</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/cbc-lower-primary</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/gallery</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/cbc-upper-primary</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/news</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/cbc-junior-secondary</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>/blog</loc>
+    <loc>https://stgabrielinternational.co.ke/academics/cbc-senior-school</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- About & Heritage -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/about</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Fees & Boarding -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/fees-and-requirements</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
-    <loc>/contact</loc>
+    <loc>https://stgabrielinternational.co.ke/boarding</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Student Life & Co-Curriculars -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/student-life</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Faculty & Leadership -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/staff</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- News, Blog & Downloads -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/news</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://stgabrielinternational.co.ke/blog</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://stgabrielinternational.co.ke/downloads</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://stgabrielinternational.co.ke/gallery</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Contact & Campus Location -->
+  <url>
+    <loc>https://stgabrielinternational.co.ke/contact</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
 </urlset>

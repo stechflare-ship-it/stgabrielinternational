@@ -30,9 +30,27 @@ export const StudentLifePage: React.FC = () => {
       <SEOMetadata
         title="Student Life, Balanced Life & Real-Life Experience | St. Gabriel Nakuru Kenya"
         description="Discover a balanced life and real-life learning experiences at St. Gabriel International School in Nakuru, Kenya. British curriculum, sports, arts, leadership and character development."
-        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, student life, co-curricular, St. Gabriel International School"
+        keywords="international school nakuru, kenya co-curricular, school sports nakuru, brass band orchestra, drama and music festivals, robotics club, student leadership, st gabriel student life"
         canonicalPath="/student-life"
+        ogType="website"
+        ogTitle="Vibrant Student Life & Holistic Co-Curriculars · St. Gabriel Nakuru"
+        ogDescription="Explore championship sports, award-winning brass band music, STEM robotics clubs, and leadership mentorship in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Student Life', path: '/student-life' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Student Life at St. Gabriel International School',
+          description: 'Holistic extracurricular activities, sports, brass band orchestra, robotics, and spiritual growth opportunities.',
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Championship Brass Band & Music Conservatory' },
+              { '@type': 'ListItem', position: 2, name: 'STEM, Robotics & Computing Clubs' },
+              { '@type': 'ListItem', position: 3, name: 'Athletics, Football, Swimming & Martial Arts' },
+              { '@type': 'ListItem', position: 4, name: 'Pastoral Care & Christian Mentorship' }
+            ]
+          }
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Student Life', path: '/student-life' }]} />

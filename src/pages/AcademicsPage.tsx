@@ -42,9 +42,24 @@ export const AcademicsPage: React.FC = () => {
       <SEOMetadata
         title="Academics & Dual Curriculum Pathways | Kenya CBC & British Cambridge | St. Gabriel Nakuru"
         description="Explore comprehensive Kenya CBC (PP1 through Senior School Grades 10–12) and British Cambridge (EYFS through A-Levels) at St. Gabriel International School in Lanet, Nakuru."
-        keywords="international school nakuru, kenya cbc, senior school kenya, junior secondary school, jss, cambridge igcse, a-level, stem pathway, social sciences, arts pathway, st gabriel lanet"
+        keywords="international school nakuru, kenya cbc, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, stem pathway, social sciences, arts pathway, st gabriel lanet, dual curriculum nakuru, cambridge international kenya"
         canonicalPath="/academics"
+        ogType="website"
+        ogTitle="Dual-Curriculum Academic Pathways · Kenya CBC & British Cambridge"
+        ogDescription="Providing tailored learning pathways from Early Childhood, Primary, JSS, Senior School STEM & Arts to Cambridge IGCSE and A-Level in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Academics', path: '/academics' }]}
+        course={{
+          name: 'St. Gabriel Dual-Curriculum Academic Program (Kenya CBC & British Cambridge)',
+          description: 'Comprehensive academic framework spanning Kenya Competency-Based Curriculum and CAIE British Cambridge International Curriculum with state-of-the-art STEM laboratories and arts conservatory.',
+          educationalLevel: 'Early Childhood to High School (A-Level / Grade 12)',
+          teaches: [
+            'Cambridge IGCSE & A-Level Sciences, Mathematics & Humanities',
+            'Kenya CBC STEM, Social Sciences & Arts Pathways',
+            'Junior Secondary School (KJSEA) Core Competencies',
+            'Computer Science, Coding & Digital Literacy',
+            'Brass Band Orchestration, Creative Arts & Physical Education'
+          ]
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Academics & Curriculum', path: '/academics' }]} />

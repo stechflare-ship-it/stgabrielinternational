@@ -14,8 +14,32 @@ export const DownloadsPage: React.FC = () => {
       <SEOMetadata
         title="Downloadable School Documents & Prospectus | St. Gabriel Nakuru"
         description="Download official St. Gabriel International School prospectus, term calendars, fee structures, boarding handbooks, and requirements checklists."
+        keywords="school prospectus download, st gabriel forms, fee structure pdf, term dates calendar nakuru, boarding checklist download"
         canonicalPath="/downloads"
+        ogType="website"
+        ogTitle="Official School Documents & Prospectus Downloads · St. Gabriel"
+        ogDescription="Download official PDF school documents including prospectus, term calendars, fees breakdowns, and boarding requirements."
         breadcrumbs={[{ name: 'Downloads', path: '/downloads' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'St. Gabriel Downloadable Resources & Documents Center',
+          description: 'Official downloadable PDF publications, school prospectus, term dates, and admissions documents.',
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: DOWNLOAD_DOCUMENTS.map((doc, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'DigitalDocument',
+                name: doc.title,
+                description: doc.description,
+                encodingFormat: 'application/pdf',
+                size: doc.fileSize
+              }
+            }))
+          }
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Document Downloads', path: '/downloads' }]} />

@@ -37,10 +37,33 @@ export const NewsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="School News & Announcements | St. Gabriel International School"
+        title="School News, Events & Press Releases | St. Gabriel Nakuru"
         description="Latest news, Cambridge examination distinctions, co-curricular galas, and announcements from St. Gabriel International School in Lanet, Nakuru."
+        keywords="school news nakuru, st gabriel events, cambridge exam results nakuru, music festivals nakuru, school announcements lanet"
         canonicalPath="/news"
+        ogType="website"
+        ogTitle="School News & Official Announcements · St. Gabriel Nakuru"
+        ogDescription="Read our latest campus updates, national music gala triumphs, Cambridge exam distinctions, and upcoming school calendar events."
         breadcrumbs={[{ name: 'News & Events', path: '/news' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          name: 'St. Gabriel International School News & Events',
+          description: 'Official press releases, academic achievement highlights, and community updates.',
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: NEWS_ITEMS.map((item, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'NewsArticle',
+                headline: item.title,
+                datePublished: item.date,
+                description: item.summary
+              }
+            }))
+          }
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'News & Announcements', path: '/news' }]} />

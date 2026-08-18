@@ -14,8 +14,18 @@ export const BoardingPage: React.FC = () => {
       <SEOMetadata
         title="Boarding Facilities & Pastoral Care | St. Gabriel Nakuru"
         description="Separate boys and girls boarding facilities located ~4km apart in Lanet, Nakuru. Pastoral care, home-away-from-home environment, and disciplined study routines."
+        keywords="boarding school nakuru, separate boys girls boarding kenya, primary boarding school, junior secondary boarding, lanet dormitories, christian boarding school nakuru"
         canonicalPath="/boarding"
+        ogType="website"
+        ogTitle="Modern Boarding Facilities & Pastoral Care · St. Gabriel Nakuru"
+        ogDescription="Secure, nurturing, home-away-from-home residential life in Lanet, Nakuru with dedicated house parents, nutritious dining, and evening prep."
         breadcrumbs={[{ name: 'Boarding', path: '/boarding' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          name: 'Boarding Life & Facilities at St. Gabriel',
+          description: 'Comprehensive overview of separate residential compounds, safety, nutritional meal planning, evening prep routines, and medical care.'
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Boarding Life', path: '/boarding' }]} />

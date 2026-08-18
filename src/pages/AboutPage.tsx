@@ -40,9 +40,28 @@ export const AboutPage: React.FC = () => {
       <SEOMetadata
         title="About Us & School History | Kenya CBC & British Cambridge | St. Gabriel Nakuru"
         description="Discover the 28-year history of St. Gabriel in Lanet, Nakuru. From foundational mission school and KCPE/KPSEA champions to premier dual-curriculum Kenya CBC and British Cambridge institution."
-        keywords="about st gabriel, school history, lanet, nakuru, kenya, cbc, kenya syllabus, kpsea, junior secondary, british curriculum, cambridge, mr nicholas"
+        keywords="about st gabriel, school history, lanet, nakuru, kenya, cbc, kenya syllabus, kpsea, junior secondary, british curriculum, cambridge, mr nicholas, st gabriel leadership, mission school lanet"
         canonicalPath="/about"
+        ogType="website"
+        ogTitle="About St. Gabriel International School · 28 Years of Educational Distinction"
+        ogDescription="Explore our heritage of holistic Christian character development, academic championships, and seamless dual-curriculum pathways in Lanet, Nakuru."
         breadcrumbs={[{ name: 'About Us', path: '/about' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          name: 'About St. Gabriel International School',
+          description: 'The official history, mission, core values, and executive leadership of St. Gabriel International School in Lanet, Nakuru, Kenya.',
+          mainEntity: {
+            '@type': 'EducationalOrganization',
+            name: SCHOOL_INFO.name,
+            foundingDate: '1998',
+            motto: SCHOOL_INFO.motto,
+            founder: {
+              '@type': 'Person',
+              name: 'Nicholas & Leadership Board'
+            }
+          }
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'About Us', path: '/about' }]} />

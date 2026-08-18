@@ -13,8 +13,18 @@ export const GalleryPage: React.FC = () => {
       <SEOMetadata
         title="Photo Gallery & Campus Life | St. Gabriel International School Nakuru"
         description="Browse photo gallery of St. Gabriel International School in Lanet, Nakuru. Official uniforms, classroom study, brass band orchestra, computer lab, and graduation ceremonies."
+        keywords="school photo gallery nakuru, st gabriel photos, campus tour nakuru, brass band pictures, school facilities photos, boarding dormitory photos"
         canonicalPath="/gallery"
+        ogType="website"
+        ogTitle="Campus Photo Gallery · St. Gabriel International School"
+        ogDescription="Explore state-of-the-art classrooms, STEM computing labs, residential dormitories, and championship co-curricular moments in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Gallery', path: '/gallery' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'ImageGallery',
+          name: 'St. Gabriel International School Campus & Student Life Gallery',
+          description: 'Photographic portfolio capturing academic life, laboratory experiments, brass band recitals, athletics, and pastoral boarding spaces in Lanet, Nakuru.'
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Photo Gallery', path: '/gallery' }]} />

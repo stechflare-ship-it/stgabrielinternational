@@ -73,11 +73,35 @@ export const StaffPage: React.FC = () => {
       <SEOMetadata
         title="Faculty & Teaching Staff | St. Gabriel International School, Nakuru"
         description="Meet the dedicated, internationally certified educators, STEM specialists, department heads, and pastoral mentors at St. Gabriel International School in Lanet, Nakuru."
-        keywords="St Gabriel teachers, international school faculty nakuru, cambridge teachers kenya, cbc educators, nakuru boarding school staff"
+        keywords="St Gabriel teachers, international school faculty nakuru, cambridge teachers kenya, cbc educators, nakuru boarding school staff, science teachers nakuru, brass band director"
         canonicalPath="/staff"
         ogType="website"
         ogTitle="Faculty & Teaching Staff · St. Gabriel International School"
         ogDescription="World-class educators and compassionate mentors empowering academic excellence and Christian character in Lanet, Nakuru."
+        breadcrumbs={[{ name: 'Faculty & Staff', path: '/staff' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          name: 'Faculty & Staff Directory - St. Gabriel International School',
+          description: 'Meet our academic leadership, department heads, certified Cambridge educators, and pastoral mentors.',
+          mainEntity: {
+            '@type': 'ItemList',
+            itemListElement: STAFF_MEMBERS.map((member, idx) => ({
+              '@type': 'ListItem',
+              position: idx + 1,
+              item: {
+                '@type': 'Person',
+                name: member.name,
+                jobTitle: member.role,
+                worksFor: {
+                  '@type': 'EducationalOrganization',
+                  name: SCHOOL_INFO.name
+                },
+                description: member.bio
+              }
+            }))
+          }
+        }}
       />
 
       {/* Hero Banner with backgroundleadership.webp */}

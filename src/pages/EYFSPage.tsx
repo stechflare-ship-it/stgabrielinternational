@@ -81,11 +81,21 @@ export const EYFSPage: React.FC = () => {
       <SEOMetadata
         title={`${stageData.title} | ${isCbc ? 'Kenya CBC' : 'British Cambridge'} | St. Gabriel Nakuru`}
         description={`${stageData.title} (${stageData.years}, ${stageData.ageRange}) at St. Gabriel International School, Lanet, Nakuru. ${stageData.subtitle}`}
+        keywords={`${stageData.title}, ${isCbc ? 'kenya cbc' : 'british cambridge'}, nakuru international school, ${stageData.subjects?.slice(0, 5).join(', ')}, lanet education`}
         canonicalPath={stageData.path}
+        ogType="website"
+        ogTitle={`${stageData.title} · ${isCbc ? 'Kenya CBC' : 'British Cambridge International'}`}
+        ogDescription={`${stageData.subtitle} Ages: ${stageData.ageRange}, Duration: ${stageData.years}.`}
         breadcrumbs={[
           { name: 'Academics', path: '/academics' },
           { name: stageData.title, path: stageData.path }
         ]}
+        course={{
+          name: stageData.title,
+          description: stageData.description || stageData.subtitle,
+          educationalLevel: `${stageData.years} (${stageData.ageRange})`,
+          teaches: stageData.subjects
+        }}
       />
 
       <Breadcrumbs

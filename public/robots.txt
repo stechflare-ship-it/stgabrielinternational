@@ -1,7 +1,46 @@
+# robots.txt for St. Gabriel International School
+# https://stgabrielinternational.co.ke
+
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
 
-# Do not block CSS/JS/Images
-User-agent: *
-Disallow: /private
-Disallow: /admin
+# Major Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://stgabrielinternational.co.ke/sitemap.xml
+Host: https://stgabrielinternational.co.ke

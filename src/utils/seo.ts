@@ -10,6 +10,26 @@ export interface SEOBreadcrumbItem {
 }
 
 /**
+ * Interface for FAQ structured data items
+ */
+export interface SEOFAQItem {
+  question: string;
+  answer: string;
+}
+
+/**
+ * Interface for academic course schema
+ */
+export interface SEOCourseInfo {
+  name: string;
+  description: string;
+  provider?: string;
+  educationalLevel?: string;
+  courseCode?: string;
+  teaches?: string[];
+}
+
+/**
  * Configuration options for dynamic SEO & OpenGraph tag injection
  */
 export interface SEOTagOptions {
@@ -31,6 +51,7 @@ export interface SEOTagOptions {
   ogImageAlt?: string;
   /** Image dimensions */
   ogImageWidth?: string | number;
+  /** Image height */
   ogImageHeight?: string | number;
   /** OpenGraph Type ('website' | 'article' | 'profile') */
   ogType?: 'website' | 'article' | 'profile';
@@ -58,6 +79,10 @@ export interface SEOTagOptions {
   articleTags?: string[];
   /** Breadcrumb hierarchy for search rich snippets */
   breadcrumbs?: SEOBreadcrumbItem[];
+  /** FAQ items for Google rich FAQ snippet expansion */
+  faqs?: SEOFAQItem[];
+  /** Academic Course Schema */
+  course?: SEOCourseInfo;
   /** Custom JSON-LD schema objects to inject */
   customSchema?: Record<string, unknown> | Record<string, unknown>[];
 }
@@ -68,14 +93,10 @@ export const DEFAULT_OG_IMAGE =
 
 /** Default Search Keywords */
 export const DEFAULT_KEYWORDS =
-  'St. Gabriel International School, international school nakuru, kenya cbc, senior secondary school, junior secondary school, jss nakuru, cambridge igcse, cambridge a-level, eyfs, lanet boarding school, christian school nakuru, dual curriculum kenya, best school in nakuru county';
+  'St. Gabriel International School, international school nakuru, kenya cbc, senior secondary school, junior secondary school, jss nakuru, cambridge igcse, cambridge a-level, eyfs, lanet boarding school, christian school nakuru, dual curriculum kenya, best school in nakuru county, transformer road lanet';
 
 /**
  * Dynamically upserts a `<meta>` tag in `<head>` by key attribute.
- *
- * @param keyAttr 'name' or 'property' or 'http-equiv'
- * @param keyValue The name of the meta tag (e.g. 'description', 'og:title')
- * @param content The value/content of the tag
  */
 export function setMetaTag(
   keyAttr: 'name' | 'property' | 'http-equiv',
@@ -105,9 +126,6 @@ export function setMetaTag(
 
 /**
  * Dynamically upserts a `<link>` tag in `<head>` (e.g. canonical, alternate).
- *
- * @param rel The relation attribute (e.g. 'canonical')
- * @param href The destination URL
  */
 export function setLinkTag(rel: string, href: string | undefined | null): void {
   if (typeof document === 'undefined') return;
@@ -131,9 +149,6 @@ export function setLinkTag(rel: string, href: string | undefined | null): void {
 
 /**
  * Injects or updates a structured JSON-LD `<script>` tag in `<head>`.
- *
- * @param id Unique ID for the script element
- * @param schema The JSON-LD schema object
  */
 export function injectJsonLd(id: string, schema: object | null | undefined): void {
   if (typeof document === 'undefined') return;
@@ -159,9 +174,6 @@ export function injectJsonLd(id: string, schema: object | null | undefined): voi
  * Core engine function to dynamically inject comprehensive meta tags,
  * OpenGraph tags, Twitter Card tags, canonical links, and JSON-LD structured
  * data for any page.
- *
- * @param options Configuration options for page metadata
- * @returns Cleanup function to remove page-specific schema or tags if desired
  */
 export function injectMetaTags(options: SEOTagOptions): () => void {
   if (typeof window === 'undefined' || typeof document === 'undefined') {
@@ -185,16 +197,20 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
     twitterCard = 'summary_large_image',
     twitterSite = '@StGabrielNakuru',
     author = SCHOOL_INFO.name,
-    robots = options.noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large',
+    robots = options.noIndex
+      ? 'noindex, nofollow'
+      : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
     publishedTime,
     modifiedTime,
     articleSection,
     articleTags = [],
     breadcrumbs = [],
+    faqs,
+    course,
     customSchema
   } = options;
 
-  const baseUrl = window.location.origin || 'https://stgabrielschool.ac.ke';
+  const baseUrl = window.location.origin || 'https://stgabrielinternational.co.ke';
   const canonicalUrl = canonicalPath.startsWith('http')
     ? canonicalPath
     : `${baseUrl}${canonicalPath.startsWith('/') ? canonicalPath : `/${canonicalPath}`}`;
@@ -206,9 +222,16 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
   setMetaTag('name', 'description', description);
   setMetaTag('name', 'keywords', keywords);
   setMetaTag('name', 'robots', robots);
+  setMetaTag('name', 'googlebot', robots);
   setMetaTag('name', 'author', author);
   setMetaTag('name', 'publisher', SCHOOL_INFO.name);
   setMetaTag('name', 'theme-color', '#0B1D33');
+
+  // Geo Tags for Nakuru, Kenya Local SEO
+  setMetaTag('name', 'geo.region', 'KE-31');
+  setMetaTag('name', 'geo.placename', 'Nakuru, Kenya');
+  setMetaTag('name', 'geo.position', `${SCHOOL_INFO.location.coordinates.lat};${SCHOOL_INFO.location.coordinates.lng}`);
+  setMetaTag('name', 'ICBM', `${SCHOOL_INFO.location.coordinates.lat}, ${SCHOOL_INFO.location.coordinates.lng}`);
 
   // 3. Canonical Link Tag
   setLinkTag('canonical', canonicalUrl);
@@ -250,10 +273,11 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
   const schoolSchema = {
     '@context': 'https://schema.org',
     '@type': ['EducationalOrganization', 'School'],
+    '@id': `${baseUrl}/#school`,
     name: SCHOOL_INFO.name,
     alternateName: ['St. Gabriel International', 'St. Gabriel Mission School Lanet', 'SGIS Nakuru'],
     url: baseUrl,
-    logo: `${baseUrl}/logo.webp`,
+    logo: `${baseUrl}/favicon.png`,
     image: ogImage,
     description: `${SCHOOL_INFO.motto} - ${description}`,
     telephone: SCHOOL_INFO.contacts.mainPhone,
@@ -341,7 +365,47 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
     injectJsonLd('breadcrumb-jsonld', null);
   }
 
-  // 8. Custom Additional Schemas (e.g. Course, Article, FAQPage, Event)
+  // 8. JSON-LD FAQ Schema
+  if (faqs && faqs.length > 0) {
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: f.answer
+        }
+      }))
+    };
+    injectJsonLd('faq-jsonld', faqSchema);
+  } else {
+    injectJsonLd('faq-jsonld', null);
+  }
+
+  // 9. Course Schema
+  if (course) {
+    const courseSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Course',
+      name: course.name,
+      description: course.description,
+      provider: {
+        '@type': 'EducationalOrganization',
+        name: course.provider || SCHOOL_INFO.name,
+        sameAs: baseUrl
+      },
+      educationalLevel: course.educationalLevel,
+      courseCode: course.courseCode,
+      teaches: course.teaches
+    };
+    injectJsonLd('course-jsonld', courseSchema);
+  } else {
+    injectJsonLd('course-jsonld', null);
+  }
+
+  // 10. Custom Additional Schemas (e.g. Article, Event, ImageGallery)
   if (customSchema) {
     injectJsonLd('custom-page-jsonld', customSchema);
   } else {
@@ -350,8 +414,9 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
 
   // Return teardown function if page changes
   return () => {
-    // Teardown page-specific JSON-LD scripts if unmounted
     injectJsonLd('breadcrumb-jsonld', null);
+    injectJsonLd('faq-jsonld', null);
+    injectJsonLd('course-jsonld', null);
     injectJsonLd('custom-page-jsonld', null);
   };
 }
@@ -359,8 +424,6 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
 /**
  * Custom React Hook for dynamically injecting and updating page meta tags,
  * OpenGraph attributes, and structured JSON-LD schemas.
- *
- * @param options Page SEO configuration
  */
 export function useSEO(options: SEOTagOptions): void {
   useEffect(() => {
@@ -380,6 +443,8 @@ export function useSEO(options: SEOTagOptions): void {
     options.noIndex,
     options.publishedTime,
     JSON.stringify(options.breadcrumbs || []),
+    JSON.stringify(options.faqs || []),
+    JSON.stringify(options.course || null),
     JSON.stringify(options.customSchema || null)
   ]);
 }

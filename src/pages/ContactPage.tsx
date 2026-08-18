@@ -12,11 +12,39 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Contact St. Gabriel International School | Lanet, Nakuru, Kenya"
-        description="Contact St. Gabriel International School in Lanet, Nakuru, Kenya. Best British Curriculum school on Transformer Rd offering a balanced life and real-life education."
-        keywords="international, nakuru, kenya, british curriculum, best education, balanced life, real life experience, St. Gabriel International School, St Gabriels Mission School, Transformer Rd Nakuru"
+        title="Contact Us, Campus Location & Campus Tours | St. Gabriel Nakuru"
+        description="Contact St. Gabriel International School in Lanet, Nakuru, Kenya. Call +254 724 694 554, WhatsApp admissions, or schedule a campus tour along Transformer Road."
+        keywords="contact st gabriel, school location nakuru, transformer road lanet, call st gabriel admissions, book school tour nakuru, international school phone number kenya"
         canonicalPath="/contact"
-        breadcrumbs={[{ name: 'Contact', path: '/contact' }]}
+        ogType="website"
+        ogTitle="Contact St. Gabriel International School · Lanet, Nakuru"
+        ogDescription="Connect with admissions, book a personalized campus tour, or reach our administrative offices along Transformer Road, Lanet."
+        breadcrumbs={[{ name: 'Contact Us', path: '/contact' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          name: 'Contact St. Gabriel International School',
+          description: 'Official contact and location information for St. Gabriel International School in Lanet, Nakuru.',
+          mainEntity: {
+            '@type': 'EducationalOrganization',
+            name: SCHOOL_INFO.name,
+            telephone: SCHOOL_INFO.contacts.mainPhone,
+            email: SCHOOL_INFO.contacts.email,
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Transformer Road, Lanet',
+              addressLocality: 'Nakuru',
+              addressRegion: 'Nakuru County',
+              postalCode: '20100',
+              addressCountry: 'KE'
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: SCHOOL_INFO.location.coordinates.lat,
+              longitude: SCHOOL_INFO.location.coordinates.lng
+            }
+          }
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Contact Us', path: '/contact' }]} />

@@ -141,10 +141,31 @@ export const BlogPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="School Blog & Insights | St. Gabriel Nakuru"
+        title="School Blog, Educational Insights & Parent Guides | St. Gabriel Nakuru"
         description="Read articles, parent guides, Cambridge curriculum advice, boarding insights, and STEM updates from St. Gabriel International School in Lanet, Nakuru."
+        keywords="school blog nakuru, cambridge parenting guide, cbc education articles, boarding preparation tips, stem learning nakuru, st gabriel articles"
         canonicalPath="/blog"
+        ogType="website"
+        ogTitle="Educational Insights & Campus Stories · St. Gabriel Nakuru"
+        ogDescription="Thought leadership on dual-curriculum excellence, holistic parenting, early childhood development, and modern STEM education."
         breadcrumbs={[{ name: 'Blog & Articles', path: '/blog' }]}
+        customSchema={{
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          name: 'St. Gabriel International School Educational Blog',
+          description: 'Parent guides, academic advice, and insights from faculty and educators.',
+          blogPost: BLOG_POSTS.map((post) => ({
+            '@type': 'BlogPosting',
+            headline: post.title,
+            description: post.summary,
+            datePublished: post.date,
+            author: {
+              '@type': 'Person',
+              name: post.author
+            },
+            keywords: post.tags.join(', ')
+          }))
+        }}
       />
 
       <Breadcrumbs items={[{ label: 'Blog & Educational Insights', path: '/blog' }]} />

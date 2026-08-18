@@ -96,11 +96,29 @@ export const HomePage: React.FC = () => {
       <SEOMetadata
         title="St. Gabriel International School | Kenya CBC & British Cambridge in Nakuru, Kenya"
         description="St. Gabriel International School in Lanet, Nakuru offers premier Kenya CBC (PP1–Senior School Grade 12) & British Cambridge (EYFS–A-Level) education with separate boys & girls boarding facilities."
-        keywords="St Gabriel International School, international school nakuru, kenya cbc nakuru, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, lanet boarding school, christian school nakuru"
+        keywords="St Gabriel International School, international school nakuru, kenya cbc nakuru, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, lanet boarding school, christian school nakuru, best school in nakuru, dual curriculum kenya"
         canonicalPath="/"
         ogType="website"
         ogTitle="St. Gabriel International School · Dual Curriculum & Boarding Excellence in Nakuru"
         ogDescription="Providing world-class Kenya CBC & British Cambridge International pathways, championship brass band, STEM laboratories, and separate residential boarding in Lanet, Nakuru."
+        faqs={[
+          {
+            question: "What curricula are offered at St. Gabriel International School?",
+            answer: "St. Gabriel International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary (JSS) and Senior School, alongside the British Cambridge International Pathway from Early Years Foundation Stage (EYFS), Cambridge Primary, Lower Secondary, IGCSE (O-Level) to Advanced Level (A-Level)."
+          },
+          {
+            question: "Where is St. Gabriel International School located in Nakuru?",
+            answer: "St. Gabriel International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene, secure learning environment."
+          },
+          {
+            question: "Does St. Gabriel offer boarding facilities?",
+            answer: "Yes, St. Gabriel provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated house parents, medical care, and balanced nutrition."
+          },
+          {
+            question: "How do I apply for admission to St. Gabriel International School?",
+            answer: "Admissions can be submitted online via our website application form, by calling admissions directly at +254 724 694 554 / +254 720 349 748, or by visiting our administration offices at the Lanet campus."
+          }
+        ]}
       />
 
       {/* 1. Cinematic Hero with hero.mp4 */}
