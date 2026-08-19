@@ -174,7 +174,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
   },
   {
     id: 'languages-alicia',
-    name: 'Mme. Alice Wairimu',
+    name: 'Mrs. Alice Wairimu',
     role: 'Head of Languages & Modern Foreign Languages',
     department: 'Languages & Humanities',
     qualification: 'M.A. French Linguistics, DELF/DALF Certified Examiner',
