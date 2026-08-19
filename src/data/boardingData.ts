@@ -1,4 +1,4 @@
-import residenceImg from '../assets/images/boarding/residence.webp';
+import boardingbackground from '../assets/images/boardinglife/boardingbackground.webp';
 import boardingCompoundImg from '../assets/images/studentlife/boardingCompound.webp';
 import boysCompoundImg from '../assets/images/studentlife/boys.webp';
 import girlsCompoundImg from '../assets/images/studentlife/girls.webp';
@@ -30,7 +30,7 @@ export const BOARDING_COMPOUNDS: BoardingCompound[] = [
       'On-site grass soccer pitch, basketball court, and table tennis tables',
       'Resident housemasters, matrons, and 24/7 biometric security guards'
     ],
-    image: boysCompoundImg
+    image: boardingbackground
   },
   {
     name: 'St. Gabriel Girls\' Residential Campus',
@@ -46,7 +46,7 @@ export const BOARDING_COMPOUNDS: BoardingCompound[] = [
       'Dedicated pastoral counseling suite and full-time resident nurse',
       'Volleyball court, badminton lawn, and outdoor gazebo reading circles'
     ],
-    image: girlsCompoundImg
+    image: boardingbackground
   }
 ];
 
@@ -57,7 +57,7 @@ export const BOARDING_SCHEDULE = [
   { time: '7:30 AM', activity: 'Morning Assembly & Academic Classes Commence' },
   { time: '1:00 PM', activity: 'Three-Course Balanced Lunch & Midday Rest' },
   { time: '2:00 PM', activity: 'Afternoon Academic Lessons & Practical Labs' },
-  { time: '4:00 PM', activity: 'Games, Swimming, Clubs & Brass Band Rehearsals' },
+  { time: '4:00 PM', activity: 'Games, Swimming, Clubs & Brass band Rehearsals' },
   { time: '5:45 PM', activity: 'Shower & Evening Uniform Change' },
   { time: '6:30 PM', activity: 'Hot Dinner & Fruit Refreshments' },
   { time: '7:15 PM – 9:00 PM', activity: 'Supervised Evening Prep & Silent Study' },
@@ -69,16 +69,16 @@ export const BOARDING_FACILITIES = [
   {
     title: 'Modern Dormitories & Living Spaces',
     description: 'Well-ventilated cubicles equipped with posture-support mattresses, personal lockable storage, and warm ambient lighting.',
-    image: facilitiesImg
+    image: boardingbackground
   },
   {
     title: 'Balanced Nutrition Dining Halls',
     description: 'Nutritious, diverse 5-meal daily menu prepared by professional chefs, catering to growing children with fresh local produce.',
-    image: residenceImg
+    image: boardingbackground
   },
   {
     title: '24/7 Medical Clinic & Resident Nurse',
     description: 'Fully stocked campus dispensary with qualified medical personnel on duty around the clock, partnered with top Nakuru hospitals.',
-    image: boardingCompoundImg
+    image: boardingbackground
   }
 ];
