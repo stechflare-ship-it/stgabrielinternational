@@ -6,7 +6,7 @@ import { BoardingSection } from '../components/BoardingSection';
 import { FeeTable } from '../components/FeeTable';
 import { RequirementsChecklist } from '../components/RequirementsChecklist';
 import boardingbackground from '../assets/images/boardinglife/boardingbackground.webp ';
-const boardingbackground = boardingFacilitiesWebp;
+import boardingfacility from '../assets/images/boardinglife/boardingfacility.webp';
 
 export const BoardingPage: React.FC = () => {
   return (
