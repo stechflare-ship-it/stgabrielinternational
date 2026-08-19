@@ -34,7 +34,7 @@ export const BoardingPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={boardingFacilitiesImg}
+            src={boardingbackground}
             alt="St. Gabriel Boarding Facilities"
             className="w-full h-full object-cover object-center"
           />
