@@ -29,7 +29,7 @@ import staff2Img from '../assets/images/staff/staff2.webp';
 export const LEADERSHIP_TEAM: StaffMember[] = [
   {
     id: 'director',
-    name: 'Mr. Anthony Maina',
+    name: 'Mr. John Muira',
     role: 'Director & Founder',
     department: 'Board of Directors',
     qualification: 'M.Ed. Institutional Leadership & Management, B.Ed. (Hons)',
@@ -94,7 +94,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
   },
   {
     id: 'school-manager',
-    name: 'Mr. Patrick Kariuki',
+    name: 'Mr. Paul Muira',
     role: 'School Manager & Operations Director',
     department: 'Operations & Institutional Management',
     qualification: 'B.Com. Operations Management, Certified Public Administrator',
@@ -174,7 +174,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
   },
   {
     id: 'languages-alicia',
-    name: 'Mme. Alicia Nduta',
+    name: 'Mme. Alice Wairimu',
     role: 'Head of Languages & Modern Foreign Languages',
     department: 'Languages & Humanities',
     qualification: 'M.A. French Linguistics, DELF/DALF Certified Examiner',
@@ -186,7 +186,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
   },
   {
     id: 'mathematics-godfrey',
-    name: 'Mr. Godfrey Kiprono',
+    name: 'Mr. Godfrey Wahungu',
     role: 'Senior Cambridge & CBC Mathematics Lead',
     department: 'Mathematics & Computing',
     qualification: 'B.Sc. Pure Mathematics & Statistics, Dip. Ed.',
@@ -198,7 +198,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
   },
   {
     id: 'ict-laban',
-    name: 'Mr. Laban Otieno',
+    name: 'Mr. Laban Mbunya',
     role: 'Head of ICT & Computer Laboratories',
     department: 'Mathematics & Computing',
     qualification: 'B.Sc. Computer Science, CCNA, Microsoft Certified Educator',
@@ -234,19 +234,19 @@ export const FACULTY_MEMBERS: StaffMember[] = [
   },
   {
     id: 'boarding-staff2',
-    name: 'Mrs. Beatrice Kemunto',
-    role: 'Resident Housemistress & Nutritionist',
-    department: 'Pastoral Care & Boarding',
-    qualification: 'Dip. Clinical Nutrition & Hospitality Management',
+    name: 'Mrs. Lydia Mwangi',
+    role: 'Assistant Technology Officer',
+    department: 'I.C.T',
+    qualification: 'Bachelor of education science',
     bio: 'Oversees dormitory hygiene, balanced meal planning, and health clinic care for residential scholars.',
     welcomeMessage: 'Every boarder receives the warmth, care, and nutritional support of home.',
-    experience: '12+ Years Experience',
+    experience: '5+ Years Experience',
     image: staff2Img,
     email: 'welfare@stgabrielinternational.sc.ke'
   },
   {
     id: 'admissions-edwin',
-    name: 'Mr. Edwin Koech',
+    name: 'Mr. Edwin Werunga',
     role: 'Admissions Coordinator & Student Registrar',
     department: 'Academic Administration',
     qualification: 'B.A. Public Administration & Student Services',
