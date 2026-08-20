@@ -44,7 +44,7 @@ import { StaffMember, NewsItem } from '../types';
 import campusImg from '../assets/images/about/campus.webp';
 import directorImg from '../assets/images/leadership/director.webp';
 import principalImg from '../assets/images/leadership/nicholas.webp';
-import claasroomImg from '../assets/images/gallery/classroom.webp';
+import claasroomImg from '../assets/images/home/classroom.webp';
 import artsImg from '../assets/images/gallery/musicBand.webp';
 import complabImg from '../assets/images/gallery/compLab.webp';
 import graduationImg from '../assets/images/gallery/graduation.webp';
