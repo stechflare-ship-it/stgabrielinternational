@@ -5,8 +5,7 @@ import { SectionHeading } from '../components/SectionHeading';
 import { DOWNLOAD_DOCUMENTS } from '../data/schoolData';
 import { Download, FileText, ArrowRight } from 'lucide-react';
 import { Button } from '../components/Button';
-import libraryHeroWebp from '../assets/images/optimized/library.webp';
-const libraryHeroImg = libraryHeroWebp;
+import downloadBg from '../../src/assets/images/backgrounds/download.webp';
 
 export const DownloadsPage: React.FC = () => {
   return (
@@ -48,7 +47,7 @@ export const DownloadsPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={libraryHeroImg}
+            src={downloadBg}
             alt="St. Gabriel School Library and Resources"
             className="w-full h-full object-cover object-center"
           />

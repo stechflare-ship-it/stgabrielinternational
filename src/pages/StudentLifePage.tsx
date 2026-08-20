@@ -18,11 +18,11 @@ import {
   Compass,
   FileText
 } from 'lucide-react';
-import athleticImg from '../assets/images/gallery/athletics.webp';
-import artsClubImg from '../assets/images/gallery/artsClub.webp';
 
-const athletic = athleticImg;
-const artsClub = artsClubImg;
+import athletics from '../../src/assets/images/studentlife/interschoolAthletics.webp';
+import arts from '../../src/assets/images/studentlife/arts.webp';
+
+
 
 export const StudentLifePage: React.FC = () => {
   return (
@@ -60,7 +60,7 @@ export const StudentLifePage: React.FC = () => {
         {/* Background Photo Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src={athletic}
+            src={athletics}
             alt="St. Gabriel Student Life & Co-Curriculars"
             className="w-full h-full object-cover object-center"
           />
@@ -341,7 +341,7 @@ export const StudentLifePage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
             <img
-              src={athletic}
+              src={athletics}
               alt="Co-Curricular Sports"
               className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-500"
             />
@@ -353,7 +353,7 @@ export const StudentLifePage: React.FC = () => {
 
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl group">
             <img
-              src={artsClub}
+              src={arts}
               alt="Performing Arts"
               className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-500"
             />
