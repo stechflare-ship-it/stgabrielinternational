@@ -1,6 +1,6 @@
 // School General Information, Contacts, Location, and Social Media
 import logoImg from '../assets/images/logo.webp';
-import campusImg from '../assets/images/about/aboutBackground.webp';
+import campusImg from '../assets/images/about/aboutusBackground.webp';
 
 export const SCHOOL_INFO = {
   name: 'St. Gabriel International School',
