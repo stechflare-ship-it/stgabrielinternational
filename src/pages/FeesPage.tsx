@@ -7,8 +7,7 @@ import { BankPaymentCard } from '../components/BankPaymentCard';
 import { PaybillCard } from '../components/PaybillCard';
 import { PaymentPolicy } from '../components/PaymentPolicy';
 import { RequirementsChecklist } from '../components/RequirementsChecklist';
-import classroomWebpImg from '../assets/images/gallery/schoolUniform.webp';
-const classroomImg = classroomWebpImg;
+import feesBg from '../../src/assets/images/backgrounds/feespageBg.webp';
 
 export const FeesPage: React.FC = () => {
   return (
@@ -36,7 +35,7 @@ export const FeesPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={classroomImg}
+            src={feesBg}
             alt="St. Gabriel Classroom Facilities"
             className="w-full h-full object-cover object-center"
           />
