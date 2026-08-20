@@ -1,7 +1,7 @@
 import { NewsItem } from '../types';
 
-import newsGraduationImg from '../assets/images/newsAndEvent/graduation.webp';
-import newsCompLabImg from '../assets/images/newsAndEvent/complab.webp';
+import newsGraduationImg from '../assets/images/home/graduationImg.webp';
+import newsCompLabImg from '../assets/images/home/complabImg.webp';
 import newsDanceImg from '../assets/images/newsAndEvent/dance.webp';
 import annualsports from '../assets/images/studentlife/annualsports.webp';
 import newsBandImg from '../assets/images/blogs/bassBand.webp';
