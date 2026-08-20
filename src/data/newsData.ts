@@ -72,7 +72,7 @@ export const NEWS_ITEMS: NewsItem[] = [
       'The Lanet sports grounds came alive with cheering as Cheetah House edged out Eagle and Lion Houses to claim the coveted 2026 Overall Champions Trophy.',
       'Individual awards for Best Junior Athlete and Victor Ludorum were presented during the closing ceremony by Executive Principal Nicholas Okeyo.'
     ],
-    image: annualsport,
+    image: annualsports,
     featured: false,
     author: 'Physical Education Directorate',
     readTime: '2 min read',
