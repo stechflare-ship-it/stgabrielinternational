@@ -6,11 +6,11 @@ import { BookOpen, Calendar, User, ArrowRight, Search, Tag, Clock, Share2, Spark
 import { Button } from '../components/Button';
 
 
-import cambridgeImg from '../assets/images/blogs/cambridge.webp';
-import boardingLifeImg from '../assets/images/blogs/boardingLife.webp';
-import playgroupImg from '../assets/images/blogs/playgroup.webp';
-import roboticsImg from '../assets/images/blogs/robotics.webp';
-import musicBandImg from '../assets/images/blogs/musicBand.webp';
+import cambridgeIgce from '../assets/images/blogs/cambridgeIgce.webp';
+import boardingLife from '../assets/images/blogs/boardingLife.webp';
+import efsplayground from '../assets/images/blogs/efsplayground.webp';
+import coding from '../assets/images/blogs/coding.webp';
+import bassBrand from '../assets/images/blogs/bassBand.webp';
 
 const cambridge = cambridgeImg;
 const boardingLife = boardingLifeImg;
@@ -48,7 +48,7 @@ const BLOG_POSTS: BlogPost[] = [
       '3. Subject Specialization: At A-Level, learners tailor their academic trajectory toward their career aspirations in Medicine, Engineering, Computer Science, Law, and International Business.',
       'Our dedicated faculty provides continuous pastoral support and examination preparation, ensuring every candidate enters test series with confidence and intellectual discipline.'
     ],
-    image: cambridge,
+    image: cambridgeIgce,
     tags: ['Cambridge', 'IGCSE', 'A-Level', 'Academic Excellence']
   },
   {
@@ -82,7 +82,7 @@ const BLOG_POSTS: BlogPost[] = [
       'By linking STEM projects to ecological challenges in Nakuru County, students learn how software engineering and clean technology can address real community issues.',
       'Hands-on computational thinking builds confidence, spatial awareness, and creative problem-solving skills across all academic subjects.'
     ],
-    image: robotics,
+    image: coding,
     tags: ['STEM', 'Robotics', 'ICT', 'Future Skills']
   },
   {
@@ -98,7 +98,7 @@ const BLOG_POSTS: BlogPost[] = [
       'Our brass band orchestra teaches rhythmic discipline and ensemble harmony, while competitive athletic leagues in soccer, basketball, swimming, and track foster sportsmanship and perseverance.',
       'Participation in journalism, drama, and debating clubs enhances verbal clarity and public speaking skills, empowering students to articulate their thoughts eloquently on international stages.'
     ],
-    image: musicBand,
+    image: bassBand,
     tags: ['Co-Curricular', 'Music', 'Sports', 'Leadership']
   },
   {
@@ -117,7 +117,7 @@ const BLOG_POSTS: BlogPost[] = [
       '3. Read together daily to build vocabulary and imaginative curiosity.',
       'Our EYFS classrooms are designed as vibrant learning sanctuaries where trained early childhood educators nurture emotional security, communication skills, and sensory exploration.'
     ],
-    image: playgroup,
+    image: efsplayground,
     tags: ['EYFS', 'Early Years', 'Parenting', 'Primary']
   }
 ];
@@ -175,7 +175,7 @@ export const BlogPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={cambridge}
+            src={cambridgeIgce}
             alt="St. Gabriel Educational Insights & Articles"
             className="w-full h-full object-cover object-center"
           />
