@@ -24,7 +24,7 @@ import {
   Target,
   ArrowRight
 } from 'lucide-react';
-import academicExploreImg from '../assets/images/academics/academicexplore.webp';
+import academicbackground from '../assets/images/academics/academicbackground.webp';
 import advanceLevelImg from '../assets/images/academics/advanceLevel.webp';
 import compLabImg from '../assets/images/gallery/compLab.webp';
 import classroomImg from '../assets/images/gallery/classroom.webp';
@@ -68,7 +68,7 @@ export const AcademicsPage: React.FC = () => {
       <section className="relative text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27] overflow-hidden bg-[#0B1D33]">
         <div className="absolute inset-0 z-0">
           <img
-            src={academicExplore}
+            src={academicbackground}
             alt="St. Gabriel Academic Pathways & Classrooms"
             className="w-full h-full object-cover object-center"
           />
