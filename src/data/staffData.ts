@@ -85,7 +85,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     name: 'Mr. Payrick Ouko',
     role: 'Principal',
     department: 'Academic Administration',
-    qualification: 'M.Sc. Curriculum Development (UoN), B.Ed. Science (Hons)',
+    qualification: 'Bachelor of Education Science Chemisrty/Physics MKU',
     bio: 'Coordinates dual-curriculum syllabus mapping, teacher professional development, STEM laboratory pedagogy, and international examination administration.',
     welcomeMessage: 'We design rigorous learning pathways that inspire scientific curiosity and lifelong intellectual mastery.',
     experience: '18+ Years Experience',
