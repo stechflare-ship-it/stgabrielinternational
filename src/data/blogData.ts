@@ -1,8 +1,8 @@
-import blogCambridgeImg from '../assets/images/blogs/cambridge.webp';
-import blogRoboticsImg from '../assets/images/blogs/robotics.webp';
+import blogCambridgeImg from '../assets/images/blogs/cambridgeIgce.webp';
+import blogRoboticsImg from '../assets/images/blogs/coding.webp';
 import blogBoardingImg from '../assets/images/blogs/boardingLife.webp';
-import blogMusicBandImg from '../assets/images/blogs/musicBand.webp';
-import blogPlaygroupImg from '../assets/images/blogs/playgroup.webp';
+import blogMusicBandImg from '../assets/images/blogs/brassBand.webp';
+import blogPlaygroupImg from '../assets/images/blogs/eyfsplaygroup.webp';
 
 export interface BlogPost {
   id: string;
