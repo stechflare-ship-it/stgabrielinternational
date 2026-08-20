@@ -15,8 +15,8 @@ import aliciaStaffImg from '../assets/images/staff/alicia.webp';
 import godfreyStaffImg from '../assets/images/staff/godfrey.webp';
 import labanStaffImg from '../assets/images/staff/laban.webp';
 import njorogeStaffImg from '../assets/images/staff/njoroge.webp';
-import camilaStaffImg from '../assets/images/staff/camila.webp';
-import staff2Img from '../assets/images/staff/staff2.webp';
+import michael from '../assets/images/staff/michael.webp';
+import lydia from '../assets/images/staff/lydia.webp';
 
 // ---------------------------------------------------------------------------
 // 5 EXECUTIVE LEADERSHIP MEMBERS (Featured on About Page & Director Welcome)
@@ -68,13 +68,13 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     name: 'Mr. Nicholas Okeyo',
     role: 'Chief Principal & Head of Institution',
     department: 'Executive Administration',
-    qualification: 'M.Ed. Educational Leadership (Univ. of London), B.Ed. Science (Kenyatta Univ.)',
+    qualification: 'Bachelor of Education Mathematics and Biology (MKU))',
     bio: 'Distinguished educator with over 24 years of executive leadership in leading national and international curriculum institutions. Oversees academic standards, faculty mentoring, and dual-curriculum execution.',
     welcomeMessage: 'We empower students to become critical thinkers, principled leaders, and innovative global problem solvers.',
     experience: '24+ Years Leadership',
     image: nicholasLeadershipImg,
-    email: 'principal@stgabrielinternational.sc.ke',
-    phone: '+254 724 694 554',
+    email: '',
+    phone: '+254 706470471',
     detailedMessage: [
       'Education at St. Gabriel is an exhilarating journey of inquiry, discovery, and character building.',
       'Whether preparing for national KPSEA and KCSE milestones or sitting for Cambridge IGCSE and A-Level examinations, our learners achieve exemplary mastery.'
@@ -90,7 +90,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     welcomeMessage: 'We design rigorous learning pathways that inspire scientific curiosity and lifelong intellectual mastery.',
     experience: '18+ Years Experience',
     image: payrick
-    email: 'academics@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'school-manager',
@@ -229,7 +229,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Passionate visual artist cultivating student creativity through painting, sculpture, graphic design, and annual art exhibitions.',
     welcomeMessage: 'Art is where imagination transforms into lasting beauty and expression.',
     experience: '9+ Years Experience',
-    image: camilaStaffImg,
+    image: michael,
     email: ''
   },
   {
@@ -241,7 +241,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Oversees dormitory hygiene, balanced meal planning, and health clinic care for residential scholars.',
     welcomeMessage: 'Every boarder receives the warmth, care, and nutritional support of home.',
     experience: '5+ Years Experience',
-    image: staff2Img,
+    image: lydia,
     email: ''
   },
   {
