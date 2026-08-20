@@ -46,7 +46,7 @@ import directorImg from '../assets/images/home/directorImg.webp';
 import principalImg from '../assets/images/home/principlImg.webp';
 import claasroomImg from '../assets/images/home/classroomImg.webp';
 import artsImg from '../assets/images/home/artsImg.webp';
-import complabImg from '../assets/images/home/compLabImg.webp';
+import complabImg from '../assets/images/home/complabImg.webp';
 import graduationImg from '../assets/images/gallery/graduationImg.webp';
 import sportsImg from '../assets/images/home/sportsImg.webp';
 
@@ -57,7 +57,7 @@ const arts = artsImg;
 const complab = complabImg;
 const graduation = graduationImg;
 const sports = sportsImg;
-const faith = faithImg;
+
 
 const PLACEHOLDER_CAMPUS = homeimg;
 const PLACEHOLDER_CLASSROOM = claasroom;
