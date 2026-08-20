@@ -8,8 +8,8 @@ import { SCHOOL_INFO, LEADERSHIP_TEAM, STAFF_MEMBERS, SCHOOL_HISTORY_MILESTONES 
 import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { StaffMember } from '../types';
-import aboutBgImg from '../assets/images/about/campus.webp';
-const aboutBg = aboutBgImg;
+import aboutBgImg from '../assets/images/about/aboutusBackground.webp';
+
 
 export const AboutPage: React.FC = () => {
   const [selectedLeader, setSelectedLeader] = useState<StaffMember | null>(null);
@@ -71,7 +71,7 @@ export const AboutPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={aboutBg}
+            src={aboutBgImg}
             alt="St. Gabriel Campus Grounds in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />
@@ -143,7 +143,7 @@ export const AboutPage: React.FC = () => {
 
           <div className="relative">
             <img
-              src={aboutBg}
+              src={aboutBgImg}
               alt="St. Gabriel Campus Administration"
               className="rounded-3xl shadow-2xl border-4 border-white object-cover w-full h-[450px]"
               referrerPolicy="no-referrer"
