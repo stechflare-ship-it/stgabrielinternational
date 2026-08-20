@@ -12,7 +12,7 @@ import labanStaffImg from '../assets/images/staff/laban.webp';
 import njorogeStaffImg from '../assets/images/staff/njoroge.webp';
 import michael from '../assets/images/staff/michael.webp';
 import lydia from '../assets/images/staff/lydia.webp';
-import camilia from '../assets/images/staff/camilia.webp';
+import camilia from '../assets/images/staff/camila.webp';
 
 // ---------------------------------------------------------------------------
 // 5 EXECUTIVE LEADERSHIP MEMBERS (Featured on About Page & Director Welcome)
