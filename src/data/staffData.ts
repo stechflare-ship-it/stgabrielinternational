@@ -89,7 +89,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     bio: 'Coordinates dual-curriculum syllabus mapping, teacher professional development, STEM laboratory pedagogy, and international examination administration.',
     welcomeMessage: 'We design rigorous learning pathways that inspire scientific curiosity and lifelong intellectual mastery.',
     experience: '18+ Years Experience',
-    image: payrick
+    image: payrick,
     email: ''
   },
   {
@@ -102,7 +102,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     welcomeMessage: 'Ensuring seamless daily operations, supreme security, and world-class facilities for our day and boarding school community.',
     experience: '16+ Years Experience',
     image: patrickImg,
-    email: 'manager@stgabrielinternational.sc.ke'
+    email: ''
   }
 ];
 
@@ -122,7 +122,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Our boarding life is grounded in Christian brotherhood, holistic wellness, and strong academic discipline.',
     experience: '15+ Years Experience',
     image: mainaStaffImg,
-    email: 'boarding@stgabrielinternational.sc.ke'
+    email: 'e'
   },
   {
     id: 'co-curricular-james',
@@ -134,7 +134,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Discipline on the field translates directly into excellence in the classroom.',
     experience: '14+ Years Coaching',
     image: jamesLeadershipImg,
-    email: 'sports@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'head-eyfs-grace',
@@ -146,7 +146,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Every child\'s early journey begins with love, wonder, and purposeful discovery.',
     experience: '12+ Years Experience',
     image: graceLeadershipImg,
-    email: 'eyfs@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'pastoral-sarah',
@@ -170,7 +170,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Science is about active discovery, experimentation, and solving real-world challenges.',
     experience: '16+ Years Experience',
     image: johnStaffImg,
-    email: 'stem@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'languages-alicia',
@@ -182,7 +182,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Languages open doors to understanding our diverse and interconnected world.',
     experience: '13+ Years Experience',
     image: aliciaStaffImg,
-    email: 'languages@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'mathematics-godfrey',
@@ -194,7 +194,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Mathematics is the foundational language of logical reasoning and universal truth.',
     experience: '14+ Years Experience',
     image: godfreyStaffImg,
-    email: 'maths@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'ict-laban',
