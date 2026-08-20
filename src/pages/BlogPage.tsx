@@ -8,15 +8,12 @@ import { Button } from '../components/Button';
 
 import cambridgeIgce from '../assets/images/blogs/cambridgeIgce.webp';
 import boardingLife from '../assets/images/blogs/boardingLife.webp';
-import efsplayground from '../assets/images/blogs/efsplayground.webp';
+import efsplayground from '../assets/images/blogs/eyfsplaygroup.webp';
 import coding from '../assets/images/blogs/coding.webp';
-import bassBrand from '../assets/images/blogs/bassBand.webp';
+import brassBrand from '../assets/images/blogs/brassBand.webp';
 
-const cambridge = cambridgeImg;
-const boardingLife = boardingLifeImg;
-const playgroup = playgroupImg;
-const robotics = roboticsImg;
-const musicBand = musicBandImg;
+
+
 
 interface BlogPost {
   id: string;
@@ -98,7 +95,7 @@ const BLOG_POSTS: BlogPost[] = [
       'Our brass band orchestra teaches rhythmic discipline and ensemble harmony, while competitive athletic leagues in soccer, basketball, swimming, and track foster sportsmanship and perseverance.',
       'Participation in journalism, drama, and debating clubs enhances verbal clarity and public speaking skills, empowering students to articulate their thoughts eloquently on international stages.'
     ],
-    image: bassBand,
+    image: brassBrand,
     tags: ['Co-Curricular', 'Music', 'Sports', 'Leadership']
   },
   {
