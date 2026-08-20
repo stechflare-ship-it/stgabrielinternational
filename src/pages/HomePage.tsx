@@ -42,14 +42,14 @@ import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS, DIRECTOR_MEMBER, LEADERSHIP_TEA
 import { StaffMember, NewsItem } from '../types';
 
 import campusImg from '../assets/images/about/aboutusBackground.webp';
-import directorImg from '../assets/images/leadership/director.webp';
-import principalImg from '../assets/images/leadership/nicholas.webp';
+import directorImg from '../assets/images/home/directorImg.webp';
+import principalImg from '../assets/images/home/principlImg.webp';
 import claasroomImg from '../assets/images/home/classroomImg.webp';
-import artsImg from '../assets/images/gallery/musicBand.webp';
-import complabImg from '../assets/images/gallery/compLab.webp';
-import graduationImg from '../assets/images/gallery/graduation.webp';
-import sportsImg from '../assets/images/gallery/sports.webp';
-import faithImg from '../assets/images/gallery/faith.webp';
+import artsImg from '../assets/images/home/artsImg.webp';
+import complabImg from '../assets/images/home/compLabImg.webp';
+import graduationImg from '../assets/images/gallery/graduationImg.webp';
+import sportsImg from '../assets/images/home/sportsImg.webp';
+
 
 const homeimg = campusImg;
 const claasroom = claasroomImg;
