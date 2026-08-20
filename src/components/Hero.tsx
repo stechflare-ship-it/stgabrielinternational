@@ -3,14 +3,14 @@ import { Play, Pause, GraduationCap, Compass, ArrowRight, Video, X, Volume2, Vol
 import { Button } from './Button';
 import { SCHOOL_INFO } from '../data/schoolData';
 
-import campusImg from '../assets/images/about/campus.webp';
-import classroomImg from '../assets/images/studentlife/classroom.webp';
-import chemistryImg from '../assets/images/studentlife/chemistry.webp';
-import complabImg from '../assets/images/studentlife/complab.webp';
-import bandImg from '../assets/images/studentlife/band.webp';
-import sportsImg from '../assets/images/studentlife/sports.webp';
-import libraryImg from '../assets/images/studentlife/library.webp';
-import graduationImg from '../assets/images/studentlife/graduation.webp';
+import campusImg from '../assets/images/about/aboutusBackground.webp';
+import classroomImg from '../assets/images/home/classroomImg.webp';
+import chemistryImg from '../assets/images/studentlife/labaratory.webp';
+import complabImg from '../assets/images/home/complabImg.webp';
+import bandImg from '../assets/images/blogs/boardingLife.webp';
+import sportsImg from '../assets/images/home/sportsImg.webp';
+
+import graduationImg from '../assets/images/home/graduationImg.webp';
 
 interface HeroProps {
   onOpenDirectorMessage?: () => void;
@@ -60,12 +60,6 @@ const HERO_SLIDES: Slide[] = [
     title: 'Olympic & Championship Sports',
     subtitle: 'Football, swimming, basketball, athletics & physical wellness',
     image: sportsImg,
-  },
-  {
-    id: 'library',
-    title: 'Ultra-Modern Resource Library',
-    subtitle: 'Extensive physical and digital academic collections for curious minds',
-    image: libraryImg,
   },
   {
     id: 'graduation',
