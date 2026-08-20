@@ -67,7 +67,7 @@ export const Gallery: React.FC<GalleryProps> = ({ limit, showFilter = true }) =>
             onClick={() => setSelectedItemIndex(idx)}
             className="group relative bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer"
           >
-            <div className="relative h-64 overflow-hidden bg-gray-100">
+            <div className="relative h-100 overflow-hidden bg-gray-100">
               <img
                 src={item.image}
                 alt={item.title}

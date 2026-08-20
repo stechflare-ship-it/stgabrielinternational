@@ -269,7 +269,7 @@ export const AboutPage: React.FC = () => {
               className="group bg-white rounded-3xl overflow-hidden border border-gray-200 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col cursor-pointer transform hover:-translate-y-1.5"
             >
               {/* Photo Area */}
-              <div className="relative h-64 w-full overflow-hidden bg-[#0A192F]">
+              <div className="relative h-100 w-full overflow-hidden bg-[#0A192F]">
                 <img
                   src={member.image}
                   alt={member.name}

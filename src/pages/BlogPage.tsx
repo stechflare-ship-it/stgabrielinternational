@@ -333,7 +333,7 @@ export const BlogPage: React.FC = () => {
               <X className="w-5 h-5" />
             </button>
 
-            <div className="relative h-64 sm:h-80 w-full overflow-hidden">
+            <div className="relative h-100 sm:h-80 w-full overflow-hidden">
               <img
                 src={activePost.image}
                 alt={activePost.title}

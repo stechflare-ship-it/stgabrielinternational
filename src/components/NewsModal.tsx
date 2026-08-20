@@ -77,7 +77,7 @@ export const NewsModal: React.FC<NewsModalProps> = ({ news, onClose, onSelectNew
         </button>
 
         {/* Hero Image Header */}
-        <div className="relative h-64 sm:h-80 w-full overflow-hidden bg-gray-900">
+        <div className="relative h-100 sm:h-80 w-full overflow-hidden bg-gray-900">
           <img
             src={news.image}
             alt={news.title}

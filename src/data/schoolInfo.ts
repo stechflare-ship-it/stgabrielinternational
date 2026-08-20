@@ -33,15 +33,17 @@ export const SCHOOL_INFO = {
   },
 
   location: {
-    address: 'Lanet, Off Nakuru-Dundori Road',
-    fullAddress: 'Lanet, Nakuru County, Kenya',
-    postalAddress: 'P.O. Box 12345 - 20100, Nakuru, Kenya',
-    coordinates: {
-      lat: '-0.3031',
-      lng: '36.1425'
-    },
-    googleMapsUrl: 'https://maps.google.com/?q=Lanet+Nakuru+Kenya',
-    embedMapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.758368814781!2d36.14031131475398!3d-0.3030999997424043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18298d0000000001%3A0x123456789abcdef!2sLanet%2C%20Nakuru!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske'
+  address: 'Lanet, Off Nakuru-Dundori Road',
+  fullAddress: 'Lanet, Nakuru County, Kenya',
+  postalAddress: 'P.O. Box 12345 - 20100, Nakuru, Kenya',
+  coordinates: {
+    lat: '-0.3031',
+    lng: '36.1425'
+  },
+  // Updated with exact Google Maps search query link
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=St.+Gabriel+Mission+School+Transformer+Rd+Lanet+Nakuru+Kenya',
+  // Updated with reliable standard Google Maps embed URL
+  embedMapUrl: 'https://maps.google.com/maps?q=-0.3031,36.1425(St.+Gabriel+Mission+School+Lanet)&t=&z=15&ie=UTF8&iwloc=&output=embed'
   },
 
   socialMedia: {

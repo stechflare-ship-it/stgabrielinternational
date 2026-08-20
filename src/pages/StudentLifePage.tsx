@@ -343,7 +343,7 @@ export const StudentLifePage: React.FC = () => {
             <img
               src={athletics}
               alt="Co-Curricular Sports"
-              className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-500"
+              className="w-full h-100 object-cover group-hover:scale-105 transition-all duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071321] via-transparent to-transparent"></div>
             <p className="absolute bottom-4 left-4 text-xs font-bold text-[#E0BA43]">
@@ -355,7 +355,7 @@ export const StudentLifePage: React.FC = () => {
             <img
               src={arts}
               alt="Performing Arts"
-              className="w-full h-64 object-cover group-hover:scale-105 transition-all duration-500"
+              className="w-full h-100 object-cover group-hover:scale-105 transition-all duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071321] via-transparent to-transparent"></div>
             <p className="absolute bottom-4 left-4 text-xs font-bold text-[#E0BA43]">
