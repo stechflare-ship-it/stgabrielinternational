@@ -3,20 +3,16 @@ import { StaffMember } from '../types';
 import directorImg from '../assets/images/leadership/director.webp';
 import mdDirectorImg from '../assets/images/leadership/mddirector.webp';
 import nicholasLeadershipImg from '../assets/images/leadership/nicholas.webp';
-import peterStaffImg from '../assets/images/staff/peter.webp';
 import payrick from '../assets/images/leadership/payrick.webp';
 import edwinImg from '../assets/images/leadership/edwin.webp';
-import jamesLeadershipImg from '../assets/images/leadership/james.webp';
-import graceLeadershipImg from '../assets/images/leadership/grace.webp';
-import sarahLeadershipImg from '../assets/images/leadership/sarah.webp';
-import mainaStaffImg from '../assets/images/staff/maina.webp';
-import johnStaffImg from '../assets/images/staff/john.webp';
+
 import aliciaStaffImg from '../assets/images/staff/alicia.webp';
 import godfreyStaffImg from '../assets/images/staff/godfrey.webp';
 import labanStaffImg from '../assets/images/staff/laban.webp';
 import njorogeStaffImg from '../assets/images/staff/njoroge.webp';
 import michael from '../assets/images/staff/michael.webp';
 import lydia from '../assets/images/staff/lydia.webp';
+
 
 // ---------------------------------------------------------------------------
 // 5 EXECUTIVE LEADERSHIP MEMBERS (Featured on About Page & Director Welcome)
