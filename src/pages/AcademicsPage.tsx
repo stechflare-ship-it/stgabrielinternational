@@ -24,17 +24,13 @@ import {
   Target,
   ArrowRight
 } from 'lucide-react';
-import academicbackground from '../assets/images/academics/academicbackground.webp';
-import advanceLevelImg from '../assets/images/academics/advanceLevel.webp';
-import compLabImg from '../assets/images/gallery/compLab.webp';
-import classroomImg from '../assets/images/gallery/classroom.webp';
-import artsClubImg from '../assets/images/gallery/artsClub.webp';
 
-const academicExplore = academicExploreImg;
-const advanceLevel = advanceLevelImg;
-const compLab = compLabImg;
-const classroom = classroomImg;
-const artsClub = artsClubImg;
+import academicBg from '../../src/assets/images/academics/academicbackground.webp';
+import complab from '../../src/assets/images/home/complabImg.webp';
+import biology from '../../src/assets/images/studentlife/biologyinvestigation.webp';
+import brassBand from '../../src/assets/images/blogs/brassBand.webp';
+
+
 
 export const AcademicsPage: React.FC = () => {
   return (
@@ -68,7 +64,7 @@ export const AcademicsPage: React.FC = () => {
       <section className="relative text-white py-16 sm:py-24 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27] overflow-hidden bg-[#0B1D33]">
         <div className="absolute inset-0 z-0">
           <img
-            src={academicbackground}
+            src={academicBg}
             alt="St. Gabriel Academic Pathways & Classrooms"
             className="w-full h-full object-cover object-center"
           />
@@ -370,7 +366,7 @@ export const AcademicsPage: React.FC = () => {
             <div className="rounded-3xl overflow-hidden bg-[#F8F9FB] border border-gray-200 shadow-md group">
               <div className="h-48 overflow-hidden">
                 <img
-                  src={compLab}
+                  src={complab}
                   alt="St. Gabriel Computer & Coding Laboratory"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -392,7 +388,7 @@ export const AcademicsPage: React.FC = () => {
             <div className="rounded-3xl overflow-hidden bg-[#F8F9FB] border border-gray-200 shadow-md group">
               <div className="h-48 overflow-hidden">
                 <img
-                  src={classroom}
+                  src={biology}
                   alt="Modern Science & Chemistry Labs"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -414,7 +410,7 @@ export const AcademicsPage: React.FC = () => {
             <div className="rounded-3xl overflow-hidden bg-[#F8F9FB] border border-gray-200 shadow-md group">
               <div className="h-48 overflow-hidden">
                 <img
-                  src={artsClub}
+                  src={brassBand}
                   alt="Performing Arts & Brass Music Hall"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
