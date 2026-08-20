@@ -1,15 +1,14 @@
 import { CurriculumStage } from '../types';
 
 import earlyYearImg from '../assets/images/academics/earlyYear.webp';
-import lowerPrimaryImg from '../assets/images/academics/cbclowerprimary.webp';
+import lowerPrimaryImg from '../assets/images/academics/cbc.webp';
 import upperPrimaryImg from '../assets/images/academics/cbcupperprimary.webp';
-import juniorSecImg from '../assets/images/academics/cbcjuniorsec.jpeg';
-import seniorSchoolImg from '../assets/images/academics/cbcsenior.webp';
-import cambridgePrimaryImg from '../assets/images/academics/international.webp';
-import cambridgeLowerSecImg from '../assets/images/academics/lowerSec.webp';
-import cambridgeIgcseImg from '../assets/images/academics/cambridge.webp';
-import cambridgeAlevelImg from '../assets/images/academics/advanceLevel.webp';
-import academicExploreImg from '../assets/images/academics/academicexplore.webp';
+import juniorSecImg from '../assets/images/academics/cbcjuniorsec.webp';
+import seniorSchoolImg from '../assets/images/academics/cbcseniorsec.webp';
+import cambridgePrimaryImg from '../assets/images/academics/cambridgePrimary.webp';
+import cambridgeLowerSecImg from '../assets/images/academics/cambridgelowersec.webp';
+import cambridgeIgcseImg from '../assets/images/academics/cambridgeIGCSE.webp';
+import cambridgeAlevelImg from '../assets/images/academics/cambridgeAdvance.webp';
 
 export const CURRICULUM_STAGES: CurriculumStage[] = [
   {
@@ -153,33 +152,6 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
     path: '/academics/a-level',
     image: cambridgeAlevelImg,
     curriculumSystem: 'british'
-  },
-  {
-    key: 'cbc-overview',
-    title: 'Kenya Competency-Based Curriculum (CBC)',
-    subtitle: 'Nurturing every learner\'s potential through competencies, values, and practical application',
-    ageRange: '4 – 18 Years',
-    years: 'PP1 to Senior School (Grade 12)',
-    overview: 'St. Gabriel International School is an accredited champion of the Kenyan Competency-Based Curriculum (CBC). Our progressive 2-6-3-3-3 structure nurtures 7 core competencies, Christian ethical values, and technological literacy.',
-    highlights: [
-      'Accredited by the Ministry of Education & KNEC',
-      'Top-performing KPSEA & KJSEA examination center in Nakuru County',
-      'Fully equipped Junior Secondary laboratories, home science labs, and computer studios',
-      'Specialized Senior School pathways: STEM, Social Sciences, Arts & Sports',
-      'Integrated agriculture demo farms and technology workshops'
-    ],
-    subjects: [
-      'Mathematics & Integrated Science',
-      'English & Kiswahili / Indigenous Languages',
-      'Social Studies & Religious Education (CRE)',
-      'Pre-Technical & Pre-Career Studies',
-      'Agriculture & Nutrition',
-      'Creative Arts & Sports',
-      'Computer Science & Digital Literacy'
-    ],
-    path: '/academics/cbc-overview',
-    image: academicExploreImg,
-    curriculumSystem: 'cbc'
   },
   {
     key: 'cbc-pre-primary',

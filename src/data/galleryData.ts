@@ -8,7 +8,7 @@ import interschool from '../../src/assets/images/studentlife/interschoolAthletic
 import annualprize from '../../src/assets/images/studentlife/AnnualPrizeGiving.webp';
 import arts from '../../src/assets/images/studentlife/arts.webp';
 import basketball from '../../src/assets/images/studentlife/basketBall.webp';
-import champion from '../../src/assets/images/studentlife/champion.webp';
+import champion from '../../src/assets/images/studentlife/championband.webp';
 import interactiveBoard from '../../src/assets/images/studentlife/interactiveBoard.webp';
 import robotics from '../../src/assets/images/studentlife/robotics.webp';
 import residential from '../../src/assets/images/studentlife/residential.webp';
