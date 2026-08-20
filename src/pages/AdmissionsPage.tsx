@@ -41,7 +41,7 @@ export const AdmissionsPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={campusHeroImg}
+            src={admissionBg}
             alt="St. Gabriel Campus Grounds in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />
