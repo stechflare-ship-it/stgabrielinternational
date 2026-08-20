@@ -12,7 +12,7 @@ import labanStaffImg from '../assets/images/staff/laban.webp';
 import njorogeStaffImg from '../assets/images/staff/njoroge.webp';
 import michael from '../assets/images/staff/michael.webp';
 import lydia from '../assets/images/staff/lydia.webp';
-
+import camila from '../../src/assets/images/staff/camila.webp'
 
 // ---------------------------------------------------------------------------
 // 5 EXECUTIVE LEADERSHIP MEMBERS (Featured on About Page & Director Welcome)
@@ -97,7 +97,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     bio: 'Directs institutional logistics, campus security protocols, transportation fleets, boarding compound maintenance, and auxiliary services.',
     welcomeMessage: 'Ensuring seamless daily operations, supreme security, and world-class facilities for our day and boarding school community.',
     experience: '16+ Years Experience',
-    image: 'patrickImg',
+    image: camila,
     email: ''
   }
 ];
@@ -117,7 +117,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Overseeing both residential compounds in Lanet, Mr. Maina ensures a safe, warm, disciplined home-away-from-home where boarders cultivate self-reliance, leadership, and Christian brotherhood.',
     welcomeMessage: 'Our boarding life is grounded in Christian brotherhood, holistic wellness, and strong academic discipline.',
     experience: '15+ Years Experience',
-    image: mainaStaffImg,
+    image: camila,
     email: 'e'
   },
   {
@@ -129,7 +129,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Director James spearheads our championship brass band, regional football teams, Taekwondo dojo, and international sports tournaments, instilling sportsmanship and resilience.',
     welcomeMessage: 'Discipline on the field translates directly into excellence in the classroom.',
     experience: '14+ Years Coaching',
-    image: jamesLeadershipImg,
+    image: camila,
     email: ''
   },
   {
@@ -141,7 +141,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Mrs. Wanjiru crafts joyful, sensory-rich playgroup and primary environments that develop foundational phonics, numeracy, and emotional intelligence.',
     welcomeMessage: 'Every child\'s early journey begins with love, wonder, and purposeful discovery.',
     experience: '12+ Years Experience',
-    image: graceLeadershipImg,
+    image: camila,
     email: ''
   },
   {
@@ -153,7 +153,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Ms. Chebet provides compassionate mentorship and dedicated counseling support across the girls\' boarding compound, guiding adolescent scholars with empathy and dignity.',
     welcomeMessage: 'We nurture young women of exceptional poise, moral courage, and intellect.',
     experience: '11+ Years Experience',
-    image: sarahLeadershipImg,
+    image: camila,
     email: 'counseling@stgabrielinternational.sc.ke'
   },
   {
@@ -165,7 +165,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     bio: 'Dr. Ochieng leads the high school science department, robotics club, and competitive STEM olympiad teams.',
     welcomeMessage: 'Science is about active discovery, experimentation, and solving real-world challenges.',
     experience: '16+ Years Experience',
-    image: johnStaffImg,
+    image: camila,
     email: ''
   },
   {
