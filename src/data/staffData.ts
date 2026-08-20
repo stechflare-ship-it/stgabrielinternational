@@ -4,7 +4,7 @@ import directorImg from '../assets/images/leadership/director.webp';
 import mdDirectorImg from '../assets/images/leadership/mddirector.webp';
 import nicholasLeadershipImg from '../assets/images/leadership/nicholas.webp';
 import peterStaffImg from '../assets/images/staff/peter.webp';
-import patrickImg from '../assets/images/leadership/patrick.webp';
+import payrick from '../assets/images/leadership/payrick.webp';
 import edwinImg from '../assets/images/leadership/edwin.webp';
 import jamesLeadershipImg from '../assets/images/leadership/james.webp';
 import graceLeadershipImg from '../assets/images/leadership/grace.webp';
@@ -82,14 +82,14 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
   },
   {
     id: 'principal-peter',
-    name: 'Mr. Peter Mwangi',
-    role: 'Principal & Academic Dean',
+    name: 'Mr. Payrick Ouko',
+    role: 'Principal',
     department: 'Academic Administration',
     qualification: 'M.Sc. Curriculum Development (UoN), B.Ed. Science (Hons)',
     bio: 'Coordinates dual-curriculum syllabus mapping, teacher professional development, STEM laboratory pedagogy, and international examination administration.',
     welcomeMessage: 'We design rigorous learning pathways that inspire scientific curiosity and lifelong intellectual mastery.',
     experience: '18+ Years Experience',
-    image: peterStaffImg,
+    image: payrick
     email: 'academics@stgabrielinternational.sc.ke'
   },
   {
@@ -206,7 +206,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Empowering future innovators with 21st-century coding and computational skills.',
     experience: '10+ Years Experience',
     image: labanStaffImg,
-    email: 'ict@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'humanities-njoroge',
@@ -216,9 +216,9 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     qualification: 'B.Ed. Arts (History & Christian Religious Education)',
     bio: 'Inspires deep historical inquiry, ethical leadership, civic engagement, and community service projects.',
     welcomeMessage: 'Understanding our history guides us in shaping a more just and hopeful future.',
-    experience: '15+ Years Experience',
+    experience: '27+ Years Experience',
     image: njorogeStaffImg,
-    email: 'humanities@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'arts-camila',
@@ -230,7 +230,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Art is where imagination transforms into lasting beauty and expression.',
     experience: '9+ Years Experience',
     image: camilaStaffImg,
-    email: 'arts@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'boarding-staff2',
@@ -242,19 +242,19 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Every boarder receives the warmth, care, and nutritional support of home.',
     experience: '5+ Years Experience',
     image: staff2Img,
-    email: 'welfare@stgabrielinternational.sc.ke'
+    email: ''
   },
   {
     id: 'admissions-edwin',
     name: 'Mr. Edwin Werunga',
-    role: 'Admissions Coordinator & Student Registrar',
-    department: 'Academic Administration',
-    qualification: 'B.A. Public Administration & Student Services',
+    role: 'Academic Officer',
+    department: 'Academic',
+    qualification: 'Bachelor of Education, Masters in Education (MMUST)',
     bio: 'Assisting prospective families with enrollment evaluations, campus tours, boarding registrations, and curriculum placement.',
     welcomeMessage: 'We are here to guide your family smoothly into the St. Gabriel community.',
-    experience: '8+ Years Experience',
+    experience: '20+ Years Experience',
     image: edwinImg,
-    email: 'admissions@stgabrielinternational.sc.ke'
+    email: ''
   }
 ];
 
