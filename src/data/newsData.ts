@@ -3,8 +3,8 @@ import { NewsItem } from '../types';
 import newsGraduationImg from '../assets/images/newsAndEvent/graduation.webp';
 import newsCompLabImg from '../assets/images/newsAndEvent/complab.webp';
 import newsDanceImg from '../assets/images/newsAndEvent/dance.webp';
-import newsSportsImg from '../assets/images/studentlife/sports.webp';
-import newsBandImg from '../assets/images/blogs/musicBand.webp';
+import annualsports from '../assets/images/studentlife/annualsports.webp';
+import newsBandImg from '../assets/images/blogs/bassBand.webp';
 
 export const NEWS_ITEMS: NewsItem[] = [
   {
@@ -72,7 +72,7 @@ export const NEWS_ITEMS: NewsItem[] = [
       'The Lanet sports grounds came alive with cheering as Cheetah House edged out Eagle and Lion Houses to claim the coveted 2026 Overall Champions Trophy.',
       'Individual awards for Best Junior Athlete and Victor Ludorum were presented during the closing ceremony by Executive Principal Nicholas Okeyo.'
     ],
-    image: newsSportsImg,
+    image: annualsport,
     featured: false,
     author: 'Physical Education Directorate',
     readTime: '2 min read',
