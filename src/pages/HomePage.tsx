@@ -41,7 +41,7 @@ import { TestimonialSlider } from '../components/TestimonialSlider';
 import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS, DIRECTOR_MEMBER, LEADERSHIP_TEAM } from '../data/schoolData';
 import { StaffMember, NewsItem } from '../types';
 
-import campusImg from '../assets/images/about/campus.webp';
+import campusImg from '../assets/images/about/aboutusBackground.webp';
 import directorImg from '../assets/images/leadership/director.webp';
 import principalImg from '../assets/images/leadership/nicholas.webp';
 import claasroomImg from '../assets/images/home/classroom.webp';
