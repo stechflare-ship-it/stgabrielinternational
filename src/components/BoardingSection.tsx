@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, MapPin, Home, Heart, Users, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from './Button';
-import facilitiesImg from '../assets/images/boardinglife/facilities.webp';
-import boardingCompoundImg from '../assets/images/studentlife/boardingCompound.webp';
+import facilitiesImg from '../assets/images/boardinglife/boardingfacility.webp';
+import boardingCompoundImg from '../assets/images/boardinglife/boardingbackground.webp';
 
 const facilities = facilitiesImg;
 const PLACEHOLDER_BOARDING = boardingCompoundImg;
