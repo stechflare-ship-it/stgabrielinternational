@@ -4,8 +4,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SectionHeading } from '../components/SectionHeading';
 import { Gallery } from '../components/Gallery';
 import { Camera } from 'lucide-react';
-import galleryHeroWebp from '../assets/images/gallery-optimized/background.webp';
-const galleryHeroImg = galleryHeroWebp;
+import galleryBg from '../../src/assets/images/studentlife/studentlifebackground.webp';
 
 export const GalleryPage: React.FC = () => {
   return (
@@ -33,7 +32,7 @@ export const GalleryPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={galleryHeroImg}
+            src={galleryBg}
             alt="St. Gabriel Campus Gallery Showcase"
             className="w-full h-full object-cover object-center"
           />
