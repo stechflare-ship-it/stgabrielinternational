@@ -136,7 +136,7 @@ export const HomePage: React.FC = () => {
             >
               <img
                 src={directorImg}
-                alt="Mr. Anthony Maina - Director & Founder of St. Gabriel International School"
+                alt="Mr. John Muira - Director & Founder of St. Gabriel International School"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
