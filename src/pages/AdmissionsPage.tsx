@@ -7,7 +7,7 @@ import { SCHOOL_INFO } from '../data/schoolData';
 import { CheckCircle2, Phone, MessageCircle, FileText, Calendar } from 'lucide-react';
 import { Button } from '../components/Button';
 import campusHeroWebp from '../assets/images/about/campus.webp';
-const campusHeroImg = campusHeroWebp;
+import admissionBg from '../../src/assets/images/backgrounds/admission.webp';
 
 export const AdmissionsPage: React.FC = () => {
   return (

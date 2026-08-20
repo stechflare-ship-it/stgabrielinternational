@@ -23,7 +23,7 @@ import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { FACULTY_MEMBERS, LEADERSHIP_TEAM, STAFF_MEMBERS, SCHOOL_INFO } from '../data/schoolData';
 import { StaffMember } from '../types';
-import heroBgImg from '../assets/images/leadership/backgroundleadership.webp';
+import heroBgImg from '../assets/images/staff/staffbackground.webp';
 
 const DEPARTMENTS = [
   'All Faculty & Staff',

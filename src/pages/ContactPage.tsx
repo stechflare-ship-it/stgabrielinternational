@@ -5,8 +5,7 @@ import { SectionHeading } from '../components/SectionHeading';
 import { SCHOOL_INFO } from '../data/schoolData';
 import { MapPin, Phone, Mail, MessageCircle, Clock } from 'lucide-react';
 import { ContactButtons } from '../components/ContactButtons';
-import campusWebp from '../assets/images/about/campus.webp';
-const campusImg = campusWebp;
+import contactBG from '../assets/images/backgrounds/contactBG.webp';
 
 export const ContactPage: React.FC = () => {
   return (
@@ -53,7 +52,7 @@ export const ContactPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={campusImg}
+            src={contactBG}
             alt="St. Gabriel Campus Contact in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />

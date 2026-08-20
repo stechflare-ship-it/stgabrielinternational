@@ -6,10 +6,11 @@ import { NewsCard } from '../components/NewsCard';
 import { NEWS_ITEMS, SCHOOL_INFO } from '../data/schoolData';
 import { NewsItem } from '../types';
 import { Newspaper, Calendar, Tag, Share2, X, CheckCircle2, ArrowRight } from 'lucide-react';
-import newsHeroWebp from '../assets/images/newsAndEvent/graduation.webp';
-const newsHeroImg = newsHeroWebp;
+
 import { Button } from '../components/Button';
 import { NewsModal } from '../components/NewsModal';
+
+import newsBgImg from '../../src/assets/images/newsAndEvent/newsBackground.webp';
 
 export const NewsPage: React.FC = () => {
   const location = useLocation();
@@ -72,7 +73,7 @@ export const NewsPage: React.FC = () => {
       <section className="relative text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27] overflow-hidden bg-[#0B1D33]">
         <div className="absolute inset-0 z-0">
           <img
-            src={newsHeroImg}
+            src={newsBgImg}
             alt="St. Gabriel School News and Graduation Celebrations"
             className="w-full h-full object-cover object-center"
           />
