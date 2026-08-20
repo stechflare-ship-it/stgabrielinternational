@@ -47,7 +47,7 @@ import principalImg from '../assets/images/home/principlImg.webp';
 import claasroomImg from '../assets/images/home/classroomImg.webp';
 import artsImg from '../assets/images/home/artsImg.webp';
 import complabImg from '../assets/images/home/complabImg.webp';
-import graduationImg from '../assets/images/gallery/graduationImg.webp';
+import graduationImg from '../assets/images/home/graduationImg.webp';
 import sportsImg from '../assets/images/home/sportsImg.webp';
 
 
