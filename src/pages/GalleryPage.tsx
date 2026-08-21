@@ -21,7 +21,7 @@ export const GalleryPage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'ImageGallery',
-          name: 'St. Gabriel's Mission International School Campus & Student Life Gallery',
+          name: "St. Gabriel's Mission International School Campus & Student Life Gallery",
           description: 'Photographic portfolio capturing academic life, laboratory experiments, brass band recitals, athletics, and pastoral boarding spaces in Lanet, Nakuru.'
         }}
       />
