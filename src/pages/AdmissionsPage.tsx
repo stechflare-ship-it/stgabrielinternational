@@ -24,7 +24,7 @@ export const AdmissionsPage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Admissions at St. Gabriel's Mission International School',
+          name: "Admissions at St. Gabriel's Mission International School",
           description: 'Official enrollment procedure, admission criteria, and online application portal for day and boarding scholars.',
           offers: {
             '@type': 'Offer',
