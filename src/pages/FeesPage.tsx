@@ -13,9 +13,9 @@ export const FeesPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Fees Structure & Boarding Requirements 2026 | St. Gabriel Nakuru"
-        description="Official school fee structure, Equity Bank account details, M-Pesa Paybill payment instructions, and junior boarding requirements for St. Gabriel International School."
-        keywords="school fees nakuru, st gabriel fee structure, boarding fees kenya, equity bank school account, mpesa paybill school fees, boarding requirements list"
+        title="Fees Structure & Boarding Requirements 2026 | St. Gabriel's Mission Nakuru"
+        description="Official school fee structure, Equity Bank account details, M-Pesa Paybill payment instructions, and junior boarding requirements for St. Gabriel's Mission International School."
+        keywords="school fees nakuru, st gabriel's Mission fee structure, boarding fees kenya, equity bank school account, mpesa paybill school fees, boarding requirements list"
         canonicalPath="/fees-and-requirements"
         ogType="website"
         ogTitle="Official Fee Structure & Payment Policies · St. Gabriel Nakuru"
@@ -24,7 +24,7 @@ export const FeesPage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Fees and Requirements at St. Gabriel International School',
+          name: 'Fees and Requirements at St. Gabriel's Mission International School',
           description: 'Official schedule of tuition and boarding fees, payment methods, bank accounts, and student supplies requirements.'
         }}
       />
