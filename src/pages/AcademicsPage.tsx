@@ -36,20 +36,20 @@ export const AcademicsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Academics & Dual Curriculum Pathways | Kenya CBC & British Cambridge | St. Gabriel Nakuru"
-        description="Explore comprehensive Kenya CBC (PP1 through Senior School Grades 10–12) and British Cambridge (EYFS through A-Levels) at St. Gabriel International School in Lanet, Nakuru."
-        keywords="international school nakuru, kenya cbc, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, stem pathway, social sciences, arts pathway, st gabriel lanet, dual curriculum nakuru, cambridge international kenya"
+        title="Academics & Dual Curriculum Pathways | Kenya CBC & British | St. Gabriel's Mission Nakuru"
+        description="Explore comprehensive Kenya CBC (PP1 through Senior School Grades 10–12) and British (EYFS through A-Levels) at St. Gabriel's Mission International School in Lanet, Nakuru."
+        keywords="international school nakuru, kenya cbc, senior school kenya, junior secondary school, jss nakuru, British igcse, a-level, stem pathway, social sciences, arts pathway, st gabriel's Mission lanet, dual curriculum nakuru, British international kenya"
         canonicalPath="/academics"
         ogType="website"
-        ogTitle="Dual-Curriculum Academic Pathways · Kenya CBC & British Cambridge"
-        ogDescription="Providing tailored learning pathways from Early Childhood, Primary, JSS, Senior School STEM & Arts to Cambridge IGCSE and A-Level in Lanet, Nakuru."
+        ogTitle="Dual-Curriculum Academic Pathways · Kenya CBC & British Curriculum"
+        ogDescription="Providing tailored learning pathways from Early Childhood, Primary, JSS, Senior School STEM & Arts to British IGCSE and A-Level in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Academics', path: '/academics' }]}
         course={{
-          name: 'St. Gabriel Dual-Curriculum Academic Program (Kenya CBC & British Cambridge)',
-          description: 'Comprehensive academic framework spanning Kenya Competency-Based Curriculum and CAIE British Cambridge International Curriculum with state-of-the-art STEM laboratories and arts conservatory.',
+          name: 'St. Gabriel's Mission Dual-Curriculum Academic Program (Kenya CBC & British Curriculum)',
+          description: 'Comprehensive academic framework spanning Kenya Competency-Based Curriculum and CAIE British International Curriculum with state-of-the-art STEM laboratories and arts conservatory.',
           educationalLevel: 'Early Childhood to High School (A-Level / Grade 12)',
           teaches: [
-            'Cambridge IGCSE & A-Level Sciences, Mathematics & Humanities',
+            'British IGCSE & A-Level Sciences, Mathematics & Humanities',
             'Kenya CBC STEM, Social Sciences & Arts Pathways',
             'Junior Secondary School (KJSEA) Core Competencies',
             'Computer Science, Coding & Digital Literacy',
@@ -78,14 +78,14 @@ export const AcademicsPage: React.FC = () => {
               🇰🇪 Kenya CBC (PP1 – Senior Secondary Grade 12)
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-[#C59B27]/20 backdrop-blur-sm text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
-              🇬🇧 British Cambridge (EYFS – A-Level)
+              🇬🇧 British Curriculum (EYFS – A-Level)
             </span>
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-sm leading-tight">
             Academic Excellence & Dual Pathways
           </h1>
           <p className="max-w-3xl mx-auto text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed drop-shadow-sm">
-            Nurturing global thinkers and ethical leaders through Kenya’s Competency-Based Curriculum and the prestigious British Cambridge International curriculum in a serene Lanet boarding environment.
+            Nurturing global thinkers and ethical leaders through Kenya’s Competency-Based Curriculum and the prestigious British International curriculum in a serene Lanet boarding environment.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -151,10 +151,10 @@ export const AcademicsPage: React.FC = () => {
                 <span className="px-3 py-1 rounded-full bg-[#0B1D33] text-[#E0BA43] text-xs font-bold uppercase tracking-wider">
                   International Curriculum
                 </span>
-                <span className="text-xs font-semibold text-sky-900">Cambridge International Centre</span>
+                <span className="text-xs font-semibold text-sky-900">British International Centre</span>
               </div>
               <h3 className="font-serif text-2xl font-bold text-[#0B1D33]">
-                British Cambridge International
+                British International
               </h3>
               <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                 Globally recognized qualification framework renowned for critical inquiry, academic rigor, and seamless entry into premier universities worldwide.
@@ -167,11 +167,11 @@ export const AcademicsPage: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2 text-xs font-semibold text-sky-950">
                   <CheckCircle2 className="w-4 h-4 text-sky-600" />
-                  <span>Cambridge Primary (Years 1–6) & Lower Secondary (Years 7–9)</span>
+                  <span>British Primary (Years 1–6) & Lower Secondary (Years 7–9)</span>
                 </div>
                 <div className="flex items-center gap-2 text-xs font-semibold text-sky-950">
                   <CheckCircle2 className="w-4 h-4 text-sky-600" />
-                  <span>Cambridge IGCSE (Years 10–11) & Advanced Level (A-Level Years 12–13)</span>
+                  <span>British IGCSE (Years 10–11) & Advanced Level (A-Level Years 12–13)</span>
                 </div>
               </div>
 
@@ -180,7 +180,7 @@ export const AcademicsPage: React.FC = () => {
                   to="/academics/igcse"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B1D33] hover:text-[#C59B27] uppercase tracking-wider group"
                 >
-                  <span>Explore Cambridge International Details</span>
+                  <span>Explore British International Details</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -203,7 +203,7 @@ export const AcademicsPage: React.FC = () => {
               <span>Senior School & Pre-University Pathways</span>
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight">
-              CBC Senior Secondary & Cambridge Advanced Level
+              CBC Senior Secondary & British Advanced Level
             </h2>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
               Our Senior School provides high-rigor academic specialization tailored for direct university admission, competitive scholarships, and future career mastery.
@@ -447,10 +447,10 @@ export const AcademicsPage: React.FC = () => {
             Admissions Open for 2026 Academic Year
           </span>
           <h2 className="font-serif text-2xl sm:text-4xl font-extrabold text-white">
-            Give Your Child the St. Gabriel Academic Advantage
+            Give Your Child the St. Gabriel's Mission Academic Advantage
           </h2>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            Our admissions and academic advisors in Lanet, Nakuru are available to guide you on CBC and Cambridge stream placements, scholarship criteria, and boarding enrollment.
+            Our admissions and academic advisors in Lanet, Nakuru are available to guide you on CBC and British stream placements, scholarship criteria, and boarding enrollment.
           </p>
           <div className="flex flex-wrap justify-center gap-4 pt-2">
             <Button to="/admissions" variant="primary" size="lg">
