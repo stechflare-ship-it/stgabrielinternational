@@ -170,13 +170,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
         {/* Top Badge */}
         <div className="inline-flex items-center gap-3 px-4 py-1.5 bg-[#0A192F]/90 border border-[#D4AF37]/50 text-[#D4AF37] text-xs font-bold uppercase tracking-[0.2em] mb-6 shadow-2xl backdrop-blur-sm">
           <div className="h-[1px] w-6 bg-[#D4AF37]"></div>
-          <span>Dual Curriculum: Cambridge & CBC • Lanet, Nakuru</span>
+          <span>Dual Curriculum: British & CBC • Lanet, Nakuru</span>
           <div className="h-[1px] w-6 bg-[#D4AF37]"></div>
         </div>
 
         {/* Main Headings */}
         <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none mb-4 drop-shadow-2xl">
-          <span className="block text-white uppercase tracking-tight">ST. GABRIEL</span>
+          <span className="block text-white uppercase tracking-tight">ST. GABRIEL's Mission</span>
           <span className="block text-[#D4AF37] mt-2 font-serif uppercase tracking-tight">INTERNATIONAL SCHOOL</span>
         </h1>
 
