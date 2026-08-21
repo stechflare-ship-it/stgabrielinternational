@@ -11,19 +11,19 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Contact Us, Campus Location & Campus Tours | St. Gabriel Nakuru"
-        description="Contact St. Gabriel International School in Lanet, Nakuru, Kenya. Call +254 724 694 554, WhatsApp admissions, or schedule a campus tour along Transformer Road."
-        keywords="contact st gabriel, school location nakuru, transformer road lanet, call st gabriel admissions, book school tour nakuru, international school phone number kenya"
+        title="Contact Us, Campus Location & Campus Tours | St. Gabriel's Mission Nakuru"
+        description="Contact St. Gabriel's Mission International School in Lanet, Nakuru, Kenya. Call +254 724 694 554, WhatsApp admissions, or schedule a campus tour along Transformer Road."
+        keywords="contact st gabriel's Mission, school location nakuru, transformer road lanet, call st gabriel's Mission admissions, book school tour nakuru, international school phone number kenya"
         canonicalPath="/contact"
         ogType="website"
-        ogTitle="Contact St. Gabriel International School · Lanet, Nakuru"
+        ogTitle="Contact St. Gabriel's Mission International School · Lanet, Nakuru"
         ogDescription="Connect with admissions, book a personalized campus tour, or reach our administrative offices along Transformer Road, Lanet."
         breadcrumbs={[{ name: 'Contact Us', path: '/contact' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'ContactPage',
-          name: 'Contact St. Gabriel International School',
-          description: 'Official contact and location information for St. Gabriel International School in Lanet, Nakuru.',
+          name: 'Contact St. Gabriel's Mission International School',
+          description: 'Official contact and location information for St. Gabriel's Mission International School in Lanet, Nakuru.',
           mainEntity: {
             '@type': 'EducationalOrganization',
             name: SCHOOL_INFO.name,
@@ -53,7 +53,7 @@ export const ContactPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={contactBG}
-            alt="St. Gabriel Campus Contact in Lanet Nakuru"
+            alt="St. Gabriel's Mission Campus Contact in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -65,7 +65,7 @@ export const ContactPage: React.FC = () => {
             Lanet, Nakuru County, Kenya
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
-            Contact St. Gabriel International School
+            Contact St. Gabriel's Mission International School
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
             We welcome parents, guardians, and visitors. Get in touch with our administration or schedule a personal campus tour in Lanet.
