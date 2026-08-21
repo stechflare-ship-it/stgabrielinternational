@@ -10,18 +10,18 @@ export const GalleryPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Photo Gallery & Campus Life | St. Gabriel International School Nakuru"
-        description="Browse photo gallery of St. Gabriel International School in Lanet, Nakuru. Official uniforms, classroom study, brass band orchestra, computer lab, and graduation ceremonies."
+        title="Photo Gallery & Campus Life | St. Gabriel's Mission International School Nakuru"
+        description="Browse photo gallery of St. Gabriel's Mission International School in Lanet, Nakuru. Official uniforms, classroom study, brass band orchestra, computer lab, and graduation ceremonies."
         keywords="school photo gallery nakuru, st gabriel photos, campus tour nakuru, brass band pictures, school facilities photos, boarding dormitory photos"
         canonicalPath="/gallery"
         ogType="website"
-        ogTitle="Campus Photo Gallery · St. Gabriel International School"
+        ogTitle="Campus Photo Gallery · St. Gabriel's Mission International School"
         ogDescription="Explore state-of-the-art classrooms, STEM computing labs, residential dormitories, and championship co-curricular moments in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Gallery', path: '/gallery' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'ImageGallery',
-          name: 'St. Gabriel International School Campus & Student Life Gallery',
+          name: 'St. Gabriel's Mission International School Campus & Student Life Gallery',
           description: 'Photographic portfolio capturing academic life, laboratory experiments, brass band recitals, athletics, and pastoral boarding spaces in Lanet, Nakuru.'
         }}
       />
@@ -57,7 +57,7 @@ export const GalleryPage: React.FC = () => {
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Image Library"
-          title="St. Gabriel Campus Showcase"
+          title="St. Gabriel's Mission Campus Showcase"
           subtitle="Filter by category to explore campus facilities, classroom writing, co-curricular arts, sports, and graduation highlights."
         />
         <Gallery />
