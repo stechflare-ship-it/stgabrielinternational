@@ -28,18 +28,18 @@ export const StudentLifePage: React.FC = () => {
   return (
     <div className="w-full bg-[#071321] text-white min-h-screen">
       <SEOMetadata
-        title="Student Life, Balanced Life & Real-Life Experience | St. Gabriel Nakuru Kenya"
-        description="Discover a balanced life and real-life learning experiences at St. Gabriel International School in Nakuru, Kenya. British curriculum, sports, arts, leadership and character development."
+        title="Student Life, Balanced Life & Real-Life Experience | St. Gabriel's Mission Nakuru Kenya"
+        description="Discover a balanced life and real-life learning experiences at St. Gabriel's Mission International School in Nakuru, Kenya. British curriculum, sports, arts, leadership and character development."
         keywords="international school nakuru, kenya co-curricular, school sports nakuru, brass band orchestra, drama and music festivals, robotics club, student leadership, st gabriel student life"
         canonicalPath="/student-life"
         ogType="website"
-        ogTitle="Vibrant Student Life & Holistic Co-Curriculars · St. Gabriel Nakuru"
+        ogTitle="Vibrant Student Life & Holistic Co-Curriculars · St. Gabriel's Mission Nakuru"
         ogDescription="Explore championship sports, award-winning brass band music, STEM robotics clubs, and leadership mentorship in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Student Life', path: '/student-life' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Student Life at St. Gabriel International School',
+          name: 'Student Life at St. Gabriel's Mission International School',
           description: 'Holistic extracurricular activities, sports, brass band orchestra, robotics, and spiritual growth opportunities.',
           mainEntity: {
             '@type': 'ItemList',
@@ -370,7 +370,7 @@ export const StudentLifePage: React.FC = () => {
         <SectionHeading
           badge="Campus Gallery"
           title="Moments of Excellence & Fellowship"
-          subtitle="Explore academic, athletic, and co-curricular highlights at St. Gabriel International School."
+          subtitle="Explore academic, athletic, and co-curricular highlights at St. Gabriel's Mission International School."
           theme="dark"
         />
         <Gallery />
