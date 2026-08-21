@@ -24,7 +24,7 @@ export const FeesPage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Fees and Requirements at St. Gabriel's Mission International School',
+          name: "Fees and Requirements at St. Gabriel's Mission International School",
           description: 'Official schedule of tuition and boarding fees, payment methods, bank accounts, and student supplies requirements.'
         }}
       />
