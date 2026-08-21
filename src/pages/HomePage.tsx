@@ -94,28 +94,28 @@ export const HomePage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB]">
       <SEOMetadata
-        title="St. Gabriel International School | Kenya CBC & British Cambridge in Nakuru, Kenya"
-        description="St. Gabriel International School in Lanet, Nakuru offers premier Kenya CBC (PP1–Senior School Grade 12) & British Cambridge (EYFS–A-Level) education with separate boys & girls boarding facilities."
-        keywords="St Gabriel International School, international school nakuru, kenya cbc nakuru, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, lanet boarding school, christian school nakuru, best school in nakuru, dual curriculum kenya"
+        title="St. Gabriel's Mission International School | Kenya CBC & British  in Nakuru, Kenya"
+        description="St. Gabriel's Mission International School in Lanet, Nakuru offers premier Kenya CBC (PP1–Senior School Grade 12) & British  (EYFS–A-Level) education with separate boys & girls boarding facilities."
+        keywords="St Gabriel's Mission International School, international school nakuru, kenya cbc nakuru, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, lanet boarding school, christian school nakuru, best school in nakuru, dual curriculum kenya"
         canonicalPath="/"
         ogType="website"
-        ogTitle="St. Gabriel International School · Dual Curriculum & Boarding Excellence in Nakuru"
-        ogDescription="Providing world-class Kenya CBC & British Cambridge International pathways, championship brass band, STEM laboratories, and separate residential boarding in Lanet, Nakuru."
+        ogTitle="St. Gabriel's Mission International School · Dual Curriculum & Boarding Excellence in Nakuru"
+        ogDescription="Providing world-class Kenya CBC & British International pathways, championship brass band, STEM laboratories, and separate residential boarding in Lanet, Nakuru."
         faqs={[
           {
-            question: "What curricula are offered at St. Gabriel International School?",
-            answer: "St. Gabriel International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary (JSS) and Senior School, alongside the British Cambridge International Pathway from Early Years Foundation Stage (EYFS), Cambridge Primary, Lower Secondary, IGCSE (O-Level) to Advanced Level (A-Level)."
+            question: "What curricula are offered at St. Gabriel's Mission International School?",
+            answer: "St. Gabriel's Mission International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary (JSS) and Senior School, alongside the British International Pathway from Early Years Foundation Stage (EYFS), Cambridge Primary, Lower Secondary, IGCSE (O-Level) to Advanced Level (A-Level)."
           },
           {
-            question: "Where is St. Gabriel International School located in Nakuru?",
-            answer: "St. Gabriel International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene, secure learning environment."
+            question: "Where is St. Gabriel's Mission International School located in Nakuru?",
+            answer: "St. Gabriel's Mission International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene, secure learning environment."
           },
           {
-            question: "Does St. Gabriel offer boarding facilities?",
-            answer: "Yes, St. Gabriel provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated house parents, medical care, and balanced nutrition."
+            question: "Does St. Gabriel's Mission offer boarding facilities?",
+            answer: "Yes, St. Gabriel's Mission provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated house parents, medical care, and balanced nutrition."
           },
           {
-            question: "How do I apply for admission to St. Gabriel International School?",
+            question: "How do I apply for admission to St. Gabriel's Mission International School?",
             answer: "Admissions can be submitted online via our website application form, by calling admissions directly at +254 724 694 554 / +254 720 349 748, or by visiting our administration offices at the Lanet campus."
           }
         ]}
@@ -152,7 +152,7 @@ export const HomePage: React.FC = () => {
                 <span className="px-3 py-1 rounded-full bg-[#C59B27] text-[#0B1D33] text-xs font-bold uppercase tracking-wider inline-block">
                   Director&apos;s Welcome
                 </span>
-                <h3 className="font-serif text-2xl font-bold text-white group-hover:text-[#E0BA43] transition-colors">Mr. Anthony Maina</h3>
+                <h3 className="font-serif text-2xl font-bold text-white group-hover:text-[#E0BA43] transition-colors">Mr. John Muira</h3>
                 <p className="text-xs text-[#E0BA43] font-medium">Director & Founder • St. Gabriel Group of Schools</p>
                 <p className="text-[11px] text-gray-300 underline pt-1 flex items-center gap-1 font-semibold">
                   <span>Click photo to read full message & biography &rarr;</span>
@@ -185,10 +185,10 @@ export const HomePage: React.FC = () => {
 
             <div className="space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
               <p className="italic border-l-4 border-[#C59B27] pl-4 text-gray-800 font-medium">
-                &ldquo;At St. Gabriel International School, our vision is to ignite intellect, character, and lifelong purpose in every child under God&apos;s grace.&rdquo;
+                &ldquo;At St. Gabriel's Mission International School, our vision is to ignite intellect, character, and lifelong purpose in every child under God&apos;s grace.&rdquo;
               </p>
               <p>
-                Welcome to St. Gabriel International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British Cambridge International Pathway (EYFS to A-Level)</strong>.
+                Welcome to St. Gabriel's Mission International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British International Pathway (EYFS to A-Level)</strong>.
               </p>
               <p>
                 Whether in our modern STEM robotics laboratories, on championship athletic fields, within our nationally acclaimed orchestral brass band, or across our separate serene boys and girls residential boarding compounds, we guide each young scholar toward a balanced, purposeful life.
@@ -239,8 +239,8 @@ export const HomePage: React.FC = () => {
               {
                 icon: <BookOpen className="w-7 h-7 text-[#E0BA43]" />,
                 badge: 'Dual Pathways',
-                title: 'Kenya CBC & British Cambridge',
-                desc: 'Seamless choice between the national CBC stream (PP1 to Grade 12) and the British Cambridge International curriculum (EYFS to A-Level).'
+                title: 'Kenya CBC & British Curriculum',
+                desc: 'Seamless choice between the national CBC stream (PP1 to Grade 12) and the British International curriculum (EYFS to A-Level).'
               },
               {
                 icon: <Heart className="w-7 h-7 text-[#E0BA43]" />,
@@ -270,7 +270,7 @@ export const HomePage: React.FC = () => {
                 icon: <CheckCircle2 className="w-7 h-7 text-[#E0BA43]" />,
                 badge: 'Since 1998',
                 title: '28+ Years of Proven Excellence',
-                desc: 'A trusted legacy in Nakuru County with 100% transition rates, top distinctions in KNEC & Cambridge exams, and alumni excelling in global universities.'
+                desc: 'A trusted legacy in Nakuru County with 100% transition rates, top distinctions in KNEC & british certicfied exams, and alumni excelling in global universities.'
               }
             ].map((pillar, idx) => (
               <div
@@ -299,7 +299,7 @@ export const HomePage: React.FC = () => {
         <SectionHeading
           badge="Dual Academic Pathways"
           title="Our Curriculum Journey"
-          subtitle="Explore our dual pathways: Kenya Competency-Based Curriculum (PP1 to Senior School Grade 12) & British Cambridge International (EYFS to A-Level)."
+          subtitle="Explore our dual pathways: Kenya Competency-Based Curriculum (PP1 to Senior School Grade 12) & British International (EYFS to A-Level)."
         />
         <CurriculumTimeline />
       </section>
@@ -364,7 +364,7 @@ export const HomePage: React.FC = () => {
         <SectionHeading
           badge="Latest Updates"
           title="News & Events"
-          subtitle="Stay updated with school announcements, Cambridge exam distinction achievements, and gala celebrations."
+          subtitle="Stay updated with school announcements, British exam distinction achievements, and gala celebrations."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
