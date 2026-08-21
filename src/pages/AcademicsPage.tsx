@@ -45,7 +45,7 @@ export const AcademicsPage: React.FC = () => {
         ogDescription="Providing tailored learning pathways from Early Childhood, Primary, JSS, Senior School STEM & Arts to British IGCSE and A-Level in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Academics', path: '/academics' }]}
         course={{
-          name: 'St. Gabriel's Mission Dual-Curriculum Academic Program (Kenya CBC & British Curriculum)',
+          name: "St. Gabriel's Mission Dual-Curriculum Academic Program (Kenya CBC & British Curriculum)",
           description: 'Comprehensive academic framework spanning Kenya Competency-Based Curriculum and CAIE British International Curriculum with state-of-the-art STEM laboratories and arts conservatory.',
           educationalLevel: 'Early Childhood to High School (A-Level / Grade 12)',
           teaches: [
