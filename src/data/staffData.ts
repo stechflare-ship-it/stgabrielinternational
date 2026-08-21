@@ -78,7 +78,7 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
   },
   {
     id: 'principal-peter',
-    name: 'Mr. Payrick Ouko',
+    name: 'Mr. Patrick Ouko',
     role: 'Principal',
     department: 'Academic Administration',
     qualification: 'Bachelor of Education Science Chemisrty/Physics MKU',
