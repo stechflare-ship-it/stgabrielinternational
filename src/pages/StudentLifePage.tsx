@@ -39,7 +39,7 @@ export const StudentLifePage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Student Life at St. Gabriel's Mission International School',
+          name: "Student Life at St. Gabriel's Mission International School",
           description: 'Holistic extracurricular activities, sports, brass band orchestra, robotics, and spiritual growth opportunities.',
           mainEntity: {
             '@type': 'ItemList',
