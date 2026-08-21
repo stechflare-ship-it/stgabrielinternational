@@ -22,7 +22,7 @@ export const ContactPage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'ContactPage',
-          name: 'Contact St. Gabriel's Mission International School',
+          name: "Contact St. Gabriel's Mission International School",
           description: 'Official contact and location information for St. Gabriel's Mission International School in Lanet, Nakuru.',
           mainEntity: {
             '@type': 'EducationalOrganization',
