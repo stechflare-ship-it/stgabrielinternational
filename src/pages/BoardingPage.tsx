@@ -23,7 +23,7 @@ export const BoardingPage: React.FC = () => {
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: 'Boarding Life & Facilities at St. Gabriel's Mission',
+          name: "Boarding Life & Facilities at St. Gabriel's Mission",
           description: 'Comprehensive overview of separate residential compounds, safety, nutritional meal planning, evening prep routines, and medical care.'
         }}
       />
