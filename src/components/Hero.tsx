@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
           loop
           muted={isMuted}
           playsInline
-          poster={heroImg}
+          poster={heroVideo}
           className="w-full h-full object-cover scale-105 transition-opacity duration-1000"
         >
           <source src={heroVideo} type="video/mp4" />
