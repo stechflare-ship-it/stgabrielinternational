@@ -180,44 +180,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
 
       </div>
 
-      {/* Floating Video Controls in Bottom Corner */}
-      <div className="absolute bottom-6 right-6 z-30 flex items-center gap-2">
-        <button
-          onClick={toggleSound}
-          className="p-2.5 bg-[#0A192F]/90 hover:bg-[#5CE1E6] hover:text-[#0A192F] text-white border border-[#D4AF37]/40 transition-all shadow-lg rounded-sm cursor-pointer"
-          aria-label={isMuted ? 'Unmute ambient sound' : 'Mute sound'}
-          title={isMuted ? 'Unmute sound' : 'Mute sound'}
-        >
-          {isMuted ? <VolumeX className="w-4 h-4 text-[#D4AF37]" /> : <Volume2 className="w-4 h-4 text-[#5CE1E6]" />}
-        </button>
-
-        <button
-          onClick={togglePlay}
-          className="flex items-center gap-2 px-3.5 py-2 bg-[#0A192F]/90 hover:bg-white hover:text-[#0A192F] text-white text-xs font-bold uppercase tracking-widest border border-[#D4AF37]/40 transition-all shadow-lg rounded-sm cursor-pointer"
-          aria-label={isPlaying ? 'Pause background video' : 'Play background video'}
-        >
-          {isPlaying ? (
-            <>
-              <Pause className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span className="hidden sm:inline">Pause</span>
-            </>
-          ) : (
-            <>
-              <Play className="w-3.5 h-3.5 text-[#D4AF37]" />
-              <span className="hidden sm:inline">Play</span>
-            </>
-          )}
-        </button>
-
-        <button
-          onClick={() => setShowVideoModal(true)}
-          className="p-2.5 bg-[#0A192F]/90 hover:bg-[#5CE1E6] hover:text-[#0A192F] text-white border border-[#D4AF37]/40 transition-all shadow-lg rounded-sm cursor-pointer"
-          aria-label="Open Fullscreen Tour"
-          title="Fullscreen Tour"
-        >
-          <Maximize2 className="w-4 h-4 text-[#D4AF37]" />
-        </button>
-      </div>
+     
+      
 
       {/* Fullscreen Video Tour Modal */}
       {showVideoModal && (
