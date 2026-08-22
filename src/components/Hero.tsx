@@ -1,167 +1,81 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, GraduationCap, Compass, ArrowRight, Video, X, Volume2, VolumeX, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { Play, Pause, GraduationCap, Compass, ArrowRight, Video, X, Volume2, VolumeX, Maximize2 } from 'lucide-react';
 import { Button } from './Button';
 import { SCHOOL_INFO } from '../data/schoolData';
 
-import campusImg from '../assets/images/about/aboutusBackground.webp';
-import classroomImg from '../assets/images/home/classroomImg.webp';
-import chemistryImg from '../assets/images/studentlife/labaratory.webp';
-import complabImg from '../assets/images/home/complabImg.webp';
-import bandImg from '../assets/images/blogs/boardingLife.webp';
-import sportsImg from '../assets/images/home/sportsImg.webp';
-
-import graduationImg from '../assets/images/home/graduationImg.webp';
+import heroImg from '../assets/images/about/administration.webp';
+import heroVideo from '../assets/hero.webp';
 
 interface HeroProps {
   onOpenDirectorMessage?: () => void;
   onOpenPrincipalMessage?: () => void;
 }
 
-interface Slide {
-  id: string;
-  title: string;
-  subtitle: string;
-  image: string;
-}
-
-const HERO_SLIDES: Slide[] = [
-  {
-    id: 'campus',
-    title: 'Serene Modern Campus',
-    subtitle: 'Safe, world-class academic environment in Lanet, Nakuru',
-    image: campusImg,
-  },
-  {
-    id: 'classroom',
-    title: 'Interactive Academic Classrooms',
-    subtitle: 'Low teacher-to-student ratio fostering individualized mentorship',
-    image: classroomImg,
-  },
-  {
-    id: 'chemistry',
-    title: 'Advanced Science Laboratories',
-    subtitle: 'Practical STEM exploration, physics, biology & chemistry research',
-    image: chemistryImg,
-  },
-  {
-    id: 'complab',
-    title: 'Modern ICT & Robotics Lab',
-    subtitle: 'High-speed coding suites, digital literacy, and computational thinking',
-    image: complabImg,
-  },
-  {
-    id: 'band',
-    title: 'Renowned Brass Band & Arts',
-    subtitle: 'National music champions, performing arts, and creative mastery',
-    image: bandImg,
-  },
-  {
-    id: 'sports',
-    title: 'Olympic & Championship Sports',
-    subtitle: 'Football, swimming, basketball, athletics & physical wellness',
-    image: sportsImg,
-  },
-  {
-    id: 'graduation',
-    title: 'Celebrating Excellence',
-    subtitle: 'Guiding global achievers to premier universities worldwide',
-    image: graduationImg,
-  },
-];
-
 export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincipalMessage }) => {
-  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const [showVideoModal, setShowVideoModal] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const timerRef = useRef<number | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const modalVideoRef = useRef<HTMLVideoElement | null>(null);
 
-  const SLIDE_DURATION = 4500; // 4.5 seconds per slide
-  const TICK_INTERVAL = 50; // Update progress bar every 50ms
-
-  // Advance to next slide
-  const nextSlide = () => {
-    setCurrentSlideIndex((prev) => (prev + 1) % HERO_SLIDES.length);
-    setProgress(0);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlideIndex((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
-    setProgress(0);
-  };
-
-  const selectSlide = (index: number) => {
-    setCurrentSlideIndex(index);
-    setProgress(0);
-  };
-
+  // Synchronize play/pause state with video element
   const togglePlay = () => {
-    setIsPlaying((prev) => !prev);
-  };
-
-  const toggleSound = () => {
-    setIsMuted((prev) => !prev);
-  };
-
-  // Continuous animation playback loop
-  useEffect(() => {
-    if (!isPlaying) {
-      if (timerRef.current) clearInterval(timerRef.current);
-      return;
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play().catch(() => {});
+        setIsPlaying(true);
+      }
     }
+  };
 
-    setProgress(0);
-    const step = (TICK_INTERVAL / SLIDE_DURATION) * 100;
+  // Synchronize mute/unmute state with video element
+  const toggleSound = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
 
-    timerRef.current = window.setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          setCurrentSlideIndex((oldIndex) => (oldIndex + 1) % HERO_SLIDES.length);
-          return 0;
-        }
-        return prev + step;
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play().then(() => {
+        setIsPlaying(true);
+      }).catch(() => {
+        setIsPlaying(false);
       });
-    }, TICK_INTERVAL);
-
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [isPlaying, currentSlideIndex]);
-
-  const activeSlide = HERO_SLIDES[currentSlideIndex];
+    }
+  }, []);
 
   return (
     <section id="hero-section" className="relative w-full min-h-[92vh] md:min-h-screen flex items-center justify-center bg-[#0A192F] overflow-hidden select-none">
       
-      {/* Dynamic Animated Motion Background (Ken Burns Cinematic Video Effect) */}
+      {/* Background Video Layer */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-        {HERO_SLIDES.map((slide, index) => {
-          const isActive = index === currentSlideIndex;
-          const isPrevious = index === (currentSlideIndex - 1 + HERO_SLIDES.length) % HERO_SLIDES.length;
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted={isMuted}
+          playsInline
+          poster={heroImg}
+          className="w-full h-full object-cover scale-105 transition-opacity duration-1000"
+        >
+          <source src={heroVideo} type="video/mp4" />
+          <source src="/hero.mp4" type="video/mp4" />
+          {/* Fallback image if video cannot be loaded */}
+          <img
+            src={heroImg}
+            alt="St. Gabriel International School Campus"
+            className="w-full h-full object-cover"
+          />
+        </video>
 
-          return (
-            <div
-              key={slide.id}
-              className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-                isActive ? 'opacity-100 z-10' : isPrevious ? 'opacity-0 z-5' : 'opacity-0 z-0'
-              }`}
-            >
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className={`w-full h-full object-cover transform transition-transform duration-[6000ms] ease-out ${
-                  isActive ? 'scale-110 translate-x-1 translate-y-1' : 'scale-100'
-                }`}
-                loading={index < 2 ? 'eager' : 'lazy'}
-              />
-            </div>
-          );
-        })}
-
-        {/* Ambient Dark Overlays for pristine readability & luxury atmosphere */}
-        <div className="absolute inset-0 z-15 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/80 to-[#0A192F]/60"></div>
-        <div className="absolute inset-0 z-15 bg-[#0A192F]/35 backdrop-blur-[0.5px]"></div>
+        {/* Cinematic Luxury Dark Overlays for pristine typography legibility */}
+        <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0A192F] via-[#0A192F]/75 to-[#0A192F]/55"></div>
+        <div className="absolute inset-0 z-10 bg-[#0A192F]/40 backdrop-blur-[0.5px]"></div>
       </div>
 
       {/* Main Hero Content */}
@@ -189,11 +103,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
           <div className="h-[1px] w-12 bg-[#D4AF37]"></div>
         </div>
 
-        {/* Dynamic Scene Caption */}
+        {/* Video Live Indicator */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-black/60 border border-white/20 rounded-full text-xs text-gray-200 my-2 backdrop-blur-md">
-          <span className="w-2 h-2 rounded-full bg-[#5CE1E6] animate-pulse"></span>
-          <span className="font-semibold text-white">{activeSlide.title}</span>
-          <span className="text-gray-400 hidden sm:inline">• {activeSlide.subtitle}</span>
+          <span className={`w-2 h-2 rounded-full ${isPlaying ? 'bg-[#5CE1E6] animate-pulse' : 'bg-amber-400'}`}></span>
+          <span className="font-semibold text-white">Campus Video Stream</span>
+          <span className="text-gray-400 hidden sm:inline">• Lanet Academic Grounds</span>
         </div>
 
         {/* Supporting Paragraph */}
@@ -244,23 +158,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
           )}
         </div>
 
-        {/* Interactive Scene Selector Pills */}
-        <div className="hidden md:flex items-center justify-center gap-2 mt-8 max-w-4xl flex-wrap">
-          {HERO_SLIDES.map((slide, idx) => (
-            <button
-              key={slide.id}
-              onClick={() => selectSlide(idx)}
-              className={`px-3 py-1 text-[11px] font-bold uppercase tracking-wider transition-all rounded-sm border cursor-pointer ${
-                idx === currentSlideIndex
-                  ? 'bg-[#D4AF37] text-[#0A192F] border-[#D4AF37] shadow-lg scale-105'
-                  : 'bg-[#0A192F]/80 text-gray-300 border-gray-700/60 hover:border-[#D4AF37]/50 hover:text-white'
-              }`}
-            >
-              {slide.id}
-            </button>
-          ))}
-        </div>
-
         {/* Key Highlights Bar */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-6 mt-10 max-w-4xl w-full bg-[#0A192F]/90 backdrop-blur-md p-4 sm:p-6 rounded-sm border border-[#D4AF37]/30 shadow-2xl">
           <div className="text-center p-2">
@@ -283,40 +180,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
 
       </div>
 
-      {/* Floating Video & Scene Controls in Bottom Corners */}
-      <div className="absolute bottom-6 left-6 z-30 flex items-center gap-2">
-        <button
-          onClick={prevSlide}
-          className="p-2.5 bg-[#0A192F]/90 hover:bg-[#D4AF37] hover:text-[#0A192F] text-white border border-[#D4AF37]/40 transition-all shadow-lg rounded-sm cursor-pointer"
-          aria-label="Previous scene"
-          title="Previous scene"
-        >
-          <ChevronLeft className="w-4 h-4" />
-        </button>
-
-        <button
-          onClick={nextSlide}
-          className="p-2.5 bg-[#0A192F]/90 hover:bg-[#D4AF37] hover:text-[#0A192F] text-white border border-[#D4AF37]/40 transition-all shadow-lg rounded-sm cursor-pointer"
-          aria-label="Next scene"
-          title="Next scene"
-        >
-          <ChevronRight className="w-4 h-4" />
-        </button>
-
-        <div className="hidden sm:flex flex-col gap-1 w-24 ml-2">
-          <div className="flex justify-between text-[9px] text-gray-400 uppercase font-mono">
-            <span>Scene</span>
-            <span>{currentSlideIndex + 1}/{HERO_SLIDES.length}</span>
-          </div>
-          <div className="w-full h-1.5 bg-gray-800 rounded-full overflow-hidden border border-gray-700">
-            <div
-              className="h-full bg-[#5CE1E6] transition-all duration-75"
-              style={{ width: `${progress}%` }}
-            ></div>
-          </div>
-        </div>
-      </div>
-
+      {/* Floating Video Controls in Bottom Corner */}
       <div className="absolute bottom-6 right-6 z-30 flex items-center gap-2">
         <button
           onClick={toggleSound}
@@ -330,7 +194,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
         <button
           onClick={togglePlay}
           className="flex items-center gap-2 px-3.5 py-2 bg-[#0A192F]/90 hover:bg-white hover:text-[#0A192F] text-white text-xs font-bold uppercase tracking-widest border border-[#D4AF37]/40 transition-all shadow-lg rounded-sm cursor-pointer"
-          aria-label={isPlaying ? 'Pause video motion' : 'Play video motion'}
+          aria-label={isPlaying ? 'Pause background video' : 'Play background video'}
         >
           {isPlaying ? (
             <>
@@ -363,7 +227,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-[#5CE1E6] animate-pulse"></div>
                 <h3 className="font-serif font-bold text-white uppercase text-sm sm:text-base tracking-wider">
-                  St. Gabriel International School • Campus Tour Showcase
+                  St. Gabriel International School • Campus Video Tour
                 </h3>
               </div>
               <button
@@ -375,57 +239,22 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
             </div>
 
             <div className="relative aspect-video w-full bg-black overflow-hidden group">
-              <img
-                src={HERO_SLIDES[currentSlideIndex].image}
-                alt={HERO_SLIDES[currentSlideIndex].title}
-                className="w-full h-full object-cover animate-fade-in"
-              />
-
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
-                <span className="text-[#5CE1E6] text-xs font-bold uppercase tracking-widest">
-                  Featured Facility {currentSlideIndex + 1} of {HERO_SLIDES.length}
-                </span>
-                <h4 className="text-white text-xl sm:text-2xl font-serif font-bold mt-1">
-                  {HERO_SLIDES[currentSlideIndex].title}
-                </h4>
-                <p className="text-gray-300 text-xs sm:text-sm mt-1 max-w-2xl">
-                  {HERO_SLIDES[currentSlideIndex].subtitle}
-                </p>
-              </div>
-
-              {/* Modal Navigation Arrows */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-black/60 hover:bg-[#D4AF37] hover:text-[#0A192F] text-white rounded-full transition-all cursor-pointer"
+              <video
+                ref={modalVideoRef}
+                autoPlay
+                controls
+                playsInline
+                poster={heroImg}
+                className="w-full h-full object-contain"
               >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-black/60 hover:bg-[#D4AF37] hover:text-[#0A192F] text-white rounded-full transition-all cursor-pointer"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
-
-            {/* Modal Bottom Gallery Thumbnails */}
-            <div className="p-4 bg-[#071321] border-t border-gray-800">
-              <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
-                {HERO_SLIDES.map((slide, i) => (
-                  <button
-                    key={slide.id}
-                    onClick={() => selectSlide(i)}
-                    className={`relative rounded overflow-hidden aspect-video border-2 transition-all cursor-pointer ${
-                      i === currentSlideIndex ? 'border-[#5CE1E6] scale-105 shadow-md' : 'border-transparent opacity-60 hover:opacity-100'
-                    }`}
-                  >
-                    <img src={slide.image} alt={slide.title} className="w-full h-full object-cover" />
-                    <span className="absolute inset-0 bg-black/30 flex items-center justify-center text-[9px] font-bold text-white uppercase truncate px-1">
-                      {slide.id}
-                    </span>
-                  </button>
-                ))}
-              </div>
+                <source src={heroVideo} type="video/mp4" />
+                <source src="/hero.mp4" type="video/mp4" />
+                <img
+                  src={heroImg}
+                  alt="St. Gabriel International School Campus Tour"
+                  className="w-full h-full object-cover"
+                />
+              </video>
             </div>
 
             <div className="p-5 bg-[#0A192F] flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-gray-800">

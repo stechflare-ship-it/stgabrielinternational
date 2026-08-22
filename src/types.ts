@@ -115,6 +115,8 @@ export interface DownloadDocument {
   format: 'PDF';
   description: string;
   updatedDate: string;
+  fileUrl?: string;     
+  fileName?: string; 
 }
 
 export interface FAQItem {
