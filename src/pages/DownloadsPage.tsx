@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SEOMetadata } from '../components/SEOMetadata';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { DOWNLOAD_DOCUMENTS } from '../data/schoolData';
-import { Download, FileText, ExternalLink, CheckCircle2, Presentation, ShieldCheck } from 'lucide-react';
+import { Download, ExternalLink, CheckCircle2, ShieldCheck } from 'lucide-react';
 import downloadBg from '../assets/images/backgrounds/download.webp';
 import { generateAndDownloadPDF, openPDFPreview } from '../utils/pdfGenerator';
 
@@ -15,39 +15,6 @@ export const DownloadsPage: React.FC = () => {
       await generateAndDownloadPDF(doc.id);
     } catch (e) {
       console.error('PDF generation error:', e);
-    } finally {
-      setTimeout(() => {
-        setDownloadingId(null);
-      }, 1200);
-    }
-  };
-
-  const handleDeckDownload = async () => {
-    setDownloadingId('doc-presentation-deck');
-    try {
-      const response = await fetch('/St_Gabriel_International_System_Presentation.pdf');
-      if (response.ok && response.headers.get('content-type')?.includes('application/pdf')) {
-        const blob = await response.blob();
-        const blobUrl = window.URL.createObjectURL(blob);
-        const link = document.createElement('a');
-        link.href = blobUrl;
-        link.download = 'St_Gabriel_International_System_Presentation.pdf';
-        document.body.appendChild(link);
-        link.click();
-        setTimeout(() => {
-          document.body.removeChild(link);
-          window.URL.revokeObjectURL(blobUrl);
-        }, 500);
-      } else {
-        const link = document.createElement('a');
-        link.href = '/St_Gabriel_International_System_Presentation.pdf';
-        link.download = 'St_Gabriel_International_System_Presentation.pdf';
-        document.body.appendChild(link);
-        link.click();
-        setTimeout(() => document.body.removeChild(link), 500);
-      }
-    } catch (err) {
-      console.warn('Deck download fallback:', err);
     } finally {
       setTimeout(() => {
         setDownloadingId(null);
@@ -70,6 +37,7 @@ export const DownloadsPage: React.FC = () => {
 
       <Breadcrumbs items={[{ label: 'Document Downloads', path: '/downloads' }]} />
 
+      {/* Hero Header */}
       <section className="relative text-white py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-[#C59B27] overflow-hidden bg-[#0B1D33]">
         <div className="absolute inset-0 z-0">
           <img
@@ -95,63 +63,8 @@ export const DownloadsPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Documents Grid */}
       <section className="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        {/* Featured Institutional System Presentation Card */}
-        <div className="bg-gradient-to-r from-[#0B1D33] to-[#163359] text-white p-6 sm:p-8 rounded-2xl border border-[#C59B27]/50 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-start gap-4">
-            <div className="p-3.5 bg-[#C59B27]/20 border border-[#C59B27] rounded-xl text-[#E0BA43] shrink-0">
-              <Presentation className="w-8 h-8" />
-            </div>
-            <div className="space-y-1.5">
-              <div className="inline-flex items-center gap-2">
-                <span className="px-2 py-0.5 rounded bg-[#C59B27] text-[#0B1D33] text-[10px] font-extrabold uppercase tracking-wider">
-                  Featured Official Resource
-                </span>
-                <span className="text-xs text-gray-300 font-mono">16-Slide PDF Deck</span>
-              </div>
-              <h2 className="font-serif text-xl sm:text-2xl font-bold text-white">
-                St. Gabriel Institutional Presentation Deck & System Overview
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-300 max-w-2xl">
-                Comprehensive 16-slide corporate deck covering company profile (TechFlare Solutions), dual curriculum structure, boarding life, leadership, and full institutional pathways.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 w-full md:w-auto shrink-0">
-            <a
-              href="/St_Gabriel_International_System_Presentation.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition-all inline-flex items-center justify-center gap-2 border border-white/20 w-full sm:w-auto"
-            >
-              <ExternalLink className="w-3.5 h-3.5 text-[#5CE1E6]" />
-              <span>Preview Online</span>
-            </a>
-            <button
-              onClick={handleDeckDownload}
-              className={`px-5 py-2.5 rounded-xl text-xs font-bold transition-all inline-flex items-center justify-center gap-2 shadow-lg w-full sm:w-auto cursor-pointer ${
-                downloadingId === 'doc-presentation-deck'
-                  ? 'bg-emerald-500 text-white'
-                  : 'bg-[#C59B27] hover:bg-[#d8ae34] text-[#0B1D33]'
-              }`}
-            >
-              {downloadingId === 'doc-presentation-deck' ? (
-                <>
-                  <CheckCircle2 className="w-4 h-4 animate-bounce" />
-                  <span>Downloading...</span>
-                </>
-              ) : (
-                <>
-                  <Download className="w-4 h-4" />
-                  <span>Download Deck PDF</span>
-                </>
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* Regular Documents Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {DOWNLOAD_DOCUMENTS.map((doc) => {
             const isDownloading = downloadingId === doc.id;
