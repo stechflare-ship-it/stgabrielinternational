@@ -17,7 +17,7 @@ export interface BoardingCompound {
 
 export const BOARDING_COMPOUNDS: BoardingCompound[] = [
   {
-    name: 'St. Gabriel Boys\' Residential Campus',
+    name: 'St Gabriel\'s Boys\' Residential Campus',
     type: 'Boys',
     location: 'Lanet North Compound, Nakuru',
     distance: 'Main Lanet Campus',
@@ -33,7 +33,7 @@ export const BOARDING_COMPOUNDS: BoardingCompound[] = [
     image: boardingbackground
   },
   {
-    name: 'St. Gabriel Girls\' Residential Campus',
+    name: 'St Gabriel\'s Girls\' Residential Campus',
     type: 'Girls',
     location: 'Lanet South Green Compound, Nakuru',
     distance: '4 km from Boys\' Compound in Lanet',

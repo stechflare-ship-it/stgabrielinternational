@@ -19,7 +19,7 @@ export const NewsPage: React.FC = () => {
 
   const categories = ['All', 'Academic', 'Arts', 'Sports', 'Community', 'Event'];
 
-  // Check URL hash or query param on mount or hash change (e.g. #outstanding-cambridge-exam-results)
+  // Check URL hash or query param on mount or hash change (e.g. #outstanding-British-exam-results)
   useEffect(() => {
     if (location.hash) {
       const slug = location.hash.replace('#', '');
@@ -38,18 +38,18 @@ export const NewsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="School News, Events & Press Releases | St. Gabriel Nakuru"
-        description="Latest news, Cambridge examination distinctions, co-curricular galas, and announcements from St. Gabriel International School in Lanet, Nakuru."
-        keywords="school news nakuru, st gabriel events, cambridge exam results nakuru, music festivals nakuru, school announcements lanet"
+        title="School News, Events & Press Releases | St Gabriel\'s Nakuru"
+        description="Latest news, British examination distinctions, co-curricular galas, and announcements from St Gabriel\'s International School in Lanet, Nakuru."
+        keywords="school news nakuru, st gabriel events, British exam results nakuru, music festivals nakuru, school announcements lanet"
         canonicalPath="/news"
         ogType="website"
-        ogTitle="School News & Official Announcements · St. Gabriel Nakuru"
-        ogDescription="Read our latest campus updates, national music gala triumphs, Cambridge exam distinctions, and upcoming school calendar events."
+        ogTitle="School News & Official Announcements · St Gabriel\'s Nakuru"
+        ogDescription="Read our latest campus updates, national music gala triumphs, British exam distinctions, and upcoming school calendar events."
         breadcrumbs={[{ name: 'News & Events', path: '/news' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'CollectionPage',
-          name: 'St. Gabriel International School News & Events',
+          name: 'St Gabriel\'s International School News & Events',
           description: 'Official press releases, academic achievement highlights, and community updates.',
           mainEntity: {
             '@type': 'ItemList',
@@ -74,7 +74,7 @@ export const NewsPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={newsBgImg}
-            alt="St. Gabriel School News and Graduation Celebrations"
+            alt="St Gabriel\'s School News and Graduation Celebrations"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -90,7 +90,7 @@ export const NewsPage: React.FC = () => {
             News & Announcements
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
-            Stay informed with academic achievements, Cambridge IGCSE and Kenya CBC exam distinctions, co-curricular galas, and official school updates.
+            Stay informed with academic achievements, British IGCSE and Kenya CBC exam distinctions, co-curricular galas, and official school updates.
           </p>
         </div>
       </section>

@@ -25,12 +25,12 @@ export const DownloadsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Downloadable School Documents & Prospectus | St. Gabriel Nakuru"
-        description="Download official St. Gabriel International School prospectus, term calendars, fee structures, boarding handbooks, and requirements checklists."
+        title="Downloadable School Documents & Prospectus | St Gabriel\'s Nakuru"
+        description="Download official St Gabriel\'s International School prospectus, term calendars, fee structures, boarding handbooks, and requirements checklists."
         keywords="school prospectus download, st gabriel forms, fee structure pdf, term dates calendar nakuru, boarding checklist download"
         canonicalPath="/downloads"
         ogType="website"
-        ogTitle="Official School Documents & Prospectus Downloads · St. Gabriel"
+        ogTitle="Official School Documents & Prospectus Downloads · St Gabriel\'s"
         ogDescription="Download official PDF school documents including prospectus, term calendars, fees breakdowns, and boarding requirements."
         breadcrumbs={[{ name: 'Downloads', path: '/downloads' }]}
       />
@@ -42,7 +42,7 @@ export const DownloadsPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={downloadBg}
-            alt="St. Gabriel School Library and Resources"
+            alt="St Gabriel\'s School Library and Resources"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -138,7 +138,7 @@ export const DownloadsPage: React.FC = () => {
         <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs flex items-center gap-3">
           <ShieldCheck className="w-5 h-5 text-emerald-600 shrink-0" />
           <span>
-            <strong>Official Verification Notice:</strong> All downloadable documents are digitally certified by the St. Gabriel International School Registrar and Board of Management for the 2026/2027 academic session.
+            <strong>Official Verification Notice:</strong> All downloadable documents are digitally certified by the St Gabriel\'s International School Registrar and Board of Management for the 2026/2027 academic session.
           </span>
         </div>
       </section>

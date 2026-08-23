@@ -25,7 +25,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
       {
         heading: '1. Institutional Profile & Dual Curriculum Distinction',
         bullets: [
-          'Dual Curriculum Excellence: Accredited Kenyan CBC (PP1 through Grade 12) & British Cambridge International (EYFS to A-Levels).',
+          'Dual Curriculum Excellence: Accredited Kenyan CBC (PP1 through Grade 12) & British International (EYFS to A-Levels).',
           'Campus Environment: Purpose-built 15-acre modern academic facility in Lanet, Nakuru with pristine air and focused study ambiance.',
           'Small Class Ratios: 1:15 educator-to-scholar ratio ensuring personalized mentorship and individualized diagnostic attention.',
           'Christian Foundation: Anchored in biblical morality, leadership stewardship, discipline, and compassionate global citizenship.'
@@ -36,7 +36,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
         bullets: [
           'Early Years (EYFS & PP1-PP2): Synthetic phonics, Montessori sensorial manipulatives, play-based numeracy, and expressive arts.',
           'Primary & Junior Secondary: STEM integration, coding & robotics, integrated science, agricultural practicals, and modern languages.',
-          'Cambridge IGCSE & A-Levels: International pre-university qualifications unlocking entry to Ivy League and Russell Group universities.',
+          'British IGCSE & A-Levels: International pre-university qualifications unlocking entry to Ivy League and Russell Group universities.',
           'Kenyan CBC Senior School: Specialized career pathways in STEM, Social Sciences, Arts & Sports Science.'
         ]
       },
@@ -45,7 +45,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
         bullets: [
           'Residential Compounds: Separate, perimeter-secured boarding compounds for boys and girls with 24/7 biometric security and CCTV.',
           'Healthcare & Nutrition: 24/7 on-campus dispensary staffed by certified nurses, paired with fresh, balanced 4-meal daily catering.',
-          'Co-Curricular Pride: Championship St. Gabriel Brass Band, robotics suites, Olympic-size swimming pool, and sports leagues.'
+          'Co-Curricular Pride: Championship St Gabriel\'s Brass Band, robotics suites, Olympic-size swimming pool, and sports leagues.'
         ]
       }
     ]
@@ -78,7 +78,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
         heading: '3. Approved Official Payment Channels',
         bullets: [
           'M-PESA Paybill: Business Number: 247247 | Account Number: 0724694554 (Student Name & Grade).',
-          'Equity Bank Kenya: Account Name: St. Gabriel International School | Account No: 0180293847561 | Nakuru Branch.',
+          'Equity Bank Kenya: Account Name: St Gabriel\'s International School | Account No: 0180293847561 | Nakuru Branch.',
           'Payment Policy: Fees must be paid on or before opening day. Cash payments are strictly prohibited on school premises.'
         ]
       }
@@ -88,7 +88,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
     id: 'doc-admission-form',
     title: 'Student Admission & Medical Declaration Form 2026/2027',
     category: 'Admissions & Enrollment',
-    subtitle: 'Official application document for incoming Day Scholars and Boarding candidates across CBC and Cambridge streams.',
+    subtitle: 'Official application document for incoming Day Scholars and Boarding candidates across CBC and British streams.',
     fileName: 'St_Gabriel_Student_Admission_Enrollment_Form.pdf',
     sections: [
       {
@@ -96,7 +96,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
         bullets: [
           'Full Student Legal Name (as per Birth Certificate / Passport): ____________________________________________________',
           'Date of Birth: (DD/MM/YYYY): ____/____/________  |  Gender: [  ] Male   [  ] Female  |  Nationality: __________________',
-          'Curriculum Applying For: [  ] Kenyan CBC System    [  ] British Cambridge International System',
+          'Curriculum Applying For: [  ] Kenyan CBC System    [  ] British International System',
           'Grade / Level Applying For: ________________________  |  Attendance Mode: [  ] Day Scholar    [  ] Full Boarding'
         ]
       },
@@ -175,7 +175,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
         bullets: [
           'Term Opening Dates: Monday, 4th May 2026 (Boarders report: Sunday, 3rd May 2026).',
           'Mid-Term Break: Wednesday, 17th June - Sunday, 21st June 2026.',
-          'National Music Festival & Arts Week: 15th - 24th July 2026 (Featuring the Championship St. Gabriel Brass Band).',
+          'National Music Festival & Arts Week: 15th - 24th July 2026 (Featuring the Championship St Gabriel\'s Brass Band).',
           'Term 2 Closing & Academic Clinics: Friday, 7th August 2026.'
         ]
       },
@@ -184,7 +184,7 @@ export const PDF_DEFINITIONS: Record<string, DocumentDefinition> = {
         bullets: [
           'Term Opening Dates: Monday, 31st August 2026 (Boarders report: Sunday, 30th August 2026).',
           'KPSEA & KJSEA National Exams: 26th October - 30th October 2026.',
-          'Cambridge IGCSE & A-Level Series: October - November 2026.',
+          'British IGCSE & A-Level Series: October - November 2026.',
           'Graduation & Valedictory Service: Friday, 13th November 2026 | Official Year Closing: Friday, 20th November 2026.'
         ]
       }
@@ -201,7 +201,7 @@ export async function generateAndDownloadPDF(docId: string): Promise<void> {
 
   const pdfDoc = await PDFDocument.create();
   pdfDoc.setTitle(docDef.title);
-  pdfDoc.setAuthor('St. Gabriel International School');
+  pdfDoc.setAuthor('St Gabriel\'s International School');
   pdfDoc.setSubject(docDef.category);
 
   const width = 595.28;
@@ -238,7 +238,7 @@ export async function generateAndDownloadPDF(docId: string): Promise<void> {
     color: cGold,
   });
 
-  page.drawText('ST. GABRIEL INTERNATIONAL SCHOOL', {
+  page.drawText('St Gabriel\'s INTERNATIONAL SCHOOL', {
     x: 40,
     y: height - 40,
     size: 18,
@@ -254,7 +254,7 @@ export async function generateAndDownloadPDF(docId: string): Promise<void> {
     color: rgb(220 / 255, 230 / 255, 242 / 255),
   });
 
-  page.drawText('Dual Curriculum: Kenyan CBC (PP1 - Grade 12) & British Cambridge (EYFS - A Levels)', {
+  page.drawText('Dual Curriculum: Kenyan CBC (PP1 - Grade 12) & British (EYFS - A Levels)', {
     x: 40,
     y: height - 74,
     size: 8.5,
@@ -371,7 +371,7 @@ export async function generateAndDownloadPDF(docId: string): Promise<void> {
     color: cGold,
   });
 
-  page.drawText('St. Gabriel International School | info@stgabrielinternational.sc.ke | https://stgabrielinternational.sc.ke', {
+  page.drawText('St Gabriel\'s International School | info@stgabrielinternational.sc.ke | https://stgabrielinternational.sc.ke', {
     x: 52,
     y: 48,
     size: 7.5,
@@ -407,7 +407,7 @@ export async function openPDFPreview(docId: string): Promise<void> {
 
   const pdfDoc = await PDFDocument.create();
   pdfDoc.setTitle(docDef.title);
-  pdfDoc.setAuthor('St. Gabriel International School');
+  pdfDoc.setAuthor('St Gabriel\'s International School');
   pdfDoc.setSubject(docDef.category);
 
   const width = 595.28;
@@ -442,7 +442,7 @@ export async function openPDFPreview(docId: string): Promise<void> {
     color: cGold,
   });
 
-  page.drawText('ST. GABRIEL INTERNATIONAL SCHOOL', {
+  page.drawText('St Gabriel\'s INTERNATIONAL SCHOOL', {
     x: 40,
     y: height - 40,
     size: 18,
@@ -458,7 +458,7 @@ export async function openPDFPreview(docId: string): Promise<void> {
     color: rgb(220 / 255, 230 / 255, 242 / 255),
   });
 
-  page.drawText('Dual Curriculum: Kenyan CBC (PP1 - Grade 12) & British Cambridge (EYFS - A Levels)', {
+  page.drawText('Dual Curriculum: Kenyan CBC (PP1 - Grade 12) & British (EYFS - A Levels)', {
     x: 40,
     y: height - 74,
     size: 8.5,
@@ -570,7 +570,7 @@ export async function openPDFPreview(docId: string): Promise<void> {
     color: cGold,
   });
 
-  page.drawText('St. Gabriel International School | info@stgabrielinternational.sc.ke | https://stgabrielinternational.sc.ke', {
+  page.drawText('St Gabriel\'s International School | info@stgabrielinternational.sc.ke | https://stgabrielinternational.sc.ke', {
     x: 52,
     y: 48,
     size: 7.5,

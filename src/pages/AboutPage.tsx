@@ -38,19 +38,19 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="About Us & School History | Kenya CBC & British Cambridge | St. Gabriel Nakuru"
-        description="Discover the 28-year history of St. Gabriel in Lanet, Nakuru. From foundational mission school and KCPE/KPSEA champions to premier dual-curriculum Kenya CBC and British Cambridge institution."
-        keywords="about st gabriel, school history, lanet, nakuru, kenya, cbc, kenya syllabus, kpsea, junior secondary, british curriculum, cambridge, mr nicholas, st gabriel leadership, mission school lanet"
+        title="About Us & School History | Kenya CBC & British | St Gabriel\'s Nakuru"
+        description="Discover the 28-year history of St Gabriel\'s in Lanet, Nakuru. From foundational mission school and KCPE/KPSEA champions to premier dual-curriculum Kenya CBC and British institution."
+        keywords="about st gabriel, school history, lanet, nakuru, kenya, cbc, kenya syllabus, kpsea, junior secondary, british curriculum, British, mr nicholas, st gabriel leadership, mission school lanet"
         canonicalPath="/about"
         ogType="website"
-        ogTitle="About St. Gabriel International School · 28 Years of Educational Distinction"
+        ogTitle="About St Gabriel\'s International School · 28 Years of Educational Distinction"
         ogDescription="Explore our heritage of holistic Christian character development, academic championships, and seamless dual-curriculum pathways in Lanet, Nakuru."
         breadcrumbs={[{ name: 'About Us', path: '/about' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
-          name: 'About St. Gabriel International School',
-          description: 'The official history, mission, core values, and executive leadership of St. Gabriel International School in Lanet, Nakuru, Kenya.',
+          name: 'About St Gabriel\'s International School',
+          description: 'The official history, mission, core values, and executive leadership of St Gabriel\'s International School in Lanet, Nakuru, Kenya.',
           mainEntity: {
             '@type': 'EducationalOrganization',
             name: SCHOOL_INFO.name,
@@ -72,7 +72,7 @@ export const AboutPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={aboutBgImg}
-            alt="St. Gabriel Campus Grounds in Lanet Nakuru"
+            alt="St Gabriel\'s Campus Grounds in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -84,7 +84,7 @@ export const AboutPage: React.FC = () => {
             Est. 1998 • Lanet, Nakuru County
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
-            About St. Gabriel International School
+            About St Gabriel\'s International School
           </h1>
           <p className="font-serif italic text-[#E0BA43] text-lg sm:text-xl font-semibold drop-shadow-sm">
             &quot;{SCHOOL_INFO.motto}&quot;
@@ -102,10 +102,10 @@ export const AboutPage: React.FC = () => {
               align="left"
             />
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-              Founded in 1998 in Lanet, Nakuru County, St. Gabriel was established with a singular mission: to provide high-quality, holistic education grounded in Christian values, self-discipline, and intellectual curiosity.
+              Founded in 1998 in Lanet, Nakuru County, St Gabriel\'s was established with a singular mission: to provide high-quality, holistic education grounded in Christian values, self-discipline, and intellectual curiosity.
             </p>
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
-              For nearly three decades, St. Gabriel has stood as a bastion of academic excellence in Kenya, pioneering the national Competency-Based Curriculum (CBC) through KPSEA Grade 6 and accredited Junior Secondary School (JSS Grades 7–9), alongside our premier British Cambridge International pathway.
+              For nearly three decades, St Gabriel\'s has stood as a bastion of academic excellence in Kenya, pioneering the national Competency-Based Curriculum (CBC) through KPSEA Grade 6 and accredited Junior Secondary School (JSS Grades 7–9), alongside our premier British International pathway.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -122,10 +122,10 @@ export const AboutPage: React.FC = () => {
               <div className="p-4 rounded-2xl bg-sky-900/10 border border-sky-500/30 space-y-1.5">
                 <div className="flex items-center gap-2 text-sky-800 font-bold text-xs uppercase">
                   <Globe className="w-4 h-4 text-sky-600" />
-                  <span>British Cambridge</span>
+                  <span>British</span>
                 </div>
                 <p className="text-xs text-gray-700">
-                  EYFS (Playgroup to Reception), Cambridge Primary, Lower Secondary, IGCSE & Advanced Level (A-Level).
+                  EYFS (Playgroup to Reception), British Primary, Lower Secondary, IGCSE & Advanced Level (A-Level).
                 </p>
               </div>
             </div>
@@ -144,7 +144,7 @@ export const AboutPage: React.FC = () => {
           <div className="relative">
             <img
               src={aboutBgImg}
-              alt="St. Gabriel Campus Administration"
+              alt="St Gabriel\'s Campus Administration"
               className="rounded-3xl shadow-2xl border-4 border-white object-cover w-full h-[450px]"
               referrerPolicy="no-referrer"
             />
@@ -331,7 +331,7 @@ export const AboutPage: React.FC = () => {
               Meet Our Inspiring Faculty & Department Leads
             </h3>
             <p className="text-sm text-gray-200 max-w-2xl">
-              Explore our full staff directory of Cambridge and CBC certified educators, STEM researchers, language specialists, sports coaches, and pastoral caregivers.
+              Explore our full staff directory of British and CBC certified educators, STEM researchers, language specialists, sports coaches, and pastoral caregivers.
             </p>
           </div>
           <Button
@@ -359,7 +359,7 @@ export const AboutPage: React.FC = () => {
           Explore Academic & Boarding Life
         </h2>
         <p className="text-gray-600 text-sm my-4">
-          Learn more about our Kenya CBC and British Cambridge curriculum stages or contact our admissions office in Lanet, Nakuru.
+          Learn more about our Kenya CBC and British curriculum stages or contact our admissions office in Lanet, Nakuru.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Button to="/academics" variant="primary" size="md">

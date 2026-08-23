@@ -6,7 +6,7 @@ import { BookOpen, Calendar, User, ArrowRight, Search, Tag, Clock, Share2, Spark
 import { Button } from '../components/Button';
 
 
-import cambridgeIgce from '../assets/images/blogs/cambridgeIgce.webp';
+import BritishIgce from '../assets/images/blogs/BritishIgce.webp';
 import boardingLife from '../assets/images/blogs/boardingLife.webp';
 import efsplayground from '../assets/images/blogs/eyfsplaygroup.webp';
 import coding from '../assets/images/blogs/coding.webp';
@@ -31,22 +31,22 @@ interface BlogPost {
 const BLOG_POSTS: BlogPost[] = [
   {
     id: 'blog-1',
-    title: 'Navigating the Cambridge IGCSE & A-Level Curriculum: A Parent Guide',
+    title: 'Navigating the British IGCSE & A-Level Curriculum: A Parent Guide',
     category: 'Academic Excellence',
     date: 'August 4, 2026',
     readTime: '5 min read',
     author: 'Academic Directorate',
-    summary: 'Discover how the British International curriculum equips scholars with global analytical skills, Cambridge examination mastery, and pathways to elite global universities.',
+    summary: 'Discover how the British International curriculum equips scholars with global analytical skills, British examination mastery, and pathways to elite global universities.',
     content: [
-      'The Cambridge Assessment International Education (CAIE) curriculum is recognized worldwide for its rigor, conceptual depth, and focus on practical problem-solving. At St. Gabriel International School in Lanet, Nakuru, we offer a seamless educational pathway from EYFS through A-Level.',
-      'Key advantages of the Cambridge curriculum include:',
-      '1. Global Recognition: Cambridge IGCSE and A-Level qualifications are accepted by top universities across the UK, USA, Canada, Australia, and Africa.',
+      'The British Assessment International Education (CAIE) curriculum is recognized worldwide for its rigor, conceptual depth, and focus on practical problem-solving. At St Gabriel\'s International School in Lanet, Nakuru, we offer a seamless educational pathway from EYFS through A-Level.',
+      'Key advantages of the British curriculum include:',
+      '1. Global Recognition: British IGCSE and A-Level qualifications are accepted by top universities across the UK, USA, Canada, Australia, and Africa.',
       '2. Critical Thinking & Application: Students are evaluated not merely on memory recall, but on their capacity to synthesize complex information, construct argument structures, and solve real-world problems.',
       '3. Subject Specialization: At A-Level, learners tailor their academic trajectory toward their career aspirations in Medicine, Engineering, Computer Science, Law, and International Business.',
       'Our dedicated faculty provides continuous pastoral support and examination preparation, ensuring every candidate enters test series with confidence and intellectual discipline.'
     ],
-    image: cambridgeIgce,
-    tags: ['Cambridge', 'IGCSE', 'A-Level', 'Academic Excellence']
+    image: BritishIgce,
+    tags: ['British', 'IGCSE', 'A-Level', 'Academic Excellence']
   },
   {
     id: 'blog-2',
@@ -57,7 +57,7 @@ const BLOG_POSTS: BlogPost[] = [
     author: 'Pastoral Care Team',
     summary: 'Our structured separate boys and girls boarding facilities in Lanet provide a safe, home-away-from-home environment that nurtures self-reliance and lifelong friendships.',
     content: [
-      'Transitioning to boarding school is a monumental milestone in a young scholar’s journey. At St. Gabriel International School, our separate 4km boys and girls compounds ensure privacy, safety, and focused personal growth.',
+      'Transitioning to boarding school is a monumental milestone in a young scholar’s journey. At St Gabriel\'s International School, our separate 4km boys and girls compounds ensure privacy, safety, and focused personal growth.',
       'Structured routines—from morning devotionals and nutritious balanced meals to supervised evening prep and weekend recreation—instill time management skills that serve scholars for a lifetime.',
       'House parents and residential matrons maintain a warm, family-like atmosphere where emotional welfare and peer mentorship go hand-in-hand.',
       'Through shared responsibilities, dorm cleanup challenges, and weekend coffee house talent evenings, boarders develop emotional resilience, empathetic leadership, and enduring brotherhood and sisterhood.'
@@ -75,7 +75,7 @@ const BLOG_POSTS: BlogPost[] = [
     summary: 'In an increasingly digital world, early exposure to computer programming, 3D logic, and eco-robotics prepares learners for the technological careers of tomorrow.',
     content: [
       'Technology literacy is no longer an optional co-curricular activity—it is a fundamental building block of modern education.',
-      'In St. Gabriel’s ICT laboratories, primary and lower secondary learners engage with block-based coding, Python basics, and environmental robotics kits.',
+      'In St Gabriel\'s’s ICT laboratories, primary and lower secondary learners engage with block-based coding, Python basics, and environmental robotics kits.',
       'By linking STEM projects to ecological challenges in Nakuru County, students learn how software engineering and clean technology can address real community issues.',
       'Hands-on computational thinking builds confidence, spatial awareness, and creative problem-solving skills across all academic subjects.'
     ],
@@ -105,7 +105,7 @@ const BLOG_POSTS: BlogPost[] = [
     date: 'June 12, 2026',
     readTime: '4 min read',
     author: 'EYFS Early Years Lead',
-    summary: 'A warm, practical guide for parents preparing their young ones for play-based learning and early literacy at St. Gabriel International School.',
+    summary: 'A warm, practical guide for parents preparing their young ones for play-based learning and early literacy at St Gabriel\'s International School.',
     content: [
       'The Early Years Foundation Stage (EYFS) sets the foundation for a child’s lifelong love for discovery. Transitioning into playgroup or reception is an exciting adventure.',
       'To ensure a seamless transition:',
@@ -138,18 +138,18 @@ export const BlogPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="School Blog, Educational Insights & Parent Guides | St. Gabriel Nakuru"
-        description="Read articles, parent guides, Cambridge curriculum advice, boarding insights, and STEM updates from St. Gabriel International School in Lanet, Nakuru."
-        keywords="school blog nakuru, cambridge parenting guide, cbc education articles, boarding preparation tips, stem learning nakuru, st gabriel articles"
+        title="School Blog, Educational Insights & Parent Guides | St Gabriel\'s Nakuru"
+        description="Read articles, parent guides, British curriculum advice, boarding insights, and STEM updates from St Gabriel\'s International School in Lanet, Nakuru."
+        keywords="school blog nakuru, British parenting guide, cbc education articles, boarding preparation tips, stem learning nakuru, st gabriel articles"
         canonicalPath="/blog"
         ogType="website"
-        ogTitle="Educational Insights & Campus Stories · St. Gabriel Nakuru"
+        ogTitle="Educational Insights & Campus Stories · St Gabriel\'s Nakuru"
         ogDescription="Thought leadership on dual-curriculum excellence, holistic parenting, early childhood development, and modern STEM education."
         breadcrumbs={[{ name: 'Blog & Articles', path: '/blog' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'Blog',
-          name: 'St. Gabriel International School Educational Blog',
+          name: 'St Gabriel\'s International School Educational Blog',
           description: 'Parent guides, academic advice, and insights from faculty and educators.',
           blogPost: BLOG_POSTS.map((post) => ({
             '@type': 'BlogPosting',
@@ -172,8 +172,8 @@ export const BlogPage: React.FC = () => {
         {/* Background Hero Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={cambridgeIgce}
-            alt="St. Gabriel Educational Insights & Articles"
+            src={BritishIgce}
+            alt="St Gabriel\'s Educational Insights & Articles"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -186,7 +186,7 @@ export const BlogPage: React.FC = () => {
             <span>Educational Insights & Campus Stories</span>
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
-            St. Gabriel Blog & Parent Resources
+            St Gabriel\'s Blog & Parent Resources
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
             Expert articles on British curriculum pathways, boarding welfare, STEM innovation, and holistic child development in Lanet, Nakuru.

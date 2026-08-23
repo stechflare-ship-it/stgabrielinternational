@@ -30,7 +30,7 @@ export const BoardingSection: React.FC = () => {
             </h2>
 
             <p className="text-gray-300 text-base leading-relaxed">
-              At St. Gabriel International School, we provide both Day School options and structured Boarding programs for boys and girls in Lanet, Nakuru County.
+              At St Gabriel\'s International School, we provide both Day School options and structured Boarding programs for boys and girls in Lanet, Nakuru County.
             </p>
 
             {/* CRITICAL PROMPT HIGHLIGHT: Separate Boarding ~4 km apart */}
@@ -87,7 +87,7 @@ export const BoardingSection: React.FC = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#C59B27]/40">
               <img
                 src={facilities}
-                alt="St. Gabriel Boarding Facilities in Lanet"
+                alt="St Gabriel\'s Boarding Facilities in Lanet"
                 className="w-full h-80 sm:h-96 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#071321] via-transparent to-transparent"></div>

@@ -36,16 +36,16 @@ export const AcademicsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Academics & Dual Curriculum Pathways | Kenya CBC & British | St. Gabriel's Mission Nakuru"
-        description="Explore comprehensive Kenya CBC (PP1 through Senior School Grades 10–12) and British (EYFS through A-Levels) at St. Gabriel's Mission International School in Lanet, Nakuru."
-        keywords="international school nakuru, kenya cbc, senior school kenya, junior secondary school, jss nakuru, British igcse, a-level, stem pathway, social sciences, arts pathway, st gabriel's Mission lanet, dual curriculum nakuru, British international kenya"
+        title="Academics & Dual Curriculum Pathways | Kenya CBC & British | St Gabriel's Mission Nakuru"
+        description="Explore comprehensive Kenya CBC (PP1 through Senior School Grades 10–12) and British (EYFS through A-Levels) at St Gabriel's Mission International School in Lanet, Nakuru."
+        keywords="international school nakuru, kenya cbc, senior school kenya, junior secondary school, jss nakuru, British igcse, a-level, stem pathway, social sciences, arts pathway, St Gabriel\'s Mission lanet, dual curriculum nakuru, British international kenya"
         canonicalPath="/academics"
         ogType="website"
         ogTitle="Dual-Curriculum Academic Pathways · Kenya CBC & British Curriculum"
         ogDescription="Providing tailored learning pathways from Early Childhood, Primary, JSS, Senior School STEM & Arts to British IGCSE and A-Level in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Academics', path: '/academics' }]}
         course={{
-          name: "St. Gabriel's Mission Dual-Curriculum Academic Program (Kenya CBC & British Curriculum)",
+          name: "St  Gabriel's Mission Dual-Curriculum Academic Program (Kenya CBC & British Curriculum)",
           description: 'Comprehensive academic framework spanning Kenya Competency-Based Curriculum and CAIE British International Curriculum with state-of-the-art STEM laboratories and arts conservatory.',
           educationalLevel: 'Early Childhood to High School (A-Level / Grade 12)',
           teaches: [
@@ -65,7 +65,7 @@ export const AcademicsPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={academicBg}
-            alt="St. Gabriel Academic Pathways & Classrooms"
+            alt="St Gabriel\'s Academic Pathways & Classrooms"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -78,7 +78,7 @@ export const AcademicsPage: React.FC = () => {
               🇰🇪 Kenya CBC (PP1 – Senior Secondary Grade 12)
             </span>
             <span className="px-3.5 py-1.5 rounded-full bg-[#C59B27]/20 backdrop-blur-sm text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
-              🇬🇧 British Curriculum (EYFS – A-Level)
+              🇬🇧 British International Curriculum (EYFS – A-Level)
             </span>
           </div>
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-sm leading-tight">
@@ -145,7 +145,7 @@ export const AcademicsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* British Cambridge Card */}
+            {/* British  Card */}
             <div className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-sky-50/70 via-white to-sky-50/30 border-2 border-sky-500/40 shadow-xl space-y-4 hover:border-sky-600 transition-all">
               <div className="flex items-center justify-between">
                 <span className="px-3 py-1 rounded-full bg-[#0B1D33] text-[#E0BA43] text-xs font-bold uppercase tracking-wider">
@@ -180,7 +180,7 @@ export const AcademicsPage: React.FC = () => {
                   to="/academics/igcse"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B1D33] hover:text-[#C59B27] uppercase tracking-wider group"
                 >
-                  <span>Explore British International Details</span>
+                  <span>Explore British International Syllabus Details</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -347,7 +347,7 @@ export const AcademicsPage: React.FC = () => {
         <SectionHeading
           badge="Curriculum Pathways"
           title="Progressive Learning Stages (PP1 – Senior School / A-Levels)"
-          subtitle="Explore Kenya CBC and British Cambridge stages below to inspect subject lists, age brackets, learning outcomes, and assessment modes."
+          subtitle="Explore Kenya CBC and British stages below to inspect subject lists, age brackets, learning outcomes, and assessment modes."
         />
         <CurriculumTimeline />
       </section>
@@ -367,7 +367,7 @@ export const AcademicsPage: React.FC = () => {
               <div className="h-48 overflow-hidden">
                 <img
                   src={complab}
-                  alt="St. Gabriel Computer & Coding Laboratory"
+                  alt="St Gabriel\'s Computer & Coding Laboratory"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -402,7 +402,7 @@ export const AcademicsPage: React.FC = () => {
                   Fully Fitted STEM Research Labs
                 </h4>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Dedicated Biology, Chemistry, and Physics laboratories providing hands-on apparatus for KJSEA practicals, KNEC assessments, and Cambridge IGCSE coursework.
+                  Dedicated Biology, Chemistry, and Physics laboratories providing hands-on apparatus for KJSEA practicals, KNEC assessments, and British IGCSE coursework.
                 </p>
               </div>
             </div>
@@ -437,7 +437,7 @@ export const AcademicsPage: React.FC = () => {
       <TestimonialSlider
         badge="Academic Endorsements"
         title="Scholars & Parents on Academic Life"
-        subtitle="Hear first-hand experiences regarding teacher dedication, exam distinctions, and spiritual formation at St. Gabriel."
+        subtitle="Hear first-hand experiences regarding teacher dedication, exam distinctions, and spiritual formation at St Gabriel\'s."
       />
 
       {/* Enrollment Call to Action */}
@@ -447,7 +447,7 @@ export const AcademicsPage: React.FC = () => {
             Admissions Open for 2026 Academic Year
           </span>
           <h2 className="font-serif text-2xl sm:text-4xl font-extrabold text-white">
-            Give Your Child the St. Gabriel's Mission Academic Advantage
+            Give Your Child the St Gabriel's Mission Academic Advantage
           </h2>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             Our admissions and academic advisors in Lanet, Nakuru are available to guide you on CBC and British stream placements, scholarship criteria, and boarding enrollment.

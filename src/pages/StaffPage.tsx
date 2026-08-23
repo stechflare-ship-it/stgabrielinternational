@@ -71,19 +71,19 @@ export const StaffPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Faculty & Teaching Staff | St. Gabriel International School, Nakuru"
-        description="Meet the dedicated, internationally certified educators, STEM specialists, department heads, and pastoral mentors at St. Gabriel International School in Lanet, Nakuru."
-        keywords="St Gabriel teachers, international school faculty nakuru, cambridge teachers kenya, cbc educators, nakuru boarding school staff, science teachers nakuru, brass band director"
+        title="Faculty & Teaching Staff | St Gabriel\'s International School, Nakuru"
+        description="Meet the dedicated, internationally certified educators, STEM specialists, department heads, and pastoral mentors at St Gabriel\'s International School in Lanet, Nakuru."
+        keywords="St Gabriel teachers, international school faculty nakuru, British teachers kenya, cbc educators, nakuru boarding school staff, science teachers nakuru, brass band director"
         canonicalPath="/staff"
         ogType="website"
-        ogTitle="Faculty & Teaching Staff · St. Gabriel International School"
+        ogTitle="Faculty & Teaching Staff · St Gabriel\'s International School"
         ogDescription="World-class educators and compassionate mentors empowering academic excellence and Christian character in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Faculty & Staff', path: '/staff' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'AboutPage',
-          name: 'Faculty & Staff Directory - St. Gabriel International School',
-          description: 'Meet our academic leadership, department heads, certified Cambridge educators, and pastoral mentors.',
+          name: 'Faculty & Staff Directory - St Gabriel\'s International School',
+          description: 'Meet our academic leadership, department heads, certified British educators, and pastoral mentors.',
           mainEntity: {
             '@type': 'ItemList',
             itemListElement: STAFF_MEMBERS.map((member, idx) => ({
@@ -109,7 +109,7 @@ export const StaffPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={heroBgImg}
-            alt="St. Gabriel Faculty Background"
+            alt="St Gabriel\'s Faculty Background"
             className="w-full h-full object-cover opacity-25 scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#071321] via-[#0A192F]/90 to-[#0A192F]/70" />
@@ -134,7 +134,7 @@ export const StaffPage: React.FC = () => {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-200 leading-relaxed font-normal">
-              Meet our passionate team of Cambridge International certified tutors, Kenya CBC specialists, STEM researchers, language experts, and compassionate pastoral caregivers dedicated to bringing out the genius in every scholar.
+              Meet our passionate team of British International certified tutors, Kenya CBC specialists, STEM researchers, language experts, and compassionate pastoral caregivers dedicated to bringing out the genius in every scholar.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">

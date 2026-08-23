@@ -5,7 +5,7 @@ export const JUNIOR_REQUIREMENTS: RequirementCategory[] = [
     category: 'Academic & Stationery Essentials',
     items: [
       'Oxford Mathematical Instrument Set (Complete Geometry Box)',
-      'Scientific Calculator (Casio fx-82MS or fx-991EX for Cambridge / JSS)',
+      'Scientific Calculator (Casio fx-82MS or fx-991EX for British / JSS)',
       '10 A4 Exercise Books (200 Pages Ruled / Squared)',
       'Oxford Advanced Learner\'s Dictionary (10th Edition)',
       'Kamusi Kuu ya Kiswahili (Latest Edition)',
@@ -41,7 +41,7 @@ export const JUNIOR_REQUIREMENTS: RequirementCategory[] = [
   {
     category: 'Official School Uniform (Acquired at School Store)',
     items: [
-      '2 Official School Blazers (Embroidered with St. Gabriel Crest)',
+      '2 Official School Blazers (Embroidered with St Gabriel\'s Crest)',
       '3 Pairs of School Trousers (Boys) / 3 Pleated Tartan Skirts (Girls)',
       '4 Official Long/Short Sleeve Shirts (Embroidered Collar)',
       '2 V-Neck Knitted Sweaters & 1 Sleeveless Pullover',

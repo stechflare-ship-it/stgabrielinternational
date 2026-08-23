@@ -3,8 +3,8 @@ import logoImg from '../assets/images/logo.webp';
 import campusImg from '../assets/images/about/aboutusBackground.webp';
 
 export const SCHOOL_INFO = {
-  name: 'St. Gabriel International School',
-  shortName: 'St. Gabriel International',
+  name: 'St Gabriel\'s International School',
+  shortName: 'St Gabriel\'s International',
   tagline: 'HOPE TO THE WORLD',
   secondaryTagline: 'A Balanced Life & Real-Life Experience',
   motto: 'Hope to the World',
@@ -70,7 +70,7 @@ export const SCHOOL_INFO = {
 
   equityAccount: {
     accountNumber: '0310284759201',
-    accountName: 'St. Gabriel International School Ltd',
+    accountName: 'St Gabriel\'s International School Ltd',
     bank: 'Equity Bank Kenya',
     branch: 'Nakuru Gate House Branch',
     branchCode: '031',
@@ -88,7 +88,7 @@ export const SCHOOL_INFO = {
 export const CORE_VALUES = [
   {
     title: 'Academic Distinction',
-    description: 'Relentless pursuit of intellectual rigor through accredited CBC and Cambridge curriculum streams with world-class faculty.'
+    description: 'Relentless pursuit of intellectual rigor through accredited CBC and British curriculum streams with world-class faculty.'
   },
   {
     title: 'Moral Integrity & Faith',

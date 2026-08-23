@@ -68,7 +68,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
           {/* Fallback image if video cannot be loaded */}
           <img
             src={heroImg}
-            alt="St. Gabriel International School Campus"
+            alt="St Gabriel\'s International School Campus"
             className="w-full h-full object-cover"
           />
         </video>
@@ -90,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
 
         {/* Main Headings */}
         <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none mb-4 drop-shadow-2xl">
-          <span className="block text-white uppercase tracking-tight">ST. GABRIEL's Mission</span>
+          <span className="block text-white uppercase tracking-tight">St  Gabriel's Mission</span>
           <span className="block text-[#D4AF37] mt-2 font-serif uppercase tracking-tight">INTERNATIONAL SCHOOL</span>
         </h1>
 
@@ -162,7 +162,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-6 mt-10 max-w-4xl w-full bg-[#0A192F]/90 backdrop-blur-md p-4 sm:p-6 rounded-sm border border-[#D4AF37]/30 shadow-2xl">
           <div className="text-center p-2">
             <span className="block text-[10px] uppercase tracking-[0.2em] text-gray-400 font-medium">Curriculum</span>
-            <span className="block text-sm sm:text-base font-bold text-[#D4AF37] mt-1 uppercase tracking-wider">Cambridge & CBC</span>
+            <span className="block text-sm sm:text-base font-bold text-[#D4AF37] mt-1 uppercase tracking-wider">British & CBC</span>
           </div>
           <div className="text-center p-2 border-l border-[#D4AF37]/20">
             <span className="block text-[10px] uppercase tracking-[0.2em] text-gray-400 font-medium">Location</span>
@@ -191,7 +191,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-[#5CE1E6] animate-pulse"></div>
                 <h3 className="font-serif font-bold text-white uppercase text-sm sm:text-base tracking-wider">
-                  St. Gabriel International School • Campus Video Tour
+                  St Gabriel\'s International School • Campus Video Tour
                 </h3>
               </div>
               <button
@@ -215,7 +215,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenDirectorMessage, onOpenPrincip
                 <source src="/hero.mp4" type="video/mp4" />
                 <img
                   src={heroImg}
-                  alt="St. Gabriel International School Campus Tour"
+                  alt="St Gabriel\'s International School Campus Tour"
                   className="w-full h-full object-cover"
                 />
               </video>

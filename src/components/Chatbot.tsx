@@ -21,7 +21,7 @@ export const Chatbot: React.FC = () => {
     {
       id: 'welcome-1',
       sender: 'bot',
-      text: 'Hello! Welcome to St. Gabriel International School Assistant. I can answer questions about our school history, motto, location, curriculum, boarding, fees, leadership, and even details about who built this website (TechFlare Solutions). How can I assist you today?',
+      text: 'Hello! Welcome to St Gabriel\'s International School Assistant. I can answer questions about our school history, motto, location, curriculum, boarding, fees, leadership, and even details about who built this website (TechFlare Solutions). How can I assist you today?',
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
   ]);
@@ -30,9 +30,9 @@ export const Chatbot: React.FC = () => {
 
   const suggestedQuestions = [
     'Who built this website & what services do they offer?',
-    'What is St. Gabriel\'s motto, vision & mission?',
-    'When was St. Gabriel established & school history?',
-    'Where is St. Gabriel located in Lanet, Nakuru?',
+    'What is St Gabriel\'s\'s motto, vision & mission?',
+    'When was St Gabriel\'s established & school history?',
+    'Where is St Gabriel\'s located in Lanet, Nakuru?',
     'What British Curriculum levels are offered?',
     'Does the school offer boarding for boys & girls?',
     'What are the boarding fees & Paybill details?',
@@ -101,7 +101,7 @@ export const Chatbot: React.FC = () => {
         q.includes('slogan') ||
         q.includes('hope to the world')
       ) {
-        botResponse = `St. Gabriel's Motto is "${SCHOOL_INFO.motto}" (also "A Balanced Life & Real-Life Experience").\n\n• Vision: To be a premier international center of academic excellence, moral integrity, and technological innovation.\n• Mission: To provide a transformative international education blending academic rigor, character discipline, STEM innovation, and global diversity.\n• 5 Core Values: Integrity, Excellence, Innovation, Diversity, and Community.`;
+        botResponse = `St  Gabriel's Motto is "${SCHOOL_INFO.motto}" (also "A Balanced Life & Real-Life Experience").\n\n• Vision: To be a premier international center of academic excellence, moral integrity, and technological innovation.\n• Mission: To provide a transformative international education blending academic rigor, character discipline, STEM innovation, and global diversity.\n• 5 Core Values: Integrity, Excellence, Innovation, Diversity, and Community.`;
         actionBtn = { label: 'Read About Our Vision & Values', href: '/about' };
       }
       // 3. School History / Legacy / Founded / Established
@@ -114,7 +114,7 @@ export const Chatbot: React.FC = () => {
         q.includes('how old') ||
         q.includes('background')
       ) {
-        botResponse = `St. Gabriel International School was established in 1998 in Lanet, Nakuru County, Kenya. Over 28 years of academic and spiritual dedication, the school has grown into a premier institution with 1,250+ students from 28+ global nationalities and alumni studying at top universities worldwide.`;
+        botResponse = `St Gabriel\'s International School was established in 1998 in Lanet, Nakuru County, Kenya. Over 28 years of academic and spiritual dedication, the school has grown into a premier institution with 1,250+ students from 28+ global nationalities and alumni studying at top universities worldwide.`;
         actionBtn = { label: 'Explore School History', href: '/about' };
       }
       // 4. Location / Address / Directions / Map
@@ -128,7 +128,7 @@ export const Chatbot: React.FC = () => {
         q.includes('transformer') ||
         q.includes('nakuru')
       ) {
-        botResponse = `St. Gabriel International School is located along Transformer Rd, Lanet, Nakuru County, Kenya. Our separate boys' and girls' boarding compounds are situated approximately 4km apart in Lanet to ensure safe, focused living environments.`;
+        botResponse = `St Gabriel\'s International School is located along Transformer Rd, Lanet, Nakuru County, Kenya. Our separate boys' and girls' boarding compounds are situated approximately 4km apart in Lanet to ensure safe, focused living environments.`;
         actionBtn = { label: 'Open Google Maps Directions', href: '/contact' };
       }
       // 5. Leadership / Principal / Staff
@@ -155,12 +155,12 @@ export const Chatbot: React.FC = () => {
         q.includes('igcse') ||
         q.includes('a-level') ||
         q.includes('alevel') ||
-        q.includes('cambridge') ||
+        q.includes('British') ||
         q.includes('grade') ||
         q.includes('level') ||
         q.includes('subject')
       ) {
-        botResponse = `We offer the full British International Curriculum path:\n1. Early Years Foundation Stage (EYFS: Playgroup, Nursery, Reception; Ages 2–5)\n2. Primary School (Years 1–6)\n3. Lower / Junior Secondary (Years 7–9)\n4. Cambridge IGCSE / Senior Secondary (Years 10–11)\n5. Advanced Level A-Level (Years 12–13)`;
+        botResponse = `We offer the full British International Curriculum path:\n1. Early Years Foundation Stage (EYFS: Playgroup, Nursery, Reception; Ages 2–5)\n2. Primary School (Years 1–6)\n3. Lower / Junior Secondary (Years 7–9)\n4. British IGCSE / Senior Secondary (Years 10–11)\n5. Advanced Level A-Level (Years 12–13)`;
         actionBtn = { label: 'Explore Curriculum Pathways', href: '/academics' };
       }
       // 7. Boarding / Accommodation / Hostels
@@ -174,7 +174,7 @@ export const Chatbot: React.FC = () => {
         q.includes('boys') ||
         q.includes('girls')
       ) {
-        botResponse = `St. Gabriel provides full boarding for boys and girls in completely separate compounds ~4km apart in Lanet. Boarding features 24/7 security, resident matrons & house fathers, nutritious dining, supervised study prep hours, medical care, and laundry services.`;
+        botResponse = `St Gabriel\'s provides full boarding for boys and girls in completely separate compounds ~4km apart in Lanet. Boarding features 24/7 security, resident matrons & house fathers, nutritious dining, supervised study prep hours, medical care, and laundry services.`;
         actionBtn = { label: 'Explore Boarding Life', href: '/boarding' };
       }
       // 8. Fees / Paybill / Equity Bank / Payment
@@ -242,7 +242,7 @@ export const Chatbot: React.FC = () => {
         q.includes('music') ||
         q.includes('band')
       ) {
-        botResponse = `St. Gabriel features modern campus facilities including a Robotics & STEM Innovation Center, computer laboratories, Olympic-size swimming pool, orchestral brass band, soccer & basketball grounds, and a fleet of school transport buses.`;
+        botResponse = `St Gabriel\'s features modern campus facilities including a Robotics & STEM Innovation Center, computer laboratories, Olympic-size swimming pool, orchestral brass band, soccer & basketball grounds, and a fleet of school transport buses.`;
         actionBtn = { label: 'Explore Student Life & Facilities', href: '/student-life' };
       }
       // 13. Fallback to FAQ database searching
@@ -264,10 +264,10 @@ export const Chatbot: React.FC = () => {
           } else if (matchedFaq.category === 'Developer & Tech') {
             actionBtn = { label: 'Visit TechFlare Solutions', href: 'https://techflare-solutions.com' };
           } else if (matchedFaq.category === 'About') {
-            actionBtn = { label: 'About St. Gabriel', href: '/about' };
+            actionBtn = { label: 'About St Gabriel\'s', href: '/about' };
           }
         } else {
-          botResponse = `Thank you for asking about St. Gabriel International School in Lanet, Nakuru. We offer a full British Curriculum (EYFS, Primary, Lower Secondary, IGCSE, A-Level) with day and separate boarding facilities. For direct assistance, call our admissions team on +254 724 694 554 or click below to chat on WhatsApp.`;
+          botResponse = `Thank you for asking about St Gabriel\'s International School in Lanet, Nakuru. We offer a full British Curriculum (EYFS, Primary, Lower Secondary, IGCSE, A-Level) with day and separate boarding facilities. For direct assistance, call our admissions team on +254 724 694 554 or click below to chat on WhatsApp.`;
           actionBtn = {
             label: 'Chat on WhatsApp',
             href: `https://wa.me/${SCHOOL_INFO.contacts.whatsappPhoneRaw}?text=${SCHOOL_INFO.whatsappPrefillMessage}`
@@ -295,11 +295,11 @@ export const Chatbot: React.FC = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="flex items-center gap-2 px-4 py-3 bg-[#0B1D33] hover:bg-[#162E4D] text-white rounded-full shadow-2xl border-2 border-[#C59B27] transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#C59B27]/40"
-          aria-label="Open St. Gabriel FAQ Assistant"
+          aria-label="Open St Gabriel\'s FAQ Assistant"
         >
           <Bot className="w-6 h-6 text-[#E0BA43]" />
           <span className="hidden sm:inline font-bold text-xs uppercase tracking-wider text-white">
-            Ask St. Gabriel Assistant
+            Ask St Gabriel's Assistant
           </span>
           <span className="relative flex h-2.5 w-2.5">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C59B27] opacity-75"></span>
@@ -313,7 +313,7 @@ export const Chatbot: React.FC = () => {
         <div
           className="fixed bottom-20 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-96 h-[520px] max-h-[80vh] bg-[#071321] text-white rounded-2xl shadow-2xl border-2 border-[#C59B27]/50 flex flex-col overflow-hidden animate-fade-in"
           role="dialog"
-          aria-label="St. Gabriel School FAQ Chatbot"
+          aria-label="St Gabriel\'s School FAQ Chatbot"
         >
           {/* Header */}
           <div className="bg-[#0B1D33] p-4 border-b border-[#C59B27]/30 flex items-center justify-between">
@@ -323,7 +323,7 @@ export const Chatbot: React.FC = () => {
               </div>
               <div>
                 <h3 className="font-serif font-bold text-sm text-white">
-                  St. Gabriel Assistant
+                  St Gabriel's Assistant
                 </h3>
                 <p className="text-[10px] text-[#E0BA43] flex items-center gap-1 font-semibold">
                   <Sparkles className="w-3 h-3" />
@@ -415,7 +415,7 @@ export const Chatbot: React.FC = () => {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Ask a question about St. Gabriel..."
+              placeholder="Ask a question about St Gabriel\'s..."
               className="flex-1 bg-[#071321] text-white text-xs px-3 py-2 rounded-lg border border-gray-700 focus:outline-none focus:border-[#C59B27]"
             />
             <button

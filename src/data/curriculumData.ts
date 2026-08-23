@@ -5,10 +5,10 @@ import lowerPrimaryImg from '../assets/images/academics/cbc.webp';
 import upperPrimaryImg from '../assets/images/academics/cbcupperprimary.webp';
 import juniorSecImg from '../assets/images/academics/cbcjuniorsec.webp';
 import seniorSchoolImg from '../assets/images/academics/cbcseniorsec.webp';
-import cambridgePrimaryImg from '../assets/images/academics/cambridgePrimary.webp';
-import cambridgeLowerSecImg from '../assets/images/academics/cambridgelowersec.webp';
-import cambridgeIgcseImg from '../assets/images/academics/cambridgeIGCSE.webp';
-import cambridgeAlevelImg from '../assets/images/academics/cambridgeAdvance.webp';
+import BritishPrimaryImg from '../assets/images/academics/BritishPrimary.webp';
+import BritishLowerSecImg from '../assets/images/academics/Britishlowersec.webp';
+import BritishIgcseImg from '../assets/images/academics/BritishIGCSE.webp';
+import BritishAlevelImg from '../assets/images/academics/BritishAdvance.webp';
 
 export const CURRICULUM_STAGES: CurriculumStage[] = [
   {
@@ -17,7 +17,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
     subtitle: 'Nurturing curiosity, creativity, and foundational literacy in play-based environments',
     ageRange: '2 – 5 Years',
     years: 'Playgroup, Reception & Kindergarten',
-    overview: 'The Early Years Foundation Stage at St. Gabriel establishes a loving, secure, and stimulating foundation for our youngest scholars. Through purposeful play, phonics, numeracy adventures, and creative exploration, children develop confidence, social grace, and an enduring love for learning.',
+    overview: 'The Early Years Foundation Stage at St Gabriel\'s establishes a loving, secure, and stimulating foundation for our youngest scholars. Through purposeful play, phonics, numeracy adventures, and creative exploration, children develop confidence, social grace, and an enduring love for learning.',
     highlights: [
       'Child-centered sensory and Montessori-inspired learning centers',
       'Jolly Phonics foundation with rich early multilingual vocabulary',
@@ -40,22 +40,22 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
   },
   {
     key: 'primary',
-    title: 'Cambridge Primary (Years 1 – 6)',
+    title: 'British Primary (Years 1 – 6)',
     subtitle: 'Building deep subject mastery, inquiry skills, and global perspectives',
     ageRange: '5 – 11 Years',
     years: 'Years 1 to 6 (Key Stages 1 & 2)',
-    overview: 'Cambridge Primary delivers a world-class broad and balanced curriculum designed to help children develop first-class cognitive, creative, and physical capabilities. Regular Cambridge Primary Checkpoint assessments benchmark progress against international standards.',
+    overview: 'British Primary delivers a world-class broad and balanced curriculum designed to help children develop first-class cognitive, creative, and physical capabilities. Regular British Primary Checkpoint assessments benchmark progress against international standards.',
     highlights: [
-      'Rigorous Cambridge International curriculum benchmarked worldwide',
+      'Rigorous British International curriculum benchmarked worldwide',
       'Interactive Smart Board classrooms with integrated digital learning',
-      'Cambridge Primary Checkpoint examinations at Year 6',
+      'British Primary Checkpoint examinations at Year 6',
       'Specialist subject teachers for French, Music, Computing, and Physical Education',
       'Hands-on science labs and dedicated junior makerspaces'
     ],
     subjects: [
-      'Cambridge English First Language',
-      'Cambridge Mathematics',
-      'Cambridge Science & Environmental Inquiry',
+      'British English First Language',
+      'British Mathematics',
+      'British Science & Environmental Inquiry',
       'Computing & Digital Literacy',
       'Global Perspectives',
       'French as a Foreign Language / Kiswahili',
@@ -64,12 +64,12 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Physical Education & Swimming'
     ],
     path: '/academics/primary',
-    image: cambridgePrimaryImg,
+    image: BritishPrimaryImg,
     curriculumSystem: 'british'
   },
   {
     key: 'lower-secondary',
-    title: 'Cambridge Lower Secondary (Years 7 – 9)',
+    title: 'British Lower Secondary (Years 7 – 9)',
     subtitle: 'Fostering analytical rigor, independent research, and subject depth',
     ageRange: '11 – 14 Years',
     years: 'Years 7 to 9 (Key Stage 3)',
@@ -77,13 +77,13 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
     highlights: [
       'Subject-specialist faculty across all academic disciplines',
       'Separate Science laboratories (Biology, Chemistry, Physics)',
-      'Cambridge Lower Secondary Checkpoint diagnostics in Year 9',
+      'British Lower Secondary Checkpoint diagnostics in Year 9',
       'Career guidance and IGCSE subject option consultations',
       'Leadership opportunities, Debating Society, and Model United Nations'
     ],
     subjects: [
       'English Language & English Literature',
-      'Cambridge Mathematics (Algebra, Geometry, Statistics)',
+      'British Mathematics (Algebra, Geometry, Statistics)',
       'Biology, Chemistry & Physics (Separate Sciences)',
       'Computer Science & Coding Fundamentals',
       'History & Geography',
@@ -94,18 +94,18 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Physical Education & Competitive Athletics'
     ],
     path: '/academics/lower-secondary',
-    image: cambridgeLowerSecImg,
+    image: BritishLowerSecImg,
     curriculumSystem: 'british'
   },
   {
     key: 'igcse',
-    title: 'Cambridge IGCSE (Years 10 – 11)',
+    title: 'British IGCSE (Years 10 – 11)',
     subtitle: 'The world\'s most recognized international qualification for 14 to 16 year olds',
     ageRange: '14 – 16 Years',
     years: 'Years 10 & 11 (Key Stage 4)',
-    overview: 'Cambridge IGCSE provides an internationally respected passport to advanced post-16 study worldwide. Scholars take 8–10 subjects blending core competencies with elective passions, examined by Cambridge Assessment International Education (CAIE).',
+    overview: 'British IGCSE provides an internationally respected passport to advanced post-16 study worldwide. Scholars take 8–10 subjects blending core competencies with elective passions, examined by British Assessment International Education (CAIE).',
     highlights: [
-      'Accredited Cambridge Assessment International Education (CAIE) centre',
+      'Accredited British Assessment International Education (CAIE) centre',
       'Consistently achieving 92%+ A*–C grades across all subject entries',
       'State-of-the-art university-standard Science & STEM innovation labs',
       'Dedicated university prep, SAT guidance, and scholarship mentorship',
@@ -123,18 +123,18 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Physical Education'
     ],
     path: '/academics/igcse',
-    image: cambridgeIgcseImg,
+    image: BritishIgcseImg,
     curriculumSystem: 'british'
   },
   {
     key: 'a-level',
-    title: 'Cambridge Advanced Level (A-Levels / Years 12 – 13)',
+    title: 'British Advanced Level (A-Levels / Years 12 – 13)',
     subtitle: 'Elite university pre-collegiate qualification opening doors to top Ivy League, Russell Group & global universities',
     ageRange: '16 – 19 Years',
     years: 'Years 12 & 13 (Sixth Form / Key Stage 5)',
-    overview: 'Cambridge International AS & A Levels represent the gold standard of secondary education. Scholars specialize in 3 to 4 subjects in exceptional depth, developing critical reasoning and academic independence.',
+    overview: 'British International AS & A Levels represent the gold standard of secondary education. Scholars specialize in 3 to 4 subjects in exceptional depth, developing critical reasoning and academic independence.',
     highlights: [
-      'Direct admissions pathway to Oxford, Cambridge, Harvard, MIT, and leading global universities',
+      'Direct admissions pathway to Oxford, British, Harvard, MIT, and leading global universities',
       'Dedicated Sixth Form study suites, seminar rooms, and private research carrels',
       'One-on-one university guidance counseling, UCAS, and Common App support',
       'Distinguished guest lecture series and industry internships',
@@ -150,7 +150,7 @@ export const CURRICULUM_STAGES: CurriculumStage[] = [
       'Law & History'
     ],
     path: '/academics/a-level',
-    image: cambridgeAlevelImg,
+    image: BritishAlevelImg,
     curriculumSystem: 'british'
   },
   {

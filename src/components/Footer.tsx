@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-5">
             <Logo variant="footer" />
             <p className="text-sm text-[#0A192F]/90 font-medium leading-relaxed max-w-md">
-              St. Gabriel International School delivers an inspiring British & Kenyan CBC dual-curriculum in Lanet, Nakuru County. We nurture academic rigor, holistic talents, Christian character, and leadership opportunities for day and boarding scholars.
+              St Gabriel\'s International School delivers an inspiring British & Kenyan CBC dual-curriculum in Lanet, Nakuru County. We nurture academic rigor, holistic talents, Christian character, and leadership opportunities for day and boarding scholars.
             </p>
 
             <div className="p-4 rounded-sm bg-[#0A192F] text-white border border-[#5CE1E6]/40 space-y-2 shadow-md">
@@ -53,7 +53,7 @@ export const Footer: React.FC = () => {
                   href={SCHOOL_INFO.socialMedia.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Visit St. Gabriel on Facebook"
+                  aria-label="Visit St Gabriel\'s on Facebook"
                   className="w-10 h-10 rounded-full bg-[#0A192F] text-white hover:bg-[#1877F2] flex items-center justify-center transition-all duration-200 shadow hover:scale-110 group"
                   title="Follow us on Facebook"
                 >
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
                   href={SCHOOL_INFO.socialMedia.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Visit St. Gabriel on Instagram"
+                  aria-label="Visit St Gabriel\'s on Instagram"
                   className="w-10 h-10 rounded-full bg-[#0A192F] text-white hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] flex items-center justify-center transition-all duration-200 shadow hover:scale-110 group"
                   title="Follow @stgabrielgroupofschools on Instagram"
                 >
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
                   href={SCHOOL_INFO.socialMedia.tiktok}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Visit St. Gabriel on TikTok"
+                  aria-label="Visit St Gabriel\'s on TikTok"
                   className="w-10 h-10 rounded-full bg-[#0A192F] text-white hover:bg-black flex items-center justify-center transition-all duration-200 shadow hover:scale-110 group"
                   title="Follow @st.gabrielsmissionschool on TikTok"
                 >
@@ -95,7 +95,7 @@ export const Footer: React.FC = () => {
                   href={SCHOOL_INFO.socialMedia.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Visit St. Gabriel on YouTube"
+                  aria-label="Visit St Gabriel\'s on YouTube"
                   className="w-10 h-10 rounded-full bg-[#0A192F] text-white hover:bg-[#FF0000] flex items-center justify-center transition-all duration-200 shadow hover:scale-110 group"
                   title="Watch us on YouTube"
                 >
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2.5 text-xs font-bold uppercase tracking-wider">
               {[
-                { label: 'About St. Gabriel', path: '/about' },
+                { label: 'About St Gabriel\'s', path: '/about' },
                 { label: 'Faculty & Staff Directory', path: '/staff' },
                 { label: 'Academics & Curriculum', path: '/academics' },
                 { label: 'Student Life', path: '/student-life' },
@@ -149,9 +149,9 @@ export const Footer: React.FC = () => {
                 { label: '🇰🇪 CBC Junior Secondary (JSS)', path: '/academics/cbc-junior-secondary' },
                 { label: '🇰🇪 CBC Senior School (SSS)', path: '/academics/cbc-senior-school' },
                 { label: '🇬🇧 EYFS (Playgroup–Reception)', path: '/academics/eyfs' },
-                { label: '🇬🇧 Cambridge Primary (Y1–Y6)', path: '/academics/primary' },
-                { label: '🇬🇧 Cambridge IGCSE (Y10–Y11)', path: '/academics/igcse' },
-                { label: '🇬🇧 Cambridge A-Level (Y12–Y13)', path: '/academics/a-level' },
+                { label: '🇬🇧 British Primary (Y1–Y6)', path: '/academics/primary' },
+                { label: '🇬🇧 British IGCSE (Y10–Y11)', path: '/academics/igcse' },
+                { label: '🇬🇧 British A-Level (Y12–Y13)', path: '/academics/a-level' },
                 { label: 'Photo Gallery', path: '/gallery' },
               ].map((link) => (
                 <li key={link.path}>

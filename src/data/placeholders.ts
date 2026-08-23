@@ -2,9 +2,9 @@ export const getPlaceholder = (text: string, width = 800, height = 600, bg = '0A
   `https://placehold.co/${width}x${height}/${bg}/${color}?text=${encodeURIComponent(text)}`;
 
 export const advanceLevel = getPlaceholder('A-Level+Studies', 800, 600, '0A192F', 'D4AF37');
-export const cambridgeLevel = getPlaceholder('Cambridge+IGCSE', 800, 600, '0A192F', '5CE1E6');
+export const BritishLevel = getPlaceholder('British+IGCSE', 800, 600, '0A192F', '5CE1E6');
 export const earlyYearLevel = getPlaceholder('EYFS+Early+Years', 800, 600, '0A192F', 'D4AF37');
-export const internationalLevel = getPlaceholder('Cambridge+Primary', 800, 600, '0A192F', '5CE1E6');
+export const internationalLevel = getPlaceholder('British+Primary', 800, 600, '0A192F', '5CE1E6');
 export const lowerSecondarLevel = getPlaceholder('Lower+Secondary', 800, 600, '0A192F', 'D4AF37');
 export const compLab = getPlaceholder('STEM+Robotics+ICT+Lab', 800, 600, '0A192F', '5CE1E6');
 export const classroom = getPlaceholder('Classroom+Excellence', 800, 600, '0A192F', 'D4AF37');

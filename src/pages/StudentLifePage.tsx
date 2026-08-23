@@ -28,18 +28,18 @@ export const StudentLifePage: React.FC = () => {
   return (
     <div className="w-full bg-[#071321] text-white min-h-screen">
       <SEOMetadata
-        title="Student Life, Balanced Life & Real-Life Experience | St. Gabriel's Mission Nakuru Kenya"
-        description="Discover a balanced life and real-life learning experiences at St. Gabriel's Mission International School in Nakuru, Kenya. British curriculum, sports, arts, leadership and character development."
+        title="Student Life, Balanced Life & Real-Life Experience | St Gabriel's Mission Nakuru Kenya"
+        description="Discover a balanced life and real-life learning experiences at St Gabriel's Mission International School in Nakuru, Kenya. British curriculum, sports, arts, leadership and character development."
         keywords="international school nakuru, kenya co-curricular, school sports nakuru, brass band orchestra, drama and music festivals, robotics club, student leadership, st gabriel student life"
         canonicalPath="/student-life"
         ogType="website"
-        ogTitle="Vibrant Student Life & Holistic Co-Curriculars · St. Gabriel's Mission Nakuru"
+        ogTitle="Vibrant Student Life & Holistic Co-Curriculars · St Gabriel's Mission Nakuru"
         ogDescription="Explore championship sports, award-winning brass band music, STEM robotics clubs, and leadership mentorship in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Student Life', path: '/student-life' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: "Student Life at St. Gabriel's Mission International School",
+          name: "Student Life at St Gabriel's Mission International School",
           description: 'Holistic extracurricular activities, sports, brass band orchestra, robotics, and spiritual growth opportunities.',
           mainEntity: {
             '@type': 'ItemList',
@@ -61,7 +61,7 @@ export const StudentLifePage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={athletics}
-            alt="St. Gabriel Student Life & Co-Curriculars"
+            alt="St Gabriel\'s Student Life & Co-Curriculars"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#071321]/95 via-[#0A192F]/85 to-[#071321]/80"></div>
@@ -71,7 +71,7 @@ export const StudentLifePage: React.FC = () => {
         <div className="relative z-10 max-w-5xl mx-auto text-center space-y-6">
           <div className="inline-block">
             <span className="px-4 py-1.5 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
-              LIFE AT ST. GABRIEL'S MISSION (SGIS)
+              LIFE AT St Gabriel's MISSION (SGIS)
             </span>
           </div>
 
@@ -111,7 +111,7 @@ export const StudentLifePage: React.FC = () => {
               DAILY ROUTINES
             </span>
             <h2 className="font-serif text-2xl sm:text-4xl font-extrabold text-white">
-              Daily Schedule at St. Gabriel's
+              Daily Schedule at St Gabriel's
             </h2>
           </div>
           <span className="px-3 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold border border-[#C59B27]/40">
@@ -258,7 +258,7 @@ export const StudentLifePage: React.FC = () => {
               <li><strong className="text-white">Shirt & Tie:</strong> White formal shirt with school tie.</li>
               <li><strong className="text-white">Blazer:</strong> Navy blue tailored blazer with crest.</li>
               <li><strong className="text-white">Trousers:</strong> Grey tailored trousers or formal pencil skirt.</li>
-              <li><strong className="text-white">Exams:</strong> Strict candidate dress code during Cambridge examinations.</li>
+              <li><strong className="text-white">Exams:</strong> Strict candidate dress code during British examinations.</li>
             </ul>
           </div>
         </div>
@@ -370,7 +370,7 @@ export const StudentLifePage: React.FC = () => {
         <SectionHeading
           badge="Campus Gallery"
           title="Moments of Excellence & Fellowship"
-          subtitle="Explore academic, athletic, and co-curricular highlights at St. Gabriel's Mission International School."
+          subtitle="Explore academic, athletic, and co-curricular highlights at St Gabriel's Mission International School."
           theme="dark"
         />
         <Gallery />

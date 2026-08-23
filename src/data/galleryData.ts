@@ -40,7 +40,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Inter-School Athletics & Track Championship',
     category: 'Sports',
     image: interschool,
-    caption: 'St. Gabriel sprint champions competing on the modern athletics track during annual sports day.'
+    caption: 'St Gabriel\'s sprint champions competing on the modern athletics track during annual sports day.'
   },
   {
     id: 'gal-arts-1',
@@ -72,7 +72,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'gal-arts-2',
-    title: 'St. Gabriel Championship Brass Band',
+    title: 'St Gabriel\'s Championship Brass Band',
     category: 'Arts & Drama',
     image: champion,
     caption: 'The celebrated school brass band performing at regional and national music festivals.'
@@ -89,7 +89,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     title: 'Football & Basketball Leagues',
     category: 'Sports',
     image: basketball,
-    caption: 'St. Gabriel Hawks football squad executing team drills during the Nakuru County inter-school league.'
+    caption: 'St Gabriel\'s Hawks football squad executing team drills during the Nakuru County inter-school league.'
   },
   {
     id: 'gal-campus-3',

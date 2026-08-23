@@ -51,35 +51,35 @@ export const BOARDING_FEES: BoardingFee[] = [
     totalAnnual: 415000
   },
   {
-    gradeGroup: 'Cambridge Primary (Years 1 – 6 - Day)',
+    gradeGroup: 'British Primary (Years 1 – 6 - Day)',
     term1: 95000,
     term2: 90000,
     term3: 90000,
     totalAnnual: 275000
   },
   {
-    gradeGroup: 'Cambridge Primary Boarding (Years 4 – 6)',
+    gradeGroup: 'British Primary Boarding (Years 4 – 6)',
     term1: 155000,
     term2: 145000,
     term3: 145000,
     totalAnnual: 445000
   },
   {
-    gradeGroup: 'Cambridge Lower Secondary (Years 7 – 9 Boarding)',
+    gradeGroup: 'British Lower Secondary (Years 7 – 9 Boarding)',
     term1: 175000,
     term2: 165000,
     term3: 165000,
     totalAnnual: 505000
   },
   {
-    gradeGroup: 'Cambridge IGCSE (Years 10 – 11 Boarding)',
+    gradeGroup: 'British IGCSE (Years 10 – 11 Boarding)',
     term1: 210000,
     term2: 195000,
     term3: 195000,
     totalAnnual: 600000
   },
   {
-    gradeGroup: 'Cambridge A-Level / Sixth Form (Years 12 – 13 Boarding)',
+    gradeGroup: 'British A-Level / Sixth Form (Years 12 – 13 Boarding)',
     term1: 245000,
     term2: 230000,
     term3: 230000,
@@ -141,7 +141,7 @@ export const PAYMENT_METHODS = {
   },
   equityBank: {
     bankName: 'Equity Bank Kenya',
-    accountName: 'St. Gabriel International School Ltd',
+    accountName: 'St Gabriel\'s International School Ltd',
     accountNumber: '0310284759201',
     branch: 'Nakuru Gate House Branch',
     branchCode: '031',
@@ -150,12 +150,12 @@ export const PAYMENT_METHODS = {
   },
   bankDetails: {
     bankName: 'Equity Bank Kenya',
-    accountName: 'St. Gabriel International School Ltd',
+    accountName: 'St Gabriel\'s International School Ltd',
     accountNumber: '0310284759201',
     branch: 'Nakuru Gate House Branch'
   },
   bankersCheque: {
-    payableTo: 'St. Gabriel International School Ltd',
+    payableTo: 'St Gabriel\'s International School Ltd',
     description: 'Bankers cheques drawn from recognized commercial banks in Kenya.'
   }
 };

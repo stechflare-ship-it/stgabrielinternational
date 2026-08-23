@@ -3,7 +3,7 @@ import { DownloadDocument } from '../types';
 export const DOWNLOAD_DOCUMENTS: DownloadDocument[] = [
   {
     id: 'doc-prospectus-2026',
-    title: 'St. Gabriel Official School Prospectus 2026/2027',
+    title: 'St Gabriel\'s Official School Prospectus 2026/2027',
     category: 'Admissions',
     fileSize: '3.8 MB',
     format: 'PDF',
@@ -14,7 +14,7 @@ export const DOWNLOAD_DOCUMENTS: DownloadDocument[] = [
   },
   {
     id: 'doc-fees-2026',
-    title: 'Approved Fee Structure & Term Payment Guide (CBC & Cambridge)',
+    title: 'Approved Fee Structure & Term Payment Guide (CBC & British)',
     category: 'Fees & Policies',
     fileSize: '1.4 MB',
     format: 'PDF',

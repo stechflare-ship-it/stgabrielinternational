@@ -12,18 +12,18 @@ export const BoardingPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Boarding Facilities & Pastoral Care | St. Gabriel's Mission Nakuru"
+        title="Boarding Facilities & Pastoral Care | St Gabriel's Mission Nakuru"
         description="Separate boys and girls boarding facilities located ~4km apart in Lanet, Nakuru. Pastoral care, home-away-from-home environment, and disciplined study routines."
         keywords="boarding school nakuru, separate boys girls boarding kenya, primary boarding school, junior secondary boarding, lanet dormitories, christian boarding school nakuru"
         canonicalPath="/boarding"
         ogType="website"
-        ogTitle="Modern Boarding Facilities & Pastoral Care · St. Gabriel's Mission Nakuru"
+        ogTitle="Modern Boarding Facilities & Pastoral Care · St Gabriel's Mission Nakuru"
         ogDescription="Secure, nurturing, home-away-from-home residential life in Lanet, Nakuru with dedicated house parents, nutritious dining, and evening prep."
         breadcrumbs={[{ name: 'Boarding', path: '/boarding' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: "Boarding Life & Facilities at St. Gabriel's Mission",
+          name: "Boarding Life & Facilities at St Gabriel's Mission",
           description: 'Comprehensive overview of separate residential compounds, safety, nutritional meal planning, evening prep routines, and medical care.'
         }}
       />
@@ -35,7 +35,7 @@ export const BoardingPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={boardingbackground}
-            alt="St. Gabriel's Mission Boarding Facilities"
+            alt="St  Gabriel's Mission Boarding Facilities"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />

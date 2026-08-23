@@ -36,7 +36,7 @@ export const EYFSPage: React.FC = () => {
       stageData = CURRICULUM_STAGES.find((s) => s.key === 'cbc-junior-secondary');
     } else if (currentPath.includes('lower-secondary')) {
       stageData = CURRICULUM_STAGES.find((s) => s.key === 'lower-secondary');
-    } else if (currentPath.includes('igcse') || currentPath.includes('cambridge')) {
+    } else if (currentPath.includes('igcse') || currentPath.includes('British')) {
       stageData = CURRICULUM_STAGES.find((s) => s.key === 'igcse');
     } else if (currentPath.includes('a-level') || currentPath.includes('alevel')) {
       stageData = CURRICULUM_STAGES.find((s) => s.key === 'a-level');
@@ -79,12 +79,12 @@ export const EYFSPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title={`${stageData.title} | ${isCbc ? 'Kenya CBC' : 'British Cambridge'} | St. Gabriel Nakuru`}
-        description={`${stageData.title} (${stageData.years}, ${stageData.ageRange}) at St. Gabriel International School, Lanet, Nakuru. ${stageData.subtitle}`}
-        keywords={`${stageData.title}, ${isCbc ? 'kenya cbc' : 'british cambridge'}, nakuru international school, ${stageData.subjects?.slice(0, 5).join(', ')}, lanet education`}
+        title={`${stageData.title} | ${isCbc ? 'Kenya CBC' : 'British'} | St Gabriel\'s Nakuru`}
+        description={`${stageData.title} (${stageData.years}, ${stageData.ageRange}) at St Gabriel\'s International School, Lanet, Nakuru. ${stageData.subtitle}`}
+        keywords={`${stageData.title}, ${isCbc ? 'kenya cbc' : 'British'}, nakuru international school, ${stageData.subjects?.slice(0, 5).join(', ')}, lanet education`}
         canonicalPath={stageData.path}
         ogType="website"
-        ogTitle={`${stageData.title} · ${isCbc ? 'Kenya CBC' : 'British Cambridge International'}`}
+        ogTitle={`${stageData.title} · ${isCbc ? 'Kenya CBC' : 'British International'}`}
         ogDescription={`${stageData.subtitle} Ages: ${stageData.ageRange}, Duration: ${stageData.years}.`}
         breadcrumbs={[
           { name: 'Academics', path: '/academics' },
@@ -151,7 +151,7 @@ export const EYFSPage: React.FC = () => {
             ) : (
               <span className="px-3.5 py-1 rounded-full bg-sky-600/30 backdrop-blur-sm text-sky-300 text-xs font-bold uppercase tracking-widest border border-sky-500/40 flex items-center gap-1.5">
                 <Globe className="w-3.5 h-3.5 text-sky-400" />
-                <span>British Cambridge International Pathway</span>
+                <span>British International Pathway</span>
               </span>
             )}
             <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 backdrop-blur-sm text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
@@ -268,7 +268,7 @@ export const EYFSPage: React.FC = () => {
             <div className="absolute -bottom-4 -right-4 bg-[#C59B27] text-[#0B1D33] p-4 rounded-2xl font-serif font-bold text-xs sm:text-sm shadow-xl max-w-xs border border-white">
               {isCbc
                 ? '🇰🇪 Ministry of Education & KICD Accredited CBC in Lanet, Nakuru'
-                : '🎓 Certified Cambridge International Delivery in Lanet, Nakuru'}
+                : '🎓 Certified British International Delivery in Lanet, Nakuru'}
             </div>
           </div>
         </div>
@@ -354,7 +354,7 @@ export const EYFSPage: React.FC = () => {
               Comprehensive Academic Journey
             </span>
             <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0B1D33]">
-              Explore Other Stages in Kenya CBC & Cambridge Pathways
+              Explore Other Stages in Kenya CBC & British Pathways
             </h3>
           </div>
           
@@ -371,7 +371,7 @@ export const EYFSPage: React.FC = () => {
                     <span className={`text-[9px] font-extrabold uppercase px-2 py-0.5 rounded-full ${
                       otherStage.curriculumSystem === 'cbc' ? 'bg-emerald-100 text-emerald-800' : 'bg-sky-100 text-sky-800'
                     }`}>
-                      {otherStage.curriculumSystem === 'cbc' ? 'CBC' : 'Cambridge'}
+                      {otherStage.curriculumSystem === 'cbc' ? 'CBC' : 'British'}
                     </span>
                   </div>
                   <h4 className="font-serif font-bold text-base text-[#0B1D33] group-hover:text-[#C59B27] transition-colors">

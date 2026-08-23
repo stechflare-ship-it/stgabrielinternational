@@ -66,7 +66,7 @@ export const StaffModal: React.FC<StaffModalProps> = ({
                 Executive Administration Profile
               </span>
               <h4 className="text-white font-serif text-sm font-semibold truncate max-w-xs sm:max-w-md">
-                St. Gabriel International School
+                St Gabriel\'s International School
               </h4>
             </div>
           </div>

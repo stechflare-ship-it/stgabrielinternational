@@ -24,9 +24,9 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
     { name: '🇰🇪 CBC Junior Secondary (JSS Grades 7-9)', path: '/academics/cbc-junior-secondary' },
     { name: '🇰🇪 CBC Senior Secondary (Grades 10-12)', path: '/academics/cbc-senior-school' },
     { name: '🇬🇧 EYFS (Playgroup - Reception)', path: '/academics/eyfs' },
-    { name: '🇬🇧 Cambridge Primary (Years 1 - 6)', path: '/academics/primary' },
+    { name: '🇬🇧 British Primary (Years 1 - 6)', path: '/academics/primary' },
     { name: '🇬🇧 Lower Secondary (Years 7 - 9)', path: '/academics/lower-secondary' },
-    { name: '🇬🇧 Cambridge IGCSE (Years 10 - 11)', path: '/academics/igcse' },
+    { name: '🇬🇧 British IGCSE (Years 10 - 11)', path: '/academics/igcse' },
     { name: '🇬🇧 A-Level (Years 12 - 13)', path: '/academics/a-level' },
   ];
 
@@ -88,7 +88,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 location.pathname === '/about' ? 'bg-[#C59B27] text-[#0B1D33]' : 'hover:bg-white/5 text-gray-200'
               }`}
             >
-              About St. Gabriel
+              About St Gabriel\'s
             </Link>
 
             {/* Academics Accordion */}

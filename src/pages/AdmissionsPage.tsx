@@ -13,18 +13,18 @@ export const AdmissionsPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Admissions & Application Guide 2026/2027 | St. Gabriel's Mission Nakuru"
-        description="Apply for admission to St. Gabriel's Mission International School in Lanet, Nakuru. Enrolling for Kenya CBC (PP1–Senior School) & British (EYFS–A-Level)."
-        keywords="school admission nakuru, international school enrollment kenya, apply st gabriel's Mission, cambridge igcse admissions, cbc junior secondary enrollment, nakuru boarding admissions"
+        title="Admissions & Application Guide 2026/2027 | St Gabriel's Mission Nakuru"
+        description="Apply for admission to St Gabriel's Mission International School in Lanet, Nakuru. Enrolling for Kenya CBC (PP1–Senior School) & British (EYFS–A-Level)."
+        keywords="school admission nakuru, international school enrollment kenya, apply St Gabriel\'s Mission, British igcse admissions, cbc junior secondary enrollment, nakuru boarding admissions"
         canonicalPath="/admissions"
         ogType="website"
-        ogTitle="Admissions & Online Application · St. Gabriel's Mission International School"
+        ogTitle="Admissions & Online Application · St Gabriel's Mission International School"
         ogDescription="Secure your child's place in premier Kenya CBC and British International programs. Open enrollment with day & boarding options in Lanet, Nakuru."
         breadcrumbs={[{ name: 'Admissions', path: '/admissions' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'WebPage',
-          name: "Admissions at St. Gabriel's Mission International School",
+          name: "Admissions at St Gabriel's Mission International School",
           description: 'Official enrollment procedure, admission criteria, and online application portal for day and boarding scholars.',
           offers: {
             '@type': 'Offer',
@@ -42,7 +42,7 @@ export const AdmissionsPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={admissionBg}
-            alt="St. Gabriel Campus Grounds in Lanet Nakuru"
+            alt="St Gabriel\'s Campus Grounds in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -54,7 +54,7 @@ export const AdmissionsPage: React.FC = () => {
             Admissions Open 2026/2027
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
-            Join the St. Gabriel's Mission Family
+            Join the St Gabriel's Mission Family
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
             Enroll your child in EYFS, Primary, Lower Secondary, British IGCSE, or A-Level at our serene Lanet campus in Nakuru.

@@ -1,16 +1,16 @@
-# 🎓 St. Gabriel International School — Official Web Platform
+# 🎓 St Gabriel\'s International School — Official Web Platform
 
 > **"HOPE TO THE WORLD" · "A Balanced Life & Real-Life Experience"**  
-> *Premier Dual-Curriculum Institution: Kenya CBC (PP1 to Senior School Grade 12) & British Cambridge International (EYFS to A-Level)*  
+> *Premier Dual-Curriculum Institution: Kenya CBC (PP1 to Senior School Grade 12) & British International (EYFS to A-Level)*  
 > *Lanet, Nakuru County, Kenya*
 
 ---
 
 ## 📌 1. Project Overview
 
-The **St. Gabriel International School Web Platform** is a modern, high-performance, single-page enterprise web application engineered to represent the school's prestigious 28-year legacy in Nakuru County, Kenya.
+The **St Gabriel\'s International School Web Platform** is a modern, high-performance, single-page enterprise web application engineered to represent the school's prestigious 28-year legacy in Nakuru County, Kenya.
 
-The platform provides a comprehensive digital gateway for prospective parents, current day and boarding scholars, alumni, and global educational partners. It features deep dual-curriculum exploration (Kenya CBC and British Cambridge CAIE), admissions pipelines, fee schedule calculators with official Equity Bank & M-Pesa Paybill payment guides, interactive community testimonials, boarding life guides (celebrating separate boys and girls facilities 4 km apart in Lanet), an executive administration directory, virtual campus tours, and multimedia galleries.
+The platform provides a comprehensive digital gateway for prospective parents, current day and boarding scholars, alumni, and global educational partners. It features deep dual-curriculum exploration (Kenya CBC and British CAIE), admissions pipelines, fee schedule calculators with official Equity Bank & M-Pesa Paybill payment guides, interactive community testimonials, boarding life guides (celebrating separate boys and girls facilities 4 km apart in Lanet), an executive administration directory, virtual campus tours, and multimedia galleries.
 
 📖 *For comprehensive architecture, routing, component hierarchy, and data schemas, please consult [`DOCUMENTATION.md`](./DOCUMENTATION.md).*
 
@@ -26,12 +26,12 @@ We proudly acknowledge the dedicated team whose vision, leadership, and engineer
 | :--- | :--- | :--- |
 | **Anthony Wanyaga Maina** | **Lead Software Engineer** | Full-Stack Architecture, TypeScript Core, Component Hierarchy, Responsive Design System, Video Hero Performance Optimization, Dynamic SEO Engine & Production Release Engineering. |
 
-### 🏫 St. Gabriel School Leadership & Advisory Team
+### 🏫 St Gabriel\'s School Leadership & Advisory Team
 
 | Contributor | Capacity & Role | Key Contributions & Institutional Input |
 | :--- | :--- | :--- |
 | **Nicholas Okeyo** | **Executive Principal & School Leadership** | Executive vision, Principal Welcome address, academic policy guidance, and institutional governance. |
-| **Paul Muira** | **Academic & Administrative Advisory** | Dual-curriculum syllabus architecture (CBC & Cambridge), examination frameworks (KPSEA, KJSEA, IGCSE, A-Levels), and academic scheduling. |
+| **Paul Muira** | **Academic & Administrative Advisory** | Dual-curriculum syllabus architecture (CBC & British), examination frameworks (KPSEA, KJSEA, IGCSE, A-Levels), and academic scheduling. |
 | **Michael** | **School Technical & Operations Liaison** | On-site infrastructure coordination, IT systems liaison, campus asset coordination, and technical support. |
 | **James** | **Co-Curricular & Student Affairs Advisory** | Sports curriculum, championship brass band media, student club rosters, and co-curricular programs. |
 | **Lydiah Mwangi** | **Admissions, Pastoral Care & Content Coordination** | Admissions workflow design, pastoral care policies, girls' boarding compound guidelines, and prospectus content verification. |
@@ -55,7 +55,7 @@ We proudly acknowledge the dedicated team whose vision, leadership, and engineer
 
 1. **Dual-Curriculum Academic Hub (`/academics`)**:
    - **Kenya CBC Stream**: Pre-Primary (PP1/PP2), Lower Primary (Grades 1–3), Upper Primary & KPSEA (Grades 4–6), Junior Secondary School (JSS Grades 7–9 with KJSEA), and Senior Secondary School (Grades 10–12 with STEM, Social Sciences, and Arts Pathways).
-   - **British Cambridge Stream**: Early Years Foundation Stage (EYFS), Cambridge Primary (Years 1–6), Lower Secondary (Years 7–9), Cambridge IGCSE (Years 10–11), and Advanced Level (A-Level Years 12–13).
+   - **British Stream**: Early Years Foundation Stage (EYFS), British Primary (Years 1–6), Lower Secondary (Years 7–9), British IGCSE (Years 10–11), and Advanced Level (A-Level Years 12–13).
 2. **Interactive Community Testimonial Carousel (`/src/components/TestimonialSlider.tsx`)**:
    - Dynamic multi-category filter (*All Reviews, Parents, Scholars, Alumni*), auto-play rotation, rating stars, verified badges, and trust indicators.
 3. **Boarding Life & Pastoral Care Hub (`/boarding`)**:
@@ -144,4 +144,4 @@ npm run build
 
 ---
 
-*© 2026 St. Gabriel International School · All Rights Reserved · Designed & Engineered for Academic Distinction.*
+*© 2026 St Gabriel\'s International School · All Rights Reserved · Designed & Engineered for Academic Distinction.*

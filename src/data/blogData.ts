@@ -1,4 +1,4 @@
-import blogCambridgeImg from '../assets/images/blogs/cambridgeIgce.webp';
+import blogBritishImg from '../assets/images/blogs/BritishIgce.webp';
 import blogRoboticsImg from '../assets/images/blogs/coding.webp';
 import blogBoardingImg from '../assets/images/blogs/boardingLife.webp';
 import blogMusicBandImg from '../assets/images/blogs/brassBand.webp';
@@ -23,9 +23,9 @@ export interface BlogPost {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    id: 'blog-cambridge-vs-cbc',
-    title: 'Navigating Dual Curriculum: Choosing Between Cambridge and CBC for Your Child',
-    slug: 'navigating-dual-curriculum-cambridge-vs-cbc',
+    id: 'blog-British-vs-cbc',
+    title: 'Navigating Dual Curriculum: Choosing Between British and CBC for Your Child',
+    slug: 'navigating-dual-curriculum-British-vs-cbc',
     excerpt: 'A comprehensive guide for parents on how our synchronized pathways empower children to excel both locally and on the global stage.',
     category: 'Curriculum & Pedagogy',
     date: 'August 05, 2026',
@@ -34,15 +34,15 @@ export const BLOG_POSTS: BlogPost[] = [
       name: 'Mr. Peter Mwangi',
       role: 'Vice Principal & Academic Dean'
     },
-    image: blogCambridgeImg,
+    image: blogBritishImg,
     content: [
       'Choosing the right educational curriculum is one of the most critical decisions parents make for their child’s future.',
-      'At St. Gabriel International School, we offer both the Kenyan Competency-Based Curriculum (CBC) and the British Cambridge International curriculum under one roof.',
+      'At St Gabriel\'s International School, we offer both the Kenyan Competency-Based Curriculum (CBC) and the British International curriculum under one roof.',
       'CBC excels at practical skill application, continuous formative evaluation, and nurturing innate talents through specialized pathways in STEM, Humanities, and the Arts.',
-      'Cambridge International delivers globally standardized benchmarks, deep conceptual rigor, and direct credit portability to universities in over 160 countries.',
+      'British International delivers globally standardized benchmarks, deep conceptual rigor, and direct credit portability to universities in over 160 countries.',
       'Our academic counselors work closely with each family to identify which learning style best matches your child’s temperament and long-term ambitions.'
     ],
-    tags: ['Curriculum', 'Cambridge', 'CBC', 'Parenting']
+    tags: ['Curriculum', 'British', 'CBC', 'Parenting']
   },
   {
     id: 'blog-stem-early-years',
@@ -99,7 +99,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: blogMusicBandImg,
     content: [
       'Learning to read musical notation and coordinate breath, finger placement, and tempo engages both cerebral hemispheres simultaneously.',
-      'Members of the St. Gabriel Brass Band consistently achieve top-tier performance in mathematics and sciences.',
+      'Members of the St Gabriel\'s Brass Band consistently achieve top-tier performance in mathematics and sciences.',
       'Performing in front of thousands builds unwavering public confidence and graceful composure under pressure.'
     ],
     tags: ['Music', 'Brass Band', 'Brain Development', 'Arts']
@@ -119,7 +119,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: blogPlaygroupImg,
     content: [
       'In early years, play is the true work of childhood. Through sensory bins, puppet theater, and rhyming songs, young learners absorb complex phonemic awareness naturally.',
-      'At St. Gabriel Kindergarten, our children learn joyfully without feeling pressured by rigid drills, fostering a lifelong appetite for reading.'
+      'At St Gabriel\'s Kindergarten, our children learn joyfully without feeling pressured by rigid drills, fostering a lifelong appetite for reading.'
     ],
     tags: ['EYFS', 'Kindergarten', 'Literacy', 'Play']
   }

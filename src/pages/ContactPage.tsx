@@ -11,19 +11,19 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
-        title="Contact Us, Campus Location & Campus Tours | St. Gabriel's Mission Nakuru"
-        description="Contact St. Gabriel's Mission International School in Lanet, Nakuru, Kenya. Call +254 724 694 554, WhatsApp admissions, or schedule a campus tour along Transformer Road."
-        keywords="contact st gabriel's Mission, school location nakuru, transformer road lanet, call st gabriel's Mission admissions, book school tour nakuru, international school phone number kenya"
+        title="Contact Us, Campus Location & Campus Tours | St Gabriel's Mission Nakuru"
+        description="Contact St Gabriel's Mission International School in Lanet, Nakuru, Kenya. Call +254 724 694 554, WhatsApp admissions, or schedule a campus tour along Transformer Road."
+        keywords="contact St Gabriel\'s Mission, school location nakuru, transformer road lanet, call St Gabriel\'s Mission admissions, book school tour nakuru, international school phone number kenya"
         canonicalPath="/contact"
         ogType="website"
-        ogTitle="Contact St. Gabriel's Mission International School · Lanet, Nakuru"
+        ogTitle="Contact St Gabriel's Mission International School · Lanet, Nakuru"
         ogDescription="Connect with admissions, book a personalized campus tour, or reach our administrative offices along Transformer Road, Lanet."
         breadcrumbs={[{ name: 'Contact Us', path: '/contact' }]}
         customSchema={{
           '@context': 'https://schema.org',
           '@type': 'ContactPage',
-          name: "Contact St. Gabriel's Mission International School",
-          description: "Official contact and location information for St. Gabriel's Mission International School in Lanet, Nakuru.",
+          name: "Contact St Gabriel's Mission International School",
+          description: "Official contact and location information for St Gabriel's Mission International School in Lanet, Nakuru.",
           mainEntity: {
             '@type': 'EducationalOrganization',
             name: SCHOOL_INFO.name,
@@ -53,7 +53,7 @@ export const ContactPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={contactBG}
-            alt="St. Gabriel's Mission Campus Contact in Lanet Nakuru"
+            alt="St  Gabriel's Mission Campus Contact in Lanet Nakuru"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1D33]/95 via-[#0B1D33]/85 to-[#0B1D33]/75" />
@@ -65,7 +65,7 @@ export const ContactPage: React.FC = () => {
             Lanet, Nakuru County, Kenya
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
-            Contact St. Gabriel's Mission International School
+            Contact St Gabriel's Mission International School
           </h1>
           <p className="max-w-2xl mx-auto text-gray-200 text-sm sm:text-base leading-relaxed drop-shadow-sm">
             We welcome parents, guardians, and visitors. Get in touch with our administration or schedule a personal campus tour in Lanet.
@@ -158,13 +158,13 @@ export const ContactPage: React.FC = () => {
                 Exact Campus Location on Google Maps
               </h3>
               <p className="text-xs text-gray-300 mt-2 leading-relaxed">
-                St. Gabriel's Mission School, Transformer Rd, Lanet, Nakuru County, Kenya. Experience our state-of-the-art academic & boarding facilities.
+                St Gabriel's Mission School, Transformer Rd, Lanet, Nakuru County, Kenya. Experience our state-of-the-art academic & boarding facilities.
               </p>
             </div>
 
             <div className="rounded-2xl overflow-hidden border border-[#C59B27]/30 shadow-lg bg-[#162E4D] space-y-0">
               <iframe
-                title="St. Gabriel's Mission School Exact Location Map"
+                title="St  Gabriel's Mission School Exact Location Map"
                 src={SCHOOL_INFO.location.embedMapUrl}
                 width="100%"
                 height="280"
@@ -177,7 +177,7 @@ export const ContactPage: React.FC = () => {
               <div className="p-4 bg-[#162E4D] text-center space-y-2">
                 <div className="flex items-center justify-center gap-2 text-[#E0BA43] text-sm font-bold">
                   <MapPin className="w-4 h-4 flex-shrink-0" />
-                  <span>St. Gabriel's Mission School, Transformer Rd</span>
+                  <span>St  Gabriel's Mission School, Transformer Rd</span>
                 </div>
                 <p className="text-[11px] text-gray-300">
                   Coordinates: <span className="font-mono text-white">{SCHOOL_INFO.location.coordinates.lat}, {SCHOOL_INFO.location.coordinates.lng}</span>

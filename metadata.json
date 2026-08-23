@@ -1,6 +1,6 @@
 {
-  "name": "St. Gabriel International School",
-  "description": "Premier Kenya CBC & British Cambridge International Curriculum Day & Boarding School in Lanet, Nakuru, Kenya. Hope to the World.",
+  "name": "St Gabriel\'s International School",
+  "description": "Premier Kenya CBC & British International Curriculum Day & Boarding School in Lanet, Nakuru, Kenya. Hope to the World.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

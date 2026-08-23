@@ -8,7 +8,7 @@ export interface HistoryMilestone {
 export const SCHOOL_HISTORY_MILESTONES: HistoryMilestone[] = [
   {
     year: '1998',
-    title: 'Foundation of St. Gabriel School',
+    title: 'Foundation of St Gabriel\'s School',
     subtitle: 'Humble Beginnings',
     description: 'Established in Lanet, Nakuru with an initial cohort of 35 scholars and a clear vision to provide values-centered Christian education.'
   },
@@ -26,9 +26,9 @@ export const SCHOOL_HISTORY_MILESTONES: HistoryMilestone[] = [
   },
   {
     year: '2018',
-    title: 'Cambridge International Accreditation',
+    title: 'British International Accreditation',
     subtitle: 'Global Standards',
-    description: 'Formally accredited by Cambridge Assessment International Education (CAIE) as a global examination center for EYFS, Primary, Checkpoint, and IGCSE.'
+    description: 'Formally accredited by British Assessment International Education (CAIE) as a global examination center for EYFS, Primary, Checkpoint, and IGCSE.'
   },
   {
     year: '2023',

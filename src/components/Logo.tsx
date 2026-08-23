@@ -21,13 +21,13 @@ export const Logo: React.FC<LogoProps> = ({
     <Link
       to="/"
       className={`group flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-[#D4AF37] rounded-sm p-1 transition-transform ${className}`}
-      aria-label="St. Gabriel International School Home"
+      aria-label="St Gabriel's International School Home"
     >
       <div className="relative flex-shrink-0 min-h-8 flex items-center justify-center rounded-full">
         {!imgError ? (
           <img
             src={realLogoImg}
-            alt="St. Gabriel International School Crest"
+            alt="St Gabriel's International School Crest"
             className="w-[3.5rem] h-[3.5rem] sm:w-[4rem] sm:h-[4rem] md:w-[4.5rem] md:h-[4.5rem] object-contain shrink-0"
             onError={() => setImgError(true)}
             referrerPolicy="no-referrer"
@@ -45,7 +45,7 @@ export const Logo: React.FC<LogoProps> = ({
               : 'text-[#0A192F] group-hover:text-red-700'
           }`}
         >
-          ST. GABRIEL
+          St Gabriel's
         </span>
         <span
           className={`text-[12px] tracking-[0.2em] font-bold uppercase ${

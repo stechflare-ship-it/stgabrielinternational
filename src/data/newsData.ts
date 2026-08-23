@@ -13,7 +13,7 @@ export const NEWS_ITEMS: NewsItem[] = [
     slug: 'admissions-open-2026-2027-intake',
     category: 'Academic',
     date: 'August 10, 2026',
-    summary: 'St. Gabriel International School welcomes prospective families to apply for limited vacancies across CBC (PP1–Grade 10) and Cambridge (EYFS–Year 12).',
+    summary: 'St Gabriel\'s International School welcomes prospective families to apply for limited vacancies across CBC (PP1–Grade 10) and British (EYFS–Year 12).',
     content: [
       'We are pleased to announce that official enrollment for the 2026/2027 academic session is now active.',
       'Prospective parents are invited to schedule campus tours across our Lanet campuses to experience our world-class science laboratories, digital learning studios, and boarding residences.',
@@ -23,7 +23,7 @@ export const NEWS_ITEMS: NewsItem[] = [
     featured: true,
     author: 'Admissions Directorate',
     readTime: '3 min read',
-    tags: ['Admissions', 'Cambridge', 'CBC', 'Enrollment']
+    tags: ['Admissions', 'British', 'CBC', 'Enrollment']
   },
   {
     id: 'news-stem-lab-expansion',
@@ -31,9 +31,9 @@ export const NEWS_ITEMS: NewsItem[] = [
     slug: 'commissioning-ai-stem-hub',
     category: 'Academic',
     date: 'July 28, 2026',
-    summary: 'The new wing features 3D prototyping printers, advanced robotics kits, and high-performance computing units for Cambridge and CBC computing curricula.',
+    summary: 'The new wing features 3D prototyping printers, advanced robotics kits, and high-performance computing units for British and CBC computing curricula.',
     content: [
-      'St. Gabriel has officially unveiled its newly expanded STEM Innovation Center.',
+      'St Gabriel\'s has officially unveiled its newly expanded STEM Innovation Center.',
       'The multi-million shilling facility empowers learners from Grade 4 upwards to program microcontrollers, design algorithmic solutions, and explore machine learning principles.',
       'Special guest speakers from leading tech firms commended the school for pioneering practical technology integration at the secondary level.'
     ],
@@ -45,13 +45,13 @@ export const NEWS_ITEMS: NewsItem[] = [
   },
   {
     id: 'news-music-festival-glory',
-    title: 'St. Gabriel Brass Band & Dance Troupe Clinches First Place in Regional Arts Gala',
+    title: 'St Gabriel\'s Brass Band & Dance Troupe Clinches First Place in Regional Arts Gala',
     slug: 'brass-band-regional-champions',
     category: 'Arts',
     date: 'July 15, 2026',
     summary: 'Our championship marching band and traditional folk dance ensemble took top honors at the Rift Valley Inter-School Music Festival.',
     content: [
-      'In a stirring display of precision, rhythm, and musical mastery, the St. Gabriel Brass Band captured 1st position across the Senior Brass Ensemble category.',
+      'In a stirring display of precision, rhythm, and musical mastery, the St Gabriel\'s Brass Band captured 1st position across the Senior Brass Ensemble category.',
       'The traditional dance troupe also earned a standing ovation with their energetic Kenyan cultural arrangement.',
       'Both ensembles now proceed to the National Music Festival scheduled for later this term.'
     ],

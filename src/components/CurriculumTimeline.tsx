@@ -74,7 +74,7 @@ export const CurriculumTimeline: React.FC = () => {
           }`}
         >
           <Globe className="w-4 h-4 text-sky-400" />
-          <span>British Cambridge (EYFS – A-Level)</span>
+          <span> British (EYFS – A-Level)</span>
         </button>
       </div>
 
@@ -135,7 +135,7 @@ export const CurriculumTimeline: React.FC = () => {
                   </span>
                 ) : (
                   <span className="bg-sky-900/90 text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full border border-sky-400/40 shadow">
-                    British Cambridge
+                  British
                   </span>
                 )}
               </div>
@@ -198,7 +198,7 @@ export const CurriculumTimeline: React.FC = () => {
                 Kenya Institute of Curriculum Development (KICD) Standards
               </span>
               <h3 className="font-serif text-xl sm:text-2xl font-bold text-white">
-                The 7 Core Competencies of Kenya CBC at St. Gabriel
+                The 7 Core Competencies of Kenya CBC at St Gabriel\'s
               </h3>
             </div>
             <span className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold border border-[#C59B27]/40 w-fit">
@@ -234,10 +234,10 @@ export const CurriculumTimeline: React.FC = () => {
             Curriculum Alignment Matrix
           </span>
           <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#0B1D33]">
-            Comparing Kenya CBC and British Cambridge Pathways
+            Comparing Kenya CBC and British International Pathways
           </h3>
           <p className="text-xs sm:text-sm text-gray-600">
-            St. Gabriel provides clear transitions and academic parity, enabling parents to choose the ideal syllabus for their children.
+            St Gabriel\'s provides clear transitions and academic parity, enabling parents to choose the ideal syllabus for their children.
           </p>
         </div>
 
@@ -247,7 +247,7 @@ export const CurriculumTimeline: React.FC = () => {
               <tr className="bg-[#0B1D33] text-white">
                 <th className="p-3.5 rounded-tl-xl font-bold">Age Bracket</th>
                 <th className="p-3.5 font-bold">Kenya CBC Syllabus</th>
-                <th className="p-3.5 font-bold">British Cambridge Pathway</th>
+                <th className="p-3.5 font-bold">British International Pathway</th>
                 <th className="p-3.5 rounded-tr-xl font-bold">Key Assessment & Milestone</th>
               </tr>
             </thead>
@@ -261,14 +261,14 @@ export const CurriculumTimeline: React.FC = () => {
               <tr className="hover:bg-gray-50/80 bg-gray-50/40">
                 <td className="p-3.5 font-bold text-[#0B1D33]">Ages 6 – 8</td>
                 <td className="p-3.5">Lower Primary (Grades 1, 2 & 3)</td>
-                <td className="p-3.5">Cambridge Primary (Years 1 – 3)</td>
+                <td className="p-3.5">British Primary (Years 1 – 3)</td>
                 <td className="p-3.5 text-gray-600">Classroom-Based Assessment (CBA)</td>
               </tr>
               <tr className="hover:bg-gray-50/80">
                 <td className="p-3.5 font-bold text-[#0B1D33]">Ages 9 – 11</td>
                 <td className="p-3.5">Upper Primary (Grades 4, 5 & 6)</td>
-                <td className="p-3.5">Cambridge Primary (Years 4 – 6)</td>
-                <td className="p-3.5 font-bold text-[#0B1D33]">KPSEA (Grade 6) / Cambridge Primary Checkpoint</td>
+                <td className="p-3.5">British Primary (Years 4 – 6)</td>
+                <td className="p-3.5 font-bold text-[#0B1D33]">KPSEA (Grade 6) / British Primary Checkpoint</td>
               </tr>
               <tr className="hover:bg-gray-50/80 bg-gray-50/40">
                 <td className="p-3.5 font-bold text-[#0B1D33]">Ages 12 – 14</td>
@@ -279,14 +279,14 @@ export const CurriculumTimeline: React.FC = () => {
               <tr className="hover:bg-gray-50/80">
                 <td className="p-3.5 font-bold text-[#0B1D33]">Ages 14 – 16</td>
                 <td className="p-3.5">Senior School (Grades 10 & 11)</td>
-                <td className="p-3.5">Cambridge IGCSE (Years 10 & 11)</td>
-                <td className="p-3.5 font-bold text-[#0B1D33]">Cambridge IGCSE Board Examinations</td>
+                <td className="p-3.5">British IGCSE (Years 10 & 11)</td>
+                <td className="p-3.5 font-bold text-[#0B1D33]">British IGCSE Board Examinations</td>
               </tr>
               <tr className="hover:bg-gray-50/80 bg-gray-50/40">
                 <td className="p-3.5 font-bold text-[#0B1D33]">Ages 16 – 18</td>
                 <td className="p-3.5">Senior School (Grade 12) / Pre-University</td>
                 <td className="p-3.5">Advanced Level (A-Level / AS & A2)</td>
-                <td className="p-3.5 text-gray-600">Cambridge International A-Level Examinations</td>
+                <td className="p-3.5 text-gray-600">British International A-Level Examinations</td>
               </tr>
             </tbody>
           </table>

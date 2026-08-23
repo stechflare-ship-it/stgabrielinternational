@@ -1,8 +1,8 @@
-# 📚 St. Gabriel International School — Comprehensive System & Technical Documentation
+# 📚 St Gabriel\'s International School — Comprehensive System & Technical Documentation
 
-> **Official Institutional Platform for St. Gabriel International School (Lanet, Nakuru County, Kenya)**  
+> **Official Institutional Platform for St Gabriel\'s International School (Lanet, Nakuru County, Kenya)**  
 > **Motto**: *"HOPE TO THE WORLD"* · *"A Balanced Life & Real-Life Experience"*  
-> **Dual-Curriculum**: Kenya Competency-Based Curriculum (CBC PP1 to Senior School Grade 12) & British Cambridge International (EYFS to A-Level)
+> **Dual-Curriculum**: Kenya Competency-Based Curriculum (CBC PP1 to Senior School Grade 12) & British International (EYFS to A-Level)
 
 ---
 
@@ -31,10 +31,10 @@
 
 ## 🏛️ 1. Executive Summary & Institutional Context
 
-Founded in 1998 in Lanet, Nakuru County, Kenya, **St. Gabriel International School** has provided over 28 years of academic excellence, holistic character formation, and leadership development. The institution caters to both day scholars and boarders across two distinct, gender-separated boarding compounds located approximately 4 km apart in Lanet.
+Founded in 1998 in Lanet, Nakuru County, Kenya, **St Gabriel\'s International School** has provided over 28 years of academic excellence, holistic character formation, and leadership development. The institution caters to both day scholars and boarders across two distinct, gender-separated boarding compounds located approximately 4 km apart in Lanet.
 
 The web platform serves as an enterprise-grade digital portal providing prospective parents, current scholars, alumni, and global educational partners with immediate access to:
-- Comprehensive dual-curriculum exploration across both national (Kenya CBC) and international (British Cambridge CAIE) pathways.
+- Comprehensive dual-curriculum exploration across both national (Kenya CBC) and international (British CAIE) pathways.
 - Transparent grade-by-grade fee structures with direct bank and M-Pesa Paybill guides enforcing a strict cashless policy.
 - Real-time admissions inquiry handling and document downloads.
 - Immersive campus life showcases featuring high-definition video hero backgrounds, interactive tours, and rich multimedia galleries.
@@ -51,7 +51,7 @@ This web platform is the result of dedicated collaboration between the school ad
 | :--- | :--- | :--- |
 | **Anthony Wanyaga Maina** | **Lead Software Engineer** | System architecture, TypeScript interface design, React component hierarchy, full-stack state management, video background performance optimization, SEO metadata engine, responsive design system, and production release engineering. |
 
-### 🏫 St. Gabriel School Leadership & Project Advisory Committee
+### 🏫 St Gabriel\'s School Leadership & Project Advisory Committee
 
 | Contributor | School Capacity | Key Project Role & Advisory Contributions |
 | :--- | :--- | :--- |
@@ -100,7 +100,7 @@ All routes are declared in `/src/App.tsx` and wrapped with the `ScrollToTop` res
 | :--- | :--- | :--- |
 | `/` | `src/pages/HomePage.tsx` | Main portal featuring Video Hero with Tour Modal, Quick Stats, Dual-Curriculum Highlights, Testimonials, and News. |
 | `/about` | `src/pages/AboutPage.tsx` | 28-year school legacy, Mission/Vision, Core Values, Campus Facilities, and Executive Leadership Directory. |
-| `/academics` | `src/pages/AcademicsPage.tsx` | Complete Dual-Curriculum Explorer: CBC (PP1–Grade 12) & Cambridge (EYFS–A-Level), STEM labs, and Senior School specializations. |
+| `/academics` | `src/pages/AcademicsPage.tsx` | Complete Dual-Curriculum Explorer: CBC (PP1–Grade 12) & British (EYFS–A-Level), STEM labs, and Senior School specializations. |
 | `/academics/:stageId` | `src/pages/EYFSPage.tsx` | Dynamic deep-dive page for individual curriculum stages (e.g., `/academics/eyfs`, `/academics/igcse`, `/academics/jss`). |
 | `/student-life` | `src/pages/StudentLifePage.tsx` | Co-curricular activities, Championship Brass Band, Taekwondo, STEM Robotics, Swimming, and House Competitions. |
 | `/boarding` | `src/pages/BoardingPage.tsx` | Residential life, separate Boys & Girls compounds (4 km apart), daily boarder schedules, dining nutrition, and health clinic. |
@@ -108,7 +108,7 @@ All routes are declared in `/src/App.tsx` and wrapped with the `ScrollToTop` res
 | `/admissions/fees` | `src/pages/FeesPage.tsx` | Full termly fee schedules for Day & Boarding, Equity Bank payment cards, and M-Pesa Paybill format generator. |
 | `/gallery` | `src/pages/GalleryPage.tsx` | Filterable high-resolution media gallery (Campus, STEM, Sports, Arts, Events) with responsive Lightbox viewer. |
 | `/news` | `src/pages/NewsPage.tsx` | Latest announcements, term calendars, examination notices, and interactive article detail modals. |
-| `/blog` | `src/pages/BlogPage.tsx` | Educational editorial articles, parenting advice, Cambridge syllabus insights, and boarding preparation guides. |
+| `/blog` | `src/pages/BlogPage.tsx` | Educational editorial articles, parenting advice, British syllabus insights, and boarding preparation guides. |
 | `/downloads` | `src/pages/DownloadsPage.tsx` | Official document downloads (Prospectus 2026/27, Fee Structure, Admission Forms, Boarding Code of Conduct). |
 | `/contact` | `src/pages/ContactPage.tsx` | Campus location directions (Lanet Transformer Rd), interactive inquiry form, emergency hotlines, and Google Maps embed. |
 
@@ -118,7 +118,7 @@ All routes are declared in `/src/App.tsx` and wrapped with the `ScrollToTop` res
 
 ### 5.1 Dual-Curriculum Academic Engine
 - **Kenya CBC Pathway**: Pre-Primary (PP1/PP2), Lower Primary (Grades 1–3), Upper Primary with KPSEA (Grades 4–6), Junior Secondary School with KJSEA (Grades 7–9), and Senior Secondary School (Grades 10–12) with STEM, Social Sciences, and Arts & Sports Pathways.
-- **British Cambridge Stream**: Early Years Foundation Stage (EYFS), Cambridge Primary (Years 1–6), Cambridge Lower Secondary (Years 7–9), Cambridge IGCSE (Years 10–11), and Advanced Level / A-Levels (Years 12–13).
+- **British Stream**: Early Years Foundation Stage (EYFS), British Primary (Years 1–6), British Lower Secondary (Years 7–9), British IGCSE (Years 10–11), and Advanced Level / A-Levels (Years 12–13).
 - **Stage Navigation**: Step-by-step curriculum visualizer (`CurriculumTimeline.tsx`) with age indicators, core competencies, and career progression maps.
 
 ### 5.2 Residential Boarding & Pastoral Care
@@ -173,7 +173,7 @@ src/
 │   ├── Gallery.tsx                # Multi-category media gallery grid
 │   ├── Hero.tsx                   # Video background hero with tour modal
 │   ├── Lightbox.tsx               # Full-screen image lightbox dialog
-│   ├── Logo.tsx                   # Branded St. Gabriel crest component
+│   ├── Logo.tsx                   # Branded St Gabriel\'s crest component
 │   ├── MobileMenu.tsx             # Responsive slide-out navigation drawer
 │   ├── Navbar.tsx                 # Top sticky navigation bar with dropdowns
 │   ├── NewsCard.tsx               # News article preview card
@@ -193,7 +193,7 @@ src/
 
 ## 🎨 7. Design System & Theme Specifications
 
-The application uses an authoritative, elegant color palette reflecting the dignity of St. Gabriel International School:
+The application uses an authoritative, elegant color palette reflecting the dignity of St Gabriel\'s International School:
 
 | Token Name | Hex Code | Purpose & Application |
 | :--- | :--- | :--- |
@@ -320,4 +320,4 @@ The output generated in the `/dist` directory is a production-ready static bundl
 
 ---
 
-*Document Version 2.4.0 · Published August 2026 · St. Gabriel International School*
+*Document Version 2.4.0 · Published August 2026 · St Gabriel\'s International School*

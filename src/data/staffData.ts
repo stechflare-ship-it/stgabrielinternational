@@ -4,7 +4,8 @@ import directorImg from '../assets/images/leadership/director.webp';
 import mdDirectorImg from '../assets/images/leadership/mddirector.webp';
 import nicholasLeadershipImg from '../assets/images/leadership/nicholas.webp';
 import payrick from '../assets/images/leadership/payrick.webp';
-import edwinImg from '../assets/images/leadership/edwin.webp';
+import edwinImg from '../assets/images/leadership/edwin.webp'
+import zachary from '../assets/images/leadership/zachary.webp'
 
 import aliciaStaffImg from '../assets/images/staff/alicia.webp';
 import godfreyStaffImg from '../assets/images/staff/godfrey.webp';
@@ -12,7 +13,10 @@ import labanStaffImg from '../assets/images/staff/laban.webp';
 import njorogeStaffImg from '../assets/images/staff/njoroge.webp';
 import michael from '../assets/images/staff/michael.webp';
 import lydia from '../assets/images/staff/lydia.webp';
-import camila from '../../src/assets/images/staff/camila.webp'
+import camila from '../../src/assets/images/staff/camila.webp';
+import bosbori from '../../src/assets/images/staff/bosbori.webp';
+import selina from '../../src/assets/images/staff/selina.webp';
+
 
 // ---------------------------------------------------------------------------
 // 5 EXECUTIVE LEADERSHIP MEMBERS (Featured on About Page & Director Welcome)
@@ -29,15 +33,15 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     role: 'Director & Founder',
     department: 'Board of Directors',
     qualification: 'M.Ed. Institutional Leadership & Management, B.Ed. (Hons)',
-    bio: 'Visionary founder and Director of St. Gabriel Group of Schools. For over 28 years, Mr. Maina has spearheaded the strategic expansion, spiritual vision, infrastructure development, and dual-curriculum excellence of St. Gabriel in Lanet, Nakuru County.',
-    welcomeMessage: 'At St. Gabriel International School, we nurture every child into a confident, ethically grounded, and intellectually formidable global citizen under God\'s grace.',
+    bio: 'Visionary founder and Director of St Gabriel\'s Group of Schools. For over 28 years, Mr. Maina has spearheaded the strategic expansion, spiritual vision, infrastructure development, and dual-curriculum excellence of St Gabriel\'s in Lanet, Nakuru County.',
+    welcomeMessage: 'At St Gabriel\'s International School, we nurture every child into a confident, ethically grounded, and intellectually formidable global citizen under God\'s grace.',
     experience: '28+ Years Visionary Leadership',
     image: directorImg,
     email: 'director@stgabrielinternational.sc.ke',
     phone: '+254 724 694 554',
     detailedMessage: [
-      'Welcome to St. Gabriel International School. Since our founding in 1998 in Lanet, Nakuru, our guiding mission has remained uncompromising: to provide transformative education that speaks to both the mind and the heart.',
-      'With our state-of-the-art international campus, we proudly offer dual academic distinction: the Kenyan Competency-Based Curriculum (CBC through Junior and Senior School) alongside the premier British Cambridge International pathway (EYFS to A-Level).',
+      'Welcome to St Gabriel\'s International School. Since our founding in 1998 in Lanet, Nakuru, our guiding mission has remained uncompromising: to provide transformative education that speaks to both the mind and the heart.',
+      'With our state-of-the-art international campus, we proudly offer dual academic distinction: the Kenyan Competency-Based Curriculum (CBC through Junior and Senior School) alongside the premier British International pathway (EYFS to A-Level).',
       'Our separate residential boarding compounds for boys and girls provide a disciplined, secure, and nurturing home-away-from-home.',
       'We warmly welcome all parents and guardians to visit us in Lanet and partner with us in shaping the leaders of tomorrow.'
     ]
@@ -55,14 +59,14 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     email: 'mddirector@stgabrielinternational.sc.ke',
     phone: '+254 720 349 748',
     detailedMessage: [
-      'Our commitment at St. Gabriel goes beyond classroom academics. We cultivate moral poise, empathetic character, and high aesthetic and athletic expression in every scholar.',
+      'Our commitment at St Gabriel\'s goes beyond classroom academics. We cultivate moral poise, empathetic character, and high aesthetic and athletic expression in every scholar.',
       'We ensure that every residential boarder and day scholar thrives within a safe, hygienic, and inspiring campus environment.'
     ]
   },
   {
-    id: 'chief-principal',
+    id: 'junior-School-principal',
     name: 'Mr. Nicholas Okeyo',
-    role: 'Chief Principal & Head of Institution',
+    role: 'Junior School Principal ',
     department: 'Executive Administration',
     qualification: 'Bachelor of Education Mathematics and Biology (MKU))',
     bio: 'Distinguished educator with over 24 years of executive leadership in leading national and international curriculum institutions. Oversees academic standards, faculty mentoring, and dual-curriculum execution.',
@@ -72,14 +76,14 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     email: '',
     phone: '+254 706470471',
     detailedMessage: [
-      'Education at St. Gabriel is an exhilarating journey of inquiry, discovery, and character building.',
-      'Whether preparing for national KPSEA and KCSE milestones or sitting for Cambridge IGCSE and A-Level examinations, our learners achieve exemplary mastery.'
+      'Education at St Gabriel\'s is an exhilarating journey of inquiry, discovery, and character building.',
+      'Whether preparing for national KPSEA and KCSE milestones or sitting for British IGCSE and A-Level examinations, our learners achieve exemplary mastery.'
     ]
   },
   {
     id: 'principal-peter',
     name: 'Mr. Patrick Ouko',
-    role: 'Principal',
+    role: 'Boy\'s Principal',
     department: 'Academic Administration',
     qualification: 'Bachelor of Education Science Chemisrty/Physics MKU',
     bio: 'Coordinates dual-curriculum syllabus mapping, teacher professional development, STEM laboratory pedagogy, and international examination administration.',
@@ -99,7 +103,32 @@ export const LEADERSHIP_TEAM: StaffMember[] = [
     experience: '16+ Years Experience',
     image: camila,
     email: ''
+  },
+  {
+    id: 'academic-principal',
+    name: 'Mr. Edwin Werunga',
+    role: 'Academic Principal',
+    department: 'Academic',
+    qualification: 'Bachelor of Education, Masters in Education (MMUST)',
+    bio: 'Assisting prospective families with enrollment evaluations, campus tours, boarding registrations, and curriculum placement.',
+    welcomeMessage: 'We are here to guide your family smoothly into the St Gabriel\'s community.',
+    experience: '20+ Years Experience',
+    image: edwinImg,
+    email: ''
+  },
+  {
+    id: 'deputy-mission',
+    name: 'Mr. Zachary Gikonyo',
+    role: 'Deputy Principal',
+    department: 'Academic',
+    qualification: 'Bachelor of Education Science (bio/chem) at Karatina University',
+    bio: 'Assisting prospective families with enrollment evaluations, campus tours, boarding registrations, and curriculum placement.',
+    welcomeMessage: 'We are here to guide your family smoothly into the St Gabriel\'s community.',
+    experience: '20+ Years Experience',
+    image: zachary,
+    email: ''
   }
+
 ];
 
 export const DIRECTOR_MEMBER = LEADERSHIP_TEAM[0];
@@ -109,35 +138,34 @@ export const DIRECTOR_MEMBER = LEADERSHIP_TEAM[0];
 // ---------------------------------------------------------------------------
 export const FACULTY_MEMBERS: StaffMember[] = [
   {
-    id: 'boarding-maina',
-    name: 'Mr. Maina',
-    role: 'Head of Boarding & Pastoral Welfare',
-    department: 'Pastoral Care & Boarding',
-    qualification: 'B.A. Psychology & Counseling, Higher Dip. Child Welfare',
-    bio: 'Overseeing both residential compounds in Lanet, Mr. Maina ensures a safe, warm, disciplined home-away-from-home where boarders cultivate self-reliance, leadership, and Christian brotherhood.',
+    id: 'hod-humanities',
+    name: 'Md. Lydia  Bosibori',
+    role: 'HOD Humanities',
+    department: 'Academics',
+    qualification: 'Bachelor of Education Kiswahili/CRE at Kenyatta University',
+    bio: 'Overseeing the humanities Department to ensure student and teachers are interacting well. Aslo ensure the perfomance of the humanities course is met as expected.',
     welcomeMessage: 'Our boarding life is grounded in Christian brotherhood, holistic wellness, and strong academic discipline.',
     experience: '15+ Years Experience',
-    image: camila,
-    email: 'e'
+    image: bosbori,
+    email: ''
   },
   {
-    id: 'co-curricular-james',
-    name: 'Mr. James Kiptoo',
-    role: 'Director of Co-Curricular & Sports',
-    department: 'Sports & Creative Arts',
-    qualification: 'B.Sc. Sports Science, Certified IAAF Coach, Level 3 Brass Band Instructor',
-    bio: 'Director James spearheads our championship brass band, regional football teams, Taekwondo dojo, and international sports tournaments, instilling sportsmanship and resilience.',
-    welcomeMessage: 'Discipline on the field translates directly into excellence in the classroom.',
-    experience: '14+ Years Coaching',
-    image: camila,
+    id: 'boarding-mistress',
+    name: 'Md. Selina',
+    role: 'Boarding Mistress',
+    department: 'HOD Technicals and Applied sciences',
+    qualification: 'Bachelor of education Egerton university',
+    bio: 'She is a boarding mistress . she ensures boarding life is smooth. Also she is the HOD in Pure and Applied Sciences where she ensure sciences subjects are taught as expected in the curricullum and perfomance is met as expected in the school',
+    experience: '12+ Years of expirience',
+    image: selina,
     email: ''
   },
   {
     id: 'head-eyfs-grace',
     name: 'Mrs. Grace Wanjiru',
-    role: 'Head of Early Years & Cambridge Primary',
+    role: 'Head of Early Years & British Primary',
     department: 'Early Years & Primary',
-    qualification: 'B.Ed. Early Childhood Development (Cambridge Certified)',
+    qualification: 'B.Ed. Early Childhood Development (British Certified)',
     bio: 'Mrs. Wanjiru crafts joyful, sensory-rich playgroup and primary environments that develop foundational phonics, numeracy, and emotional intelligence.',
     welcomeMessage: 'Every child\'s early journey begins with love, wonder, and purposeful discovery.',
     experience: '12+ Years Experience',
@@ -183,7 +211,7 @@ export const FACULTY_MEMBERS: StaffMember[] = [
   {
     id: 'mathematics-godfrey',
     name: 'Mr. Godfrey Wahungu',
-    role: 'Senior Cambridge & CBC Mathematics Lead',
+    role: 'Senior British & CBC Mathematics Lead',
     department: 'Mathematics & Computing',
     qualification: 'B.Sc. Pure Mathematics & Statistics, Dip. Ed.',
     bio: 'Expert mathematics mentor celebrated for simplifying complex concepts and mentoring regional mathematics contest champions.',
@@ -238,18 +266,6 @@ export const FACULTY_MEMBERS: StaffMember[] = [
     welcomeMessage: 'Every boarder receives the warmth, care, and nutritional support of home.',
     experience: '5+ Years Experience',
     image: lydia,
-    email: ''
-  },
-  {
-    id: 'admissions-edwin',
-    name: 'Mr. Edwin Werunga',
-    role: 'Academic Officer',
-    department: 'Academic',
-    qualification: 'Bachelor of Education, Masters in Education (MMUST)',
-    bio: 'Assisting prospective families with enrollment evaluations, campus tours, boarding registrations, and curriculum placement.',
-    welcomeMessage: 'We are here to guide your family smoothly into the St. Gabriel community.',
-    experience: '20+ Years Experience',
-    image: edwinImg,
     email: ''
   }
 ];

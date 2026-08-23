@@ -19,7 +19,7 @@ export const FloatingWhatsApp: React.FC = () => {
               Need Help / Enquiries?
             </p>
             <p className="text-[11px] text-gray-200 mt-0.5">
-              Chat directly with St. Gabriel Admissions on WhatsApp!
+              Chat directly with St Gabriel's Admissions on WhatsApp!
             </p>
           </div>
           <button
@@ -39,7 +39,7 @@ export const FloatingWhatsApp: React.FC = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="group relative flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#25D366]/50"
-        aria-label="Chat with St. Gabriel International School on WhatsApp"
+        aria-label="Chat with St Gabriel\'s International School on WhatsApp"
         title="Chat on WhatsApp +254 724 694 554"
       >
         <MessageCircle className="w-8 h-8 fill-current" />

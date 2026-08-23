@@ -1,4 +1,4 @@
-# robots.txt for St. Gabriel International School
+# robots.txt for St Gabriel\'s International School
 # https://stgabrielinternational.co.ke
 
 User-agent: *

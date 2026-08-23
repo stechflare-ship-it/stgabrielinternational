@@ -55,7 +55,7 @@ export interface SEOTagOptions {
   ogImageHeight?: string | number;
   /** OpenGraph Type ('website' | 'article' | 'profile') */
   ogType?: 'website' | 'article' | 'profile';
-  /** OpenGraph Site Name (defaults to St. Gabriel International School) */
+  /** OpenGraph Site Name (defaults to St Gabriel\'s International School) */
   ogSiteName?: string;
   /** OpenGraph Locale (defaults to en_KE) */
   ogLocale?: string;
@@ -93,7 +93,7 @@ export const DEFAULT_OG_IMAGE =
 
 /** Default Search Keywords */
 export const DEFAULT_KEYWORDS =
-  'St. Gabriel International School, international school nakuru, kenya cbc, senior secondary school, junior secondary school, jss nakuru, cambridge igcse, cambridge a-level, eyfs, lanet boarding school, christian school nakuru, dual curriculum kenya, best school in nakuru county, transformer road lanet';
+  'St Gabriel\'s International School, international school nakuru, kenya cbc, senior secondary school, junior secondary school, jss nakuru, British igcse, British a-level, eyfs, lanet boarding school, christian school nakuru, dual curriculum kenya, best school in nakuru county, transformer road lanet';
 
 /**
  * Dynamically upserts a `<meta>` tag in `<head>` by key attribute.
@@ -275,7 +275,7 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
     '@type': ['EducationalOrganization', 'School'],
     '@id': `${baseUrl}/#school`,
     name: SCHOOL_INFO.name,
-    alternateName: ['St. Gabriel International', 'St. Gabriel Mission School Lanet', 'SGIS Nakuru'],
+    alternateName: ['St Gabriel\'s International', 'St Gabriel\'s Mission School Lanet', 'SGIS Nakuru'],
     url: baseUrl,
     logo: `${baseUrl}/favicon.png`,
     image: ogImage,
@@ -319,22 +319,22 @@ export function injectMetaTags(options: SEOTagOptions): () => void {
       'Kenya Competency-Based Curriculum (CBC)',
       'Kenya Junior Secondary School (KJSEA)',
       'Kenya Senior Secondary School (STEM, Social Sciences & Arts)',
-      'Cambridge Early Years Foundation Stage (EYFS)',
-      'Cambridge Primary & Lower Secondary',
-      'Cambridge IGCSE (O-Level)',
-      'Cambridge Advanced Level (A-Level)'
+      'British Early Years Foundation Stage (EYFS)',
+      'British Primary & Lower Secondary',
+      'British IGCSE (O-Level)',
+      'British Advanced Level (A-Level)'
     ],
     educationalLevel: [
       'Early Childhood Education (PP1, PP2 & EYFS)',
-      'Primary School (Grades 1-6 & Cambridge Primary)',
+      'Primary School (Grades 1-6 & British Primary)',
       'Junior Secondary School (JSS Grades 7-9)',
       'Senior Secondary School (Grades 10-12)',
-      'Cambridge IGCSE & A-Level'
+      'British IGCSE & A-Level'
     ],
     offers: {
       '@type': 'Offer',
       category: 'Day & Boarding Dual-Curriculum Education',
-      description: 'Kenya CBC and British Cambridge International Day & Boarding Education in Lanet, Nakuru'
+      description: 'Kenya CBC and British International Day & Boarding Education in Lanet, Nakuru'
     }
   };
 

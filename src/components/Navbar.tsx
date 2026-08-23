@@ -47,11 +47,11 @@ export const Navbar: React.FC = () => {
         <div className="animate-ribbon-marquee text-xs sm:text-sm font-bold tracking-wide uppercase flex items-center gap-12 select-none">
           <span className="flex items-center gap-3">
             <span className="bg-[#D4AF37] text-red-950 text-[10px] sm:text-xs px-2 py-0.5 rounded font-black tracking-widest shadow">ANNOUNCEMENT</span>
-            <span>🚨 OFFICIAL OPENING OF ST. GABRIEL INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
+            <span>🚨 OFFICIAL OPENING OF St Gabriel\'s INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
           </span>
           <span className="flex items-center gap-3">
             <span className="bg-[#D4AF37] text-red-950 text-[10px] sm:text-xs px-2 py-0.5 rounded font-black tracking-widest shadow">ANNOUNCEMENT</span>
-            <span>🚨 OFFICIAL OPENING OF ST. GABRIEL INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
+            <span>🚨 OFFICIAL OPENING OF St Gabriel\'s INTERNATIONAL SCHOOL FROM SEPTEMBER 2026! 🎓 ENROLLING NOW FOR BRITISH CURRICULUM (EYFS, PRIMARY, LOWER SECONDARY, IGCSE & A-LEVEL) 📞 CALL ADMISSIONS: +254 724 694 554 · +254 720 349 748 🌟 HOPE TO THE WORLD 🌟</span>
           </span>
         </div>
       </Link>
@@ -176,9 +176,9 @@ export const Navbar: React.FC = () => {
                     CBC Senior Secondary School (SSS Grades 10 – 12)
                   </Link>
 
-                  {/* British Cambridge Group */}
+                  {/* British Group */}
                   <div className="px-4 pt-2 pb-1 text-[10px] uppercase tracking-wider text-sky-400 font-black border-t border-white/10 mt-1">
-                    🇬🇧 British Cambridge Pathway
+                    🇬🇧 British Pathway
                   </div>
                   <Link
                     to="/academics/eyfs"
@@ -190,7 +190,7 @@ export const Navbar: React.FC = () => {
                     to="/academics/primary"
                     className="block px-4 py-1.5 text-xs text-gray-200 hover:bg-sky-600 hover:text-white font-medium transition-colors"
                   >
-                    Cambridge Primary (Years 1 – 6)
+                    British Primary (Years 1 – 6)
                   </Link>
                   <Link
                     to="/academics/lower-secondary"
@@ -202,7 +202,7 @@ export const Navbar: React.FC = () => {
                     to="/academics/igcse"
                     className="block px-4 py-1.5 text-xs text-gray-200 hover:bg-sky-600 hover:text-white font-medium transition-colors"
                   >
-                    Cambridge IGCSE (Years 10 – 11)
+                    British IGCSE (Years 10 – 11)
                   </Link>
                   <Link
                     to="/academics/a-level"

@@ -27,8 +27,8 @@ interface TestimonialSliderProps {
 }
 
 export const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
-  title = 'Voices of the St. Gabriel Community',
-  subtitle = 'Discover why parents, scholars, and alumni trust St. Gabriel for Kenya CBC and British Cambridge excellence.',
+  title = 'Voices of the St Gabriel\'s Community',
+  subtitle = 'Discover why parents, scholars, and alumni trust St Gabriel\'s for Kenya CBC and British excellence.',
   badge = 'Community Reviews & Testimonials',
   limitCategory
 }) => {
@@ -158,8 +158,8 @@ export const TestimonialSlider: React.FC<TestimonialSliderProps> = ({
                   {currentItem.curriculum === 'cbc'
                     ? '🇰🇪 Kenya CBC Stream'
                     : currentItem.curriculum === 'british'
-                    ? '🇬🇧 Cambridge British Stream'
-                    : '🌐 Dual CBC & Cambridge'}
+                    ? '🇬🇧 British Stream'
+                    : '🌐 Dual CBC & British'}
                 </span>
               </div>
 

@@ -94,28 +94,28 @@ export const HomePage: React.FC = () => {
   return (
     <div className="w-full bg-[#F8F9FB]">
       <SEOMetadata
-        title="St. Gabriel's Mission International School | Kenya CBC & British  in Nakuru, Kenya"
-        description="St. Gabriel's Mission International School in Lanet, Nakuru offers premier Kenya CBC (PP1–Senior School Grade 12) & British  (EYFS–A-Level) education with separate boys & girls boarding facilities."
-        keywords="St Gabriel's Mission International School, international school nakuru, kenya cbc nakuru, senior school kenya, junior secondary school, jss nakuru, cambridge igcse, a-level, lanet boarding school, christian school nakuru, best school in nakuru, dual curriculum kenya"
+        title="St  Gabriel's Mission International School | Kenya CBC & British  in Nakuru, Kenya"
+        description="St  Gabriel's Mission International School in Lanet, Nakuru offers premier Kenya CBC (PP1–Senior School Grade 12) & British  (EYFS–A-Level) education with separate boys & girls boarding facilities."
+        keywords="St Gabriel\'s Mission International School, international school nakuru, kenya cbc nakuru, senior school kenya, junior secondary school, jss nakuru, British igcse, a-level, lanet boarding school, christian school nakuru, best school in nakuru, dual curriculum kenya"
         canonicalPath="/"
         ogType="website"
-        ogTitle="St. Gabriel's Mission International School · Dual Curriculum & Boarding Excellence in Nakuru"
+        ogTitle="St  Gabriel's Mission International School · Dual Curriculum & Boarding Excellence in Nakuru"
         ogDescription="Providing world-class Kenya CBC & British International pathways, championship brass band, STEM laboratories, and separate residential boarding in Lanet, Nakuru."
         faqs={[
           {
-            question: "What curricula are offered at St. Gabriel's Mission International School?",
-            answer: "St. Gabriel's Mission International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary (JSS) and Senior School, alongside the British International Pathway from Early Years Foundation Stage (EYFS), Cambridge Primary, Lower Secondary, IGCSE (O-Level) to Advanced Level (A-Level)."
+            question: "What curricula are offered at St Gabriel's Mission International School?",
+            answer: "St  Gabriel's Mission International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary (JSS) and Senior School, alongside the British International Pathway from Early Years Foundation Stage (EYFS), British Primary, Lower Secondary, IGCSE (O-Level) to Advanced Level (A-Level)."
           },
           {
-            question: "Where is St. Gabriel's Mission International School located in Nakuru?",
-            answer: "St. Gabriel's Mission International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene, secure learning environment."
+            question: "Where is St Gabriel's Mission International School located in Nakuru?",
+            answer: "St  Gabriel's Mission International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene, secure learning environment."
           },
           {
-            question: "Does St. Gabriel's Mission offer boarding facilities?",
-            answer: "Yes, St. Gabriel's Mission provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated house parents, medical care, and balanced nutrition."
+            question: "Does St Gabriel's Mission offer boarding facilities?",
+            answer: "Yes, St Gabriel's Mission provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated house parents, medical care, and balanced nutrition."
           },
           {
-            question: "How do I apply for admission to St. Gabriel's Mission International School?",
+            question: "How do I apply for admission to St Gabriel's Mission International School?",
             answer: "Admissions can be submitted online via our website application form, by calling admissions directly at +254 724 694 554 / +254 720 349 748, or by visiting our administration offices at the Lanet campus."
           }
         ]}
@@ -136,7 +136,7 @@ export const HomePage: React.FC = () => {
             >
               <img
                 src={directorImg}
-                alt="Mr. John Muira - Director & Founder of St. Gabriel International School"
+                alt="Mr. John Muira - Director & Founder of St Gabriel\'s International School"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
@@ -153,7 +153,7 @@ export const HomePage: React.FC = () => {
                   Director&apos;s Welcome
                 </span>
                 <h3 className="font-serif text-2xl font-bold text-white group-hover:text-[#E0BA43] transition-colors">Mr. John Muira</h3>
-                <p className="text-xs text-[#E0BA43] font-medium">Director & Founder • St. Gabriel Group of Schools</p>
+                <p className="text-xs text-[#E0BA43] font-medium">Director & Founder • St Gabriel\'s Group of Schools</p>
                 <p className="text-[11px] text-gray-300 underline pt-1 flex items-center gap-1 font-semibold">
                   <span>Click photo to read full message & biography &rarr;</span>
                 </p>
@@ -185,10 +185,10 @@ export const HomePage: React.FC = () => {
 
             <div className="space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed">
               <p className="italic border-l-4 border-[#C59B27] pl-4 text-gray-800 font-medium">
-                &ldquo;At St. Gabriel's Mission International School, our vision is to ignite intellect, character, and lifelong purpose in every child under God&apos;s grace.&rdquo;
+                &ldquo;At St Gabriel's Mission International School, our vision is to ignite intellect, character, and lifelong purpose in every child under God&apos;s grace.&rdquo;
               </p>
               <p>
-                Welcome to St. Gabriel's Mission International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British International Pathway (EYFS to A-Level)</strong>.
+                Welcome to St Gabriel's Mission International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British International Pathway (EYFS to A-Level)</strong>.
               </p>
               <p>
                 Whether in our modern STEM robotics laboratories, on championship athletic fields, within our nationally acclaimed orchestral brass band, or across our separate serene boys and girls residential boarding compounds, we guide each young scholar toward a balanced, purposeful life.
@@ -217,14 +217,14 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. Why Choose St. Gabriel (6 Pillars) */}
+      {/* 3. Why Choose St Gabriel\'s (6 Pillars) */}
       <section className="py-16 sm:py-24 bg-[#0B1D33] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('/images/pattern-dots.svg')] opacity-5" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-12">
           
           <div className="text-center space-y-3 max-w-3xl mx-auto">
             <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40 inline-block">
-              Why Families Choose St. Gabriel
+              Why Families Choose St Gabriel\'s
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-white">
               Six Pillars of Academic & Personal Distinction
@@ -294,7 +294,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. Curriculum Journey (Kenya CBC + British Cambridge) */}
+      {/* 4. Curriculum Journey (Kenya CBC + British) */}
       <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
           badge="Dual Academic Pathways"
@@ -340,7 +340,7 @@ export const HomePage: React.FC = () => {
       {/* 7. Campus & Student Life Gallery */}
       <section className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         <SectionHeading
-          badge="Life at St. Gabriel"
+          badge="Life at St Gabriel\'s"
           title="Campus Life & Modern Facilities"
           subtitle="Explore our vibrant learning spaces, laboratories, athletics grounds, and dormitories in Lanet, Nakuru."
         />
@@ -355,8 +355,8 @@ export const HomePage: React.FC = () => {
       {/* 9. Interactive Testimonials Slider */}
       <TestimonialSlider
         badge="Parent & Scholar Testimonials"
-        title="What Families Say About St. Gabriel"
-        subtitle="Read authentic reviews with verified 5-star ratings from current parents, scholars, and alumni across our Kenya CBC and British Cambridge streams."
+        title="What Families Say About St Gabriel\'s"
+        subtitle="Read authentic reviews with verified 5-star ratings from current parents, scholars, and alumni across our Kenya CBC and British streams."
       />
 
       {/* 10. News & Events */}
@@ -382,7 +382,7 @@ export const HomePage: React.FC = () => {
       <section className="bg-[#0B1D33] text-white py-16 px-4 sm:px-6 border-t-2 border-[#C59B27]">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
-            Join St. Gabriel Family
+            Join St Gabriel\'s Family
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold leading-tight">
             Ready to Give Your Child a Premier International Education?
