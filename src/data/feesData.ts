@@ -2,95 +2,95 @@ import { BoardingFee, AdditionalCharge } from '../types';
 
 export const BOARDING_FEES: BoardingFee[] = [
   {
-    gradeGroup: 'Playgroup & Reception (Day Only)',
-    term1: 45000,
-    term2: 42000,
-    term3: 42000,
-    totalAnnual: 129000
+    gradeGroup: 'Pre-Unit DAY SCHOLAR',
+    term1: 8500,
+    term2: 90000,
+    term3: 8500,
+    totalAnnual: 26000
   },
   {
-    gradeGroup: 'Pre-Primary (PP1 & PP2 - Day Scholars)',
-    term1: 52000,
-    term2: 48000,
-    term3: 48000,
-    totalAnnual: 148000
+    gradeGroup: 'Grade 1 (Day Schoolars)',
+    term1: 11000,
+    term2: 11200,
+    term3: 11000,
+    totalAnnual: 33200
   },
   {
-    gradeGroup: 'CBC Lower Primary (Grades 1 – 3 - Day Scholars)',
-    term1: 65000,
-    term2: 60000,
-    term3: 60000,
-    totalAnnual: 185000
+    gradeGroup: 'Grade 2 and 3 (Day Scholars)',
+    term1: 12000,
+    term2: 12200,
+    term3: 12000,
+    totalAnnual: 36200
   },
   {
-    gradeGroup: 'CBC Upper Primary (Grades 4 – 6 - Day Scholars)',
-    term1: 75000,
-    term2: 70000,
-    term3: 70000,
-    totalAnnual: 215000
+    gradeGroup: 'Grade 4 (Day Scholars)',
+    term1: 13000,
+    term2: 13200,
+    term3: 13000,
+    totalAnnual: 39200
   },
   {
-    gradeGroup: 'CBC Upper Primary Boarding (Grades 4 – 6)',
-    term1: 125000,
-    term2: 115000,
-    term3: 115000,
-    totalAnnual: 355000
+    gradeGroup: 'Grade 5 (Day Scholars)',
+    term1: 14000,
+    term2: 14200,
+    term3: 14000,
+    totalAnnual: 42200
   },
   {
-    gradeGroup: 'CBC Junior Secondary (Grades 7 – 9 - Day)',
-    term1: 92000,
+    gradeGroup: 'Grade 6 (Day Scholars)',
+    term1: 15000,
+    term2: 15200,
+    term3: 15000,
+    totalAnnual: 45200
+  },
+  {
+    gradeGroup: 'Grade 1,2 and 3 (Boarding Scholars)',
+    term1: 20100,
+    term2: 20500,
+    term3: 20100,
+    totalAnnual: 60700
+  },
+  {
+    gradeGroup: 'Grade 4 and 5 (Boarding Scholars)',
+    term1: 21400,
+    term2: 21700,
+    term3: 21400,
+    totalAnnual: 64500
+  },
+  {
+    gradeGroup: 'Grade 6 (Boarding Scholars',
+    term1: 23500,
+    term2: 23800,
+    term3: 23500,
+    totalAnnual: 70800
+  },
+  {
+    gradeGroup: 'Junior school (Day Scholars)',
+    term1: 17000,
+    term2: 17200,
+    term3: 17000,
+    totalAnnual: 51200
+  },
+  {
+    gradeGroup: 'Junior school (Boarders)',
+    term1: 25100,
+    term2: 25500,
+    term3: 25100,
+    totalAnnual: 75600
+  },
+  {
+    gradeGroup: 'British IGSE Year 9 and 10',
+    term1: 85000,
     term2: 85000,
     term3: 85000,
-    totalAnnual: 262000
-  },
-  {
-    gradeGroup: 'CBC Junior Secondary Boarding (Grades 7 – 9)',
-    term1: 145000,
-    term2: 135000,
-    term3: 135000,
-    totalAnnual: 415000
-  },
-  {
-    gradeGroup: 'British Primary (Years 1 – 6 - Day)',
-    term1: 95000,
-    term2: 90000,
-    term3: 90000,
-    totalAnnual: 275000
-  },
-  {
-    gradeGroup: 'British Primary Boarding (Years 4 – 6)',
-    term1: 155000,
-    term2: 145000,
-    term3: 145000,
-    totalAnnual: 445000
-  },
-  {
-    gradeGroup: 'British Lower Secondary (Years 7 – 9 Boarding)',
-    term1: 175000,
-    term2: 165000,
-    term3: 165000,
-    totalAnnual: 505000
-  },
-  {
-    gradeGroup: 'British IGCSE (Years 10 – 11 Boarding)',
-    term1: 210000,
-    term2: 195000,
-    term3: 195000,
-    totalAnnual: 600000
-  },
-  {
-    gradeGroup: 'British A-Level / Sixth Form (Years 12 – 13 Boarding)',
-    term1: 245000,
-    term2: 230000,
-    term3: 230000,
-    totalAnnual: 705000
+    totalAnnual: 255000
   }
 ];
 
 export const OTHER_CHARGES: AdditionalCharge[] = [
   {
     item: 'Admission & Registration Fee',
-    amount: 5000,
+    amount: 2000,
     frequency: 'One-off upon enrollment',
     notes: 'Non-refundable administrative fee covers student file and badge setup.'
   },
@@ -102,13 +102,13 @@ export const OTHER_CHARGES: AdditionalCharge[] = [
   },
   {
     item: 'Comprehensive School Uniform Package',
-    amount: 22500,
+    amount: 17500,
     frequency: 'One-off upon admission',
     notes: 'Includes blazer, sweaters, 3 shirts/blouses, skirts/trousers, PE kit, track suit, and socks.'
   },
   {
-    item: 'Medical & Accident Insurance Cover',
-    amount: 4500,
+    item: 'Transort',
+    amount: 7500,
     frequency: 'Annual (Term 1)',
     notes: '24/7 comprehensive emergency medical care on campus and during trips.'
   },
