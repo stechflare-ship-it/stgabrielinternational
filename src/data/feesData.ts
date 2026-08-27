@@ -4,7 +4,7 @@ export const BOARDING_FEES: BoardingFee[] = [
   {
     gradeGroup: 'Pre-Unit DAY SCHOLAR',
     term1: 8500,
-    term2: 90000,
+    term2: 9000,
     term3: 8500,
     totalAnnual: 26000
   },
