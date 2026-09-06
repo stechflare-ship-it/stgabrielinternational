@@ -81,7 +81,7 @@ export const StudentLifePage: React.FC = () => {
           <p className="max-w-3xl mx-auto text-gray-300 text-sm sm:text-base leading-relaxed">
             Daily routines, uniform guidelines, co-curricular sports, health welfare, and character development in Lanet, Nakuru.
           </p>
-        </div>nnp
+        </div>
       </section>
 
       {/* Daily Routines Section */}
