@@ -120,9 +120,7 @@ export const Footer: React.FC = () => {
                 { label: 'Student Life', path: '/student-life' },
                 { label: 'Boarding Experience', path: '/boarding' },
                 { label: 'Admissions Process', path: '/admissions' },
-                { label: 'Fees & Requirements', path: '/fees-and-requirements' },
-                { label: 'Downloads & Forms', path: '/downloads' },
-                { label: 'School News & Stories', path: '/news' }
+                { label: 'Fees & Requirements', path: '/fees-and-requirements' }
               ].map((link) => (
                 <li key={link.path}>
                   <Link
