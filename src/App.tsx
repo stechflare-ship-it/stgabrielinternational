@@ -39,10 +39,8 @@ export default function App() {
             <Route path="/admissions" element={<AdmissionsPage />} />
             <Route path="/fees-and-requirements" element={<FeesPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/news" element={<NewsPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/staff" element={<StaffPage />} />
-            <Route path="/downloads" element={<DownloadsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
