@@ -16,9 +16,7 @@ import { BoardingPage } from './pages/BoardingPage';
 import { AdmissionsPage } from './pages/AdmissionsPage';
 import { FeesPage } from './pages/FeesPage';
 import { GalleryPage } from './pages/GalleryPage';
-import { NewsPage } from './pages/NewsPage';
 import { BlogPage } from './pages/BlogPage';
-import { DownloadsPage } from './pages/DownloadsPage';
 import { ContactPage } from './pages/ContactPage';
 import { StaffPage } from './pages/StaffPage';
 
