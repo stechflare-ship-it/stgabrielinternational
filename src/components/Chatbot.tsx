@@ -219,17 +219,17 @@ export const Chatbot: React.FC = () => {
           href: `https://wa.me/${SCHOOL_INFO.contacts.whatsappPhoneRaw}?text=${SCHOOL_INFO.whatsappPrefillMessage}`
         };
       }
-      // 11. Downloads / Prospectus / Documents / PDF
+      // 11.  Prospectus / Documents / PDF
       else if (
-        q.includes('download') ||
+
         q.includes('prospectus') ||
         q.includes('pdf') ||
         q.includes('document') ||
         q.includes('calendar') ||
         q.includes('handbook')
       ) {
-        botResponse = `You can download official PDF documents including the School Prospectus 2026/2027, Fees Structure & Payment Policy, Student Requirements Checklist, Academic Term Calendar, and Boarding Code of Conduct from our Downloads page.`;
-        actionBtn = { label: 'Go to Downloads Page', href: '/downloads' };
+        botResponse = `You can visit the school to get the documents including the School Prospectus 2026/2027, Fees Structure & Payment Policy, Student Requirements Checklist, Academic Term Calendar, and Boarding Code of Conduct from our Contacts page.`;
+        actionBtn = { label: 'Go to Contacts Page', href: '/contact' };
       }
       // 12. Facilities / Swimming / STEM / Sports / Music / Bus
       else if (

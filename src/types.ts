@@ -69,20 +69,7 @@ export interface RequirementCategory {
   items: string[];
 }
 
-export interface NewsItem {
-  id: string;
-  title: string;
-  slug: string;
-  category: 'Academic' | 'Sports' | 'Arts' | 'Community' | 'Event';
-  date: string;
-  summary: string;
-  content: string[];
-  image: string;
-  featured?: boolean;
-  author?: string;
-  readTime?: string;
-  tags?: string[];
-}
+
 
 export interface GalleryItem {
   id: string;
@@ -107,17 +94,7 @@ export interface StaffMember {
   email?: string;
 }
 
-export interface DownloadDocument {
-  id: string;
-  title: string;
-  category: 'Admissions' | 'Academic Calendar' | 'Fees & Policies' | 'Student Handbooks';
-  fileSize: string;
-  format: 'PDF';
-  description: string;
-  updatedDate: string;
-  fileUrl?: string;     
-  fileName?: string; 
-}
+
 
 export interface FAQItem {
   id: string;

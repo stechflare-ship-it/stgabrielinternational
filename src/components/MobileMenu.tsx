@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { X, ChevronDown, Phone, MessageCircle, ArrowRight, ShieldCheck, Download } from 'lucide-react';
+import { X, ChevronDown, Phone, MessageCircle, ArrowRight, ShieldCheck, Downloa} from 'lucide-react';
 import { Logo } from './Logo';
 import { Button } from './Button';
 import { SCHOOL_INFO } from '../data/schoolData';

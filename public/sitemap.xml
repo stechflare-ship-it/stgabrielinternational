@@ -128,25 +128,15 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- News, Blog & Downloads -->
-  <url>
-    <loc>https://stgabrielinternational.co.ke/news</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.85</priority>
-  </url>
+  <!--  Blog  -->
+
   <url>
     <loc>https://stgabrielinternational.co.ke/blog</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
-  <url>
-    <loc>https://stgabrielinternational.co.ke/downloads</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.80</priority>
-  </url>
+  
   <url>
     <loc>https://stgabrielinternational.co.ke/gallery</loc>
     <lastmod>2026-08-18</lastmod>

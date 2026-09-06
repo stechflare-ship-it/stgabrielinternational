@@ -269,16 +269,7 @@ export const Navbar: React.FC = () => {
               Gallery
             </Link>
 
-            <Link
-              to="/news"
-              className={`px-3 py-2 text-xs font-bold uppercase tracking-wider transition-all border-b-2 ${
-                isActive('/news')
-                  ? 'text-[#0A192F] border-[#0A192F] bg-white/30 rounded-t-sm'
-                  : 'text-[#0A192F]/90 hover:text-[#0A192F] border-transparent hover:border-[#0A192F] hover:bg-white/20 rounded-t-sm'
-              }`}
-            >
-              News
-            </Link>
+ 
 
             <Link
               to="/blog"
@@ -291,16 +282,7 @@ export const Navbar: React.FC = () => {
               Blog
             </Link>
 
-            <Link
-              to="/downloads"
-              className={`px-3 py-2 text-xs font-bold uppercase tracking-wider transition-all border-b-2 ${
-                isActive('/downloads')
-                  ? 'text-[#0A192F] border-[#0A192F] bg-white/30 rounded-t-sm'
-                  : 'text-[#0A192F]/90 hover:text-[#0A192F] border-transparent hover:border-[#0A192F] hover:bg-white/20 rounded-t-sm'
-              }`}
-            >
-              Downloads
-            </Link>
+          
 
             <Link
               to="/contact"
