@@ -33,13 +33,11 @@ import { FeeTable } from '../components/FeeTable';
 import { BankPaymentCard } from '../components/BankPaymentCard';
 import { PaybillCard } from '../components/PaybillCard';
 import { Gallery } from '../components/Gallery';
-import { NewsCard } from '../components/NewsCard';
-import { NewsModal } from '../components/NewsModal';
 import { Button } from '../components/Button';
 import { StaffModal } from '../components/StaffModal';
 import { TestimonialSlider } from '../components/TestimonialSlider';
-import { SCHOOL_INFO, NEWS_ITEMS, STAFF_MEMBERS, DIRECTOR_MEMBER, LEADERSHIP_TEAM } from '../data/schoolData';
-import { StaffMember, NewsItem } from '../types';
+import { SCHOOL_INFO, STAFF_MEMBERS, DIRECTOR_MEMBER, LEADERSHIP_TEAM } from '../data/schoolData';
+import { StaffMember} from '../types';
 
 import campusImg from '../assets/images/about/aboutusBackground.webp';
 import directorImg from '../assets/images/home/directorImg.webp';
@@ -67,7 +65,6 @@ const PLACEHOLDER_ICT = complab;
 
 export const HomePage: React.FC = () => {
   const [selectedLeader, setSelectedLeader] = useState<StaffMember | null>(null);
-  const [activeStory, setActiveStory] = useState<NewsItem | null>(null);
   const [copied, setCopied] = useState<boolean>(false);
 
   const openDirectorMessage = () => {
@@ -77,19 +74,7 @@ export const HomePage: React.FC = () => {
     }
   };
 
-  const handleShareStory = (story: NewsItem) => {
-    if (navigator.share) {
-      navigator.share({
-        title: story.title,
-        text: story.summary,
-        url: `${window.location.origin}/news#${story.slug}`,
-      }).catch(() => {});
-    } else {
-      navigator.clipboard.writeText(`${window.location.origin}/news#${story.slug}`);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2500);
-    }
-  };
+
 
   return (
     <div className="w-full bg-[#F8F9FB]">
@@ -359,24 +344,7 @@ export const HomePage: React.FC = () => {
         subtitle="Read authentic reviews with verified 5-star ratings from current parents, scholars, and alumni across our Kenya CBC and British streams."
       />
 
-      {/* 10. News & Events */}
-      <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          badge="Latest Updates"
-          title="News & Events"
-          subtitle="Stay updated with school announcements, British exam distinction achievements, and gala celebrations."
-        />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {NEWS_ITEMS.map((news) => (
-            <NewsCard 
-              key={news.id} 
-              news={news} 
-              onReadMore={(item) => setActiveStory(item)} 
-            />
-          ))}
-        </div>
-      </section>
 
       {/* 11. Call to Action Banner */}
       <section className="bg-[#0B1D33] text-white py-16 px-4 sm:px-6 border-t-2 border-[#C59B27]">
@@ -423,13 +391,7 @@ export const HomePage: React.FC = () => {
         onClose={() => setSelectedLeader(null)}
       />
 
-      {/* Interactive News Story Modal for Homepage */}
-      <NewsModal
-        news={activeStory}
-        onClose={() => setActiveStory(null)}
-        onSelectNews={(story) => setActiveStory(story)}
-        allNews={NEWS_ITEMS}
-      />
+     
 
     </div>
   );

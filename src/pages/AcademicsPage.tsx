@@ -7,20 +7,14 @@ import { CurriculumTimeline } from '../components/CurriculumTimeline';
 import { TestimonialSlider } from '../components/TestimonialSlider';
 import { Button } from '../components/Button';
 import {
-  BookOpen,
-  Sparkles,
-  Award,
   GraduationCap,
   Microscope,
   Cpu,
   Palette,
   Globe2,
-  Compass,
   CheckCircle2,
   ChevronRight,
-  Download,
-  Building2,
-  Library,
+ 
   Target,
   ArrowRight
 } from 'lucide-react';

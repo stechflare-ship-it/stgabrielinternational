@@ -6,7 +6,6 @@ import { Gallery } from '../components/Gallery';
 import {
   Sparkles,
   Clock,
-  Download,
   CheckCircle2,
   Trophy,
   BookOpen,
@@ -82,24 +81,6 @@ export const StudentLifePage: React.FC = () => {
           <p className="max-w-3xl mx-auto text-gray-300 text-sm sm:text-base leading-relaxed">
             Daily routines, uniform guidelines, co-curricular sports, health welfare, and character development in Lanet, Nakuru.
           </p>
-
-          <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="/downloads"
-              className="px-6 py-3 rounded-full bg-[#D32F2F] hover:bg-[#b71c1c] text-white text-xs font-extrabold uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg"
-            >
-              <Download className="w-4 h-4" />
-              <span>DOWNLOAD LIFE AT SGIS (PDF)</span>
-            </a>
-
-            <a
-              href="/downloads"
-              className="px-6 py-3 rounded-full bg-[#1976D2] hover:bg-[#1565c0] text-white text-xs font-extrabold uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg"
-            >
-              <FileText className="w-4 h-4" />
-              <span>DOWNLOAD LIFE AT SGIS (DOC)</span>
-            </a>
-          </div>
         </div>
       </section>
 
