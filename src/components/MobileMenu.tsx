@@ -39,10 +39,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
     { name: 'Admissions', path: '/admissions' },
     { name: 'Fees & Requirements', path: '/fees-and-requirements' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'News & Events', path: '/news' },
     { name: 'Blog & Articles', path: '/blog' },
-    { name: 'Downloads', path: '/downloads' },
-    { name: 'Contact Us', path: '/contact' },
   ];
 
   const whatsappUrl = `https://wa.me/${SCHOOL_INFO.contacts.whatsappPhoneRaw}?text=${SCHOOL_INFO.whatsappPrefillMessage}`;
