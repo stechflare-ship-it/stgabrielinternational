@@ -19,12 +19,12 @@ export const SCHOOL_INFO = {
   whatsappPrefillMessage: 'Hello%2C%20I%20would%20like%20to%20enquire%20about%20admissions%20at%20St.%20Gabriel%20International%20School.',
 
   contacts: {
-    mainPhone: '+254 711 000 000',
-    mainPhoneRaw: '254711000000',
-    enquiryPhone: '+254 722 000 000',
-    enquiryPhoneRaw: '254722000000',
-    whatsappPhone: '+254 700 000 000',
-    whatsappPhoneRaw: '254700000000',
+    mainPhone: '+254724694554'',
+    mainPhoneRaw: '+254724694554'',
+    enquiryPhone: '+254724694554'',
+    enquiryPhoneRaw: '+254724694554'',
+    whatsappPhone: '+254724694554',
+    whatsappPhoneRaw: '+254724694554'',
     email: 'admissions@stgabrielinternational.sc.ke',
     infoEmail: 'info@stgabrielinternational.sc.ke',
     principalEmail: 'principal@stgabrielinternational.sc.ke',
