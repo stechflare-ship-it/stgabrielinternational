@@ -133,6 +133,12 @@ export const PAYMENT_METHODS = {
     accountExample: '780824#KIPRUTO_GRADE8',
     description: 'Instant M-Pesa mobile banking through Equity Bank Gateway.'
   },
+  familybankpaybill: {
+    accountnumber: '222111',
+    accountFormat: '222111#STUDENT_NAME,ADM',
+    accountExample: '780824#KIPRUTO_1234',
+    description: 'Instant M-Pesa mobile banking through Equity Bank Gateway.'
+  },
   paybillDetails: {
     paybillNumber: '247247',
     accountFormat: '780824#STUDENT_NAME_CLASS',
