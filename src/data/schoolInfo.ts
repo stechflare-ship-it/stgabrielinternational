@@ -76,6 +76,12 @@ export const SCHOOL_INFO = {
     branchCode: '031',
     swiftCode: 'EQBLKENA'
   },
+  
+  familybank: {
+    paybill: '222111',
+    accountNumber: '2502227#Name,ADM',
+
+  },
 
   mpesaPaybill: {
     businessNumber: '247247',
