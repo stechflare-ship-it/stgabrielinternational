@@ -134,10 +134,19 @@ export const PAYMENT_METHODS = {
     description: 'Instant M-Pesa mobile banking through Equity Bank Gateway.'
   },
   familybankpaybill: {
-    accountnumber: '222111',
-    accountFormat: '222111#STUDENT_NAME,ADM',
-    accountExample: '780824#KIPRUTO_1234',
-    description: 'Instant M-Pesa mobile banking through Equity Bank Gateway.'
+    businessNumber: '222111',
+    accountFormat: '2502227#STUDENT_NAME,ADM',
+    accountExample: '2502227#KIPRUTO,1234',
+    description: 'Instant M-Pesa mobile banking through Family Bank Gateway.'
+  },
+  familybankAccount: {
+    bankName: 'Family Bank Kenya',
+    accountNumber: '018000113882',
+    accountName: 'St Gabriel\'s International School Ltd',
+    paybill: '222111',
+    accountFormat: '2502227#STUDENT_NAME,ADM',
+    accountExample: '2502227#KIPRUTO,1234',
+    description: 'Direct transfer or M-Pesa paybill through Family Bank.'
   },
   paybillDetails: {
     paybillNumber: '247247',
