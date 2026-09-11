@@ -4,6 +4,7 @@ import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SectionHeading } from '../components/SectionHeading';
 import { FeeTable } from '../components/FeeTable';
 import { BankPaymentCard } from '../components/BankPaymentCard';
+import { FamilyBankPaymentCard } from '../components/FamilyBankPaymentCard';
 import { PaybillCard } from '../components/PaybillCard';
 import { PaymentPolicy } from '../components/PaymentPolicy';
 import { RequirementsChecklist } from '../components/RequirementsChecklist';
@@ -14,8 +15,8 @@ export const FeesPage: React.FC = () => {
     <div className="w-full bg-[#F8F9FB] min-h-screen">
       <SEOMetadata
         title="Fees Structure & Boarding Requirements 2026 | St Gabriel's Mission Nakuru"
-        description="Official school fee structure, Equity Bank account details, M-Pesa Paybill payment instructions, and junior boarding requirements for St Gabriel's Mission International School."
-        keywords="school fees nakuru, St Gabriel\'s Mission fee structure, boarding fees kenya, equity bank school account, mpesa paybill school fees, boarding requirements list"
+        description="Official school fee structure, Equity Bank account details, Family Bank account details, M-Pesa Paybill payment instructions, and junior boarding requirements for St Gabriel's Mission International School."
+        keywords="school fees nakuru, St Gabriel\'s Mission fee structure, boarding fees kenya, equity bank school account, family bank school account, mpesa paybill school fees, boarding requirements list"
         canonicalPath="/fees-and-requirements"
         ogType="website"
         ogTitle="Official Fee Structure & Payment Policies · St Gabriel\'s Nakuru"
@@ -45,7 +46,7 @@ export const FeesPage: React.FC = () => {
 
         <div className="relative z-10 max-w-7xl mx-auto text-center space-y-4">
           <span className="px-3.5 py-1 rounded-full bg-[#C59B27]/20 backdrop-blur-sm text-[#E0BA43] text-xs font-bold uppercase tracking-widest border border-[#C59B27]/40">
-            Cashless Payment Policy • Equity Bank & M-Pesa Paybill
+            Cashless Payment Policy • Equity Bank, Family Bank & M-Pesa Paybill
           </span>
           <h1 className="font-serif text-3xl sm:text-5xl font-extrabold text-white drop-shadow-sm">
             School Fees & Requirements Guide
@@ -62,12 +63,13 @@ export const FeesPage: React.FC = () => {
         <div className="space-y-6">
           <SectionHeading
             badge="Official Payment Channels"
-            title="Equity Bank & M-Pesa Paybill"
+            title="Equity Bank, Family Bank & M-Pesa Paybill"
             subtitle="STRICT POLICY: NO CASH PAYMENTS AT SCHOOL OFFICE. Payments must be deposited via Bank or Paybill."
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <BankPaymentCard />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <PaybillCard />
+            <BankPaymentCard />
+            <FamilyBankPaymentCard />
           </div>
         </div>
 

@@ -31,6 +31,7 @@ import { CurriculumTimeline } from '../components/CurriculumTimeline';
 import { BoardingSection } from '../components/BoardingSection';
 import { FeeTable } from '../components/FeeTable';
 import { BankPaymentCard } from '../components/BankPaymentCard';
+import { FamilyBankPaymentCard } from '../components/FamilyBankPaymentCard';
 import { PaybillCard } from '../components/PaybillCard';
 import { Gallery } from '../components/Gallery';
 import { Button } from '../components/Button';
@@ -89,19 +90,19 @@ export const HomePage: React.FC = () => {
         faqs={[
           {
             question: "What curricula are offered at St Gabriel's Mission International School?",
-            answer: "St  Gabriel's Mission International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary (JSS) and Senior School, alongside the British International Pathway from Early Years Foundation Stage (EYFS), British Primary, Lower Secondary, IGCSE (O-Level) to Advanced Level (A-Level)."
+            answer: "St  Gabriel's Mission International School offers a dual-curriculum structure: the Kenya Competency-Based Curriculum (CBC) from Pre-Primary (PP1/PP2) through Junior Secondary School (JSS/Grades 7–9) and Senior School (Grades 10–12), and the British International Curriculum from Early Years Foundation Stage (EYFS) through A-Levels (Years 12–13)."
           },
           {
             question: "Where is St Gabriel's Mission International School located in Nakuru?",
-            answer: "St  Gabriel's Mission International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene, secure learning environment."
+            answer: "St  Gabriel's Mission International School is located along Transformer Road in Lanet, Nakuru County, Kenya, situated approximately 10 minutes from Nakuru City Centre in a serene and secure 15-hectare campus."
           },
           {
             question: "Does St Gabriel's Mission offer boarding facilities?",
-            answer: "Yes, St Gabriel's Mission provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated house parents, medical care, and balanced nutrition."
+            answer: "Yes, St Gabriel's Mission provides modern, secure, and separate boarding compounds for boys and girls located approximately 4 kilometers apart in Lanet, Nakuru with dedicated professional houseparents, 24/7 security, matrons, and comprehensive pastoral care."
           },
           {
             question: "How do I apply for admission to St Gabriel's Mission International School?",
-            answer: "Admissions can be submitted online via our website application form, by calling admissions directly at +254 724 694 554 / +254 720 349 748, or by visiting our administration offices at the Lanet campus."
+            answer: "Admissions can be submitted online via our website application form, by calling admissions directly at +254 724 694 554 / +254 720 349 748, or by visiting our administration office along Transformer Road, Lanet."
           }
         ]}
       />
@@ -173,17 +174,17 @@ export const HomePage: React.FC = () => {
                 &ldquo;At St Gabriel's Mission International School, our vision is to ignite intellect, character, and lifelong purpose in every child under God&apos;s grace.&rdquo;
               </p>
               <p>
-                Welcome to St Gabriel's Mission International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. We are proud to offer dual excellence: both the full <strong>Kenya Competency-Based Curriculum (CBC from PP1 to Senior School Grade 12)</strong> and the <strong>British International Pathway (EYFS to A-Level)</strong>.
+                Welcome to St Gabriel's Mission International School, Lanet, Nakuru. For over 28 years, our institution has stood as a beacon of academic distinction and moral integrity in Kenya. Our scholars have earned top distinctions in national examinations, secured global university placements, and developed the principled character to lead with purpose.
               </p>
               <p>
-                Whether in our modern STEM robotics laboratories, on championship athletic fields, within our nationally acclaimed orchestral brass band, or across our separate serene boys and girls residential boarding compounds, we guide each young scholar toward a balanced, purposeful life.
+                Whether in our modern STEM robotics laboratories, on championship athletic fields, within our nationally acclaimed orchestral brass band, or across our separate serene boys and girls boarding compounds (4 kilometers apart for optimal safety and focus), every corner of St Gabriel's Mission cultivates intellectual brilliance alongside character depth.
               </p>
             </div>
 
             <div className="pt-4 flex flex-wrap items-center gap-4">
               <button
                 onClick={openDirectorMessage}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0B1D33] hover:bg-[#C59B27] hover:text-[#0B1D33] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-md cursor-pointer"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#0B1D33] hover:bg-[#C59B27] hover:text-[#0B1D33] text-white font-bold text-xs uppercase tracking-wider transition-all duration-300"
               >
                 <span>Read Full Director&apos;s Address</span>
                 <ArrowRight className="w-4 h-4" />
@@ -299,7 +300,7 @@ export const HomePage: React.FC = () => {
         <SectionHeading
           badge="Transparent Fee Structure"
           title="Boarding Fees & Payment Channels"
-          subtitle="Clear, all-inclusive termly fee schedules and official cashless payment guidelines via Equity Bank and M-Pesa Paybill."
+          subtitle="Clear, all-inclusive termly fee schedules and official cashless payment guidelines via Equity Bank, Family Bank and M-Pesa Paybill."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -318,6 +319,7 @@ export const HomePage: React.FC = () => {
           <div className="lg:col-span-4 space-y-6">
             <PaybillCard />
             <BankPaymentCard />
+            <FamilyBankPaymentCard />
           </div>
         </div>
       </section>
